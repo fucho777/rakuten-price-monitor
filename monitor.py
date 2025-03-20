@@ -85,7 +85,7 @@ def search_product_by_jan_code(jan_code):
         return None
 
 # 検索結果から最適な商品を選択する
-def select_best_product(search_result):
+def select_best_product(search_result, jan_code):
     try:
         # 検索結果がない場合はNoneを返す
         if not search_result or "Items" not in search_result or not search_result["Items"]:
@@ -110,6 +110,38 @@ def select_best_product(search_result):
         if not valid_items:
             log_message("商品選択", "なし", "警告", "有効な価格の新品商品がありません")
             return None
+            
+        # JANコードが商品名や説明文に含まれる商品を優先して選択
+        jan_matched_items = []
+        for item in valid_items:
+            item_name = item.get("itemName", "").lower()
+            item_caption = item.get("itemCaption", "").lower()
+            if jan_code.lower() in item_name or jan_code.lower() in item_caption:
+                jan_matched_items.append(item)
+        
+        # JANコードに一致する商品があればその中から最安値、なければ元の最安値商品を選択
+        items_to_sort = jan_matched_items if jan_matched_items else valid_items
+            
+        # 価格の安い順にソート
+        items_to_sort.sort(key=lambda x: int(x["itemPrice"]))
+        
+        # 最安値の商品を選択
+        selected_item = items_to_sort[0]
+        
+        # 選択された商品の情報をログに記録
+        if selected_item:
+            log_message("商品選択", selected_item.get("itemCode", "なし"), "成功", 
+                      f"新品商品を選択: {selected_item.get('itemName', '名称不明')}, "
+                      f"価格: {selected_item.get('itemPrice', '0')}円, "
+                      f"販売店: {selected_item.get('shopName', '不明')}")
+        else:
+            log_message("商品選択", "なし", "注意", "条件に合う商品が見つかりませんでした")
+            
+        return selected_item
+        
+    except Exception as e:
+        log_message("商品選択", "なし", "失敗", str(e))
+        return None
             
         # 価格の安い順にソート
         valid_items.sort(key=lambda x: int(x["itemPrice"]))
@@ -165,7 +197,7 @@ def get_product_info_by_jan_code(jan_code):
             raise ValueError(f"JANコード {jan_code} に一致する商品が見つかりませんでした")
             
         # 検索結果から新品商品を選択
-        selected_product = select_best_product(search_result)
+        selected_product = select_best_product(search_result, jan_code)
         
         # 新品商品が見つからない場合は「新品なし」状態を返す
         if not selected_product:
