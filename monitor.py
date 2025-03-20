@@ -47,6 +47,16 @@ def search_product_by_jan_code(jan_code):
           "sort": "+itemPrice",
           "availability": 1,
           "format": "json"
+            # レスポンスをJSONに変換
+result = response.json()
+
+        # 検索結果の詳細を出力（デバッグ用）
+        if result.get("count", 0) > 0:
+                   first_item = result["Items"][0]["Item"]
+                   log_message("楽天API詳細", f"JANコード: {jan_code}", "情報", 
+                   f"最初の商品: {first_item.get('itemName')}, "
+                   f"商品コード: {first_item.get('itemCode')}, "
+                   f"カテゴリ: {first_item.get('genreName')}")
 }
         
         # URLパラメータ構築
