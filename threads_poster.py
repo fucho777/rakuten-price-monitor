@@ -38,40 +38,76 @@ def create_threads_message(product):
     
     return threads_msg
 
+# スレッズAPIにアクセストークンを取得
+def get_threads_access_token():
+    try:
+        # Meta Graph APIの認証情報
+        app_id = os.environ.get("THREADS_APP_ID")
+        app_secret = os.environ.get("THREADS_APP_SECRET")
+        long_lived_token = os.environ.get("THREADS_LONG_LIVED_TOKEN")
+        
+        # 長期アクセストークンが既に存在する場合はそれを使用
+        if long_lived_token:
+            return long_lived_token
+            
+        # 認証情報が設定されているか確認
+        if not all([app_id, app_secret]):
+            raise ValueError("Threads API認証情報が不足しています")
+        
+        # アクセストークンリクエストURL
+        token_url = f"https://graph.facebook.com/v18.0/oauth/access_token"
+        
+        # リクエストパラメータ
+        params = {
+            "client_id": app_id,
+            "client_secret": app_secret,
+            "grant_type": "client_credentials"
+        }
+        
+        # POSTリクエストを送信
+        response = requests.get(token_url, params=params)
+        
+        # レスポンスを確認
+        if response.status_code == 200:
+            response_data = response.json()
+            access_token = response_data.get("access_token")
+            log_message("Threads認証", "システム", "成功", "アクセストークンを取得しました")
+            return access_token
+        else:
+            error_msg = f"アクセストークン取得エラー: ステータスコード {response.status_code}, レスポンス: {response.text}"
+            log_message("Threads認証", "システム", "失敗", error_msg)
+            raise ValueError(error_msg)
+            
+    except Exception as e:
+        log_message("Threads認証", "システム", "失敗", f"エラー: {str(e)}")
+        raise
+
 # スレッズにAPIを使用して投稿する関数
 def post_to_threads(message):
     try:
         # スレッズAPI認証情報
-        api_key = os.environ.get("THREADS_API_KEY")
-        api_endpoint = os.environ.get("THREADS_API_ENDPOINT")
-        user_id = os.environ.get("THREADS_USER_ID")
+        access_token = get_threads_access_token()
+        instagram_account_id = os.environ.get("THREADS_INSTAGRAM_ACCOUNT_ID")
         
         # 認証情報が設定されているか確認
-        if not all([api_key, api_endpoint, user_id]):
+        if not all([access_token, instagram_account_id]):
             raise ValueError("Threads API認証情報が不足しています")
             
-        # リクエストヘッダーを設定
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}"
-        }
+        # スレッズ投稿エンドポイント
+        # Instagram Graph APIを使用してスレッズに投稿
+        api_url = f"https://graph.facebook.com/v18.0/{instagram_account_id}/threads"
         
-        # リクエストボディを設定
-        payload = {
-            "user_id": user_id,
-            "text": message
+        # リクエストパラメータ
+        params = {
+            "message": message,
+            "access_token": access_token
         }
         
         # POSTリクエストを送信
-        response = requests.post(
-            api_endpoint, 
-            headers=headers, 
-            json=payload, 
-            timeout=30
-        )
+        response = requests.post(api_url, data=params, timeout=30)
         
         # レスポンスを確認
-        if response.status_code == 200 or response.status_code == 201:
+        if response.status_code == 200:
             response_data = response.json()
             thread_id = response_data.get("id", "未取得")
             log_message("Threads投稿", thread_id, "成功", f"投稿ID: {thread_id}")
