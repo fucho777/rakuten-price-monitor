@@ -1,0 +1,53 @@
+name: 楽天価格監視と投稿
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # 4時間ごとに実行（0, 4, 8, 12, 16, 20時）
+  workflow_dispatch:  # 手動実行も可能に
+
+jobs:
+  monitor-and-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v3
+        
+      - name: Pythonセットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: 依存関係インストール
+        run: |
+          pip install -r requirements.txt
+          
+      - name: 楽天商品価格監視を実行
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+          PRICE_CHANGE_THRESHOLD: ${{ secrets.PRICE_CHANGE_THRESHOLD || '5' }}
+        run: python monitor.py
+        
+      - name: X(Twitter)に投稿
+        env:
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+        run: python twitter_poster.py
+        
+      - name: スレッズに投稿
+        env:
+          THREADS_APP_ID: ${{ secrets.THREADS_APP_ID }}
+          THREADS_APP_SECRET: ${{ secrets.THREADS_APP_SECRET }}
+          THREADS_LONG_LIVED_TOKEN: ${{ secrets.THREADS_LONG_LIVED_TOKEN }}
+          THREADS_INSTAGRAM_ACCOUNT_ID: ${{ secrets.THREADS_INSTAGRAM_ACCOUNT_ID }}
+        run: python threads_poster.py
+        
+      - name: データ更新をコミット
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add price_history.csv product_list.csv twitter_posting_log.csv threads_posting_log.csv
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
+          git push
