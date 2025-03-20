@@ -53,6 +53,23 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          git add -A  # 変更されたすべてのファイルをステージングする
-          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
+          # ファイルの存在を確認してからaddする
+          if [ -f "price_history.csv" ]; then
+           git add price_history.csv
+          fi
+          if [ -f "product_list.csv" ]; then
+           git add product_list.csv
+          fi
+          if [ -f "twitter_posting_log.csv" ]; then
+           git add twitter_posting_log.csv
+          fi
+          if [ -f "threads_posting_log.csv" ]; then
+           git add threads_posting_log.csv
+          fi
+          # コミットする変更があるかチェック
+          if git diff --staged --quiet; then
+           echo "コミットする変更はありません"
+          else
+          git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
           git push
+          fi
