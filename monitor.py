@@ -51,7 +51,7 @@ def search_product_by_jan_code(jan_code):
         # URLパラメータ構築
         query_string = "&".join([f"{key}={value}" for key, value in params.items()])
         request_url = f"{base_url}?{query_string}"
-　　　　　
+        
         # デバッグ用にURLを出力
         print(f"DEBUG - リクエストURL: {request_url}")
         
