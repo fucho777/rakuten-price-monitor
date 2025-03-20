@@ -41,12 +41,13 @@ def search_product_by_jan_code(jan_code):
         params = {
             "applicationId": app_id,
             "affiliateId": affiliate_id,
-            "keyword": jan_code,
+        # "keyword": jan_code,  # コメントアウト
+            "keyword": "nintendo",  # テスト用の一般キーワード
             "hits": 30,
-            "sort": "+itemPrice",
-            "availability": 1,
-            "format": "json"
-        }
+          "sort": "+itemPrice",
+          "availability": 1,
+          "format": "json"
+}
         
         # URLパラメータ構築
         # URLパラメータ構築
