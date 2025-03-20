@@ -36,29 +36,36 @@ def search_product_by_jan_code(jan_code):
         if not (len(jan_code) == 8 or len(jan_code) == 13):
             raise ValueError(f"無効なJANコード形式です: {jan_code}")
             
-        # 楽天商品検索APIのURL構築
-        base_url = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706"
-        params = {
-            "applicationId": app_id,
-            "affiliateId": affiliate_id,
-        # "keyword": jan_code,  # コメントアウト
-            "keyword": "nintendo",  # テスト用の一般キーワード
-            "hits": 30,
-          "sort": "+itemPrice",
-          "availability": 1,
-          "format": "json"
-            # レスポンスをJSONに変換
+       # 楽天商品検索APIのURL構築
+base_url = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706"
+params = {
+    "applicationId": app_id,
+    "affiliateId": affiliate_id,
+    # "keyword": jan_code,  # コメントアウト
+    "keyword": "nintendo",  # テスト用の一般キーワード
+    "hits": 30,
+    "sort": "+itemPrice",
+    "availability": 1,
+    "format": "json"
+}
+
+# APIリクエスト実行
+response = requests.get(request_url, timeout=10)
+
+# レスポンスステータスの確認
+if response.status_code != 200:
+    raise ValueError(f"API応答エラー：ステータスコード {response.status_code}")
+    
+# レスポンスをJSONに変換
 result = response.json()
 
-        # 検索結果の詳細を出力（デバッグ用）
-        if result.get("count", 0) > 0:
-                   first_item = result["Items"][0]["Item"]
-                   log_message("楽天API詳細", f"JANコード: {jan_code}", "情報", 
-                   f"最初の商品: {first_item.get('itemName')}, "
-                   f"商品コード: {first_item.get('itemCode')}, "
-                   f"カテゴリ: {first_item.get('genreName')}")
-}
-        
+# 検索結果の詳細を出力（デバッグ用）
+if result.get("count", 0) > 0:
+    first_item = result["Items"][0]["Item"]
+    log_message("楽天API詳細", f"JANコード: {jan_code}", "情報", 
+               f"最初の商品: {first_item.get('itemName')}, "
+               f"商品コード: {first_item.get('itemCode')}, "
+               f"カテゴリ: {first_item.get('genreName')}")
         # URLパラメータ構築
         # URLパラメータ構築
         import urllib.parse
