@@ -13,13 +13,13 @@ def log_message(message_type, target, status, message):
 
 # 楽天APIの設定を取得
 def get_rakuten_api_settings():
+    # デバッグ用に直接アプリケーションIDを指定
+    app_id = "1027811366364555365"  # 実際のIDを入力
+    
     return {
-        #"app_id": os.environ.get("RAKUTEN_APP_ID"),
-        # テスト用に直接アプリケーションIDを指定
-        app_id = "1027811366364555365"  # 実際のIDを入力
-        #"affiliate_id": os.environ.get("RAKUTEN_AFFILIATE_ID", "")
-        affiliate_id = "46002782.426d9804.46002783.08db397d"   
-    }
+        "app_id": app_id,
+        "affiliate_id": os.environ.get("RAKUTEN_AFFILIATE_ID", "")
+}
 
 # JANコードで商品を検索
 def search_product_by_jan_code(jan_code):
