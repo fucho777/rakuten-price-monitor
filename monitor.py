@@ -36,37 +36,18 @@ def search_product_by_jan_code(jan_code):
         if not (len(jan_code) == 8 or len(jan_code) == 13):
             raise ValueError(f"無効なJANコード形式です: {jan_code}")
             
-       # 楽天商品検索APIのURL構築
-base_url = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706"
-params = {
-    "applicationId": app_id,
-    "affiliateId": affiliate_id,
-    # "keyword": jan_code,  # コメントアウト
-    "keyword": "nintendo",  # テスト用の一般キーワード
-    "hits": 30,
-    "sort": "+itemPrice",
-    "availability": 1,
-    "format": "json"
-}
-
-# APIリクエスト実行
-response = requests.get(request_url, timeout=10)
-
-# レスポンスステータスの確認
-if response.status_code != 200:
-    raise ValueError(f"API応答エラー：ステータスコード {response.status_code}")
-    
-# レスポンスをJSONに変換
-result = response.json()
-
-# 検索結果の詳細を出力（デバッグ用）
-if result.get("count", 0) > 0:
-    first_item = result["Items"][0]["Item"]
-    log_message("楽天API詳細", f"JANコード: {jan_code}", "情報", 
-               f"最初の商品: {first_item.get('itemName')}, "
-               f"商品コード: {first_item.get('itemCode')}, "
-               f"カテゴリ: {first_item.get('genreName')}")
-        # URLパラメータ構築
+        # 楽天商品検索APIのURL構築
+        base_url = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706"
+        params = {
+            "applicationId": app_id,
+            "affiliateId": affiliate_id,
+            "keyword": jan_code,  # JANコードで検索
+            "hits": 30,
+            "sort": "+itemPrice",
+            "availability": 1,
+            "format": "json"
+        }
+        
         # URLパラメータ構築
         import urllib.parse
         query_string = "&".join([f"{key}={urllib.parse.quote(str(value))}" for key, value in params.items()])
@@ -90,6 +71,14 @@ if result.get("count", 0) > 0:
             error_msg = f"楽天API エラー: {result['error']}: {result.get('error_description', '')}"
             raise ValueError(error_msg)
             
+        # 検索結果の詳細を出力（デバッグ用）
+        if result.get("count", 0) > 0:
+            first_item = result["Items"][0]["Item"]
+            log_message("楽天API詳細", f"JANコード: {jan_code}", "情報", 
+                       f"最初の商品: {first_item.get('itemName')}, "
+                       f"商品コード: {first_item.get('itemCode')}, "
+                       f"カテゴリ: {first_item.get('genreName')}")
+        
         # 実行ログに記録
         log_message("楽天API検索", f"JANコード: {jan_code}", "成功", 
                     f"検索結果: {result.get('count', 0)}件")
@@ -144,27 +133,6 @@ def select_best_product(search_result, jan_code):
         
         # 最安値の商品を選択
         selected_item = items_to_sort[0]
-        
-        # 選択された商品の情報をログに記録
-        if selected_item:
-            log_message("商品選択", selected_item.get("itemCode", "なし"), "成功", 
-                      f"新品商品を選択: {selected_item.get('itemName', '名称不明')}, "
-                      f"価格: {selected_item.get('itemPrice', '0')}円, "
-                      f"販売店: {selected_item.get('shopName', '不明')}")
-        else:
-            log_message("商品選択", "なし", "注意", "条件に合う商品が見つかりませんでした")
-            
-        return selected_item
-        
-    except Exception as e:
-        log_message("商品選択", "なし", "失敗", str(e))
-        return None
-            
-        # 価格の安い順にソート
-        valid_items.sort(key=lambda x: int(x["itemPrice"]))
-        
-        # 最安値の商品を選択
-        selected_item = valid_items[0]
         
         # 選択された商品の情報をログに記録
         if selected_item:
