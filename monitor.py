@@ -16,8 +16,9 @@ def get_rakuten_api_settings():
     return {
         #"app_id": os.environ.get("RAKUTEN_APP_ID"),
         # テスト用に直接アプリケーションIDを指定
-　　　　　app_id = "1027811366364555365"  # 実際のIDを入力
-        "affiliate_id": os.environ.get("RAKUTEN_AFFILIATE_ID", "")
+        app_id = "1027811366364555365"  # 実際のIDを入力
+        #"affiliate_id": os.environ.get("RAKUTEN_AFFILIATE_ID", "")
+        affiliate_id = "46002782.426d9804.46002783.08db397d"   
     }
 
 # JANコードで商品を検索
