@@ -48,6 +48,7 @@ def get_threads_access_token():
         
         # 長期アクセストークンが既に存在する場合はそれを使用
         if long_lived_token:
+            log_message("Threads認証", "システム", "情報", "長期アクセストークンを使用します")
             return long_lived_token
             
         # 認証情報が設定されているか確認
@@ -91,11 +92,16 @@ def post_to_threads(message):
         
         # 認証情報が設定されているか確認
         if not all([access_token, instagram_account_id]):
+            log_message("Threads投稿", "システム", "警告", "Threads API認証情報が不足しています")
             raise ValueError("Threads API認証情報が不足しています")
             
         # スレッズ投稿エンドポイント
         # Instagram Graph APIを使用してスレッズに投稿
         api_url = f"https://graph.facebook.com/v18.0/{instagram_account_id}/threads"
+        
+        # トークンをデバッグ（プロダクション環境では削除してください）
+        log_message("Threads投稿", "システム", "デバッグ", f"アカウントID: {instagram_account_id}")
+        log_message("Threads投稿", "システム", "デバッグ", f"トークン長: {len(access_token)} 文字")
         
         # リクエストパラメータ
         params = {
@@ -104,6 +110,7 @@ def post_to_threads(message):
         }
         
         # POSTリクエストを送信
+        log_message("Threads投稿", "システム", "進行中", f"APIリクエスト送信: {api_url}")
         response = requests.post(api_url, data=params, timeout=30)
         
         # レスポンスを確認
@@ -120,6 +127,19 @@ def post_to_threads(message):
         else:
             error_msg = f"APIエラー: ステータスコード {response.status_code}, レスポンス: {response.text}"
             log_message("Threads投稿", "なし", "失敗", error_msg)
+            
+            # エラーの詳細な解析（OAuthエラーの場合）
+            if "OAuthException" in response.text:
+                try:
+                    error_data = response.json().get("error", {})
+                    error_code = error_data.get("code")
+                    error_message = error_data.get("message")
+                    
+                    if error_code == 190:
+                        log_message("Threads認証", "システム", "警告", 
+                                   "アクセストークンが無効です。THREADS_APP_ID、THREADS_APP_SECRET、THREADS_LONG_LIVED_TOKENの値を確認してください。")
+                except:
+                    pass
             
             return {
                 "success": False,
@@ -164,9 +184,27 @@ def record_posting_result(product, post_result):
     except Exception as e:
         log_message("投稿記録", product["jan_code"], "失敗", f"エラー: {str(e)}")
 
+# アクセストークンの検証用関数
+def validate_threads_token():
+    """トークンが正常に取得できるかを検証する関数"""
+    try:
+        token = get_threads_access_token()
+        if token:
+            log_message("Threads認証", "システム", "検証", "アクセストークンの取得に成功しました")
+            return True
+        return False
+    except Exception as e:
+        log_message("Threads認証", "システム", "検証失敗", f"エラー: {str(e)}")
+        return False
+
 # 商品情報をスレッズに投稿するメイン関数
 def post_products_to_threads():
     try:
+        # まずトークンの検証を行う
+        if not validate_threads_token():
+            log_message("Threads投稿", "システム", "中止", "アクセストークンの検証に失敗したため処理を中止します")
+            return []
+            
         # 通知対象の商品がなければ終了
         if not os.path.exists("notifiable_products.json"):
             log_message("Threads投稿", "システム", "情報", "通知対象の商品がありません")
@@ -226,17 +264,59 @@ def post_products_to_threads():
         log_message("Threads投稿", "システム", "失敗", f"エラー: {str(e)}")
         return []
 
+# テスト用の関数
+def test_threads_connection():
+    """スレッズAPIの接続テスト用関数"""
+    try:
+        log_message("接続テスト", "システム", "開始", "Threads API接続テストを開始します")
+        
+        # 認証情報の確認
+        app_id = os.environ.get("THREADS_APP_ID")
+        app_secret = os.environ.get("THREADS_APP_SECRET")
+        long_lived_token = os.environ.get("THREADS_LONG_LIVED_TOKEN")
+        instagram_account_id = os.environ.get("THREADS_INSTAGRAM_ACCOUNT_ID")
+        
+        log_message("接続テスト", "システム", "情報", f"App ID設定: {'あり' if app_id else 'なし'}")
+        log_message("接続テスト", "システム", "情報", f"App Secret設定: {'あり' if app_secret else 'なし'}")
+        log_message("接続テスト", "システム", "情報", f"長期トークン設定: {'あり' if long_lived_token else 'なし'}")
+        log_message("接続テスト", "システム", "情報", f"Instagram ID設定: {'あり' if instagram_account_id else 'なし'}")
+        
+        # アクセストークン取得テスト
+        token = get_threads_access_token()
+        log_message("接続テスト", "システム", "情報", f"アクセストークン取得: {'成功' if token else '失敗'}")
+        
+        # 簡易的なテスト投稿（本番環境では実行しないことをお勧めします）
+        if token and instagram_account_id:
+            test_message = "これはThreads APIのテスト投稿です。"
+            log_message("接続テスト", "システム", "進行中", "テスト投稿を試みます")
+            
+            # テスト投稿を実行（実際に投稿したくない場合はコメントアウト）
+            # post_result = post_to_threads(test_message)
+            # log_message("接続テスト", "システム", "結果", f"テスト投稿: {'成功' if post_result['success'] else '失敗'}")
+        
+        log_message("接続テスト", "システム", "完了", "接続テストが完了しました")
+        
+    except Exception as e:
+        log_message("接続テスト", "システム", "失敗", f"エラー: {str(e)}")
+
 # メイン実行関数
 if __name__ == "__main__":
     try:
-        # 実行開始ログ
-        log_message("メイン処理", "システム", "開始", "Threads投稿処理を開始します")
+        import sys
         
-        # 商品情報をスレッズに投稿
-        results = post_products_to_threads()
-        
-        # 実行結果をログに記録
-        log_message("メイン処理", "システム", "完了", f"{len(results)}件の商品をThreadsに投稿しました")
+        # コマンドライン引数の確認
+        if len(sys.argv) > 1 and sys.argv[1] == "--test":
+            # テストモードの場合
+            test_threads_connection()
+        else:
+            # 通常実行
+            log_message("メイン処理", "システム", "開始", "Threads投稿処理を開始します")
+            
+            # 商品情報をスレッズに投稿
+            results = post_products_to_threads()
+            
+            # 実行結果をログに記録
+            log_message("メイン処理", "システム", "完了", f"{len(results)}件の商品をThreadsに投稿しました")
         
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", f"エラー: {str(e)}")
