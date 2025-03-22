@@ -311,7 +311,7 @@ def run_posting_scripts():
     except Exception as e:
         log_message("投稿実行", "システム", "失敗", f"エラー: {str(e)}")
 
-# 監視対象商品の変動を監視するメイン関数（10件ごとに投稿）
+# 監視対象商品の変動を監視するメイン関数（バッチ処理）
 def monitor_products():
     try:
         # 価格履歴ファイルが存在しない場合は新規作成
@@ -341,6 +341,9 @@ def monitor_products():
         # 商品リストをバッチに分割
         total_products = len(active_products)
         batch_count = (total_products + batch_size - 1) // batch_size  # 切り上げ計算
+        
+        # 全バッチの通知可能商品を保持するリスト
+        all_notifiable_products = []
         
         for batch_num in range(batch_count):
             start_idx = batch_num * batch_size
@@ -447,28 +450,33 @@ def monitor_products():
             # 通知すべき変動商品をフィルタリング
             batch_notifiable_products = filter_notifiable_products(batch_changed_products, threshold)
             
+            # このバッチの通知可能商品を全体のリストに追加
+            all_notifiable_products.extend(batch_notifiable_products)
+            
             # 通知すべき商品数をログに記録
             log_message("バッチ通知", f"バッチ {batch_num+1}/{batch_count}", "情報", 
-                        f"通知すべき商品数: {len(batch_notifiable_products)}件")
-            
-            # 通知すべき商品をJSONファイルに保存（投稿スクリプトで使用）
-            if batch_notifiable_products:
-                with open("notifiable_products.json", "w", encoding="utf-8") as f:
-                    json.dump(batch_notifiable_products, f, ensure_ascii=False, indent=2)
-                
-                # 投稿スクリプトを実行
-                run_posting_scripts()
-            else:
-                log_message("バッチ通知", f"バッチ {batch_num+1}/{batch_count}", "スキップ", 
-                            "通知すべき商品がないため、投稿をスキップします")
+                        f"バッチ内の通知可能商品: {len(batch_notifiable_products)}件, 累計: {len(all_notifiable_products)}件")
             
             # バッチ間の遅延を追加（必要に応じて）
             if batch_num < batch_count - 1:
                 time.sleep(5)  # バッチ間に5秒の遅延
         
+        # すべてのバッチ処理が終わった後、すべての通知対象商品をファイルに保存し、投稿を一度だけ実行
+        if all_notifiable_products:
+            log_message("メイン処理", "システム", "通知", f"通知対象商品: {len(all_notifiable_products)}件")
+            
+            # 通知対象商品をJSONファイルに保存
+            with open("notifiable_products.json", "w", encoding="utf-8") as f:
+                json.dump(all_notifiable_products, f, ensure_ascii=False, indent=2)
+            
+            # 投稿スクリプトを実行（一度だけ）
+            run_posting_scripts()
+        else:
+            log_message("メイン処理", "システム", "通知", "通知対象商品がありません")
+        
         log_message("メイン処理", "システム", "完了", "すべてのバッチ処理が完了しました")
         
-        return []  # 互換性のために空のリストを返す
+        return all_notifiable_products  # 互換性のために全通知対象商品を返す
         
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", str(e))
@@ -480,7 +488,7 @@ if __name__ == "__main__":
         # 実行開始ログ
         log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムの実行を開始します")
         
-        # 商品監視を実行（10件ごとに投稿する新しい方式）
+        # 商品監視を実行（バッチ処理方式）
         monitor_products()
         
         # 処理完了をログに記録
