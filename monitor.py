@@ -273,7 +273,11 @@ def filter_notifiable_products(changed_products, threshold=5):
         stock_restored = (product["previous_availability"] == "在庫なし" and 
                          product["current_availability"] == "在庫あり")
         
-        if price_reduced or stock_restored:
+        # 現在在庫があるかどうかを確認
+        has_stock = product["current_availability"] == "在庫あり"
+        
+        # 条件に合致し、かつ在庫がある場合のみ通知対象とする
+        if (price_reduced or stock_restored) and has_stock:
             notifiable.append(product)
             
     return notifiable
