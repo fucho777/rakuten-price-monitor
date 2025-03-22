@@ -4,6 +4,7 @@ import json
 import time
 import pandas as pd
 import requests
+import subprocess
 from datetime import datetime
 
 # ログ出力関数
@@ -282,9 +283,46 @@ def filter_notifiable_products(changed_products, threshold=5):
             
     return notifiable
 
-# 監視対象商品の変動を監視するメイン関数
+# 投稿スクリプトを実行する関数
+def run_posting_scripts():
+    try:
+        log_message("投稿実行", "システム", "開始", "投稿スクリプトを実行します")
+        
+        # スレッズに投稿
+        if os.path.exists("threads_poster.py"):
+            log_message("投稿実行", "Threads", "開始", "スレッズへの投稿を開始します")
+            try:
+                subprocess.run(["python", "threads_poster.py"], check=True)
+                log_message("投稿実行", "Threads", "完了", "スレッズへの投稿が完了しました")
+            except subprocess.CalledProcessError as e:
+                log_message("投稿実行", "Threads", "失敗", f"エラー: {str(e)}")
+        
+        # Twitterに投稿 (コメントアウトされているかチェック)
+        if os.path.exists("twitter_poster.py") and "TWITTER_API_KEY" in os.environ:
+            log_message("投稿実行", "Twitter", "開始", "Twitterへの投稿を開始します")
+            try:
+                subprocess.run(["python", "twitter_poster.py"], check=True)
+                log_message("投稿実行", "Twitter", "完了", "Twitterへの投稿が完了しました")
+            except subprocess.CalledProcessError as e:
+                log_message("投稿実行", "Twitter", "失敗", f"エラー: {str(e)}")
+        
+        log_message("投稿実行", "システム", "完了", "投稿スクリプトの実行が完了しました")
+        
+    except Exception as e:
+        log_message("投稿実行", "システム", "失敗", f"エラー: {str(e)}")
+
+# 監視対象商品の変動を監視するメイン関数（10件ごとに投稿）
 def monitor_products():
     try:
+        # 価格履歴ファイルが存在しない場合は新規作成
+        if not os.path.exists("price_history.csv"):
+            with open("price_history.csv", mode="w", newline="", encoding="utf-8") as file:
+                writer = csv.writer(file)
+                writer.writerow([
+                    "timestamp", "jan_code", "product_name", "price", 
+                    "availability", "shop_name", "price_change_rate", "notified"
+                ])
+
         # 商品リストを読み込む
         product_df = pd.read_csv("product_list.csv")
         
@@ -297,99 +335,140 @@ def monitor_products():
             
         log_message("メイン処理", "システム", "開始", f"合計{len(active_products)}件の商品を監視します")
         
-        changed_products = []
+        batch_size = 10  # 一度に処理する商品数
+        threshold = float(os.environ.get("PRICE_CHANGE_THRESHOLD", "5"))  # 通知する価格変動閾値
         
-        # 各商品を処理
-        for index, row in active_products.iterrows():
-            jan_code = str(row["jan_code"]).strip()
+        # 商品リストをバッチに分割
+        total_products = len(active_products)
+        batch_count = (total_products + batch_size - 1) // batch_size  # 切り上げ計算
+        
+        for batch_num in range(batch_count):
+            start_idx = batch_num * batch_size
+            end_idx = min(start_idx + batch_size, total_products)
             
-            try:
-                # 処理中であることをログに記録
-                log_message("価格監視", jan_code, "処理中", f"商品名: {row['product_name']}, 処理を開始します")
+            log_message("バッチ処理", f"バッチ {batch_num+1}/{batch_count}", "開始", 
+                        f"商品 {start_idx+1} から {end_idx} を処理します")
+            
+            batch_changed_products = []
+            
+            # バッチ内の各商品を処理
+            for index in range(start_idx, end_idx):
+                row = active_products.iloc[index-start_idx]
+                jan_code = str(row["jan_code"]).strip()
                 
-                # JANコードで最新の商品情報を取得
-                product_info = get_product_info_by_jan_code(jan_code)
-                
-                if not product_info or product_info["availability"] == "不明":
-                    log_message("価格監視", jan_code, "失敗", "商品情報が取得できませんでした")
-                    continue
+                try:
+                    # 処理中であることをログに記録
+                    log_message("価格監視", jan_code, "処理中", f"商品名: {row['product_name']}, 処理を開始します")
                     
-                # 前回データとの比較
-                current_price = product_info["item_price"]
-                previous_price = row["last_price"] if not pd.isna(row["last_price"]) else 0
-                current_availability = product_info["availability"]
-                previous_availability = row["last_availability"] if not pd.isna(row["last_availability"]) else "不明"
-                
-                # 初回の場合は変動なしとする
-                if previous_price == 0:
-                    # 商品リストを更新
-                    product_df.at[index, "product_name"] = product_info["item_name"]
-                    product_df.at[index, "last_price"] = current_price
-                    product_df.at[index, "last_availability"] = current_availability
-                    log_message("価格監視", jan_code, "初回取得", 
-                               f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
-                    continue
-                
-                # 価格または在庫に変動があるか確認
-                price_changed = current_price != previous_price
-                availability_changed = current_availability != previous_availability
-                
-                if price_changed or availability_changed:
-                    # 価格変動率を計算
-                    price_change_rate = 0
-                    if previous_price > 0:
-                        price_change_rate = ((current_price - previous_price) / previous_price) * 100
+                    # JANコードで最新の商品情報を取得
+                    product_info = get_product_info_by_jan_code(jan_code)
                     
-                    # 商品リストを更新
-                    product_df.at[index, "product_name"] = product_info["item_name"]
-                    product_df.at[index, "last_price"] = current_price
-                    product_df.at[index, "last_availability"] = current_availability
+                    if not product_info or product_info["availability"] == "不明":
+                        log_message("価格監視", jan_code, "失敗", "商品情報が取得できませんでした")
+                        continue
+                        
+                    # 前回データとの比較
+                    current_price = product_info["item_price"]
+                    previous_price = row["last_price"] if not pd.isna(row["last_price"]) else 0
+                    current_availability = product_info["availability"]
+                    previous_availability = row["last_availability"] if not pd.isna(row["last_availability"]) else "不明"
                     
-                    # 変動情報を価格履歴に記録
-                    history_info = record_price_history(
-                        jan_code,
-                        product_info["item_name"],
-                        current_price,
-                        current_availability,
-                        product_info["shop_name"],
-                        price_change_rate
-                    )
+                    # 初回の場合は変動なしとする
+                    if previous_price == 0:
+                        # 商品リストを更新
+                        product_df.loc[product_df["jan_code"] == jan_code, "product_name"] = product_info["item_name"]
+                        product_df.loc[product_df["jan_code"] == jan_code, "last_price"] = current_price
+                        product_df.loc[product_df["jan_code"] == jan_code, "last_availability"] = current_availability
+                        log_message("価格監視", jan_code, "初回取得", 
+                                   f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
+                        continue
                     
-                    # 変動があった商品情報を配列に追加
-                    changed_products.append({
-                        "jan_code": jan_code,
-                        "product_name": product_info["item_name"],
-                        "current_price": current_price,
-                        "previous_price": previous_price,
-                        "price_change_rate": price_change_rate,
-                        "current_availability": current_availability,
-                        "previous_availability": previous_availability,
-                        "shop_name": product_info["shop_name"],
-                        "item_url": product_info["item_url"],
-                        "affiliate_url": product_info["affiliate_url"],
-                        "timestamp": history_info["timestamp"] if history_info else datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                    })
+                    # 価格または在庫に変動があるか確認
+                    price_changed = current_price != previous_price
+                    availability_changed = current_availability != previous_availability
                     
-                    log_message("価格監視", jan_code, "変動検知", 
-                               f"商品名: {product_info['item_name']}, "
-                               f"価格変動: {previous_price}円→{current_price}円 ({price_change_rate:.2f}%), "
-                               f"在庫: {previous_availability}→{current_availability}")
-                else:
-                    log_message("価格監視", jan_code, "変動なし", 
-                               f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
+                    if price_changed or availability_changed:
+                        # 価格変動率を計算
+                        price_change_rate = 0
+                        if previous_price > 0:
+                            price_change_rate = ((current_price - previous_price) / previous_price) * 100
+                        
+                        # 商品リストを更新
+                        product_df.loc[product_df["jan_code"] == jan_code, "product_name"] = product_info["item_name"]
+                        product_df.loc[product_df["jan_code"] == jan_code, "last_price"] = current_price
+                        product_df.loc[product_df["jan_code"] == jan_code, "last_availability"] = current_availability
+                        
+                        # 変動情報を価格履歴に記録
+                        history_info = record_price_history(
+                            jan_code,
+                            product_info["item_name"],
+                            current_price,
+                            current_availability,
+                            product_info["shop_name"],
+                            price_change_rate
+                        )
+                        
+                        # 変動があった商品情報を配列に追加
+                        batch_changed_products.append({
+                            "jan_code": jan_code,
+                            "product_name": product_info["item_name"],
+                            "current_price": current_price,
+                            "previous_price": previous_price,
+                            "price_change_rate": price_change_rate,
+                            "current_availability": current_availability,
+                            "previous_availability": previous_availability,
+                            "shop_name": product_info["shop_name"],
+                            "item_url": product_info["item_url"],
+                            "affiliate_url": product_info["affiliate_url"],
+                            "timestamp": history_info["timestamp"] if history_info else datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        })
+                        
+                        log_message("価格監視", jan_code, "変動検知", 
+                                   f"商品名: {product_info['item_name']}, "
+                                   f"価格変動: {previous_price}円→{current_price}円 ({price_change_rate:.2f}%), "
+                                   f"在庫: {previous_availability}→{current_availability}")
+                    else:
+                        log_message("価格監視", jan_code, "変動なし", 
+                                   f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
+                    
+                    # API呼び出しの間に短い遅延を挿入（レート制限対策）
+                    time.sleep(1)
+                    
+                except Exception as e:
+                    log_message("価格監視", jan_code, "失敗", f"商品名: {row['product_name']}, エラー: {str(e)}")
+            
+            # 商品リストの変更を保存
+            product_df.to_csv("product_list.csv", index=False)
+            
+            # このバッチで変動があった商品数をログに記録
+            log_message("バッチ処理", f"バッチ {batch_num+1}/{batch_count}", "完了", 
+                        f"{len(batch_changed_products)}件の商品に変動がありました")
+            
+            # 通知すべき変動商品をフィルタリング
+            batch_notifiable_products = filter_notifiable_products(batch_changed_products, threshold)
+            
+            # 通知すべき商品数をログに記録
+            log_message("バッチ通知", f"バッチ {batch_num+1}/{batch_count}", "情報", 
+                        f"通知すべき商品数: {len(batch_notifiable_products)}件")
+            
+            # 通知すべき商品をJSONファイルに保存（投稿スクリプトで使用）
+            if batch_notifiable_products:
+                with open("notifiable_products.json", "w", encoding="utf-8") as f:
+                    json.dump(batch_notifiable_products, f, ensure_ascii=False, indent=2)
                 
-                # API呼び出しの間に短い遅延を挿入（レート制限対策）
-                time.sleep(1)
-                
-            except Exception as e:
-                log_message("価格監視", jan_code, "失敗", f"商品名: {row['product_name']}, エラー: {str(e)}")
+                # 投稿スクリプトを実行
+                run_posting_scripts()
+            else:
+                log_message("バッチ通知", f"バッチ {batch_num+1}/{batch_count}", "スキップ", 
+                            "通知すべき商品がないため、投稿をスキップします")
+            
+            # バッチ間の遅延を追加（必要に応じて）
+            if batch_num < batch_count - 1:
+                time.sleep(5)  # バッチ間に5秒の遅延
         
-        # 商品リストの変更を保存
-        product_df.to_csv("product_list.csv", index=False)
+        log_message("メイン処理", "システム", "完了", "すべてのバッチ処理が完了しました")
         
-        log_message("メイン処理", "システム", "完了", f"{len(changed_products)}件の商品に変動がありました")
-        
-        return changed_products
+        return []  # 互換性のために空のリストを返す
         
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", str(e))
@@ -401,25 +480,10 @@ if __name__ == "__main__":
         # 実行開始ログ
         log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムの実行を開始します")
         
-        # 1. 商品監視を実行
-        changed_products = monitor_products()
+        # 商品監視を実行（10件ごとに投稿する新しい方式）
+        monitor_products()
         
-        # 2. 変動があった商品数をログに記録
-        log_message("メイン処理", "システム", "進行中", f"変動があった商品数: {len(changed_products)}件")
-        
-        # 3. 通知すべき変動商品をフィルタリング
-        threshold = float(os.environ.get("PRICE_CHANGE_THRESHOLD", "5"))
-        notifiable_products = filter_notifiable_products(changed_products, threshold)
-        
-        # 4. 通知すべき商品数をログに記録
-        log_message("メイン処理", "システム", "進行中", f"通知すべき商品数: {len(notifiable_products)}件")
-        
-        # 5. 通知すべき商品をJSONファイルに保存（social_poster.pyで使用）
-        if notifiable_products:
-            with open("notifiable_products.json", "w", encoding="utf-8") as f:
-                json.dump(notifiable_products, f, ensure_ascii=False, indent=2)
-                
-        # 6. 処理完了をログに記録
+        # 処理完了をログに記録
         log_message("メイン処理", "システム", "完了", "楽天商品価格監視システムの実行が完了しました")
         
     except Exception as e:
