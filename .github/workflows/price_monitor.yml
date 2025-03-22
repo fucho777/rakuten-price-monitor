@@ -2,7 +2,7 @@ name: 楽天価格監視と投稿
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # 4時間ごとに実行（0, 4, 8, 12, 16, 20時）
+    - cron: '0 */2 * * *'  # 2時間ごとに実行
   workflow_dispatch:  # 手動実行も可能に
 
 jobs:
@@ -26,28 +26,25 @@ jobs:
           pip install tweepy==4.12.1
           pip install requests==2.28.2
           
-      - name: 楽天商品価格監視を実行
+      - name: 楽天商品価格監視と投稿を実行
         env:
+          # 楽天API設定
           RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
           RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
           PRICE_CHANGE_THRESHOLD: ${{ secrets.PRICE_CHANGE_THRESHOLD || '5' }}
-        run: python monitor.py
-        
-      #- name: X(Twitter)に投稿
-      # env:
-      #    TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-      #    TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-      #    TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-      #    TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-      #  run: python twitter_poster.py
-        
-      - name: スレッズに投稿
-        env:
+          
+          # スレッズAPI設定
           THREADS_APP_ID: ${{ secrets.THREADS_APP_ID }}
           THREADS_APP_SECRET: ${{ secrets.THREADS_APP_SECRET }}
           THREADS_LONG_LIVED_TOKEN: ${{ secrets.THREADS_LONG_LIVED_TOKEN }}
           THREADS_INSTAGRAM_ACCOUNT_ID: ${{ secrets.THREADS_INSTAGRAM_ACCOUNT_ID }}
-        run: python threads_poster.py
+          
+          # Twitter API設定 (必要に応じてコメント解除)
+          # TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          # TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          # TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          # TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+        run: python monitor.py
         
       - name: データ更新をコミット
         run: |
@@ -55,21 +52,21 @@ jobs:
           git config --global user.email 'actions@github.com'
           # ファイルの存在を確認してからaddする
           if [ -f "price_history.csv" ]; then
-           git add price_history.csv
+            git add price_history.csv
           fi
           if [ -f "product_list.csv" ]; then
-           git add product_list.csv
+            git add product_list.csv
           fi
           if [ -f "twitter_posting_log.csv" ]; then
-           git add twitter_posting_log.csv
+            git add twitter_posting_log.csv
           fi
           if [ -f "threads_posting_log.csv" ]; then
-           git add threads_posting_log.csv
+            git add threads_posting_log.csv
           fi
           # コミットする変更があるかチェック
           if git diff --staged --quiet; then
-           echo "コミットする変更はありません"
+            echo "コミットする変更はありません"
           else
-          git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
-          git push
+            git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
+            git push
           fi
