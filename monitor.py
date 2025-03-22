@@ -264,8 +264,15 @@ def record_price_history(jan_code, product_name, price, availability, shop_name,
 # 通知すべき商品をフィルタリング
 def filter_notifiable_products(changed_products, threshold=5):
     notifiable = []
+    # 既に通知対象となったJANコードを記録するセット
+    seen_jan_codes = set()
     
     for product in changed_products:
+        # 既に通知対象になっているJANコードはスキップ
+        if product["jan_code"] in seen_jan_codes:
+            log_message("通知フィルタ", product["jan_code"], "スキップ", "このバッチ内で既に通知対象になっています")
+            continue
+            
         # 価格下落の判定（変動率が負の値かつ閾値以上）
         price_reduced = (product["price_change_rate"] < 0 and 
                         abs(product["price_change_rate"]) >= threshold)
@@ -280,6 +287,8 @@ def filter_notifiable_products(changed_products, threshold=5):
         # 条件に合致し、かつ在庫がある場合のみ通知対象とする
         if (price_reduced or stock_restored) and has_stock:
             notifiable.append(product)
+            # このJANコードを「通知済み」としてマーク
+            seen_jan_codes.add(product["jan_code"])
             
     return notifiable
 
@@ -463,14 +472,33 @@ def monitor_products():
         
         # すべてのバッチ処理が終わった後、すべての通知対象商品をファイルに保存し、投稿を一度だけ実行
         if all_notifiable_products:
-            log_message("メイン処理", "システム", "通知", f"通知対象商品: {len(all_notifiable_products)}件")
+            # 最終的な重複除去
+            unique_jan_codes = set()
+            unique_notifiable_products = []
+            
+            for product in all_notifiable_products:
+                if product["jan_code"] not in unique_jan_codes:
+                    unique_notifiable_products.append(product)
+                    unique_jan_codes.add(product["jan_code"])
+            
+            if len(unique_notifiable_products) < len(all_notifiable_products):
+                log_message("メイン処理", "システム", "通知", 
+                           f"重複を除外して{len(unique_notifiable_products)}件の商品を通知します (元は{len(all_notifiable_products)}件)")
+            else:
+                log_message("メイン処理", "システム", "通知", f"通知対象商品: {len(unique_notifiable_products)}件")
             
             # 通知対象商品をJSONファイルに保存
             with open("notifiable_products.json", "w", encoding="utf-8") as f:
-                json.dump(all_notifiable_products, f, ensure_ascii=False, indent=2)
+                json.dump(unique_notifiable_products, f, ensure_ascii=False, indent=2)
             
             # 投稿スクリプトを実行（一度だけ）
             run_posting_scripts()
+            
+            # 投稿後にJSONファイルをクリア（再処理防止）
+            with open("notifiable_products.json", "w", encoding="utf-8") as f:
+                json.dump([], f, ensure_ascii=False, indent=2)
+            log_message("メイン処理", "システム", "情報", "通知済みファイルをクリアしました")
+            
         else:
             log_message("メイン処理", "システム", "通知", "通知対象商品がありません")
         
