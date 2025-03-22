@@ -33,14 +33,7 @@ jobs:
           PRICE_CHANGE_THRESHOLD: ${{ secrets.PRICE_CHANGE_THRESHOLD || '5' }}
         run: python monitor.py
         
-      #- name: X(Twitter)に投稿
-      # env:
-      #    TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-      #    TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-      #    TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-      #    TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-      #  run: python twitter_poster.py
-        
+      # 監視と投稿を分離して実行
       - name: スレッズに投稿
         env:
           THREADS_APP_ID: ${{ secrets.THREADS_APP_ID }}
@@ -48,6 +41,15 @@ jobs:
           THREADS_LONG_LIVED_TOKEN: ${{ secrets.THREADS_LONG_LIVED_TOKEN }}
           THREADS_INSTAGRAM_ACCOUNT_ID: ${{ secrets.THREADS_INSTAGRAM_ACCOUNT_ID }}
         run: python threads_poster.py
+        
+      # 必要に応じてTwitter投稿も有効化 (コメントアウト解除で有効になります)
+      #- name: X(Twitter)に投稿
+      #  env:
+      #    TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+      #    TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+      #    TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+      #    TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+      #  run: python twitter_poster.py
         
       - name: データ更新をコミット
         run: |
@@ -65,6 +67,9 @@ jobs:
           fi
           if [ -f "threads_posting_log.csv" ]; then
             git add threads_posting_log.csv
+          fi
+          if [ -f "notifiable_products.json" ]; then
+            git add notifiable_products.json
           fi
           # コミットする変更があるかチェック
           if git diff --staged --quiet; then
