@@ -352,3 +352,7 @@ if __name__ == "__main__":
         
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", f"エラー: {str(e)}")
+# 投稿完了後にnotifiable_products.jsonをクリアする
+with open("notifiable_products.json", "w", encoding="utf-8") as f:
+    json.dump([], f)
+log_message("メイン処理", "システム", "情報", "通知対象商品リストをクリアしました")
