@@ -676,3 +676,158 @@ if __name__ == "__main__":
         
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", f"エラー: {str(e)}")
+# 以下を monitor.py に追加
+
+# 通知履歴の取得関数を改善
+def get_notification_history():
+    if os.path.exists("notification_history.json"):
+        try:
+            with open("notification_history.json", "r", encoding="utf-8") as f:
+                history = json.load(f)
+            
+            log_message("通知履歴", "システム", "読込", f"{len(history)}件の通知履歴を読み込みました")
+            return history
+        except Exception as e:
+            log_message("通知履歴", "システム", "読込エラー", str(e))
+            return {}
+    else:
+        log_message("通知履歴", "システム", "初期化", "通知履歴ファイルが存在しないため新規作成します")
+        return {}
+
+# 通知履歴の保存関数を改善
+def save_notification_history(history):
+    try:
+        with open("notification_history.json", "w", encoding="utf-8") as f:
+            json.dump(history, f, ensure_ascii=False, indent=2)
+        
+        log_message("通知履歴", "システム", "保存", f"{len(history)}件の履歴を保存しました")
+        return True
+    except Exception as e:
+        log_message("通知履歴", "システム", "保存エラー", str(e))
+        return False
+
+# 通知判定関数を改善
+def filter_notifiable_products(changed_products, product_df, threshold=5):
+    # 通知履歴を読み込む
+    notification_history = get_notification_history()
+    
+    # 絶対額での最小変動額
+    min_price_change_amount = 500
+    
+    # 変動率の最小閾値（1%未満の変動は無視）
+    min_rate_threshold = 1.0
+    
+    # 現在の時刻
+    current_time = datetime.now()
+    
+    # 通知間隔（72時間＝3日間は同じ商品を再通知しない）
+    min_hours_between_notifications = 72
+    
+    notifiable = []
+    
+    for product in changed_products:
+        jan_code = product["jan_code"]
+        
+        # 変動率チェック
+        if abs(product["price_change_rate"]) < min_rate_threshold:
+            log_message("通知フィルタ", jan_code, "スキップ", 
+                       f"変動率が小さすぎます: {product['price_change_rate']:.2f}%")
+            continue
+            
+        # 絶対額チェック
+        price_change_amount = abs(product["current_price"] - product["previous_price"])
+        if price_change_amount < min_price_change_amount:
+            log_message("通知フィルタ", jan_code, "スキップ", 
+                       f"価格変動額が小さすぎます: {price_change_amount}円")
+            continue
+        
+        # 通知履歴チェック (重要な改善点)
+        if jan_code in notification_history:
+            last_info = notification_history[jan_code]
+            
+            try:
+                # 前回通知時刻をパース
+                last_time = datetime.strptime(last_info["last_notified_time"], "%Y-%m-%d %H:%M:%S")
+                
+                # 経過時間を計算
+                time_diff = current_time - last_time
+                hours_since_last_notification = time_diff.total_seconds() / 3600
+                
+                # 最低間隔チェック
+                if hours_since_last_notification < min_hours_between_notifications:
+                    log_message("通知フィルタ", jan_code, "スキップ", 
+                              f"前回通知から{hours_since_last_notification:.1f}時間しか経過していません（最低{min_hours_between_notifications}時間必要）")
+                    continue
+                
+                # 前回と同じ価格なら通知しない
+                if last_info["price"] == product["current_price"]:
+                    log_message("通知フィルタ", jan_code, "スキップ", 
+                              f"前回通知と同じ価格です: {product['current_price']}円")
+                    continue
+                
+                # 価格変動率チェック
+                last_price = last_info["price"]
+                price_diff_percent = abs((product["current_price"] - last_price) / last_price * 100) if last_price > 0 else 100
+                
+                if price_diff_percent < threshold:
+                    log_message("通知フィルタ", jan_code, "スキップ", 
+                              f"前回通知時価格({last_price}円)から変動が小さいため通知しません({price_diff_percent:.2f}%)")
+                    continue
+            except Exception as e:
+                log_message("通知フィルタ", jan_code, "警告", f"日時解析エラー: {str(e)}")
+        
+        # 価格下落または在庫復活判定
+        price_reduced = (product["price_change_rate"] < 0 and 
+                        abs(product["price_change_rate"]) >= threshold)
+        
+        stock_restored = (product["previous_availability"] == "在庫なし" and 
+                         product["current_availability"] == "在庫あり")
+        
+        has_stock = product["current_availability"] == "在庫あり"
+        
+        # 条件に合致かつ在庫ありなら通知
+        if (price_reduced or stock_restored) and has_stock:
+            notifiable.append(product)
+            log_message("通知フィルタ", jan_code, "通知対象", 
+                      f"価格: {product['current_price']}円, 変動率: {product['price_change_rate']:.2f}%, 在庫: {product['current_availability']}")
+    
+    return notifiable
+
+# 通知履歴更新関数を改善
+def update_notification_history(notifiable_products):
+    try:
+        history = get_notification_history()
+        current_time_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # 新しい通知を履歴に追加
+        for product in notifiable_products:
+            jan_code = product["jan_code"]
+            
+            if jan_code in history:
+                # 既存エントリの更新
+                count = history[jan_code]["count"] + 1
+                history[jan_code] = {
+                    "product_name": product["product_name"],
+                    "price": product["current_price"],
+                    "last_notified_time": current_time_str,
+                    "count": count
+                }
+            else:
+                # 新規エントリの追加
+                history[jan_code] = {
+                    "product_name": product["product_name"],
+                    "price": product["current_price"],
+                    "last_notified_time": current_time_str,
+                    "count": 1
+                }
+        
+        # 履歴を保存
+        save_result = save_notification_history(history)
+        
+        if save_result:
+            log_message("通知履歴", "システム", "更新", f"{len(notifiable_products)}件の通知履歴を更新しました")
+        else:
+            log_message("通知履歴", "システム", "警告", "通知履歴の保存に失敗しました")
+            
+    except Exception as e:
+        log_message("通知履歴", "システム", "更新失敗", str(e))
