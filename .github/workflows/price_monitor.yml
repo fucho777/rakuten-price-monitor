@@ -17,14 +17,18 @@ jobs:
         with:
           python-version: '3.10'
           
+      - name: 依存関係キャッシュ
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+          
       - name: 依存関係インストール
         run: |
           pip install --upgrade pip
-          pip uninstall -y numpy pandas
-          pip install numpy==1.22.4
-          pip install pandas==1.4.3
-          pip install tweepy==4.12.1
-          pip install requests==2.28.2
+          pip install -r requirements.txt
           
       - name: 楽天商品価格監視を実行
         env:
@@ -33,7 +37,6 @@ jobs:
           PRICE_CHANGE_THRESHOLD: ${{ secrets.PRICE_CHANGE_THRESHOLD || '5' }}
         run: python monitor.py
         
-      # 監視と投稿を分離して実行
       - name: スレッズに投稿
         env:
           THREADS_APP_ID: ${{ secrets.THREADS_APP_ID }}
@@ -42,7 +45,7 @@ jobs:
           THREADS_INSTAGRAM_ACCOUNT_ID: ${{ secrets.THREADS_INSTAGRAM_ACCOUNT_ID }}
         run: python threads_poster.py
         
-      # 必要に応じてTwitter投稿も有効化 (コメントアウト解除で有効になります)
+      # Twitter投稿ステップ（コメントアウト解除で有効化）
       #- name: X(Twitter)に投稿
       #  env:
       #    TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
@@ -50,36 +53,23 @@ jobs:
       #    TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
       #    TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       #  run: python twitter_poster.py
-
-      # データ更新をコミット部分を修正
+        
       - name: データ更新をコミット
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          # ファイルの存在を確認してからaddする
-          if [ -f "price_history.csv" ]; then
-          git add price_history.csv
-          fi
-          if [ -f "product_list.csv" ]; then
-          git add product_list.csv
-          fi
-          if [ -f "twitter_posting_log.csv" ]; then
-          git add twitter_posting_log.csv
-          fi
-          if [ -f "threads_posting_log.csv" ]; then
-          git add threads_posting_log.csv
-          fi
-          if [ -f "notifiable_products.json" ]; then
-          git add notifiable_products.json
-          fi
-          # 通知履歴ファイルを追加（重要）
-          if [ -f "notification_history.json" ]; then
-          git add notification_history.json
-          fi
+          
+          # 変更ファイルを検出して追加
+          for file in price_history.csv product_list.csv twitter_posting_log.csv threads_posting_log.csv notifiable_products.json notification_history.json; do
+            if [ -f "$file" ]; then
+              git add "$file"
+            fi
+          done
+          
           # コミットする変更があるかチェック
-          if git diff --staged --quiet; then
-          echo "コミットする変更はありません"
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
+            git push
           else
-          git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
-          git push
+            echo "コミットする変更はありません"
           fi
