@@ -459,8 +459,13 @@ def run_posting_scripts():
 # 監視対象商品の変動を監視するメイン関数（一括処理）
 def monitor_products():
     try:
-        # 価格履歴ファイルが存在しない場合は新規作成
-        if not os.path.exists("price_history.csv"):
+        # 価格履歴ファイルが存在しない、または空の場合は新規作成
+        is_file_empty = False
+        if os.path.exists("price_history.csv"):
+            # ファイルサイズをチェック
+            is_file_empty = os.path.getsize("price_history.csv") == 0
+        
+        if not os.path.exists("price_history.csv") or is_file_empty:
             with open("price_history.csv", mode="w", newline="", encoding="utf-8") as file:
                 writer = csv.writer(file)
                 writer.writerow([
