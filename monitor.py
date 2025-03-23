@@ -4,6 +4,7 @@ import json
 import time
 import pandas as pd
 import requests
+import subprocess
 from datetime import datetime
 
 # ログ出力関数
@@ -261,10 +262,25 @@ def record_price_history(jan_code, product_name, price, availability, shop_name,
         return None
 
 # 通知すべき商品をフィルタリング
-def filter_notifiable_products(changed_products, threshold=5):
+def filter_notifiable_products(changed_products, product_df, threshold=5):
     notifiable = []
     
     for product in changed_products:
+        jan_code = product["jan_code"]
+        
+        # 商品リストから該当商品の行を取得
+        product_row = product_df[product_df["jan_code"] == jan_code]
+        
+        if product_row.empty:
+            log_message("通知フィルタ", jan_code, "警告", "商品リストに該当商品が見つかりません")
+            continue
+            
+        # 既に通知済みかどうかを確認
+        already_notified = product_row["notified_flag"].iloc[0]
+        
+        # 前回通知時の価格を取得 (新しいカラムが必要)
+        last_notified_price = product_row["last_notified_price"].iloc[0] if "last_notified_price" in product_row.columns and not pd.isna(product_row["last_notified_price"].iloc[0]) else 0
+        
         # 価格下落の判定（変動率が負の値かつ閾値以上）
         price_reduced = (product["price_change_rate"] < 0 and 
                         abs(product["price_change_rate"]) >= threshold)
@@ -276,13 +292,53 @@ def filter_notifiable_products(changed_products, threshold=5):
         # 現在在庫があるかどうかを確認
         has_stock = product["current_availability"] == "在庫あり"
         
-        # 条件に合致し、かつ在庫がある場合のみ通知対象とする
-        if (price_reduced or stock_restored) and has_stock:
+        # 前回通知した価格と現在の価格を比較
+        price_changed_since_last_notification = True
+        if last_notified_price > 0:
+            # 価格が前回通知時と同じか、差が小さい場合は通知しない
+            price_diff_percent = abs((product["current_price"] - last_notified_price) / last_notified_price * 100)
+            if price_diff_percent < threshold:
+                price_changed_since_last_notification = False
+                log_message("通知フィルタ", jan_code, "スキップ", 
+                          f"前回通知時価格({last_notified_price}円)から変動が小さいため通知しません({price_diff_percent:.2f}%)")
+        
+        # 条件に合致し、かつ在庫があり、未通知または価格が大きく変動した場合のみ通知対象とする
+        if (price_reduced or stock_restored) and has_stock and (not already_notified or price_changed_since_last_notification):
             notifiable.append(product)
+            log_message("通知フィルタ", jan_code, "通知対象", 
+                      f"価格: {product['current_price']}円, 変動率: {product['price_change_rate']:.2f}%, 在庫: {product['current_availability']}")
             
     return notifiable
 
-# 監視対象商品の変動を監視するメイン関数
+# 投稿スクリプトを実行する関数
+def run_posting_scripts():
+    try:
+        log_message("投稿実行", "システム", "開始", "投稿スクリプトを実行します")
+        
+        # スレッズに投稿
+        if os.path.exists("threads_poster.py"):
+            log_message("投稿実行", "Threads", "開始", "スレッズへの投稿を開始します")
+            try:
+                subprocess.run(["python", "threads_poster.py"], check=True)
+                log_message("投稿実行", "Threads", "完了", "スレッズへの投稿が完了しました")
+            except subprocess.CalledProcessError as e:
+                log_message("投稿実行", "Threads", "失敗", f"エラー: {str(e)}")
+        
+        # Twitterに投稿 (コメントアウトされているかチェック)
+        if os.path.exists("twitter_poster.py") and "TWITTER_API_KEY" in os.environ:
+            log_message("投稿実行", "Twitter", "開始", "Twitterへの投稿を開始します")
+            try:
+                subprocess.run(["python", "twitter_poster.py"], check=True)
+                log_message("投稿実行", "Twitter", "完了", "Twitterへの投稿が完了しました")
+            except subprocess.CalledProcessError as e:
+                log_message("投稿実行", "Twitter", "失敗", f"エラー: {str(e)}")
+        
+        log_message("投稿実行", "システム", "完了", "投稿スクリプトの実行が完了しました")
+        
+    except Exception as e:
+        log_message("投稿実行", "システム", "失敗", f"エラー: {str(e)}")
+
+# 監視対象商品の変動を監視するメイン関数（一括処理）
 def monitor_products():
     try:
         # 価格履歴ファイルが存在しない場合は新規作成
@@ -296,6 +352,11 @@ def monitor_products():
 
         # 商品リストを読み込む
         product_df = pd.read_csv("product_list.csv")
+        
+        # 商品リストに必要な列が存在するか確認し、なければ追加
+        if "last_notified_price" not in product_df.columns:
+            product_df["last_notified_price"] = float('nan')
+            log_message("メイン処理", "システム", "情報", "last_notified_price 列を追加しました")
         
         # 監視対象の商品のみを抽出
         active_products = product_df[product_df["monitor_flag"] == True]
@@ -315,7 +376,7 @@ def monitor_products():
             
             try:
                 # 処理中であることをログに記録
-                log_message("価格監視", jan_code, "処理中", f"商品名: {row['product_name']}, 処理を開始します")
+                log_message("価格監視", jan_code, "処理中", f"商品名: {row['product_name'] if not pd.isna(row['product_name']) else '未取得'}, 処理を開始します")
                 
                 # JANコードで最新の商品情報を取得
                 product_info = get_product_info_by_jan_code(jan_code)
@@ -392,16 +453,13 @@ def monitor_products():
                 time.sleep(1)
                 
             except Exception as e:
-                log_message("価格監視", jan_code, "失敗", f"商品名: {row['product_name']}, エラー: {str(e)}")
-        
-        # 商品リストの変更を保存
-        product_df.to_csv("product_list.csv", index=False)
+                log_message("価格監視", jan_code, "失敗", f"商品名: {row['product_name'] if not pd.isna(row['product_name']) else '未取得'}, エラー: {str(e)}")
         
         # 変動があった商品数をログに記録
         log_message("メイン処理", "システム", "情報", f"{len(changed_products)}件の商品に変動がありました")
         
         # 通知すべき変動商品をフィルタリング
-        notifiable_products = filter_notifiable_products(changed_products, threshold)
+        notifiable_products = filter_notifiable_products(changed_products, product_df, threshold)
         
         # 重複排除（JAN コードベース）
         unique_products = []
@@ -414,16 +472,40 @@ def monitor_products():
                 unique_products.append(product)
         
         # 通知すべき商品数をログに記録
-        log_message("メイン処理", "システム", "通知", 
-                   f"重複を除外して{len(unique_products)}件の商品を通知します (元は{len(notifiable_products)}件)")
+        if notifiable_products:
+            log_message("メイン処理", "システム", "通知", 
+                       f"重複を除外して{len(unique_products)}件の商品を通知します (元は{len(notifiable_products)}件)")
         
         # 通知対象商品をJSONファイルに保存
         if unique_products:
             with open("notifiable_products.json", "w", encoding="utf-8") as f:
                 json.dump(unique_products, f, ensure_ascii=False, indent=2)
             log_message("メイン処理", "システム", "情報", f"通知対象商品をJSONファイルに保存しました")
+            
+            # 通知対象商品の notified_flag と last_notified_price を更新
+            for product in unique_products:
+                jan_code = product["jan_code"]
+                current_price = product["current_price"]
+                
+                # 通知フラグを更新
+                product_df.loc[product_df["jan_code"] == jan_code, "notified_flag"] = True
+                
+                # 最後に通知した価格を更新
+                product_df.loc[product_df["jan_code"] == jan_code, "last_notified_price"] = current_price
+                
+                log_message("通知状態更新", jan_code, "更新", 
+                           f"notified_flag = True, last_notified_price = {current_price}円")
+            
+            # 商品リストの変更を保存
+            product_df.to_csv("product_list.csv", index=False)
+            
+            # 投稿スクリプトを実行
+            run_posting_scripts()
         else:
             log_message("メイン処理", "システム", "情報", "通知対象商品がありません")
+            
+            # 商品リストの変更を保存（通知対象でなくても更新内容は保存）
+            product_df.to_csv("product_list.csv", index=False)
         
         return unique_products
         
@@ -438,10 +520,10 @@ if __name__ == "__main__":
         log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムの実行を開始します")
         
         # 商品監視を実行
-        monitor_products()
+        notified_products = monitor_products()
         
         # 処理完了をログに記録
-        log_message("メイン処理", "システム", "完了", "楽天商品価格監視システムの実行が完了しました")
+        log_message("メイン処理", "システム", "完了", f"楽天商品価格監視システムの実行が完了しました（通知商品数: {len(notified_products)}）")
         
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", f"エラー: {str(e)}")
