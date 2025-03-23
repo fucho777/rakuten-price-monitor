@@ -747,29 +747,54 @@ def monitor_products():
             # 通知履歴を更新
             update_notification_history(unique_products)
             
-            # 通知対象商品の notified_flag と last_notified_price を更新
-            for product in unique_products:
-                jan_code = product["jan_code"]
-                current_price = product["current_price"]
-                current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                
-                # 通知フラグを更新
-                product_df.loc[product_df["jan_code"] == jan_code, "notified_flag"] = True
-                
-                # 最後に通知した価格を更新
-                product_df.loc[product_df["jan_code"] == jan_code, "last_notified_price"] = current_price
-                
-                # 最後に通知した時刻を更新
-                product_df.loc[product_df["jan_code"] == jan_code, "last_notified_time"] = current_time
-                
-                log_message("通知状態更新", jan_code, "更新", 
-                           f"notified_flag = True, last_notified_price = {current_price}円, last_notified_time = {current_time}")
-            
-            # 商品リストの変更を保存
-            product_df.to_csv("product_list.csv", index=False)
-            
             # 投稿スクリプトを実行
             run_posting_scripts()
+            
+            # 実際に投稿された商品だけを「通知済み」としてマークする
+            posted_jan_codes = set()
+            current_time = datetime.now()
+            time_threshold = (current_time - timedelta(minutes=10)).strftime("%Y-%m-%d %H:%M:%S")
+            
+            # Threadsの投稿ログをチェック
+            if os.path.exists("threads_posting_log.csv"):
+                try:
+                    posted_df = pd.read_csv("threads_posting_log.csv")
+                    recent_posts = posted_df[posted_df["timestamp"] > time_threshold]
+                    
+                    # 投稿に成功した商品のJANコードを取得
+                    for jan_code in recent_posts[recent_posts["success"] == True]["jan_code"]:
+                        posted_jan_codes.add(jan_code)
+                        log_message("投稿確認", jan_code, "成功", "Threadsへの投稿を確認")
+                except Exception as e:
+                    log_message("投稿確認", "Threads", "エラー", f"ログ解析エラー: {str(e)}")
+
+            # Twitterの投稿ログをチェック（ある場合）
+            if os.path.exists("twitter_posting_log.csv"):
+                try:
+                    twitter_df = pd.read_csv("twitter_posting_log.csv")
+                    recent_twitter = twitter_df[twitter_df["timestamp"] > time_threshold]
+                    for jan_code in recent_twitter[recent_twitter["success"] == True]["jan_code"]:
+                        posted_jan_codes.add(jan_code)
+                        log_message("投稿確認", jan_code, "成功", "Twitterへの投稿を確認")
+                except Exception as e:
+                    log_message("投稿確認", "Twitter", "エラー", f"ログ解析エラー: {str(e)}")
+
+            # 投稿に成功した商品だけをマークする
+            for jan_code in posted_jan_codes:
+                product_info = next((p for p in unique_products if p["jan_code"] == jan_code), None)
+                if product_info:
+                    product_df.loc[product_df["jan_code"] == jan_code, "notified_flag"] = True
+                    product_df.loc[product_df["jan_code"] == jan_code, "last_notified_price"] = product_info["current_price"]
+                    product_df.loc[product_df["jan_code"] == jan_code, "last_notified_time"] = current_time.strftime("%Y-%m-%d %H:%M:%S")
+                    
+                    log_message("通知状態更新", jan_code, "更新", 
+                              f"投稿確認済み: notified_flag = True, last_notified_price = {product_info['current_price']}円")
+            
+            # 投稿に成功した件数をログに記録
+            log_message("メイン処理", "システム", "完了", f"{len(posted_jan_codes)}件の商品が実際に投稿されました")
+                    
+            # 商品リストの変更を保存
+            product_df.to_csv("product_list.csv", index=False)
         else:
             log_message("メイン処理", "システム", "情報", "通知対象商品がありません")
             
