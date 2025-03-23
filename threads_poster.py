@@ -257,7 +257,7 @@ def post_products_to_threads():
         results = []
         
         # 投稿数の上限（API制限対策）
-        max_posts = min(5, len(notifiable_products))
+        max_posts = min(20, len(notifiable_products))
         
         # 各商品を処理
         for i in range(max_posts):
