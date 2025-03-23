@@ -5,7 +5,7 @@ import time
 import pandas as pd
 import requests
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # ログ出力関数
 def log_message(message_type, target, status, message):
@@ -18,6 +18,60 @@ def get_rakuten_api_settings():
         "app_id": os.environ.get("RAKUTEN_APP_ID"),
         "affiliate_id": os.environ.get("RAKUTEN_AFFILIATE_ID", "")
     }
+
+# 直近の記録と重複していないか確認
+def is_duplicate_record(jan_code, current_price):
+    try:
+        if not os.path.exists("price_history.csv"):
+            return False
+            
+        # 直近の履歴を10件だけ読み込む（効率化）
+        last_records = pd.read_csv("price_history.csv", nrows=10, encoding="utf-8")
+        
+        # 同じJANコードで価格も同じレコードを検索
+        matching_records = last_records[
+            (last_records["jan_code"] == jan_code) & 
+            (last_records["price"] == current_price)
+        ]
+        
+        if matching_records.empty:
+            return False
+            
+        # 最新の記録の時刻を取得
+        latest_record_time = datetime.strptime(
+            matching_records["timestamp"].iloc[0], 
+            "%Y-%m-%d %H:%M:%S"
+        )
+        
+        # 現在時刻との差を計算
+        time_diff = datetime.now() - latest_record_time
+        
+        # 1時間以内の同一商品・同一価格の記録は重複とみなす
+        return time_diff.total_seconds() < 3600
+        
+    except Exception as e:
+        log_message("重複チェック", jan_code, "エラー", str(e))
+        return False
+
+# 通知履歴の取得
+def get_notification_history():
+    if os.path.exists("notification_history.json"):
+        try:
+            with open("notification_history.json", "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            log_message("通知履歴", "システム", "読込エラー", str(e))
+            return {}
+    return {}
+
+# 通知履歴の保存
+def save_notification_history(history):
+    try:
+        with open("notification_history.json", "w", encoding="utf-8") as f:
+            json.dump(history, f, ensure_ascii=False, indent=2)
+        log_message("通知履歴", "システム", "保存", f"{len(history)}件の履歴を保存しました")
+    except Exception as e:
+        log_message("通知履歴", "システム", "保存エラー", str(e))
 
 # JANコードで商品を検索
 def search_product_by_jan_code(jan_code):
@@ -240,6 +294,12 @@ def get_product_info_by_jan_code(jan_code):
 # 価格履歴に記録する
 def record_price_history(jan_code, product_name, price, availability, shop_name, price_change_rate=0, notified=False):
     try:
+        # 重複チェック - 1時間以内に同じ商品・同じ価格の記録があれば記録しない
+        if is_duplicate_record(jan_code, price):
+            log_message("価格履歴記録", jan_code, "スキップ", "1時間以内に同じ価格の記録があるため重複を省略します")
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            return {"timestamp": timestamp}
+            
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
         with open("price_history.csv", mode="a", newline="", encoding="utf-8") as file:
@@ -265,8 +325,61 @@ def record_price_history(jan_code, product_name, price, availability, shop_name,
 def filter_notifiable_products(changed_products, product_df, threshold=5):
     notifiable = []
     
+    # 通知履歴を読み込む
+    notification_history = get_notification_history()
+    
+    # 絶対額での最小変動額
+    min_price_change_amount = 500
+    
+    # 変動率の最小閾値（1%未満の変動は無視）
+    min_rate_threshold = 1.0
+    
+    # 現在の時刻
+    current_time = datetime.now()
+    
+    # 通知間隔（最低72時間＝3日間は同じ商品を再通知しない）
+    min_hours_between_notifications = 72
+    
     for product in changed_products:
         jan_code = product["jan_code"]
+        
+        # 変動率が非常に小さい場合はスキップ
+        if abs(product["price_change_rate"]) < min_rate_threshold:
+            log_message("通知フィルタ", jan_code, "スキップ", 
+                      f"変動率が小さすぎます: {product['price_change_rate']:.2f}%")
+            continue
+            
+        # 絶対額での変動が小さい場合はスキップ
+        price_change_amount = abs(product["current_price"] - product["previous_price"])
+        if price_change_amount < min_price_change_amount:
+            log_message("通知フィルタ", jan_code, "スキップ", 
+                      f"価格変動額が小さすぎます: {price_change_amount}円")
+            continue
+        
+        # 通知履歴を確認
+        if jan_code in notification_history:
+            last_time_str = notification_history[jan_code]["last_notified_time"]
+            last_time = datetime.strptime(last_time_str, "%Y-%m-%d %H:%M:%S")
+            
+            # 前回の通知からの経過時間を計算
+            time_diff = current_time - last_time
+            hours_since_last_notification = time_diff.total_seconds() / 3600
+            
+            # 通知間隔が短すぎる場合はスキップ
+            if hours_since_last_notification < min_hours_between_notifications:
+                log_message("通知フィルタ", jan_code, "スキップ", 
+                          f"前回通知から{hours_since_last_notification:.1f}時間しか経過していません（最低{min_hours_between_notifications}時間必要）")
+                continue
+                
+            # 前回通知時の価格と比較
+            last_price = notification_history[jan_code]["last_price"]
+            price_diff_percent = abs((product["current_price"] - last_price) / last_price * 100) if last_price > 0 else 100
+            
+            # 価格差が小さい場合はスキップ
+            if price_diff_percent < threshold:
+                log_message("通知フィルタ", jan_code, "スキップ", 
+                          f"前回通知時価格({last_price}円)から変動が小さいため通知しません({price_diff_percent:.2f}%)")
+                continue
         
         # 商品リストから該当商品の行を取得
         product_row = product_df[product_df["jan_code"] == jan_code]
@@ -275,12 +388,6 @@ def filter_notifiable_products(changed_products, product_df, threshold=5):
             log_message("通知フィルタ", jan_code, "警告", "商品リストに該当商品が見つかりません")
             continue
             
-        # 既に通知済みかどうかを確認
-        already_notified = product_row["notified_flag"].iloc[0]
-        
-        # 前回通知時の価格を取得 (新しいカラムが必要)
-        last_notified_price = product_row["last_notified_price"].iloc[0] if "last_notified_price" in product_row.columns and not pd.isna(product_row["last_notified_price"].iloc[0]) else 0
-        
         # 価格下落の判定（変動率が負の値かつ閾値以上）
         price_reduced = (product["price_change_rate"] < 0 and 
                         abs(product["price_change_rate"]) >= threshold)
@@ -292,23 +399,34 @@ def filter_notifiable_products(changed_products, product_df, threshold=5):
         # 現在在庫があるかどうかを確認
         has_stock = product["current_availability"] == "在庫あり"
         
-        # 前回通知した価格と現在の価格を比較
-        price_changed_since_last_notification = True
-        if last_notified_price > 0:
-            # 価格が前回通知時と同じか、差が小さい場合は通知しない
-            price_diff_percent = abs((product["current_price"] - last_notified_price) / last_notified_price * 100)
-            if price_diff_percent < threshold:
-                price_changed_since_last_notification = False
-                log_message("通知フィルタ", jan_code, "スキップ", 
-                          f"前回通知時価格({last_notified_price}円)から変動が小さいため通知しません({price_diff_percent:.2f}%)")
-        
-        # 条件に合致し、かつ在庫があり、未通知または価格が大きく変動した場合のみ通知対象とする
-        if (price_reduced or stock_restored) and has_stock and (not already_notified or price_changed_since_last_notification):
+        # 条件に合致し、かつ在庫がある場合のみ通知対象とする
+        if (price_reduced or stock_restored) and has_stock:
             notifiable.append(product)
             log_message("通知フィルタ", jan_code, "通知対象", 
                       f"価格: {product['current_price']}円, 変動率: {product['price_change_rate']:.2f}%, 在庫: {product['current_availability']}")
             
     return notifiable
+
+# 通知履歴を更新
+def update_notification_history(notifiable_products):
+    try:
+        history = get_notification_history()
+        current_time_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # 新しい通知を履歴に追加
+        for product in notifiable_products:
+            jan_code = product["jan_code"]
+            history[jan_code] = {
+                "product_name": product["product_name"],
+                "last_price": product["current_price"],
+                "last_notified_time": current_time_str
+            }
+        
+        # 履歴を保存
+        save_notification_history(history)
+        log_message("通知履歴", "システム", "更新", f"{len(notifiable_products)}件の通知履歴を更新しました")
+    except Exception as e:
+        log_message("通知履歴", "システム", "更新失敗", str(e))
 
 # 投稿スクリプトを実行する関数
 def run_posting_scripts():
@@ -357,6 +475,10 @@ def monitor_products():
         if "last_notified_price" not in product_df.columns:
             product_df["last_notified_price"] = float('nan')
             log_message("メイン処理", "システム", "情報", "last_notified_price 列を追加しました")
+            
+        if "last_notified_time" not in product_df.columns:
+            product_df["last_notified_time"] = None
+            log_message("メイン処理", "システム", "情報", "last_notified_time 列を追加しました")
         
         # 監視対象の商品のみを抽出
         active_products = product_df[product_df["monitor_flag"] == True]
@@ -410,6 +532,12 @@ def monitor_products():
                     price_change_rate = 0
                     if previous_price > 0:
                         price_change_rate = ((current_price - previous_price) / previous_price) * 100
+                    
+                    # 重複チェック - 直近の記録と価格が同じなら記録しない
+                    if is_duplicate_record(jan_code, current_price):
+                        log_message("価格監視", jan_code, "重複スキップ", 
+                                  f"1時間以内に同じ価格({current_price}円)の記録があるためスキップします")
+                        continue
                     
                     # 商品リストを更新
                     product_df.loc[product_df["jan_code"] == jan_code, "product_name"] = product_info["item_name"]
@@ -482,10 +610,14 @@ def monitor_products():
                 json.dump(unique_products, f, ensure_ascii=False, indent=2)
             log_message("メイン処理", "システム", "情報", f"通知対象商品をJSONファイルに保存しました")
             
+            # 通知履歴を更新
+            update_notification_history(unique_products)
+            
             # 通知対象商品の notified_flag と last_notified_price を更新
             for product in unique_products:
                 jan_code = product["jan_code"]
                 current_price = product["current_price"]
+                current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 
                 # 通知フラグを更新
                 product_df.loc[product_df["jan_code"] == jan_code, "notified_flag"] = True
@@ -493,8 +625,11 @@ def monitor_products():
                 # 最後に通知した価格を更新
                 product_df.loc[product_df["jan_code"] == jan_code, "last_notified_price"] = current_price
                 
+                # 最後に通知した時刻を更新
+                product_df.loc[product_df["jan_code"] == jan_code, "last_notified_time"] = current_time
+                
                 log_message("通知状態更新", jan_code, "更新", 
-                           f"notified_flag = True, last_notified_price = {current_price}円")
+                           f"notified_flag = True, last_notified_price = {current_price}円, last_notified_time = {current_time}")
             
             # 商品リストの変更を保存
             product_df.to_csv("product_list.csv", index=False)
@@ -516,8 +651,17 @@ def monitor_products():
 # メイン実行関数
 if __name__ == "__main__":
     try:
+        # コマンドライン引数の解析
+        import argparse
+        parser = argparse.ArgumentParser(description="楽天商品価格監視システム")
+        parser.add_argument("--dry-run", action="store_true", help="通知はスキップしてテスト実行します")
+        args = parser.parse_args()
+        
         # 実行開始ログ
-        log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムの実行を開始します")
+        if args.dry_run:
+            log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムをドライランモードで実行開始します（通知処理はスキップ）")
+        else:
+            log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムの実行を開始します")
         
         # 商品監視を実行
         notified_products = monitor_products()
