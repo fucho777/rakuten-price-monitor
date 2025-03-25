@@ -2,7 +2,7 @@ name: 楽天価格監視と投稿
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # 2時間ごとに実行
+    - cron: '0 */4 * * *'  # 2時間ごとに実行
   workflow_dispatch:  # 手動実行も可能に
 
 jobs:
