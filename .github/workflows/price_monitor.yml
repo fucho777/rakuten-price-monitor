@@ -2,12 +2,14 @@ name: 楽天価格監視と投稿
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # 2時間ごとに実行
+    - cron: '0 */3 * * *'  # 3時間ごとに実行
   workflow_dispatch:  # 手動実行も可能に
 
 jobs:
   monitor-and-post:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # GitHubリポジトリの内容を変更する権限を明示的に指定
     steps:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@v3
@@ -67,6 +69,24 @@ jobs:
       #    TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       #  run: python twitter_poster.py
         
+      - name: JSONファイルの内容を確認（デバッグ用）
+        run: |
+          echo "notifiable_products.jsonの内容確認:"
+          if [ -f "notifiable_products.json" ]; then
+            cat notifiable_products.json
+            echo "ファイルサイズ: $(wc -c < notifiable_products.json) バイト"
+          else
+            echo "ファイルが存在しません"
+          fi
+          
+          echo "notification_history.jsonの内容確認:"
+          if [ -f "notification_history.json" ]; then
+            cat notification_history.json
+            echo "ファイルサイズ: $(wc -c < notification_history.json) バイト"
+          else
+            echo "ファイルが存在しません"
+          fi
+        
       - name: データ更新をコミット
         run: |
           git config --global user.name 'GitHub Actions'
@@ -86,6 +106,12 @@ jobs:
           if [ -f "notification_history.json" ]; then
             git add notification_history.json
             echo "notification_history.json を明示的に追加しました"
+          fi
+          
+          # 特に notifiable_products.json を確実に追加
+          if [ -f "notifiable_products.json" ]; then
+            git add notifiable_products.json
+            echo "notifiable_products.json を明示的に追加しました"
           fi
           
           # コミットする変更があるかチェック
