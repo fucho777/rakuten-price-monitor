@@ -349,6 +349,9 @@ if __name__ == "__main__":
             
             # 実行結果をログに記録
             log_message("メイン処理", "システム", "完了", f"{len(results)}件の商品をThreadsに投稿しました")
+            
+            # notifiable_products.jsonファイルを維持し、GitHubのコミットに含める
+            log_message("メイン処理", "システム", "情報", "通知対象商品リストを保持しています（コミット用）")
         
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", f"エラー: {str(e)}")
