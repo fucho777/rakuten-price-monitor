@@ -187,9 +187,8 @@ if __name__ == "__main__":
         # 実行結果をログに記録
         log_message("メイン処理", "システム", "完了", f"{len(results)}件の商品をTwitterに投稿しました")
         
+        # notifiable_products.jsonは更新せず、GitHubコミット用に保持しておく
+        log_message("メイン処理", "システム", "情報", "通知対象商品リストを保持しています（コミット用）")
+        
     except Exception as e:
         log_message("メイン処理", "システム", "失敗", f"エラー: {str(e)}")
-# 投稿完了後にnotifiable_products.jsonをクリアする
-with open("notifiable_products.json", "w", encoding="utf-8") as f:
-    json.dump([], f)
-log_message("メイン処理", "システム", "情報", "通知対象商品リストをクリアしました")
