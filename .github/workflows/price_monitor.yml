@@ -2,7 +2,7 @@ name: 楽天価格監視と投稿
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # 2時間ごとに実行
+    - cron: '0 */2 * * *'  # 2時間ごとに実行
   workflow_dispatch:  # 手動実行も可能に
 
 jobs:
@@ -11,6 +11,12 @@ jobs:
     steps:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 完全な履歴を取得
+      
+      - name: 最新の変更を取得
+        run: |
+          git pull origin main
         
       - name: Pythonセットアップ
         uses: actions/setup-python@v4
@@ -29,6 +35,13 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
+          
+      - name: 通知履歴ファイルの存在確認
+        run: |
+          if [ ! -f "notification_history.json" ]; then
+            echo "{}" > notification_history.json
+            echo "通知履歴ファイルを初期化しました"
+          fi
           
       - name: 楽天商品価格監視を実行
         env:
@@ -62,14 +75,24 @@ jobs:
           # 変更ファイルを検出して追加
           for file in price_history.csv product_list.csv twitter_posting_log.csv threads_posting_log.csv notifiable_products.json notification_history.json; do
             if [ -f "$file" ]; then
+              echo "ファイル $file を追加します"
               git add "$file"
+            else
+              echo "ファイル $file が見つかりません"
             fi
           done
+          
+          # 特に notification_history.json を確実に追加
+          if [ -f "notification_history.json" ]; then
+            git add notification_history.json
+            echo "notification_history.json を明示的に追加しました"
+          fi
           
           # コミットする変更があるかチェック
           if ! git diff --staged --quiet; then
             git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
-            git push
+            git push origin main
+            echo "変更をコミットしました"
           else
             echo "コミットする変更はありません"
           fi
