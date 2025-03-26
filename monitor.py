@@ -131,19 +131,27 @@ def is_duplicate_record(jan_code, current_price):
         if not os.path.exists("price_history.csv"):
             return False
             
-        # 直近の履歴を10件だけ読み込む（効率化）
-        last_records = pd.read_csv("price_history.csv", nrows=10, encoding="utf-8")
+        # CSVファイル全体を読み込む
+        all_records = pd.read_csv("price_history.csv", encoding="utf-8")
         
-        # 同じJANコードで価格も同じレコードを検索
-        matching_records = last_records[
-            (last_records["jan_code"] == jan_code) & 
-            (last_records["price"] == current_price)
-        ]
+        # ファイルが空の場合はFalseを返す
+        if all_records.empty:
+            return False
+            
+        # 指定されたJANコードの記録だけをフィルタリング
+        jan_records = all_records[all_records["jan_code"] == jan_code]
+        
+        if jan_records.empty:
+            return False
+            
+        # 価格が一致する記録をさらにフィルタリング
+        matching_records = jan_records[jan_records["price"] == current_price]
         
         if matching_records.empty:
             return False
             
-        # 最新の記録の時刻を取得
+        # タイムスタンプでソートして最新の記録を取得
+        matching_records = matching_records.sort_values("timestamp", ascending=False)
         latest_record_time = datetime.strptime(
             matching_records["timestamp"].iloc[0], 
             "%Y-%m-%d %H:%M:%S"
@@ -156,7 +164,9 @@ def is_duplicate_record(jan_code, current_price):
         return time_diff.total_seconds() < 3600
         
     except Exception as e:
-        log_message("重複チェック", jan_code, "エラー", str(e))
+        log_message("重複チェック", jan_code, "エラー", f"エラー詳細: {str(e)}")
+        # 安全のため、エラーが発生した場合は重複とみなさない（Falseを返す）
+        # ただし、ログにはエラー内容を詳細に記録
         return False
 
 # 価格履歴に記録する
