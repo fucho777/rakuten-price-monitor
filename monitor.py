@@ -122,125 +122,85 @@ def update_notification_history(notifiable_products):
     except Exception as e:
         log_message("通知履歴", "システム", "更新失敗", str(e))
 
-# ======= 価格履歴管理 =======
+# ======= 商品リスト管理 =======
 
-# 直近の記録と重複していないか確認
-def is_duplicate_record(jan_code, current_price):
-    """1時間以内に同じJANコードで同じ価格の記録があるか確認"""
+# 商品リストの読み込み
+def load_product_list():
+    """product_list.csvを読み込み、DataFrameとして返す"""
     try:
-        if not os.path.exists("price_history.csv"):
-            return False
+        if os.path.exists("product_list.csv"):
+            product_df = pd.read_csv("product_list.csv")
+            log_message("商品リスト", "システム", "読込", f"{len(product_df)}件の商品情報を読み込みました")
             
-        # CSVファイル全体を読み込む
-        all_records = pd.read_csv("price_history.csv", encoding="utf-8")
-        
-        # ファイルが空の場合はFalseを返す
-        if all_records.empty:
-            return False
+            # 必要な列が存在するか確認
+            required_columns = [
+                "jan_code", "product_name", "last_price", "last_availability", 
+                "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
+            ]
             
-        # 指定されたJANコードの記録だけをフィルタリング
-        jan_records = all_records[all_records["jan_code"] == jan_code]
-        
-        if jan_records.empty:
-            return False
+            # 不足している列を追加
+            for col in required_columns:
+                if col not in product_df.columns:
+                    if col in ["monitor_flag", "notified_flag"]:
+                        product_df[col] = False
+                    elif col in ["last_price", "last_notified_price"]:
+                        product_df[col] = 0
+                    else:
+                        product_df[col] = None
+                    log_message("商品リスト", "システム", "列追加", f"{col}列を追加しました")
             
-        # 価格が一致する記録をさらにフィルタリング
-        matching_records = jan_records[jan_records["price"] == current_price]
-        
-        if matching_records.empty:
-            return False
-            
-        # タイムスタンプでソートして最新の記録を取得
-        matching_records = matching_records.sort_values("timestamp", ascending=False)
-        latest_record_time = datetime.strptime(
-            matching_records["timestamp"].iloc[0], 
-            "%Y-%m-%d %H:%M:%S"
-        )
-        
-        # 現在時刻との差を計算
-        time_diff = datetime.now() - latest_record_time
-        
-        # 1時間以内の同一商品・同一価格の記録は重複とみなす
-        return time_diff.total_seconds() < 3600
-        
+            return product_df
+        else:
+            log_message("商品リスト", "システム", "エラー", "product_list.csvが見つかりません")
+            # 空のDataFrameを返す
+            return pd.DataFrame(columns=[
+                "jan_code", "product_name", "last_price", "last_availability", 
+                "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
+            ])
     except Exception as e:
-        log_message("重複チェック", jan_code, "エラー", f"エラー詳細: {str(e)}")
-        # 安全のため、エラーが発生した場合は重複とみなさない（Falseを返す）
-        # ただし、ログにはエラー内容を詳細に記録
+        log_message("商品リスト", "システム", "読込エラー", str(e))
+        # エラーが発生した場合も空のDataFrameを返す
+        return pd.DataFrame(columns=[
+            "jan_code", "product_name", "last_price", "last_availability", 
+            "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
+        ])
+
+# 商品リストの保存
+def save_product_list(product_df):
+    """商品リストをCSVファイルに保存"""
+    try:
+        product_df.to_csv("product_list.csv", index=False)
+        log_message("商品リスト", "システム", "保存", f"{len(product_df)}件の商品情報を保存しました")
+        return True
+    except Exception as e:
+        log_message("商品リスト", "システム", "保存エラー", str(e))
         return False
 
-# monitor.py の変更部分
-
-# ======= 価格履歴管理 =======
-
-# 価格履歴に記録する
-def record_price_history(jan_code, product_name, price, availability, shop_name, price_change_rate=0, notified=False):
-    """商品の価格履歴をCSVに記録（既存レコードは更新）"""
+# 商品情報の更新
+def update_product_info(product_df, jan_code, product_info, price_change_rate=0):
+    """指定されたJANコードの商品情報を更新"""
     try:
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # DataFrameにJANコードが存在するか確認
+        if jan_code not in product_df["jan_code"].values:
+            log_message("商品情報更新", jan_code, "スキップ", "指定されたJANコードが商品リストに存在しません")
+            return product_df
         
-        # 重複チェック - 1時間以内に同じ商品・同じ価格の記録があれば記録しない
-        if is_duplicate_record(jan_code, price):
-            log_message("価格履歴記録", jan_code, "スキップ", "1時間以内に同じ価格の記録があるため重複を省略します")
-            return {"timestamp": timestamp}
+        # 商品情報を更新
+        mask = product_df["jan_code"] == jan_code
+        product_df.loc[mask, "product_name"] = product_info["item_name"]
+        product_df.loc[mask, "last_price"] = product_info["item_price"]
+        product_df.loc[mask, "last_availability"] = product_info["availability"]
         
-        # 価格履歴ファイルがなければヘッダー付きで作成
-        if not os.path.exists("price_history.csv"):
-            with open("price_history.csv", mode="w", newline="", encoding="utf-8") as file:
-                writer = csv.writer(file)
-                writer.writerow([
-                    "timestamp", "jan_code", "product_name", "price", 
-                    "availability", "shop_name", "price_change_rate", "notified"
-                ])
-            # 新規作成した場合は空のDataFrameを作成
-            df = pd.DataFrame(columns=[
-                "timestamp", "jan_code", "product_name", "price", 
-                "availability", "shop_name", "price_change_rate", "notified"
-            ])
-        else:
-            # 既存ファイルを読み込む
-            df = pd.read_csv("price_history.csv", encoding="utf-8")
+        log_message("商品情報更新", jan_code, "成功", 
+                   f"商品名: {product_info['item_name']}, "
+                   f"価格: {product_info['item_price']}円, "
+                   f"在庫: {product_info['availability']}")
         
-        # 同じJANコードの行があるか確認
-        same_jan_rows = df[df["jan_code"] == jan_code]
-        
-        if not same_jan_rows.empty:
-            # 既存の行を更新
-            row_idx = df.index[df["jan_code"] == jan_code].tolist()[0]
-            df.at[row_idx, "timestamp"] = timestamp
-            df.at[row_idx, "product_name"] = product_name
-            df.at[row_idx, "price"] = price
-            df.at[row_idx, "availability"] = availability
-            df.at[row_idx, "shop_name"] = shop_name
-            df.at[row_idx, "price_change_rate"] = price_change_rate
-            df.at[row_idx, "notified"] = "TRUE" if notified else "FALSE"
-            
-            # 更新後のCSVを保存
-            df.to_csv("price_history.csv", index=False, encoding="utf-8")
-            log_message("価格履歴記録", jan_code, "更新", f"既存の商品情報を更新しました: {timestamp}")
-        else:
-            # 新しい行を追加
-            new_row = {
-                "timestamp": timestamp,
-                "jan_code": jan_code,
-                "product_name": product_name,
-                "price": price,
-                "availability": availability,
-                "shop_name": shop_name,
-                "price_change_rate": price_change_rate,
-                "notified": "TRUE" if notified else "FALSE"
-            }
-            df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-            
-            # 更新後のCSVを保存
-            df.to_csv("price_history.csv", index=False, encoding="utf-8")
-            log_message("価格履歴記録", jan_code, "追加", f"新しい商品情報を追加しました: {timestamp}")
-        
-        return {"timestamp": timestamp}
-            
+        return product_df
     except Exception as e:
-        log_message("価格履歴記録", jan_code, "失敗", f"エラー: {str(e)}")
-        return None
+        log_message("商品情報更新", jan_code, "失敗", str(e))
+        return product_df
+
 # ======= 楽天API 関連 =======
 
 # APIキャッシュ
@@ -613,44 +573,45 @@ def run_posting_scripts():
 
 # ======= メイン処理 =======
 
+# 直近の通知と重複していないか確認
+def is_recently_notified(jan_code, current_price, hours=24):
+    """直近の指定時間内に同じJANコードで同じ価格の通知があるか確認"""
+    try:
+        notification_history = get_notification_history()
+        if jan_code not in notification_history:
+            return False
+            
+        # 履歴エントリを取得
+        history = notification_history[jan_code]
+        last_notified_time = datetime.strptime(history["last_notified_time"], "%Y-%m-%d %H:%M:%S")
+        last_price = history["price"]
+        
+        # 時間チェック
+        time_diff = (datetime.now() - last_notified_time).total_seconds() / 3600
+        if time_diff < hours:
+            # 価格チェック
+            if abs(current_price - last_price) < 10:  # 10円未満の差は同一価格とみなす
+                log_message("重複チェック", jan_code, "検出", 
+                          f"{time_diff:.1f}時間前に同価格で通知済み: {last_price}円")
+                return True
+                
+        return False
+        
+    except Exception as e:
+        log_message("重複チェック", jan_code, "エラー", f"エラー詳細: {str(e)}")
+        # エラー発生時は安全のため重複とみなさない
+        return False
+
 # 監視対象商品の変動を監視するメイン関数
 def monitor_products():
     """商品の価格変動を監視し、通知すべき商品を検出する"""
     try:
-        # 価格履歴ファイルの初期化確認
-        is_file_empty = False
-        if os.path.exists("price_history.csv"):
-            # ファイルサイズをチェック
-            is_file_empty = os.path.getsize("price_history.csv") == 0
-        
-        if not os.path.exists("price_history.csv") or is_file_empty:
-            with open("price_history.csv", mode="w", newline="", encoding="utf-8") as file:
-                writer = csv.writer(file)
-                writer.writerow([
-                    "timestamp", "jan_code", "product_name", "price", 
-                    "availability", "shop_name", "price_change_rate", "notified"
-                ])
-            log_message("メイン処理", "システム", "初期化", "価格履歴ファイルを新規作成しました")
-
         # 商品リストを読み込む
-        try:
-            product_df = pd.read_csv("product_list.csv")
-        except Exception as e:
-            log_message("メイン処理", "システム", "エラー", f"商品リスト読込失敗: {str(e)}")
-            # 商品リストが読めない場合は空のデータフレームを作成
-            product_df = pd.DataFrame(columns=[
-                "jan_code", "product_name", "last_price", "last_availability", 
-                "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
-            ])
+        product_df = load_product_list()
         
-        # 商品リストに必要な列が存在するか確認し、なければ追加
-        if "last_notified_price" not in product_df.columns:
-            product_df["last_notified_price"] = float('nan')
-            log_message("メイン処理", "システム", "情報", "last_notified_price 列を追加しました")
-            
-        if "last_notified_time" not in product_df.columns:
-            product_df["last_notified_time"] = None
-            log_message("メイン処理", "システム", "情報", "last_notified_time 列を追加しました")
+        if len(product_df) == 0:
+            log_message("メイン処理", "システム", "警告", "商品リストが空です")
+            return []
         
         # 監視対象の商品のみを抽出
         active_products = product_df[product_df["monitor_flag"] == True]
@@ -673,7 +634,8 @@ def monitor_products():
             
             try:
                 # 処理中であることをログに記録
-                log_message("価格監視", jan_code, "処理中", f"商品名: {row['product_name'] if not pd.isna(row['product_name']) else '未取得'}, 処理を開始します")
+                product_name = str(row["product_name"]) if not pd.isna(row["product_name"]) else "未取得"
+                log_message("価格監視", jan_code, "処理中", f"商品名: {product_name}, 処理を開始します")
                 
                 # JANコードで最新の商品情報を取得
                 product_info = get_product_info_by_jan_code(jan_code)
@@ -689,11 +651,9 @@ def monitor_products():
                 previous_availability = row["last_availability"] if not pd.isna(row["last_availability"]) else "不明"
                 
                 # 初回の場合は変動なしとする
-                if previous_price == 0:
+                if previous_price == 0 or previous_availability == "不明":
                     # 商品リストを更新
-                    product_df.loc[product_df["jan_code"] == jan_code, "product_name"] = product_info["item_name"]
-                    product_df.loc[product_df["jan_code"] == jan_code, "last_price"] = current_price
-                    product_df.loc[product_df["jan_code"] == jan_code, "last_availability"] = current_availability
+                    product_df = update_product_info(product_df, jan_code, product_info)
                     log_message("価格監視", jan_code, "初回取得", 
                                f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
                     continue
@@ -708,26 +668,16 @@ def monitor_products():
                     if previous_price > 0:
                         price_change_rate = ((current_price - previous_price) / previous_price) * 100
                     
-                    # 重複チェック - 直近の記録と価格が同じなら記録しない
-                    if is_duplicate_record(jan_code, current_price):
-                        log_message("価格監視", jan_code, "重複スキップ", 
-                                  f"1時間以内に同じ価格({current_price}円)の記録があるためスキップします")
+                    # 重複チェック - 直近の通知と同一ならスキップ
+                    if is_recently_notified(jan_code, current_price):
+                        log_message("価格監視", jan_code, "通知スキップ", 
+                                  f"直近で同価格({current_price}円)の通知があるためスキップします")
+                        # 商品情報は更新するが、通知はしない
+                        product_df = update_product_info(product_df, jan_code, product_info, price_change_rate)
                         continue
                     
                     # 商品リストを更新
-                    product_df.loc[product_df["jan_code"] == jan_code, "product_name"] = product_info["item_name"]
-                    product_df.loc[product_df["jan_code"] == jan_code, "last_price"] = current_price
-                    product_df.loc[product_df["jan_code"] == jan_code, "last_availability"] = current_availability
-                    
-                    # 変動情報を価格履歴に記録
-                    history_info = record_price_history(
-                        jan_code,
-                        product_info["item_name"],
-                        current_price,
-                        current_availability,
-                        product_info["shop_name"],
-                        price_change_rate
-                    )
+                    product_df = update_product_info(product_df, jan_code, product_info, price_change_rate)
                     
                     # 変動があった商品情報を配列に追加
                     changed_products.append({
@@ -741,7 +691,7 @@ def monitor_products():
                         "shop_name": product_info["shop_name"],
                         "item_url": product_info["item_url"],
                         "affiliate_url": product_info["affiliate_url"],
-                        "timestamp": history_info["timestamp"] if history_info else datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     })
                     
                     log_message("価格監視", jan_code, "変動検知", 
@@ -761,6 +711,9 @@ def monitor_products():
         # 変動があった商品数をログに記録
         log_message("メイン処理", "システム", "情報", f"{len(changed_products)}件の商品に変動がありました")
         
+        # 商品リストの変更を保存（この時点で必ず保存）
+        save_product_list(product_df)
+        
         # 通知すべき変動商品をフィルタリング
         notifiable_products = filter_notifiable_products(changed_products, product_df, threshold)
         
@@ -775,7 +728,7 @@ def monitor_products():
                 unique_products.append(product)
         
         # 通知すべき商品数をログに記録
-        if notifiable_products:
+        if unique_products:
             log_message("メイン処理", "システム", "通知", 
                        f"重複を除外して{len(unique_products)}件の商品を通知します (元は{len(notifiable_products)}件)")
         
@@ -824,9 +777,10 @@ def monitor_products():
             for jan_code in posted_jan_codes:
                 product_info = next((p for p in unique_products if p["jan_code"] == jan_code), None)
                 if product_info:
-                    product_df.loc[product_df["jan_code"] == jan_code, "notified_flag"] = True
-                    product_df.loc[product_df["jan_code"] == jan_code, "last_notified_price"] = product_info["current_price"]
-                    product_df.loc[product_df["jan_code"] == jan_code, "last_notified_time"] = current_time.strftime("%Y-%m-%d %H:%M:%S")
+                    mask = product_df["jan_code"] == jan_code
+                    product_df.loc[mask, "notified_flag"] = True
+                    product_df.loc[mask, "last_notified_price"] = product_info["current_price"]
+                    product_df.loc[mask, "last_notified_time"] = current_time.strftime("%Y-%m-%d %H:%M:%S")
                     
                     log_message("通知状態更新", jan_code, "更新", 
                               f"投稿確認済み: notified_flag = True, last_notified_price = {product_info['current_price']}円")
@@ -834,13 +788,10 @@ def monitor_products():
             # 投稿に成功した件数をログに記録
             log_message("メイン処理", "システム", "完了", f"{len(posted_jan_codes)}件の商品が実際に投稿されました")
                     
-            # 商品リストの変更を保存
-            product_df.to_csv("product_list.csv", index=False)
+            # 商品リストの変更を再度保存（通知フラグ更新後）
+            save_product_list(product_df)
         else:
             log_message("メイン処理", "システム", "情報", "通知対象商品がありません")
-            
-            # 商品リストの変更を保存（通知対象でなくても更新内容は保存）
-            product_df.to_csv("product_list.csv", index=False)
         
         return unique_products
         
