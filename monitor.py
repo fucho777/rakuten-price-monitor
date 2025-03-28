@@ -165,15 +165,48 @@ def load_product_list():
             "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
         ])
 
-# 商品リストの保存
+# 商品リストの保存（修正版）
 def save_product_list(product_df):
     """商品リストをCSVファイルに保存"""
     try:
-        product_df.to_csv("product_list.csv", index=False)
-        log_message("商品リスト", "システム", "保存", f"{len(product_df)}件の商品情報を保存しました")
-        return True
+        # 現在の時刻を取得してタイムスタンプ列を追加
+        import datetime
+        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # タイムスタンプ列を追加（これにより常に変更が発生する）
+        product_df["last_updated"] = current_time
+        
+        # 保存前のログ
+        log_message("商品リスト", "システム", "保存処理", f"{len(product_df)}件のデータを保存します")
+        
+        # CSVファイルに保存（index=Falseは必須）
+        product_df.to_csv("product_list.csv", index=False, encoding="utf-8")
+        
+        # 保存後の確認
+        if os.path.exists("product_list.csv"):
+            file_size = os.path.getsize("product_list.csv")
+            log_message("商品リスト", "システム", "保存成功", f"{len(product_df)}件の商品情報を保存しました (サイズ: {file_size} バイト)")
+            
+            # ファイルの内容を確認（最初の数行）
+            with open("product_list.csv", "r", encoding="utf-8") as f:
+                first_lines = [next(f) for _ in range(min(5, len(product_df)+1))]
+            log_message("商品リスト", "システム", "ファイル内容", f"先頭行: {first_lines}")
+            
+            # バックアップも作成
+            import shutil
+            backup_file = f"product_list_backup_{current_time.replace(' ', '_').replace(':', '-')}.csv"
+            shutil.copy("product_list.csv", backup_file)
+            log_message("商品リスト", "システム", "バックアップ", f"バックアップを作成しました: {backup_file}")
+            
+            return True
+        else:
+            log_message("商品リスト", "システム", "保存エラー", "ファイルの確認ができません")
+            return False
     except Exception as e:
-        log_message("商品リスト", "システム", "保存エラー", str(e))
+        import traceback
+        error_trace = traceback.format_exc()
+        log_message("商品リスト", "システム", "保存エラー", f"例外発生: {str(e)}")
+        log_message("商品リスト", "システム", "エラー詳細", error_trace)
         return False
 
 # 商品情報の更新
