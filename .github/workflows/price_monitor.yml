@@ -45,12 +45,35 @@ jobs:
             echo "通知履歴ファイルを初期化しました"
           fi
           
+      - name: 実行前のCSVファイル確認
+        run: |
+          echo "実行前のproduct_list.csvの内容確認:"
+          if [ -f "product_list.csv" ]; then
+            head -n 5 product_list.csv
+            echo "ファイルサイズ: $(wc -c < product_list.csv) バイト"
+            echo "行数: $(wc -l < product_list.csv) 行"
+          else
+            echo "ファイルが存在しません"
+          fi
+          
       - name: 楽天商品価格監視を実行
         env:
           RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
           RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
           PRICE_CHANGE_THRESHOLD: ${{ secrets.PRICE_CHANGE_THRESHOLD || '5' }}
         run: python monitor.py
+        
+      - name: 実行後のCSVファイル確認
+        run: |
+          echo "実行後のproduct_list.csvの内容確認:"
+          if [ -f "product_list.csv" ]; then
+            head -n 5 product_list.csv
+            echo "ファイルサイズ: $(wc -c < product_list.csv) バイト"
+            echo "行数: $(wc -l < product_list.csv) 行"
+            echo "最終更新時刻: $(stat -c %y product_list.csv)"
+          else
+            echo "ファイルが存在しません"
+          fi
         
       - name: スレッズに投稿
         env:
@@ -86,39 +109,34 @@ jobs:
           else
             echo "ファイルが存在しません"
           fi
+          
+      - name: タイムスタンプファイルを作成
+        run: |
+          echo "最終実行: $(date "+%Y-%m-%d %H:%M:%S")" > last_run.txt
         
       - name: データ更新をコミット
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
           
-          # 変更ファイルを検出して追加
-          for file in price_history.csv product_list.csv twitter_posting_log.csv threads_posting_log.csv notifiable_products.json notification_history.json; do
+          # ファイルの状態を確認
+          echo "リポジトリの状態を確認:"
+          git status
+          
+          # 変更ファイルを検出して強制的に追加
+          echo "変更ファイルを追加します:"
+          for file in price_history.csv product_list.csv twitter_posting_log.csv threads_posting_log.csv notifiable_products.json notification_history.json last_run.txt; do
             if [ -f "$file" ]; then
               echo "ファイル $file を追加します"
-              git add "$file"
+              git add -f "$file"
             else
               echo "ファイル $file が見つかりません"
             fi
           done
           
-          # 特に notification_history.json を確実に追加
-          if [ -f "notification_history.json" ]; then
-            git add notification_history.json
-            echo "notification_history.json を明示的に追加しました"
-          fi
+          # コミットを作成（常に変更があるようにタイムスタンプファイルがある）
+          git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
           
-          # 特に notifiable_products.json を確実に追加
-          if [ -f "notifiable_products.json" ]; then
-            git add notifiable_products.json
-            echo "notifiable_products.json を明示的に追加しました"
-          fi
-          
-          # コミットする変更があるかチェック
-          if ! git diff --staged --quiet; then
-            git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
-            git push origin main
-            echo "変更をコミットしました"
-          else
-            echo "コミットする変更はありません"
-          fi
+          # 変更をプッシュ
+          echo "変更をプッシュします:"
+          git push origin main
