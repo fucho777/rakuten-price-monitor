@@ -169,14 +169,19 @@ def is_duplicate_record(jan_code, current_price):
         # ただし、ログにはエラー内容を詳細に記録
         return False
 
+# monitor.py の変更部分
+
+# ======= 価格履歴管理 =======
+
 # 価格履歴に記録する
 def record_price_history(jan_code, product_name, price, availability, shop_name, price_change_rate=0, notified=False):
-    """商品の価格履歴をCSVに記録（重複チェック付き）"""
+    """商品の価格履歴をCSVに記録（既存レコードは更新）"""
     try:
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
         # 重複チェック - 1時間以内に同じ商品・同じ価格の記録があれば記録しない
         if is_duplicate_record(jan_code, price):
             log_message("価格履歴記録", jan_code, "スキップ", "1時間以内に同じ価格の記録があるため重複を省略します")
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             return {"timestamp": timestamp}
         
         # 価格履歴ファイルがなければヘッダー付きで作成
@@ -187,29 +192,55 @@ def record_price_history(jan_code, product_name, price, availability, shop_name,
                     "timestamp", "jan_code", "product_name", "price", 
                     "availability", "shop_name", "price_change_rate", "notified"
                 ])
-        
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        
-        # 履歴を追記
-        with open("price_history.csv", mode="a", newline="", encoding="utf-8") as file:
-            writer = csv.writer(file)
-            writer.writerow([
-                timestamp,
-                jan_code,
-                product_name,
-                price,
-                availability,
-                shop_name,
-                price_change_rate,
-                "TRUE" if notified else "FALSE"
+            # 新規作成した場合は空のDataFrameを作成
+            df = pd.DataFrame(columns=[
+                "timestamp", "jan_code", "product_name", "price", 
+                "availability", "shop_name", "price_change_rate", "notified"
             ])
-            
-        return {"timestamp": timestamp}
+        else:
+            # 既存ファイルを読み込む
+            df = pd.read_csv("price_history.csv", encoding="utf-8")
         
+        # 同じJANコードの行があるか確認
+        same_jan_rows = df[df["jan_code"] == jan_code]
+        
+        if not same_jan_rows.empty:
+            # 既存の行を更新
+            row_idx = df.index[df["jan_code"] == jan_code].tolist()[0]
+            df.at[row_idx, "timestamp"] = timestamp
+            df.at[row_idx, "product_name"] = product_name
+            df.at[row_idx, "price"] = price
+            df.at[row_idx, "availability"] = availability
+            df.at[row_idx, "shop_name"] = shop_name
+            df.at[row_idx, "price_change_rate"] = price_change_rate
+            df.at[row_idx, "notified"] = "TRUE" if notified else "FALSE"
+            
+            # 更新後のCSVを保存
+            df.to_csv("price_history.csv", index=False, encoding="utf-8")
+            log_message("価格履歴記録", jan_code, "更新", f"既存の商品情報を更新しました: {timestamp}")
+        else:
+            # 新しい行を追加
+            new_row = {
+                "timestamp": timestamp,
+                "jan_code": jan_code,
+                "product_name": product_name,
+                "price": price,
+                "availability": availability,
+                "shop_name": shop_name,
+                "price_change_rate": price_change_rate,
+                "notified": "TRUE" if notified else "FALSE"
+            }
+            df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+            
+            # 更新後のCSVを保存
+            df.to_csv("price_history.csv", index=False, encoding="utf-8")
+            log_message("価格履歴記録", jan_code, "追加", f"新しい商品情報を追加しました: {timestamp}")
+        
+        return {"timestamp": timestamp}
+            
     except Exception as e:
-        log_message("価格履歴記録", jan_code, "失敗", str(e))
+        log_message("価格履歴記録", jan_code, "失敗", f"エラー: {str(e)}")
         return None
-
 # ======= 楽天API 関連 =======
 
 # APIキャッシュ
