@@ -114,29 +114,21 @@ jobs:
         run: |
           echo "最終実行: $(date "+%Y-%m-%d %H:%M:%S")" > last_run.txt
         
-      - name: データ更新をコミット
+      - name: データ更新を強制的にコミット
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
           
-          # ファイルの状態を確認
-          echo "リポジトリの状態を確認:"
-          git status
+          # 変更に関係なく、last_updated値を更新して強制的に変更を作る
+          echo "最終更新: $(date)" > last_updated.txt
           
-          # 変更ファイルを検出して強制的に追加
-          echo "変更ファイルを追加します:"
-          for file in price_history.csv product_list.csv twitter_posting_log.csv threads_posting_log.csv notifiable_products.json notification_history.json last_run.txt; do
-            if [ -f "$file" ]; then
-              echo "ファイル $file を追加します"
-              git add -f "$file"
-            else
-              echo "ファイル $file が見つかりません"
-            fi
-          done
+          # 全ファイルを強制的に追加
+          git add -f product_list.csv
+          git add -f last_updated.txt
+          git add -f threads_posting_log.csv
+          git add -f notification_history.json
+          git add -f notifiable_products.json
           
-          # コミットを作成（常に変更があるようにタイムスタンプファイルがある）
-          git commit -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
-          
-          # 変更をプッシュ
-          echo "変更をプッシュします:"
+          # 強制的にコミット
+          git commit --allow-empty -m "🤖 価格データ更新: $(date +%Y-%m-%d-%H:%M)"
           git push origin main
