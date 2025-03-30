@@ -3,6 +3,7 @@ import json
 import csv
 from datetime import datetime
 import tweepy
+import time
 
 # ログ出力関数
 def log_message(message_type, target, status, message):
@@ -33,7 +34,7 @@ def create_twitter_message(product):
     
     # Twitter用（最大280文字に収まるよう調整）
     twitter_msg = (
-        f"【価格変動】#PR\n"
+        f"【価格変動】\n"
         f"商品名：{truncate_text(product['product_name'], 50)}\n"
         f"価格：{product['current_price']:,}円（{change_rate_str}%）\n"
         f"在庫：{availability_status}\n"
@@ -43,18 +44,20 @@ def create_twitter_message(product):
     
     return twitter_msg
 
-# Twitterに投稿する関数
-def post_to_twitter(message):
+# Twitter APIのセットアップ
+def setup_twitter_api():
+    """Twitter APIの設定と認証テスト"""
     try:
-        # Twitter API認証情報
-        api_key = os.environ.get("TWITTER_API_KEY")
-        api_secret = os.environ.get("TWITTER_API_SECRET")
+        # 環境変数を取得 (注: 両方の命名規則をサポート)
+        api_key = os.environ.get("TWITTER_API_KEY") or os.environ.get("TWITTER_CONSUMER_KEY")
+        api_secret = os.environ.get("TWITTER_API_SECRET") or os.environ.get("TWITTER_CONSUMER_SECRET")
         access_token = os.environ.get("TWITTER_ACCESS_TOKEN")
         access_token_secret = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET")
         
         # 認証情報が設定されているか確認
         if not all([api_key, api_secret, access_token, access_token_secret]):
-            raise ValueError("Twitter API認証情報が不足しています")
+            log_message("Twitter認証", "システム", "警告", "Twitter API認証情報が不足しています")
+            return None
             
         # Twitter APIクライアントを初期化
         client = tweepy.Client(
@@ -64,18 +67,59 @@ def post_to_twitter(message):
             access_token_secret=access_token_secret
         )
         
+        # 認証テスト - ユーザー情報を取得して検証
+        try:
+            me = client.get_me()
+            if me.data:
+                log_message("Twitter認証", "システム", "成功", f"認証成功: @{me.data.username}")
+                return client
+            else:
+                log_message("Twitter認証", "システム", "失敗", "認証テストに失敗しました")
+                return None
+        except Exception as e:
+            log_message("Twitter認証", "システム", "失敗", f"認証テストエラー: {str(e)}")
+            return None
+            
+    except Exception as e:
+        log_message("Twitter認証", "システム", "失敗", f"APIセットアップエラー: {str(e)}")
+        return None
+
+# Twitterに投稿する関数
+def post_to_twitter(message, client=None):
+    """Twitterに投稿"""
+    if client is None:
+        client = setup_twitter_api()
+        
+    if not client:
+        log_message("Twitter投稿", "なし", "失敗", "APIクライアントの初期化に失敗")
+        return {
+            "success": False,
+            "error": "APIクライアントの初期化に失敗",
+            "platform": "twitter"
+        }
+    
+    try:
         # ツイート投稿
         response = client.create_tweet(text=message)
         
-        tweet_id = response.data["id"]
-        log_message("Twitter投稿", tweet_id, "成功", f"投稿ID: {tweet_id}")
-        
-        return {
-            "success": True,
-            "id": tweet_id,
-            "platform": "twitter"
-        }
-        
+        # レスポンスの検証
+        if response.data and "id" in response.data:
+            tweet_id = response.data["id"]
+            log_message("Twitter投稿", tweet_id, "成功", f"投稿ID: {tweet_id}")
+            
+            return {
+                "success": True,
+                "id": tweet_id,
+                "platform": "twitter"
+            }
+        else:
+            log_message("Twitter投稿", "なし", "失敗", "投稿に失敗しました")
+            return {
+                "success": False,
+                "error": "投稿に失敗しました",
+                "platform": "twitter"
+            }
+            
     except Exception as e:
         log_message("Twitter投稿", "なし", "失敗", f"エラー: {str(e)}")
         return {
@@ -131,6 +175,12 @@ def post_products_to_twitter():
             
         log_message("Twitter投稿", "システム", "開始", f"{len(notifiable_products)}件の商品を投稿します")
         
+        # Twitter APIクライアントを初期化（一度だけ初期化）
+        twitter_client = setup_twitter_api()
+        if not twitter_client:
+            log_message("Twitter投稿", "システム", "警告", "Twitter APIの認証に失敗したため投稿をスキップします")
+            return []
+        
         results = []
         
         # 投稿数の上限（API制限対策）
@@ -146,7 +196,7 @@ def post_products_to_twitter():
                 
                 # Twitterに投稿
                 log_message("Twitter投稿", product["jan_code"], "進行中", "Twitterに投稿します")
-                post_result = post_to_twitter(twitter_message)
+                post_result = post_to_twitter(twitter_message, twitter_client)
                 
                 # 投稿結果を記録
                 record_posting_result(product, post_result)
@@ -161,7 +211,6 @@ def post_products_to_twitter():
                 
                 # 連続投稿の場合はAPIレート制限を考慮して少し待機
                 if i < max_posts - 1:
-                    import time
                     time.sleep(2)
                     
             except Exception as e:
