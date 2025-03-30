@@ -27,7 +27,7 @@ def create_threads_message(product):
     
     # スレッズ用（より詳細に）
     threads_msg = (
-        f"【価格変動】\n"
+        f"【価格変動】#PR\n"
         f"商品名：{product['product_name']}\n"
         f"価格：{product['current_price']:,}円（{change_rate_str}%）\n"
         f"前回：{product['previous_price']:,}円\n"
