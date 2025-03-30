@@ -130,5 +130,65 @@
         "time": "2025-03-30 13:58:26"
       }
     ]
+  },
+  "4549980737408": {
+    "product_name": "新品 Panasonic ラムダッシュ 3 ES-LT8C-A [青] パナソニック シェーバー",
+    "price": 16800,
+    "last_notified_time": "2025-03-30 16:16:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 16800,
+        "time": "2025-03-30 16:16:38"
+      }
+    ]
+  },
+  "4549980737484": {
+    "product_name": "新品 Panasonic ラムダッシュ 3 ES-LT2Q-T [茶] パナソニック シェーバー",
+    "price": 9800,
+    "last_notified_time": "2025-03-30 16:16:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9800,
+        "time": "2025-03-30 16:16:38"
+      }
+    ]
+  },
+  "4549995454017": {
+    "product_name": "【未使用】Apple Apple Pencil（USB-C） MUWA3ZA/A【ECセンター】保証期間1週間",
+    "price": 11980,
+    "last_notified_time": "2025-03-30 16:16:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 11980,
+        "time": "2025-03-30 16:16:38"
+      }
+    ]
+  },
+  "4960759902290": {
+    "product_name": "Nikon デジタルカメラ COOLPIX B600 BK 光学60倍 軽量 クールピクス ブラック B600BK",
+    "price": 87407,
+    "last_notified_time": "2025-03-30 16:16:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 87407,
+        "time": "2025-03-30 16:16:38"
+      }
+    ]
+  },
+  "4968929221639": {
+    "product_name": "JBL　ブルートゥース スピーカー ［防水 /Bluetooth対応］ SWASH PINK　JBLGO4PINK",
+    "price": 5991,
+    "last_notified_time": "2025-03-30 16:16:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 5991,
+        "time": "2025-03-30 16:16:38"
+      }
+    ]
   }
 }
