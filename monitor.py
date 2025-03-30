@@ -533,33 +533,6 @@ def get_product_info_by_jan_code(jan_code):
         }
 
 # ======= 通知フィルタリング =======
-
-# 通知すべき商品をフィルタリング
-def filter_notifiable_products(changed_products, product_df, threshold=5):
-    """価格変動が閾値を超えた商品の中から通知すべきものをフィルタリング"""
-    notifiable = []
-    notification_history = get_notification_history()
-    current_time = datetime.now()
-    
-    for product in changed_products:
-        jan_code = product["jan_code"]
-        
-        # ステップ1: 最小変動チェック
-        if abs(product["price_change_rate"]) < CONFIG["min_price_change_percentage"]:
-            log_message("通知フィルタ", jan_code, "スキップ", 
-                      f"変動率が小さすぎます: {product['price_change_rate']:.2f}%")
-            continue
-            
-        # ステップ2: 絶対額チェック
-        price_change_amount = abs(product["current_price"] - product["previous_price"])
-        if price_change_amount < CONFIG["min_price_change_amount"]:
-            log_message("通知フィルタ", jan_code, "スキップ", 
-                      f"価格変動額が小さすぎます: {price_change_amount}円")
-            continue
-        
-        # ステップ3: 在庫チェック
-        has_stock = product["current_availability"] == "在庫あり"
-        if not has_stock:
             
 # 通知すべき商品をフィルタリング
 def filter_notifiable_products(changed_products, product_df, threshold=5):
