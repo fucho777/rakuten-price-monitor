@@ -124,7 +124,7 @@ def update_notification_history(notifiable_products):
 
 # ======= 商品リスト管理 =======
 
-# 商品リストの読み込み（修正版）
+# 商品リストの読み込み
 def load_product_list():
     """product_list.csvを読み込み、DataFrameとして返す"""
     try:
@@ -133,12 +133,6 @@ def load_product_list():
                 # jan_codeを文字列として読み込む
                 product_df = pd.read_csv("product_list.csv", dtype={"jan_code": str})
                 log_message("商品リスト", "システム", "読込", f"{len(product_df)}件の商品情報を読み込みました")
-                
-                # CSVファイルの内容を確認（デバッグ用）
-                log_message("商品リスト", "システム", "デバッグ", f"列一覧: {list(product_df.columns)}")
-                if len(product_df) > 0:
-                    first_row = product_df.iloc[0].to_dict()
-                    log_message("商品リスト", "システム", "デバッグ", f"最初の行: {first_row}")
                 
                 # カラム型を適切に設定
                 if "last_price" in product_df.columns:
@@ -190,7 +184,7 @@ def load_product_list():
             "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
         ])
 
-# 商品リストの保存（修正版）
+# 商品リストの保存
 def save_product_list(product_df):
     """商品リストをCSVファイルに保存"""
     try:
@@ -212,24 +206,15 @@ def save_product_list(product_df):
         if os.path.exists("product_list.csv"):
             file_size = os.path.getsize("product_list.csv")
             log_message("商品リスト", "システム", "保存成功", f"{len(product_df)}件の商品情報を保存しました (サイズ: {file_size} バイト)")
-            
-            # ファイルの内容を確認（最初の数行）
-            with open("product_list.csv", "r", encoding="utf-8") as f:
-                first_lines = [next(f) for _ in range(min(5, len(product_df)+1))]
-            log_message("商品リスト", "システム", "ファイル内容", f"先頭行: {first_lines[0:2]}")
-            
             return True
         else:
             log_message("商品リスト", "システム", "保存エラー", "ファイルの確認ができません")
             return False
     except Exception as e:
-        import traceback
-        error_trace = traceback.format_exc()
         log_message("商品リスト", "システム", "保存エラー", f"例外発生: {str(e)}")
-        log_message("商品リスト", "システム", "エラー詳細", error_trace)
         return False
 
-# 商品情報の更新（修正版）
+# 商品情報の更新
 def update_product_info(product_df, jan_code, product_info, price_change_rate=0):
     """指定されたJANコードの商品情報を更新"""
     try:
@@ -242,26 +227,19 @@ def update_product_info(product_df, jan_code, product_info, price_change_rate=0)
         # マッチする行が存在するか確認
         if not mask.any():
             log_message("商品情報更新", jan_code, "スキップ", "指定されたJANコードが商品リストに存在しません")
-            log_message("商品情報更新", jan_code, "デバッグ", f"CSVのJANコード型: {product_df['jan_code'].dtype}, 検索対象: {jan_code_str} (型: {type(jan_code_str)})")
             return product_df
         
-        # 更新前の値を記録（デバッグ用）
+        # 更新前の値を記録
         old_product_name = product_df.loc[mask, "product_name"].iloc[0] if not pd.isna(product_df.loc[mask, "product_name"].iloc[0]) else "未取得"
         old_price = product_df.loc[mask, "last_price"].iloc[0] if not pd.isna(product_df.loc[mask, "last_price"].iloc[0]) else 0
         old_availability = product_df.loc[mask, "last_availability"].iloc[0] if not pd.isna(product_df.loc[mask, "last_availability"].iloc[0]) else "不明"
-        
-        # デバッグ出力（更新前の行データ）
-        log_message("商品情報更新", jan_code, "更新前", f"行データ: {product_df.loc[mask].iloc[0].to_dict()}")
         
         # 商品情報を更新
         product_df.loc[mask, "product_name"] = product_info["item_name"]
         product_df.loc[mask, "last_price"] = product_info["item_price"]
         product_df.loc[mask, "last_availability"] = product_info["availability"]
         
-        # デバッグ出力（更新後の行データ）
-        log_message("商品情報更新", jan_code, "更新後", f"行データ: {product_df.loc[mask].iloc[0].to_dict()}")
-        
-        # 更新後の値を確認（デバッグ用）
+        # 更新後の値を確認
         new_product_name = product_df.loc[mask, "product_name"].iloc[0]
         new_price = product_df.loc[mask, "last_price"].iloc[0]
         new_availability = product_df.loc[mask, "last_availability"].iloc[0]
@@ -274,9 +252,6 @@ def update_product_info(product_df, jan_code, product_info, price_change_rate=0)
         return product_df
     except Exception as e:
         log_message("商品情報更新", jan_code, "失敗", str(e))
-        # スタックトレースを出力
-        import traceback
-        log_message("商品情報更新", jan_code, "エラー詳細", traceback.format_exc())
         return product_df
 
 # ======= 楽天API 関連 =======
@@ -341,11 +316,8 @@ def search_product_by_jan_code(jan_code, use_cache=True):
         query_string = "&".join([f"{key}={urllib.parse.quote(str(value))}" for key, value in params.items()])
         request_url = f"{base_url}?{query_string}"
         
-        # デバッグ用にURLを出力
-        log_message("楽天API", jan_code, "リクエスト", f"URL: {request_url}")
-        
         # APIリクエスト実行
-        response = requests.get(request_url, timeout=15)  # タイムアウト増加
+        response = requests.get(request_url, timeout=15)
         
         # レスポンスステータスの確認
         if response.status_code != 200:
@@ -358,14 +330,6 @@ def search_product_by_jan_code(jan_code, use_cache=True):
         if "error" in result:
             error_msg = f"楽天API エラー: {result['error']}: {result.get('error_description', '')}"
             raise ValueError(error_msg)
-            
-        # 検索結果の詳細を出力（デバッグ用）
-        if result.get("count", 0) > 0:
-            first_item = result["Items"][0]["Item"]
-            log_message("楽天API詳細", f"JANコード: {jan_code}", "情報", 
-                       f"最初の商品: {first_item.get('itemName')}, "
-                       f"商品コード: {first_item.get('itemCode')}, "
-                       f"カテゴリ: {first_item.get('genreName')}")
         
         # 実行ログに記録
         log_message("楽天API検索", f"JANコード: {jan_code}", "成功", 
@@ -471,6 +435,37 @@ def select_best_product(search_result, jan_code):
         log_message("商品選択", "なし", "失敗", str(e))
         return None
 
+# 空の商品情報を作成
+def create_empty_product_info(jan_code):
+    """空の商品情報を作成"""
+    return {
+        "jan_code": str(jan_code),
+        "item_name": f"取得できませんでした（{jan_code}）",
+        "item_price": 0,
+        "shop_name": "不明",
+        "availability": "不明",
+        "item_url": "",
+        "affiliate_url": "",
+        "image_url": "",
+        "is_new_item": False
+    }
+
+# 商品情報を整形
+def create_product_info(jan_code, selected_product):
+    """商品情報を整形"""
+    return {
+        "jan_code": str(jan_code),
+        "item_name": selected_product.get("itemName", "商品名なし"),
+        "item_price": int(selected_product.get("itemPrice", 0)),
+        "shop_name": selected_product.get("shopName", "販売店不明"),
+        "availability": "在庫あり" if selected_product.get("availability") == 1 else "在庫なし",
+        "item_url": selected_product.get("itemUrl", ""),
+        "affiliate_url": selected_product.get("affiliateUrl", "") or selected_product.get("itemUrl", ""),
+        "image_url": (selected_product.get("mediumImageUrls", [{}])[0].get("imageUrl", "") 
+                    if selected_product.get("mediumImageUrls") else ""),
+        "is_new_item": True
+    }
+
 # JANコードから商品情報を取得する
 def get_product_info_by_jan_code(jan_code):
     """JANコードをもとに商品情報を取得"""
@@ -478,20 +473,18 @@ def get_product_info_by_jan_code(jan_code):
         # JANコードで商品を検索
         search_result = search_product_by_jan_code(jan_code)
         
-        if not search_result:
-            raise ValueError("検索結果が取得できませんでした")
-            
-        if not search_result.get("Items") or len(search_result["Items"]) == 0:
-            raise ValueError(f"JANコード {jan_code} に一致する商品が見つかりませんでした")
+        # 基本的なエラーチェック
+        if not search_result or "Items" not in search_result or len(search_result["Items"]) == 0:
+            return create_empty_product_info(jan_code)
             
         # 検索結果から新品商品を選択
         selected_product = select_best_product(search_result, jan_code)
         
-        # 新品商品が見つからない場合は「新品なし」状態を返す
         if not selected_product:
+            # 新品商品が見つからない場合は「新品なし」状態を返す
             log_message("商品選択", jan_code, "情報", "新品商品がないため、在庫なし状態を返します")
             return {
-                "jan_code": jan_code,
+                "jan_code": str(jan_code),
                 "item_name": f"{jan_code}（新品なし）",
                 "item_price": 0,
                 "shop_name": "",
@@ -503,18 +496,7 @@ def get_product_info_by_jan_code(jan_code):
             }
             
         # 商品情報を整形して返す
-        product_info = {
-            "jan_code": jan_code,
-            "item_name": selected_product.get("itemName", "商品名なし"),
-            "item_price": int(selected_product.get("itemPrice", 0)),
-            "shop_name": selected_product.get("shopName", "販売店不明"),
-            "availability": "在庫あり" if selected_product.get("availability") == 1 else "在庫なし",
-            "item_url": selected_product.get("itemUrl", ""),
-            "affiliate_url": selected_product.get("affiliateUrl", "") or selected_product.get("itemUrl", ""),
-            "image_url": (selected_product.get("mediumImageUrls", [{}])[0].get("imageUrl", "") 
-                        if selected_product.get("mediumImageUrls") else ""),
-            "is_new_item": True
-        }
+        product_info = create_product_info(jan_code, selected_product)
         
         log_message("商品情報取得", jan_code, "成功", 
                     f"新品商品: {product_info['item_name']}, "
@@ -524,20 +506,8 @@ def get_product_info_by_jan_code(jan_code):
         return product_info
         
     except Exception as e:
-        log_message("商品情報取得", jan_code or "なし", "失敗", f"エラー: {str(e)}")
-        
-        # エラー発生時にダミー商品情報を返す
-        return {
-            "jan_code": jan_code or "",
-            "item_name": f"取得できませんでした（{jan_code}）",
-            "item_price": 0,
-            "shop_name": "不明",
-            "availability": "不明",
-            "item_url": "",
-            "affiliate_url": "",
-            "image_url": "",
-            "is_new_item": False
-        }
+        log_message("商品情報取得", jan_code, "失敗", f"エラー: {str(e)}")
+        return create_empty_product_info(jan_code)
 
 # ======= 通知フィルタリング =======
             
@@ -609,11 +579,355 @@ def filter_notifiable_products(changed_products, product_df, threshold=5):
         # 在庫が復活した場合の判定
         stock_restored = (product["previous_availability"] == "在庫なし" and 
                          product["current_availability"] == "在庫あり")
-        
+
         # 条件に合致し、かつ在庫があり、大きな価格変動がある場合に通知対象とする
-        if (price_reduced or stock_restored) and has_stock:
-            notifiable.append(product)
-            log_message("通知フィルタ", jan_code, "通知対象", 
-                      f"価格: {product['current_price']}円, 変動率: {product['price_change_rate']:.2f}%, 在庫: {product['current_availability']}")
-            
-    return notifiable
+       if (price_reduced or stock_restored) and has_stock:
+           notifiable.append(product)
+           log_message("通知フィルタ", jan_code, "通知対象", 
+                     f"価格: {product['current_price']}円, 変動率: {product['price_change_rate']:.2f}%, 在庫: {product['current_availability']}")
+           
+   return notifiable
+
+# ======= 投稿処理 =======
+
+# 投稿スクリプトを実行する関数
+def run_posting_scripts():
+   """通知対象商品をSNSに投稿するスクリプトを実行"""
+   try:
+       log_message("投稿実行", "システム", "開始", "投稿スクリプトを実行します")
+       
+       # スレッズに投稿
+       if os.path.exists("threads_poster.py"):
+           log_message("投稿実行", "Threads", "開始", "スレッズへの投稿を開始します")
+           try:
+               subprocess.run(["python", "threads_poster.py"], check=True)
+               log_message("投稿実行", "Threads", "完了", "スレッズへの投稿が完了しました")
+           except subprocess.CalledProcessError as e:
+               log_message("投稿実行", "Threads", "失敗", f"エラー: {str(e)}")
+       
+       # Twitterに投稿 (環境変数のチェック)
+       if os.path.exists("twitter_poster.py") and "TWITTER_API_KEY" in os.environ:
+           log_message("投稿実行", "Twitter", "開始", "Twitterへの投稿を開始します")
+           try:
+               subprocess.run(["python", "twitter_poster.py"], check=True)
+               log_message("投稿実行", "Twitter", "完了", "Twitterへの投稿が完了しました")
+           except subprocess.CalledProcessError as e:
+               log_message("投稿実行", "Twitter", "失敗", f"エラー: {str(e)}")
+       
+       log_message("投稿実行", "システム", "完了", "投稿スクリプトの実行が完了しました")
+       
+   except Exception as e:
+       log_message("投稿実行", "システム", "失敗", f"エラー: {str(e)}")
+
+# ======= メイン処理 =======
+
+# 直近の通知と重複していないか確認
+def is_recently_notified(jan_code, current_price, hours=24):
+   """直近の指定時間内に同じJANコードで同じ価格の通知があるか確認"""
+   try:
+       notification_history = get_notification_history()
+       if jan_code not in notification_history:
+           return False
+           
+       # 履歴エントリを取得
+       history = notification_history[jan_code]
+       last_notified_time = datetime.strptime(history["last_notified_time"], "%Y-%m-%d %H:%M:%S")
+       last_price = history["price"]
+       
+       # 時間チェック
+       time_diff = (datetime.now() - last_notified_time).total_seconds() / 3600
+       if time_diff < hours:
+           # 価格チェック
+           if abs(current_price - last_price) < 10:  # 10円未満の差は同一価格とみなす
+               log_message("重複チェック", jan_code, "検出", 
+                         f"{time_diff:.1f}時間前に同価格で通知済み: {last_price}円")
+               return True
+               
+       return False
+       
+   except Exception as e:
+       log_message("重複チェック", jan_code, "エラー", f"エラー詳細: {str(e)}")
+       # エラー発生時は安全のため重複とみなさない
+       return False
+
+# 重複するJANコードを削除する
+def remove_duplicate_jan_codes():
+   """product_list.csvから重複するJANコードを削除する"""
+   try:
+       # 商品リストを読み込む
+       product_df = load_product_list()
+       
+       # 重複前の行数を記録
+       original_count = len(product_df)
+       
+       # 重複を確認
+       duplicates = product_df[product_df.duplicated(subset=['jan_code'], keep=False)]
+       
+       if not duplicates.empty:
+           log_message("重複JANコード", "システム", "検出", f"{len(duplicates)}件の重複JANコードが見つかりました")
+           
+           # 重複を表示（デバッグ用）
+           for jan_code, group in duplicates.groupby('jan_code'):
+               log_message("重複JANコード", jan_code, "詳細", f"{len(group)}件の重複があります")
+           
+           # 各グループの最初の行を保持し、残りを削除
+           product_df = product_df.drop_duplicates(subset=['jan_code'], keep='first')
+           
+           # 重複削除後のサイズを記録
+           new_count = len(product_df)
+           log_message("重複JANコード", "システム", "削除", f"{original_count - new_count}件の重複エントリを削除しました")
+           
+           # 更新されたDataFrameを保存
+           save_product_list(product_df)
+           
+       else:
+           log_message("重複JANコード", "システム", "確認", "重複するJANコードはありません")
+           
+       return product_df
+       
+   except Exception as e:
+       log_message("重複JANコード", "システム", "エラー", f"重複削除中にエラーが発生しました: {str(e)}")
+       # エラーが発生した場合は元のDataFrameを返す
+       return load_product_list()
+
+# 監視対象商品の変動を監視するメイン関数
+def monitor_products():
+   """商品の価格変動を監視し、通知すべき商品を検出する"""
+   try:
+       # 商品リストを読み込む
+       product_df = load_product_list()
+       
+       if len(product_df) == 0:
+           log_message("メイン処理", "システム", "警告", "商品リストが空です")
+           return []
+       
+       # 監視対象の商品のみを抽出
+       active_products = product_df[product_df["monitor_flag"] == True]
+       
+       if len(active_products) == 0:
+           log_message("メイン処理", "システム", "警告", "監視対象の商品がありません")
+           return []
+           
+       log_message("メイン処理", "システム", "開始", f"合計{len(active_products)}件の商品を監視します")
+       
+       threshold = CONFIG["price_change_threshold"]  # 通知する価格変動閾値
+       changed_products = []
+       products_updated = False  # 商品情報が更新されたかを追跡するフラグ
+       
+       # APIレート制限対策のため、処理間隔を設定
+       api_request_interval = 1  # 秒
+       
+       # すべての監視対象商品を処理
+       for index, row in active_products.iterrows():
+           jan_code = str(row["jan_code"]).strip()
+           
+           try:
+               # 処理中であることをログに記録
+               product_name = str(row["product_name"]) if not pd.isna(row["product_name"]) else "未取得"
+               log_message("価格監視", jan_code, "処理中", f"商品名: {product_name}, 処理を開始します")
+               
+               # JANコードで最新の商品情報を取得
+               product_info = get_product_info_by_jan_code(jan_code)
+               
+               if not product_info or product_info["availability"] == "不明":
+                   log_message("価格監視", jan_code, "失敗", "商品情報が取得できませんでした")
+                   continue
+                   
+               # 前回データとの比較
+               current_price = product_info["item_price"]
+               previous_price = row["last_price"] if not pd.isna(row["last_price"]) else 0
+               current_availability = product_info["availability"]
+               previous_availability = row["last_availability"] if not pd.isna(row["last_availability"]) else "不明"
+               
+               # 初回の場合は変動なしとする
+               if previous_price == 0 or previous_availability == "不明":
+                   # 商品リストを更新
+                   product_df = update_product_info(product_df, jan_code, product_info)
+                   products_updated = True  # 更新フラグをセット
+                   log_message("価格監視", jan_code, "初回取得", 
+                              f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
+                   continue
+               
+               # 価格または在庫に変動があるか確認
+               price_changed = current_price != previous_price
+               availability_changed = current_availability != previous_availability
+               
+               if price_changed or availability_changed:
+                   # 価格変動率を計算
+                   price_change_rate = 0
+                   if previous_price > 0:
+                       price_change_rate = ((current_price - previous_price) / previous_price) * 100
+                   
+                   # 重複チェック - 直近の通知と同一ならスキップ
+                   if is_recently_notified(jan_code, current_price):
+                       log_message("価格監視", jan_code, "通知スキップ", 
+                                 f"直近で同価格({current_price}円)の通知があるためスキップします")
+                       # 商品情報は更新するが、通知はしない
+                       product_df = update_product_info(product_df, jan_code, product_info, price_change_rate)
+                       products_updated = True  # 更新フラグをセット
+                       continue
+                   
+                   # 商品リストを更新
+                   product_df = update_product_info(product_df, jan_code, product_info, price_change_rate)
+                   products_updated = True  # 更新フラグをセット
+                   
+                   # 変動があった商品情報を配列に追加
+                   changed_products.append({
+                       "jan_code": jan_code,
+                       "product_name": product_info["item_name"],
+                       "current_price": current_price,
+                       "previous_price": previous_price,
+                       "price_change_rate": price_change_rate,
+                       "current_availability": current_availability,
+                       "previous_availability": previous_availability,
+                       "shop_name": product_info["shop_name"],
+                       "item_url": product_info["item_url"],
+                       "affiliate_url": product_info["affiliate_url"],
+                       "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                   })
+                   
+                   log_message("価格監視", jan_code, "変動検知", 
+                              f"商品名: {product_info['item_name']}, "
+                              f"価格変動: {previous_price}円→{current_price}円 ({price_change_rate:.2f}%), "
+                              f"在庫: {previous_availability}→{current_availability}")
+               else:
+                   log_message("価格監視", jan_code, "変動なし", 
+                              f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
+               
+               # API呼び出しの間に短い遅延を挿入（レート制限対策）
+               time.sleep(api_request_interval)
+               
+           except Exception as e:
+               log_message("価格監視", jan_code, "失敗", f"商品名: {row['product_name'] if not pd.isna(row['product_name']) else '未取得'}, エラー: {str(e)}")
+       
+       # 変動があった商品数をログに記録
+       log_message("メイン処理", "システム", "情報", f"{len(changed_products)}件の商品に変動がありました")
+       
+       # 商品情報に更新があった場合のみ保存
+       if products_updated:
+           # 商品リストの変更を保存
+           save_result = save_product_list(product_df)
+           log_message("メイン処理", "システム", "保存", 
+                     f"商品リストの保存: {'成功' if save_result else '失敗'}")
+       else:
+           log_message("メイン処理", "システム", "情報", "商品情報に更新がなかったため、保存をスキップします")
+       
+       # 通知すべき変動商品をフィルタリング
+       notifiable_products = filter_notifiable_products(changed_products, product_df, threshold)
+       
+       # 重複排除（JAN コードベース）
+       unique_products = []
+       jan_codes_seen = set()
+       
+       for product in notifiable_products:
+           jan_code = str(product["jan_code"])
+           if jan_code not in jan_codes_seen:
+               jan_codes_seen.add(jan_code)
+               unique_products.append(product)
+       
+       # 通知すべき商品数をログに記録
+       if unique_products:
+           log_message("メイン処理", "システム", "通知", 
+                      f"重複を除外して{len(unique_products)}件の商品を通知します (元は{len(notifiable_products)}件)")
+       
+       # 通知対象商品をJSONファイルに保存
+       if unique_products:
+           with open("notifiable_products.json", "w", encoding="utf-8") as f:
+               json.dump(unique_products, f, ensure_ascii=False, indent=2)
+           log_message("メイン処理", "システム", "情報", f"通知対象商品をJSONファイルに保存しました")
+           
+           # 通知履歴を更新
+           update_notification_history(unique_products)
+           
+           # 投稿スクリプトを実行
+           run_posting_scripts()
+           
+           # 実際に投稿された商品だけを「通知済み」としてマークする
+           posted_jan_codes = set()
+           current_time = datetime.now()
+           time_threshold = (current_time - timedelta(minutes=10)).strftime("%Y-%m-%d %H:%M:%S")
+           
+           # Threadsの投稿ログをチェック
+           if os.path.exists("threads_posting_log.csv"):
+               try:
+                   posted_df = pd.read_csv("threads_posting_log.csv")
+                   recent_posts = posted_df[posted_df["timestamp"] > time_threshold]
+                   
+                   # 投稿に成功した商品のJANコードを取得
+                   for jan_code in recent_posts[recent_posts["success"] == True]["jan_code"]:
+                       posted_jan_codes.add(str(jan_code))
+                       log_message("投稿確認", jan_code, "成功", "Threadsへの投稿を確認")
+               except Exception as e:
+                   log_message("投稿確認", "Threads", "エラー", f"ログ解析エラー: {str(e)}")
+
+           # Twitterの投稿ログをチェック（ある場合）
+           if os.path.exists("twitter_posting_log.csv"):
+               try:
+                   twitter_df = pd.read_csv("twitter_posting_log.csv")
+                   recent_twitter = twitter_df[twitter_df["timestamp"] > time_threshold]
+                   for jan_code in recent_twitter[recent_twitter["success"] == True]["jan_code"]:
+                       posted_jan_codes.add(str(jan_code))
+                       log_message("投稿確認", jan_code, "成功", "Twitterへの投稿を確認")
+               except Exception as e:
+                   log_message("投稿確認", "Twitter", "エラー", f"ログ解析エラー: {str(e)}")
+
+           # 投稿に成功した商品だけをマークする
+           for jan_code in posted_jan_codes:
+               product_info = next((p for p in unique_products if str(p["jan_code"]) == jan_code), None)
+               if product_info:
+                   mask = product_df["jan_code"].astype(str) == jan_code
+                   product_df.loc[mask, "notified_flag"] = True
+                   product_df.loc[mask, "last_notified_price"] = product_info["current_price"]
+                   product_df.loc[mask, "last_notified_time"] = current_time.strftime("%Y-%m-%d %H:%M:%S")
+                   
+                   log_message("通知状態更新", jan_code, "更新", 
+                             f"投稿確認済み: notified_flag = True, last_notified_price = {product_info['current_price']}円")
+           
+           # 投稿に成功した件数をログに記録
+           log_message("メイン処理", "システム", "完了", f"{len(posted_jan_codes)}件の商品が実際に投稿されました")
+                   
+           # 通知フラグが更新された場合は商品リストを再度保存
+           if posted_jan_codes:
+               save_result = save_product_list(product_df)
+               log_message("メイン処理", "システム", "保存", 
+                         f"通知フラグ更新後の商品リスト保存: {'成功' if save_result else '失敗'}")
+       else:
+           log_message("メイン処理", "システム", "情報", "通知対象商品がありません")
+       
+       return unique_products
+       
+   except Exception as e:
+       log_message("メイン処理", "システム", "失敗", str(e))
+       return []
+
+# メイン実行関数
+if __name__ == "__main__":
+   try:
+       # コマンドライン引数の解析
+       import argparse
+       parser = argparse.ArgumentParser(description="楽天商品価格監視システム")
+       parser.add_argument("--dry-run", action="store_true", help="通知はスキップしてテスト実行します")
+       parser.add_argument("--debug", action="store_true", help="デバッグモードで実行します")
+       args = parser.parse_args()
+       
+       # 実行開始ログ
+       if args.dry_run:
+           log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムをドライランモードで実行開始します（通知処理はスキップ）")
+       else:
+           log_message("メイン処理", "システム", "開始", "楽天商品価格監視システムの実行を開始します")
+       
+       # 重複するJANコードを削除
+       log_message("メイン処理", "システム", "準備", "重複するJANコードを確認・削除します")
+       product_df = remove_duplicate_jan_codes()
+       
+       # 商品監視を実行
+       notified_products = monitor_products()
+       
+       # 処理完了をログに記録
+       log_message("メイン処理", "システム", "完了", f"楽天商品価格監視システムの実行が完了しました（通知商品数: {len(notified_products)}）")
+       
+   except Exception as e:
+       log_message("メイン処理", "システム", "失敗", f"エラー: {str(e)}")
+       # スタックトレースをログに出力（デバッグ用）
+       import traceback
+       traceback.print_exc()
