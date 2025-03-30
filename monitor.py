@@ -559,7 +559,8 @@ def filter_notifiable_products(changed_products, product_df, threshold=5):
         
         # ステップ3: 在庫チェック
         has_stock = product["current_availability"] == "在庫あり"
-        if not has_stock
+        if not has_stock:
+            
 # 通知すべき商品をフィルタリング
 def filter_notifiable_products(changed_products, product_df, threshold=5):
     """価格変動が閾値を超えた商品の中から通知すべきものをフィルタリング"""
