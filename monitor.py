@@ -124,39 +124,63 @@ def update_notification_history(notifiable_products):
 
 # ======= 商品リスト管理 =======
 
-# 商品リストの読み込み
+# 商品リストの読み込み（修正版）
 def load_product_list():
     """product_list.csvを読み込み、DataFrameとして返す"""
     try:
         if os.path.exists("product_list.csv"):
-            product_df = pd.read_csv("product_list.csv")
-            log_message("商品リスト", "システム", "読込", f"{len(product_df)}件の商品情報を読み込みました")
-            
-            # 必要な列が存在するか確認
-            required_columns = [
-                "jan_code", "product_name", "last_price", "last_availability", 
-                "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
-            ]
-            
-            # 不足している列を追加
-            for col in required_columns:
-                if col not in product_df.columns:
-                    if col in ["monitor_flag", "notified_flag"]:
-                        product_df[col] = False
-                    elif col in ["last_price", "last_notified_price"]:
-                        product_df[col] = 0
-                    else:
-                        product_df[col] = None
-                    log_message("商品リスト", "システム", "列追加", f"{col}列を追加しました")
-            
-            return product_df
-        else:
-            log_message("商品リスト", "システム", "エラー", "product_list.csvが見つかりません")
-            # 空のDataFrameを返す
-            return pd.DataFrame(columns=[
-                "jan_code", "product_name", "last_price", "last_availability", 
-                "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
-            ])
+            try:
+                product_df = pd.read_csv("product_list.csv")
+                log_message("商品リスト", "システム", "読込", f"{len(product_df)}件の商品情報を読み込みました")
+                
+                # CSVファイルの内容を確認（デバッグ用）
+                log_message("商品リスト", "システム", "デバッグ", f"列一覧: {list(product_df.columns)}")
+                if len(product_df) > 0:
+                    first_row = product_df.iloc[0].to_dict()
+                    log_message("商品リスト", "システム", "デバッグ", f"最初の行: {first_row}")
+                
+                # カラム型を適切に設定
+                if "last_price" in product_df.columns:
+                    # 数値データの型変換（エラーは無視）
+                    product_df["last_price"] = pd.to_numeric(product_df["last_price"], errors="coerce")
+                    product_df["last_notified_price"] = pd.to_numeric(product_df["last_notified_price"], errors="coerce")
+                
+                # 真偽値の型変換
+                if "monitor_flag" in product_df.columns:
+                    product_df["monitor_flag"] = product_df["monitor_flag"].astype(bool)
+                    
+                if "notified_flag" in product_df.columns:
+                    product_df["notified_flag"] = product_df["notified_flag"].astype(bool)
+                
+                # 必要な列が存在するか確認
+                required_columns = [
+                    "jan_code", "product_name", "last_price", "last_availability", 
+                    "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
+                ]
+                
+                # 不足している列を追加
+                for col in required_columns:
+                    if col not in product_df.columns:
+                        if col in ["monitor_flag", "notified_flag"]:
+                            product_df[col] = False
+                        elif col in ["last_price", "last_notified_price"]:
+                            product_df[col] = 0
+                        else:
+                            product_df[col] = None
+                        log_message("商品リスト", "システム", "列追加", f"{col}列を追加しました")
+                
+                return product_df
+            except Exception as e:
+                log_message("商品リスト", "システム", "読込エラー", f"CSV解析エラー: {str(e)}")
+                # 読み込みに失敗した場合は空のDataFrameを作成し返す
+        
+        # ファイルが存在しない場合、またはエラーが発生した場合は新規作成
+        log_message("商品リスト", "システム", "警告", "product_list.csvが見つからないか読み込めません。新規作成します。")
+        # 空のDataFrameを返す
+        return pd.DataFrame(columns=[
+            "jan_code", "product_name", "last_price", "last_availability", 
+            "monitor_flag", "notified_flag", "last_notified_price", "last_notified_time"
+        ])
     except Exception as e:
         log_message("商品リスト", "システム", "読込エラー", str(e))
         # エラーが発生した場合も空のDataFrameを返す
@@ -175,6 +199,10 @@ def save_product_list(product_df):
         
         # タイムスタンプ列を追加（これにより常に変更が発生する）
         product_df["last_updated"] = current_time
+        
+        # フレームの内容をデバッグ出力
+        log_message("商品リスト", "システム", "デバッグ", f"保存前のDataFrame: {len(product_df)}行, {list(product_df.columns)}列")
+        log_message("商品リスト", "システム", "デバッグ", f"サンプルデータ: {product_df.iloc[0:2].to_dict('records')}")
         
         # 保存前のログ
         log_message("商品リスト", "システム", "保存処理", f"{len(product_df)}件のデータを保存します")
@@ -209,7 +237,7 @@ def save_product_list(product_df):
         log_message("商品リスト", "システム", "エラー詳細", error_trace)
         return False
 
-# 商品情報の更新
+# 商品情報の更新（修正版）
 def update_product_info(product_df, jan_code, product_info, price_change_rate=0):
     """指定されたJANコードの商品情報を更新"""
     try:
@@ -218,16 +246,26 @@ def update_product_info(product_df, jan_code, product_info, price_change_rate=0)
             log_message("商品情報更新", jan_code, "スキップ", "指定されたJANコードが商品リストに存在しません")
             return product_df
         
-        # 商品情報を更新
+        # 更新前の値を記録（デバッグ用）
         mask = product_df["jan_code"] == jan_code
+        old_product_name = product_df.loc[mask, "product_name"].iloc[0] if not pd.isna(product_df.loc[mask, "product_name"].iloc[0]) else "未取得"
+        old_price = product_df.loc[mask, "last_price"].iloc[0] if not pd.isna(product_df.loc[mask, "last_price"].iloc[0]) else 0
+        old_availability = product_df.loc[mask, "last_availability"].iloc[0] if not pd.isna(product_df.loc[mask, "last_availability"].iloc[0]) else "不明"
+        
+        # 商品情報を更新
         product_df.loc[mask, "product_name"] = product_info["item_name"]
         product_df.loc[mask, "last_price"] = product_info["item_price"]
         product_df.loc[mask, "last_availability"] = product_info["availability"]
         
+        # 更新後の値を確認（デバッグ用）
+        new_product_name = product_df.loc[mask, "product_name"].iloc[0]
+        new_price = product_df.loc[mask, "last_price"].iloc[0]
+        new_availability = product_df.loc[mask, "last_availability"].iloc[0]
+        
         log_message("商品情報更新", jan_code, "成功", 
-                   f"商品名: {product_info['item_name']}, "
-                   f"価格: {product_info['item_price']}円, "
-                   f"在庫: {product_info['availability']}")
+                   f"商品名: {old_product_name} → {new_product_name}, "
+                   f"価格: {old_price}円 → {new_price}円, "
+                   f"在庫: {old_availability} → {new_availability}")
         
         return product_df
     except Exception as e:
@@ -521,6 +559,32 @@ def filter_notifiable_products(changed_products, product_df, threshold=5):
         
         # ステップ3: 在庫チェック
         has_stock = product["current_availability"] == "在庫あり"
+        if not has_stock
+# 通知すべき商品をフィルタリング
+def filter_notifiable_products(changed_products, product_df, threshold=5):
+    """価格変動が閾値を超えた商品の中から通知すべきものをフィルタリング"""
+    notifiable = []
+    notification_history = get_notification_history()
+    current_time = datetime.now()
+    
+    for product in changed_products:
+        jan_code = product["jan_code"]
+        
+        # ステップ1: 最小変動チェック
+        if abs(product["price_change_rate"]) < CONFIG["min_price_change_percentage"]:
+            log_message("通知フィルタ", jan_code, "スキップ", 
+                      f"変動率が小さすぎます: {product['price_change_rate']:.2f}%")
+            continue
+            
+        # ステップ2: 絶対額チェック
+        price_change_amount = abs(product["current_price"] - product["previous_price"])
+        if price_change_amount < CONFIG["min_price_change_amount"]:
+            log_message("通知フィルタ", jan_code, "スキップ", 
+                      f"価格変動額が小さすぎます: {price_change_amount}円")
+            continue
+        
+        # ステップ3: 在庫チェック
+        has_stock = product["current_availability"] == "在庫あり"
         if not has_stock:
             log_message("通知フィルタ", jan_code, "スキップ", "在庫がないため通知しません")
             continue
@@ -657,6 +721,7 @@ def monitor_products():
         
         threshold = CONFIG["price_change_threshold"]  # 通知する価格変動閾値
         changed_products = []
+        products_updated = False  # 商品情報が更新されたかを追跡するフラグ
         
         # APIレート制限対策のため、処理間隔を設定
         api_request_interval = 1  # 秒
@@ -687,6 +752,7 @@ def monitor_products():
                 if previous_price == 0 or previous_availability == "不明":
                     # 商品リストを更新
                     product_df = update_product_info(product_df, jan_code, product_info)
+                    products_updated = True  # 更新フラグをセット
                     log_message("価格監視", jan_code, "初回取得", 
                                f"商品名: {product_info['item_name']}, 価格: {current_price}円, 在庫: {current_availability}")
                     continue
@@ -707,10 +773,12 @@ def monitor_products():
                                   f"直近で同価格({current_price}円)の通知があるためスキップします")
                         # 商品情報は更新するが、通知はしない
                         product_df = update_product_info(product_df, jan_code, product_info, price_change_rate)
+                        products_updated = True  # 更新フラグをセット
                         continue
                     
                     # 商品リストを更新
                     product_df = update_product_info(product_df, jan_code, product_info, price_change_rate)
+                    products_updated = True  # 更新フラグをセット
                     
                     # 変動があった商品情報を配列に追加
                     changed_products.append({
@@ -744,8 +812,14 @@ def monitor_products():
         # 変動があった商品数をログに記録
         log_message("メイン処理", "システム", "情報", f"{len(changed_products)}件の商品に変動がありました")
         
-        # 商品リストの変更を保存（この時点で必ず保存）
-        save_product_list(product_df)
+        # 商品情報に更新があった場合のみ保存
+        if products_updated:
+            # 商品リストの変更を保存
+            save_result = save_product_list(product_df)
+            log_message("メイン処理", "システム", "保存", 
+                      f"商品リストの保存: {'成功' if save_result else '失敗'}")
+        else:
+            log_message("メイン処理", "システム", "情報", "商品情報に更新がなかったため、保存をスキップします")
         
         # 通知すべき変動商品をフィルタリング
         notifiable_products = filter_notifiable_products(changed_products, product_df, threshold)
@@ -821,8 +895,11 @@ def monitor_products():
             # 投稿に成功した件数をログに記録
             log_message("メイン処理", "システム", "完了", f"{len(posted_jan_codes)}件の商品が実際に投稿されました")
                     
-            # 商品リストの変更を再度保存（通知フラグ更新後）
-            save_product_list(product_df)
+            # 通知フラグが更新された場合は商品リストを再度保存
+            if posted_jan_codes:
+                save_result = save_product_list(product_df)
+                log_message("メイン処理", "システム", "保存", 
+                          f"通知フラグ更新後の商品リスト保存: {'成功' if save_result else '失敗'}")
         else:
             log_message("メイン処理", "システム", "情報", "通知対象商品がありません")
         
