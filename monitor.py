@@ -581,43 +581,43 @@ def filter_notifiable_products(changed_products, product_df, threshold=5):
                          product["current_availability"] == "在庫あり")
 
         # 条件に合致し、かつ在庫があり、大きな価格変動がある場合に通知対象とする
-       if (price_reduced or stock_restored) and has_stock:
-           notifiable.append(product)
-           log_message("通知フィルタ", jan_code, "通知対象", 
-                     f"価格: {product['current_price']}円, 変動率: {product['price_change_rate']:.2f}%, 在庫: {product['current_availability']}")
+        if (price_reduced or stock_restored) and has_stock:
+            notifiable.append(product)
+            log_message("通知フィルタ", jan_code, "通知対象", 
+                      f"価格: {product['current_price']}円, 変動率: {product['price_change_rate']:.2f}%, 在庫: {product['current_availability']}")
            
-   return notifiable
+    return notifiable
 
 # ======= 投稿処理 =======
 
 # 投稿スクリプトを実行する関数
 def run_posting_scripts():
-   """通知対象商品をSNSに投稿するスクリプトを実行"""
-   try:
-       log_message("投稿実行", "システム", "開始", "投稿スクリプトを実行します")
-       
-       # スレッズに投稿
-       if os.path.exists("threads_poster.py"):
-           log_message("投稿実行", "Threads", "開始", "スレッズへの投稿を開始します")
-           try:
-               subprocess.run(["python", "threads_poster.py"], check=True)
-               log_message("投稿実行", "Threads", "完了", "スレッズへの投稿が完了しました")
-           except subprocess.CalledProcessError as e:
-               log_message("投稿実行", "Threads", "失敗", f"エラー: {str(e)}")
-       
-       # Twitterに投稿 (環境変数のチェック)
-       if os.path.exists("twitter_poster.py") and "TWITTER_API_KEY" in os.environ:
-           log_message("投稿実行", "Twitter", "開始", "Twitterへの投稿を開始します")
-           try:
-               subprocess.run(["python", "twitter_poster.py"], check=True)
-               log_message("投稿実行", "Twitter", "完了", "Twitterへの投稿が完了しました")
-           except subprocess.CalledProcessError as e:
-               log_message("投稿実行", "Twitter", "失敗", f"エラー: {str(e)}")
-       
-       log_message("投稿実行", "システム", "完了", "投稿スクリプトの実行が完了しました")
-       
-   except Exception as e:
-       log_message("投稿実行", "システム", "失敗", f"エラー: {str(e)}")
+    """通知対象商品をSNSに投稿するスクリプトを実行"""
+    try:
+        log_message("投稿実行", "システム", "開始", "投稿スクリプトを実行します")
+        
+        # スレッズに投稿
+        if os.path.exists("threads_poster.py"):
+            log_message("投稿実行", "Threads", "開始", "スレッズへの投稿を開始します")
+            try:
+                subprocess.run(["python", "threads_poster.py"], check=True)
+                log_message("投稿実行", "Threads", "完了", "スレッズへの投稿が完了しました")
+            except subprocess.CalledProcessError as e:
+                log_message("投稿実行", "Threads", "失敗", f"エラー: {str(e)}")
+        
+        # Twitterに投稿 (環境変数のチェック)
+        if os.path.exists("twitter_poster.py") and "TWITTER_API_KEY" in os.environ:
+            log_message("投稿実行", "Twitter", "開始", "Twitterへの投稿を開始します")
+            try:
+                subprocess.run(["python", "twitter_poster.py"], check=True)
+                log_message("投稿実行", "Twitter", "完了", "Twitterへの投稿が完了しました")
+            except subprocess.CalledProcessError as e:
+                log_message("投稿実行", "Twitter", "失敗", f"エラー: {str(e)}")
+        
+        log_message("投稿実行", "システム", "完了", "投稿スクリプトの実行が完了しました")
+        
+    except Exception as e:
+        log_message("投稿実行", "システム", "失敗", f"エラー: {str(e)}")
 
 # ======= メイン処理 =======
 
