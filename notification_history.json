@@ -766,5 +766,41 @@
         "time": "2025-03-31 14:30:12"
       }
     ]
+  },
+  "4547410476361": {
+    "product_name": "富士フイルム FUJIFILM チェキ スマホプリンター instax mini Link2 クレイホワイト INS MINI LINK2 C WHITE",
+    "price": 11090,
+    "last_notified_time": "2025-03-31 16:31:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 11090,
+        "time": "2025-03-31 16:31:06"
+      }
+    ]
+  },
+  "4549077811813": {
+    "product_name": "パナソニック HDビデオカメラ V480MS 32GB 高倍率90倍ズーム ブラック HC-V480MS-K",
+    "price": 85376,
+    "last_notified_time": "2025-03-31 16:31:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 85376,
+        "time": "2025-03-31 16:31:06"
+      }
+    ]
+  },
+  "4549995514919": {
+    "product_name": "【未使用】Apple Apple Watch SE2 44mm GPS ミッドナイトアルミニウムケース/ミッドナイトスポーツバンド (S/M) MXEJ3J/A【京都】保証期間3ヶ月",
+    "price": 34980,
+    "last_notified_time": "2025-03-31 16:31:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 34980,
+        "time": "2025-03-31 16:31:06"
+      }
+    ]
   }
 }
