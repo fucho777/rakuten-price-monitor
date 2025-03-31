@@ -34,7 +34,7 @@ def create_twitter_message(product):
     
     # Twitter用（最大280文字に収まるよう調整）
     twitter_msg = (
-        f"【価格変動】#PR\n"
+        f"楽天価格変動🎉#PR\n"
         f"商品名：{truncate_text(product['product_name'], 40)}\n"
         f"価格：{product['current_price']:,}円（{change_rate_str}%）\n"
         f"在庫：{availability_status}\n"
