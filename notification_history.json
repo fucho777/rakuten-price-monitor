@@ -1402,5 +1402,41 @@
         "time": "2025-04-01 16:24:50"
       }
     ]
+  },
+  "4549077457974": {
+    "product_name": "パナソニック デジタルカメラ ルミックス FZ300 光学24倍 ブラック DMC-FZ300-K",
+    "price": 152480,
+    "last_notified_time": "2025-04-01 19:42:39",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 152480,
+        "time": "2025-04-01 19:42:39"
+      }
+    ]
+  },
+  "4589796418627": {
+    "product_name": "NEC PC-N1670HAW LAVIE N16 N1670/HAW パールホワイト/Core i7 1225U/16GB/SSD256GB/DVDスーパーマルチドライブ/Win11Home/Office H&amp;B 2021/16型/IPS/WUXGA",
+    "price": 210001,
+    "last_notified_time": "2025-04-01 19:42:39",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 210001,
+        "time": "2025-04-01 19:42:39"
+      }
+    ]
+  },
+  "4948872017169": {
+    "product_name": "【即日発送】【数量限定特典付き】 PlayStation 5 “モンスターハンターワイルズ” 同梱版",
+    "price": 94000,
+    "last_notified_time": "2025-04-01 19:42:39",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 94000,
+        "time": "2025-04-01 19:42:39"
+      }
+    ]
   }
 }
