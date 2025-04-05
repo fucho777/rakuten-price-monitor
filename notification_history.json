@@ -1124,14 +1124,18 @@
     ]
   },
   "4547410441529": {
-    "product_name": "【新品】FUJIFILM フジフイルム instax SQUARE SQ1 チェキスクエア グレイシャーブルー",
-    "price": 18500,
-    "last_notified_time": "2025-04-01 10:31:59",
-    "notification_count": 1,
+    "product_name": "【在庫あり・送料無料】FUJIFILM instax SQUARE SQ1 チェキスクエア [グレイシャーブルー]",
+    "price": 19499,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 18500,
         "time": "2025-04-01 10:31:59"
+      },
+      {
+        "price": 19499,
+        "time": "2025-04-05 13:58:10"
       }
     ]
   },
@@ -1472,14 +1476,18 @@
     ]
   },
   "4549980487457": {
-    "product_name": "パナソニック おうちクラウドディーガ DMR-2W201 JAN 4549980487457",
-    "price": 43780,
-    "last_notified_time": "2025-04-02 03:55:09",
-    "notification_count": 1,
+    "product_name": "パナソニック 2TB 2チューナー ブルーレイレコーダー どこでもディーガ対応 おうちクラウドDIGA DMR-2W201",
+    "price": 63962,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 43780,
         "time": "2025-04-02 03:55:09"
+      },
+      {
+        "price": 63962,
+        "time": "2025-04-05 13:58:10"
       }
     ]
   },
@@ -3472,6 +3480,78 @@
       {
         "price": 246980,
         "time": "2025-04-05 10:15:22"
+      }
+    ]
+  },
+  "4548736122796": {
+    "product_name": "ソニー ポータブルスピーカー SRS-XB13 LIC パウダーブルー 2021年モデル 防水・防塵IP6 バッテリー駆動最大16時間",
+    "price": 10140,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 10140,
+        "time": "2025-04-05 13:58:10"
+      }
+    ]
+  },
+  "4549576195544": {
+    "product_name": "【新品】Microsoft マイクロソフト Surface Laptop 5 13.5型 Core i5/8GB/512GB/Office R1S-00061 セージ",
+    "price": 172000,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 172000,
+        "time": "2025-04-05 13:58:10"
+      }
+    ]
+  },
+  "4549980496350": {
+    "product_name": "【土日祝発送】【新品】Panasonic マスク型イオン美顔器 ゴールド調 EH-SM50-N",
+    "price": 17880,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 17880,
+        "time": "2025-04-05 13:58:10"
+      }
+    ]
+  },
+  "4580550942808": {
+    "product_name": "Lenovo IdeaPad Duet Chromebook ZA6F0019JP MediaTek Helio P60T/メモリ4GB/eMMC128GB/日本語キーボード/10.1型IPS WUXGA (1920x1200)マルチタッチ対応液晶 2",
+    "price": 51974,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 51974,
+        "time": "2025-04-05 13:58:10"
+      }
+    ]
+  },
+  "4902370549027": {
+    "product_name": "『ポケットモンスター ブリリアントダイヤモンド・シャイニングパール』ダブルパック",
+    "price": 11248,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 11248,
+        "time": "2025-04-05 13:58:10"
+      }
+    ]
+  },
+  "5025155103722": {
+    "product_name": "【新品】Dyson ダイソン Airstrait ストレイトナー HT01 SBP ストロベリー/ブロンズピンク 数量限定カラー",
+    "price": 42869,
+    "last_notified_time": "2025-04-05 13:58:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 42869,
+        "time": "2025-04-05 13:58:10"
       }
     ]
   }
