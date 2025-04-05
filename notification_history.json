@@ -3554,5 +3554,29 @@
         "time": "2025-04-05 13:58:10"
       }
     ]
+  },
+  "4545350052690": {
+    "product_name": "[ジャンク] OLYMPUS 防水カメラ STYLUS Tough TG-6　tg-6-rレッド [難あり(D)]",
+    "price": 19790,
+    "last_notified_time": "2025-04-05 19:34:48",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 19790,
+        "time": "2025-04-05 19:34:48"
+      }
+    ]
+  },
+  "5025155041123": {
+    "product_name": "ダイソン SV11SLM サイクロン式スティッククリーナー V7 Slim コードレス掃除機",
+    "price": 45000,
+    "last_notified_time": "2025-04-05 19:34:48",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 45000,
+        "time": "2025-04-05 19:34:48"
+      }
+    ]
   }
 }
