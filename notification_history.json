@@ -3618,5 +3618,29 @@
         "time": "2025-04-06 03:57:07"
       }
     ]
+  },
+  "4549576188379": {
+    "product_name": "マイクロソフト Surface Laptop Go 2/ 第 11 世代 Intel??Core? H35 i5-1135G7 / Office HB 2021搭載 / 12.4インチ /8GB / 256GB /セージ 8QF-00007",
+    "price": 149666,
+    "last_notified_time": "2025-04-06 07:36:57",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 149666,
+        "time": "2025-04-06 07:36:57"
+      }
+    ]
+  },
+  "8710103996422": {
+    "product_name": "フィリップス 5000シリーズ S5444/03 JAN 8710103996422",
+    "price": 8249,
+    "last_notified_time": "2025-04-06 07:36:57",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 8249,
+        "time": "2025-04-06 07:36:57"
+      }
+    ]
   }
 }
