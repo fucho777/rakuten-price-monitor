@@ -3710,5 +3710,65 @@
         "time": "2025-04-06 13:57:31"
       }
     ]
+  },
+  "4550161481423": {
+    "product_name": "NEC　無線LANルーター(Wi-Fiルーター) Wi-Fi 6(ax)/ac/n/a/g/b 目安：〜4LDK/3階建　PA-WX3000HP2",
+    "price": 9100,
+    "last_notified_time": "2025-04-06 16:24:54",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9100,
+        "time": "2025-04-06 16:24:54"
+      }
+    ]
+  },
+  "4550556149945": {
+    "product_name": "シャープ　SHARP　SIMフリースマートフォン AQUOS sense9 Snapdragon7s Gen2 Mobile Platform 6.1インチ メモリ/ストレージ：8GB/256GB グレージュ　SHM29BH",
+    "price": 65939,
+    "last_notified_time": "2025-04-06 16:24:54",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 65939,
+        "time": "2025-04-06 16:24:54"
+      }
+    ]
+  },
+  "4961310161231": {
+    "product_name": "オーディオテクニカ　完全ワイヤレスイヤホン [ワイヤレス(左右分離) /Bluetooth /ノイズキャンセリング対応]　ATH-TWX7 BK",
+    "price": 17333,
+    "last_notified_time": "2025-04-06 16:24:54",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 17333,
+        "time": "2025-04-06 16:24:54"
+      }
+    ]
+  },
+  "4961310161255": {
+    "product_name": "オーディオテクニカ　完全ワイヤレスイヤホン [ワイヤレス(左右分離) /Bluetooth /ノイズキャンセリング対応]　ATH-TWX7 WH",
+    "price": 17333,
+    "last_notified_time": "2025-04-06 16:24:54",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 17333,
+        "time": "2025-04-06 16:24:54"
+      }
+    ]
+  },
+  "4969929251022": {
+    "product_name": "BOSE　サラウンドスピーカーセット ブラック　SurroundspeakersBL",
+    "price": 53900,
+    "last_notified_time": "2025-04-06 16:24:54",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 53900,
+        "time": "2025-04-06 16:24:54"
+      }
+    ]
   }
 }
