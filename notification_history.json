@@ -801,13 +801,17 @@
   },
   "4549077811813": {
     "product_name": "パナソニック HDビデオカメラ V480MS 32GB 高倍率90倍ズーム ブラック HC-V480MS-K",
-    "price": 85376,
-    "last_notified_time": "2025-03-31 16:31:06",
-    "notification_count": 1,
+    "price": 72071,
+    "last_notified_time": "2025-04-06 03:57:07",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 85376,
         "time": "2025-03-31 16:31:06"
+      },
+      {
+        "price": 72071,
+        "time": "2025-04-06 03:57:07"
       }
     ]
   },
@@ -3576,6 +3580,42 @@
       {
         "price": 45000,
         "time": "2025-04-05 19:34:48"
+      }
+    ]
+  },
+  "4549995329292": {
+    "product_name": "2022 Apple TV 4K 64GBストレージ搭載Wi‑Fiモデル (第3世代)",
+    "price": 24675,
+    "last_notified_time": "2025-04-06 03:57:07",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 24675,
+        "time": "2025-04-06 03:57:07"
+      }
+    ]
+  },
+  "4549995504460": {
+    "product_name": "[保証開始 未開封新品]Apple（アップル） Apple Pencil Pro MX2D3ZA/A 保証期間:2026年1月まで",
+    "price": 18590,
+    "last_notified_time": "2025-04-06 03:57:07",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 18590,
+        "time": "2025-04-06 03:57:07"
+      }
+    ]
+  },
+  "4948872416320": {
+    "product_name": "【未使用】SONY PlayStation 5 Pro CFI-7000B01 PS5 \"プレイステーション5 本体\"【加納店】",
+    "price": 113000,
+    "last_notified_time": "2025-04-06 03:57:07",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 113000,
+        "time": "2025-04-06 03:57:07"
       }
     ]
   }
