@@ -193,13 +193,17 @@
   },
   "4549980568361": {
     "product_name": "2022年発売 パナソニック 光美容器 光エステ ボディフェイス用 ハイパワー ゴールド ES-WP98-N",
-    "price": 64197,
-    "last_notified_time": "2025-03-30 19:35:26",
-    "notification_count": 1,
+    "price": 57777,
+    "last_notified_time": "2025-04-06 13:57:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 64197,
         "time": "2025-03-30 19:35:26"
+      },
+      {
+        "price": 57777,
+        "time": "2025-04-06 13:57:31"
       }
     ]
   },
@@ -292,14 +296,18 @@
     ]
   },
   "4948872416207": {
-    "product_name": "【お得・新品・送料無料・即納】 SONY ワイヤレスヘッドセット CFI-ZWH2J ※倉庫からの移動中に箱傷みあり※ 【外箱傷あり】",
-    "price": 19768,
-    "last_notified_time": "2025-03-31 07:35:40",
-    "notification_count": 1,
+    "product_name": "PULSE Elite ワイヤレスヘッドセット",
+    "price": 20930,
+    "last_notified_time": "2025-04-06 13:57:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 19768,
         "time": "2025-03-31 07:35:40"
+      },
+      {
+        "price": 20930,
+        "time": "2025-04-06 13:57:31"
       }
     ]
   },
@@ -3676,6 +3684,30 @@
       {
         "price": 19885,
         "time": "2025-04-06 10:16:12"
+      }
+    ]
+  },
+  "4210201443391": {
+    "product_name": "【新品 箱不良】BRAUN ブラウン メンズシェーバー シリーズ9 Pro 9465cc-V",
+    "price": 30000,
+    "last_notified_time": "2025-04-06 13:57:31",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 30000,
+        "time": "2025-04-06 13:57:31"
+      }
+    ]
+  },
+  "4550556110761": {
+    "product_name": "【送料無料・新品・在庫あり】SHARP ヘルシオ ホットクック KN-HW24G-B 【プレミアムブラック】",
+    "price": 53999,
+    "last_notified_time": "2025-04-06 13:57:31",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 53999,
+        "time": "2025-04-06 13:57:31"
       }
     ]
   }
