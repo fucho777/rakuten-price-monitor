@@ -4094,5 +4094,29 @@
         "time": "2025-04-07 16:31:22"
       }
     ]
+  },
+  "4549980515747": {
+    "product_name": "パナソニック 掃除機 コードレス セパレート型 スティック クリーンドック ナノイーX からまないブラシ ホワイト MC-NS10K-W",
+    "price": 76000,
+    "last_notified_time": "2025-04-07 19:37:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 76000,
+        "time": "2025-04-07 19:37:38"
+      }
+    ]
+  },
+  "4948872414647": {
+    "product_name": "PlayStation 4 ジェット・ブラック 500GB (CUH-2200AB01)【メーカー生産終了】",
+    "price": 39760,
+    "last_notified_time": "2025-04-07 19:37:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 39760,
+        "time": "2025-04-07 19:37:38"
+      }
+    ]
   }
 }
