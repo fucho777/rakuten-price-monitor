@@ -49,13 +49,17 @@
   },
   "4549576247038": {
     "product_name": "【送料無料・在庫あり】Microsoft Xbox Series X 1TB デジタル モデル [EP2-00708](ホワイト)",
-    "price": 76999,
-    "last_notified_time": "2025-03-30 13:58:26",
-    "notification_count": 1,
+    "price": 89099,
+    "last_notified_time": "2025-04-07 03:58:06",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 76999,
         "time": "2025-03-30 13:58:26"
+      },
+      {
+        "price": 89099,
+        "time": "2025-04-07 03:58:06"
       }
     ]
   },
@@ -3784,6 +3788,78 @@
       {
         "price": 12820,
         "time": "2025-04-06 22:19:12"
+      }
+    ]
+  },
+  "4547410377231": {
+    "product_name": "FUJIFILM（フジフィルム） インスタントカラーフィルム 4547410377231 チェキ用フィルム instax mini JP2（10枚入x2）",
+    "price": 2800,
+    "last_notified_time": "2025-04-07 03:58:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 2800,
+        "time": "2025-04-07 03:58:06"
+      }
+    ]
+  },
+  "4547410554236": {
+    "product_name": "【在庫あり・送料無料】FUJIFILM X-T30 II XC15-45mmレンズキット",
+    "price": 166278,
+    "last_notified_time": "2025-04-07 03:58:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 166278,
+        "time": "2025-04-07 03:58:06"
+      }
+    ]
+  },
+  "4549980191279": {
+    "product_name": "パナソニック【Panasonic】沸騰浄水コーヒーメーカー NC-A57-K★【NCA57K】",
+    "price": 19650,
+    "last_notified_time": "2025-04-07 03:58:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 19650,
+        "time": "2025-04-07 03:58:06"
+      }
+    ]
+  },
+  "4902370551471": {
+    "product_name": "【お得・新品・送料無料・在庫あり】Nintendo Switch Lite あつまれ どうぶつの森セット [しずえアロハ柄] HDHSPBZGB コーラル プレゼント ギフト 贈り物 誕生日 あつ森 ゲーム",
+    "price": 31878,
+    "last_notified_time": "2025-04-07 03:58:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 31878,
+        "time": "2025-04-07 03:58:06"
+      }
+    ]
+  },
+  "4986773240026": {
+    "product_name": "★サムスン Galaxy S24 256GB SIMフリー [コバルト バイオレット] (SIMフリー) 【スマートフォン】【送料無料】",
+    "price": 117100,
+    "last_notified_time": "2025-04-07 03:58:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 117100,
+        "time": "2025-04-07 03:58:06"
+      }
+    ]
+  },
+  "4988617467149": {
+    "product_name": "エプソン プリンター A4インクジェット複合機 カラリオ EP-885AR レッド(赤) 中",
+    "price": 34927,
+    "last_notified_time": "2025-04-07 03:58:06",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 34927,
+        "time": "2025-04-07 03:58:06"
       }
     ]
   }
