@@ -2817,13 +2817,17 @@
   },
   "4549995451245": {
     "product_name": "【新品】Apple iPad Pro 11インチ Wi-Fiモデル 7世代 512GB（標準ガラス搭載）MVVD3J/A シルバー",
-    "price": 219397,
-    "last_notified_time": "2025-04-04 07:43:21",
-    "notification_count": 1,
+    "price": 187614,
+    "last_notified_time": "2025-04-07 10:29:01",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 219397,
         "time": "2025-04-04 07:43:21"
+      },
+      {
+        "price": 187614,
+        "time": "2025-04-07 10:29:01"
       }
     ]
   },
@@ -3916,6 +3920,18 @@
       {
         "price": 14030,
         "time": "2025-04-07 07:44:20"
+      }
+    ]
+  },
+  "4968543714005": {
+    "product_name": "【新品】YUPITERU ユピテル marumie 全方面3カメラドライブレコーダー Y-3000",
+    "price": 23040,
+    "last_notified_time": "2025-04-07 10:29:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 23040,
+        "time": "2025-04-07 10:29:01"
       }
     ]
   }
