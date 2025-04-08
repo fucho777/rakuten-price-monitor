@@ -4562,5 +4562,41 @@
         "time": "2025-04-08 19:43:38"
       }
     ]
+  },
+  "4549980708071": {
+    "product_name": "パナソニック　Panasonic　VIOフェリエ グレー調 ［1枚刃］　ES-WV62-H",
+    "price": 4480,
+    "last_notified_time": "2025-04-08 22:25:04",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 4480,
+        "time": "2025-04-08 22:25:04"
+      }
+    ]
+  },
+  "4549995085334": {
+    "product_name": "Apple USB-C Digital AV Multiport アダプタ　並行輸入品",
+    "price": 9590,
+    "last_notified_time": "2025-04-08 22:25:04",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9590,
+        "time": "2025-04-08 22:25:04"
+      }
+    ]
+  },
+  "4975514064892": {
+    "product_name": "MDV-S810F ケンウッド KENWOOD 彩速ナビ カーナビ 8V型インチ",
+    "price": 82789,
+    "last_notified_time": "2025-04-08 22:25:04",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 82789,
+        "time": "2025-04-08 22:25:04"
+      }
+    ]
   }
 }
