@@ -5386,5 +5386,29 @@
         "time": "2025-04-10 14:27:07"
       }
     ]
+  },
+  "4549980511763": {
+    "product_name": "パナソニック スチーマー ナノケア コンパクトタイプ ゴールド調 EH-SA3C-N",
+    "price": 23852,
+    "last_notified_time": "2025-04-10 19:39:09",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 23852,
+        "time": "2025-04-10 19:39:09"
+      }
+    ]
+  },
+  "4981254057391": {
+    "product_name": "東芝　TOSHIBA　USB3．2（Gen1）対応　外付けHDD　東芝　Canvio　Desktop［3．5インチ　／6TB］　HD-TDA6U3-B",
+    "price": 20980,
+    "last_notified_time": "2025-04-10 19:39:09",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 20980,
+        "time": "2025-04-10 19:39:09"
+      }
+    ]
   }
 }
