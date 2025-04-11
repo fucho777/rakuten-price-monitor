@@ -3768,14 +3768,18 @@
     ]
   },
   "4549576188379": {
-    "product_name": "マイクロソフト Surface Laptop Go 2/ 第 11 世代 Intel??Core? H35 i5-1135G7 / Office HB 2021搭載 / 12.4インチ /8GB / 256GB /セージ 8QF-00007",
-    "price": 149666,
-    "last_notified_time": "2025-04-06 07:36:57",
-    "notification_count": 1,
+    "product_name": "ノートパソコン 新品 マイクロソフト Surface Laptop Go 2 8QF-00007 12.4型 Core i5 1135G7 SSD容量256GB メモリ容量8GB Office Windows 11 Home 指紋認証 Webカメラ 日本語キーボード セージ",
+    "price": 114800,
+    "last_notified_time": "2025-04-11 14:29:14",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 149666,
         "time": "2025-04-06 07:36:57"
+      },
+      {
+        "price": 114800,
+        "time": "2025-04-11 14:29:14"
       }
     ]
   },
@@ -5688,6 +5692,54 @@
       {
         "price": 30800,
         "time": "2025-04-11 10:29:45"
+      }
+    ]
+  },
+  "4550556132954": {
+    "product_name": "シャープ　SHARP　SIMフリースマートフォン AQUOS R9 Snapdragon7＋Gen3 Mobile Platform 6.5型 メモリ/ストレージ：12GB/256GB ホワイト　SH-M28-W",
+    "price": 94939,
+    "last_notified_time": "2025-04-11 14:29:14",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 94939,
+        "time": "2025-04-11 14:29:14"
+      }
+    ]
+  },
+  "4560330111365": {
+    "product_name": "【送料無料】 K09A BK　（ブラック）　BALMUDA The Range（バルミューダ ザ・レンジ）バルミューダ",
+    "price": 45978,
+    "last_notified_time": "2025-04-11 14:29:14",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 45978,
+        "time": "2025-04-11 14:29:14"
+      }
+    ]
+  },
+  "4560330111372": {
+    "product_name": "【あす楽関東_対応】【正規品】BALMUDA（バルミューダ）K09A WH[K09AWH] ホワイトオーブンレンジ 20L BALMUDA The Range（バルミューダ ザ・レンジ）[4560330111372]",
+    "price": 45998,
+    "last_notified_time": "2025-04-11 14:29:14",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 45998,
+        "time": "2025-04-11 14:29:14"
+      }
+    ]
+  },
+  "4974305220462": {
+    "product_name": "象印マホービン(ZOJIRUSHI) 炊飯器 5.5合 炎舞炊き 圧力IHタイプ 日本製 毎回のお手入れ点数2点 濃墨 NW-PT10-BZ",
+    "price": 89125,
+    "last_notified_time": "2025-04-11 14:29:14",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 89125,
+        "time": "2025-04-11 14:29:14"
       }
     ]
   }
