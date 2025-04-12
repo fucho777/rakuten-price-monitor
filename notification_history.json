@@ -5754,5 +5754,29 @@
         "time": "2025-04-11 22:23:58"
       }
     ]
+  },
+  "4571591626192": {
+    "product_name": "Lenovo レノボ Tab M10 (3rd Gen) ZAAE0009JP [ タブレットPC ]",
+    "price": 32890,
+    "last_notified_time": "2025-04-12 04:02:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 32890,
+        "time": "2025-04-12 04:02:01"
+      }
+    ]
+  },
+  "4974305227805": {
+    "product_name": "象印 加湿器 スチーム式 2.2L ホワイト EE-RT35-WA",
+    "price": 22480,
+    "last_notified_time": "2025-04-12 04:02:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 22480,
+        "time": "2025-04-12 04:02:01"
+      }
+    ]
   }
 }
