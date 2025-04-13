@@ -1244,14 +1244,18 @@
     ]
   },
   "4549576212739": {
-    "product_name": "ノートパソコン Microsoft / マイクロソフト Surface Laptop Go 3 XK1-00015 [サンドストーン] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549576212739-ds 4549576212739-ds",
-    "price": 135130,
-    "last_notified_time": "2025-04-01 10:31:59",
-    "notification_count": 1,
+    "product_name": "マイクロソフト Surface Laptop Go 3 / Office HB 2021 搭載 / 12.4インチ /第12世代 Core-i5 /8GB/256GB / サンドストーン XK1-00015",
+    "price": 171604,
+    "last_notified_time": "2025-04-13 13:58:52",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 135130,
         "time": "2025-04-01 10:31:59"
+      },
+      {
+        "price": 171604,
+        "time": "2025-04-13 13:58:52"
       }
     ]
   },
@@ -2008,14 +2012,18 @@
     ]
   },
   "4540790332333": {
-    "product_name": "【土日祝発送】【新品】YA-MAN ヤーマン 美顔器 ミーゼ スカルプリフト アクティブ プラス MS-82G",
-    "price": 40319,
-    "last_notified_time": "2025-04-02 14:20:19",
-    "notification_count": 1,
+    "product_name": "【新品 箱不良・シュリンク破れ品】YA-MAN ヤーマン 美顔器 ミーゼ スカルプリフト アクティブ プラス MS-82G",
+    "price": 37000,
+    "last_notified_time": "2025-04-13 13:58:52",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 40319,
         "time": "2025-04-02 14:20:19"
+      },
+      {
+        "price": 37000,
+        "time": "2025-04-13 13:58:52"
       }
     ]
   },
@@ -6084,6 +6092,30 @@
       {
         "price": 57711,
         "time": "2025-04-13 10:24:41"
+      }
+    ]
+  },
+  "4547410533842": {
+    "product_name": "【新品】FUJIFILM 富士フイルム X-T50 XC15-45mmレンズキット シルバー",
+    "price": 240000,
+    "last_notified_time": "2025-04-13 13:58:52",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 240000,
+        "time": "2025-04-13 13:58:52"
+      }
+    ]
+  },
+  "4582239436820": {
+    "product_name": "【新品・在庫あり・送料無料】Motorola edge 50 pro [リュクスラベンダー]｜SIMフリー｜白ロム ｜softbank｜AU｜docomo｜国内どのキャリアでも使用可能※メーカー保証対象外※",
+    "price": 59412,
+    "last_notified_time": "2025-04-13 13:58:52",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 59412,
+        "time": "2025-04-13 13:58:52"
       }
     ]
   }
