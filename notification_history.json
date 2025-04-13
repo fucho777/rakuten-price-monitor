@@ -3421,13 +3421,17 @@
   },
   "4988617354814": {
     "product_name": "エプソン カラー プリンター インクジェット複合機 カラリオ EW-052A 2019年モデル",
-    "price": 16323,
-    "last_notified_time": "2025-04-04 14:24:34",
-    "notification_count": 1,
+    "price": 17486,
+    "last_notified_time": "2025-04-13 16:26:53",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 16323,
         "time": "2025-04-04 14:24:34"
+      },
+      {
+        "price": 17486,
+        "time": "2025-04-13 16:26:53"
       }
     ]
   },
@@ -6116,6 +6120,30 @@
       {
         "price": 59412,
         "time": "2025-04-13 13:58:52"
+      }
+    ]
+  },
+  "4549576188393": {
+    "product_name": "マイクロソフト Surface Laptop Go 2/ 第 11 世代 Intel??Core? H35 i5-1135G7 / Office HB 2021搭載 / 12.4インチ /8GB / 256GB /プラチナ 8QF-00040",
+    "price": 161294,
+    "last_notified_time": "2025-04-13 16:26:53",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 161294,
+        "time": "2025-04-13 16:26:53"
+      }
+    ]
+  },
+  "4948872415682": {
+    "product_name": "【未使用品】 純正品 プレイステーション5 PS5 DualSense ワイヤレスコントローラー グレーカモフラージュ CFI-ZCT1J 024-250412-nm-03-kus 万代Net店",
+    "price": 9581,
+    "last_notified_time": "2025-04-13 16:26:53",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9581,
+        "time": "2025-04-13 16:26:53"
       }
     ]
   }
