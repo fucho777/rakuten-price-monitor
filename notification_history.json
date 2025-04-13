@@ -173,13 +173,17 @@
   },
   "4549995454017": {
     "product_name": "【未使用】Apple Apple Pencil（USB-C） MUWA3ZA/A【ECセンター】保証期間1週間",
-    "price": 11980,
-    "last_notified_time": "2025-03-30 16:16:38",
-    "notification_count": 1,
+    "price": 12980,
+    "last_notified_time": "2025-04-13 05:22:44",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 11980,
         "time": "2025-03-30 16:16:38"
+      },
+      {
+        "price": 12980,
+        "time": "2025-04-13 05:22:44"
       }
     ]
   },
@@ -2189,21 +2193,25 @@
   },
   "4549980601761": {
     "product_name": "パナソニック 温水洗浄便座 ビューティ トワレ CH941SPF パステルアイボリー 貯湯式タイプ 脱臭無",
-    "price": 31555,
-    "last_notified_time": "2025-04-02 22:21:41",
-    "notification_count": 1,
+    "price": 29044,
+    "last_notified_time": "2025-04-13 05:22:44",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 31555,
         "time": "2025-04-02 22:21:41"
+      },
+      {
+        "price": 29044,
+        "time": "2025-04-13 05:22:44"
       }
     ]
   },
   "4589794580142": {
     "product_name": "【在庫あり・送料無料】Godfall Ascended Edition/PS5【ポスト投函】",
-    "price": 10791,
-    "last_notified_time": "2025-04-06 19:26:53",
-    "notification_count": 2,
+    "price": 8842,
+    "last_notified_time": "2025-04-13 05:22:44",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 13197,
@@ -2212,6 +2220,10 @@
       {
         "price": 10791,
         "time": "2025-04-06 19:26:53"
+      },
+      {
+        "price": 8842,
+        "time": "2025-04-13 05:22:44"
       }
     ]
   },
@@ -6012,6 +6024,30 @@
       {
         "price": 133721,
         "time": "2025-04-12 19:36:27"
+      }
+    ]
+  },
+  "4974305224729": {
+    "product_name": "象印 加湿器 スチーム式 蒸気式 フィルター不要 お手入れ簡単 ホワイト EE-DD50-WA",
+    "price": 25124,
+    "last_notified_time": "2025-04-13 05:22:44",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 25124,
+        "time": "2025-04-13 05:22:44"
+      }
+    ]
+  },
+  "4986773231451": {
+    "product_name": "サムスン Galaxy Tab S9 FE [グレー] JAN 4986773231451",
+    "price": 65358,
+    "last_notified_time": "2025-04-13 05:22:44",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 65358,
+        "time": "2025-04-13 05:22:44"
       }
     ]
   }
