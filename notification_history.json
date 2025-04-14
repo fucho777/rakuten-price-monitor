@@ -520,14 +520,18 @@
     ]
   },
   "4582239433331": {
-    "product_name": "【新品・送料無料・在庫あり】モトローラ motorola razr 50 ultra 12GB+512GB SIMフリー [ミッドナイトブルー]｜ストレージ容量合計：512.0 GB｜バッテリー容量：4000 mAh｜メモリ容量（RAM）：12.0 GB※メーカー保証対象外※",
-    "price": 145000,
-    "last_notified_time": "2025-03-31 10:32:19",
-    "notification_count": 1,
+    "product_name": "【最大2000円クーポンGET】「新品 未開封品」motorola razr 50 ultra 12GB+512GB SIMフリー [XT2451-5][ミッドナイトブルー][JAN:4582239433331]",
+    "price": 130000,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 145000,
         "time": "2025-03-31 10:32:19"
+      },
+      {
+        "price": 130000,
+        "time": "2025-04-14 04:04:31"
       }
     ]
   },
@@ -577,13 +581,17 @@
   },
   "4942857242836": {
     "product_name": "【在庫あり・送料無料】Galaxy A25 5G SC-53F 4G+64G [ライト ブルー] ／ docomo 版／白ロム ／SIMフリー",
-    "price": 17999,
-    "last_notified_time": "2025-03-31 10:32:19",
-    "notification_count": 1,
+    "price": 16438,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 17999,
         "time": "2025-03-31 10:32:19"
+      },
+      {
+        "price": 16438,
+        "time": "2025-04-14 04:04:31"
       }
     ]
   },
@@ -2437,13 +2445,17 @@
   },
   "4942857239126": {
     "product_name": "【在庫あり・送料無料】arrows We2 F-52E docomo [ネイビーグリーン]　SIMフリー　白ロム",
-    "price": 12827,
-    "last_notified_time": "2025-04-03 07:43:07",
-    "notification_count": 1,
+    "price": 15799,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 12827,
         "time": "2025-04-03 07:43:07"
+      },
+      {
+        "price": 15799,
+        "time": "2025-04-14 04:04:31"
       }
     ]
   },
@@ -5321,13 +5333,17 @@
   },
   "4948872016186": {
     "product_name": "【在庫あり・送料無料】グランツーリスモ7/PS5【ポスト投函】",
-    "price": 4899,
-    "last_notified_time": "2025-04-10 10:21:32",
-    "notification_count": 1,
+    "price": 5879,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 4899,
         "time": "2025-04-10 10:21:32"
+      },
+      {
+        "price": 5879,
+        "time": "2025-04-14 04:04:31"
       }
     ]
   },
@@ -6180,6 +6196,54 @@
       {
         "price": 106291,
         "time": "2025-04-13 19:35:35"
+      }
+    ]
+  },
+  "4549995250527": {
+    "product_name": "Apple 2021 iPad mini (Wi-Fi + Cellular, 64GB) - パープル",
+    "price": 110098,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 110098,
+        "time": "2025-04-14 04:04:31"
+      }
+    ]
+  },
+  "4580038879558": {
+    "product_name": "【送料無料・在庫あり】OPPO Reno9 A SIMフリー [ナイトブラック]【Snapdragon695 5G／メモリ8GB／ストレージ128GB／防水防塵IP68】 CPH2523-BK ※開封済品発送する場合もございます。",
+    "price": 38499,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 38499,
+        "time": "2025-04-14 04:04:31"
+      }
+    ]
+  },
+  "4580527850839": {
+    "product_name": "【新登場】arrows We2 【エントリーで10000ポイント還元！他社から電話番号そのままで乗り換え（MNP）＆はじめて楽天回線をご契約の方限定！】 simフリー 国内正規品 本体 端末 新品 回線セット（18歳未満の購入不可）",
+    "price": 24990,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 24990,
+        "time": "2025-04-14 04:04:31"
+      }
+    ]
+  },
+  "4968929077922": {
+    "product_name": "JBL GO3 Bluetoothスピーカー USB C充電/IP67防塵防水/パッシブラジエーター搭載/ポータブル/2020年モデル ブラック JBLGO3BLK",
+    "price": 7379,
+    "last_notified_time": "2025-04-14 04:04:31",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 7379,
+        "time": "2025-04-14 04:04:31"
       }
     ]
   }
