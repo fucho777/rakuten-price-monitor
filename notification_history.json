@@ -3181,13 +3181,17 @@
   },
   "4974011803836": {
     "product_name": "MTG リファ ビューテック ドライヤースマートダブル ReFa BEAUTECH DRYER SMART W ブラック",
-    "price": 34499,
-    "last_notified_time": "2025-04-04 10:25:40",
-    "notification_count": 1,
+    "price": 32000,
+    "last_notified_time": "2025-04-14 14:22:34",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 34499,
         "time": "2025-04-04 10:25:40"
+      },
+      {
+        "price": 32000,
+        "time": "2025-04-14 14:22:34"
       }
     ]
   },
@@ -5456,14 +5460,18 @@
     ]
   },
   "4549980797280": {
-    "product_name": "【新品】Panasonic パナソニック Technics ワイヤレスイヤホン EAH-AZ100-K ブラック",
-    "price": 36411,
-    "last_notified_time": "2025-04-10 14:27:07",
-    "notification_count": 1,
+    "product_name": "【4/15限定★抽選で2人に1人最大100%ポイントバック！要エントリー】【キャンセル品のアウトレット販売】パナソニック【Panasonic】ワイヤレスステレオインサイドホン ブラック Technics テクニクス 完全ワイヤレスイヤホン EAH-AZ100-K【ノイズキャンセリング搭載】",
+    "price": 33000,
+    "last_notified_time": "2025-04-14 14:22:34",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 36411,
         "time": "2025-04-10 14:27:07"
+      },
+      {
+        "price": 33000,
+        "time": "2025-04-14 14:22:34"
       }
     ]
   },
@@ -6448,6 +6456,54 @@
       {
         "price": 33299,
         "time": "2025-04-14 10:24:48"
+      }
+    ]
+  },
+  "4549995530537": {
+    "product_name": "【新品】iPad mini 第7世代 8.3インチ Wi-Fi 512GB 2024年秋モデル MYGY3J/A スペースグレイ",
+    "price": 115858,
+    "last_notified_time": "2025-04-14 14:22:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 115858,
+        "time": "2025-04-14 14:22:34"
+      }
+    ]
+  },
+  "4549995556346": {
+    "product_name": "Apple iPad Air 13インチ (M3) Wi-Fi 128GB MCNL4J/A パープル【お取り寄せ（5週から7週程度見込み）での入荷、発送】",
+    "price": 141075,
+    "last_notified_time": "2025-04-14 14:22:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 141075,
+        "time": "2025-04-14 14:22:34"
+      }
+    ]
+  },
+  "4943765055587": {
+    "product_name": "Logicool G ゲーミングマウス G502 X PLUS LIGHTSPEED ワイヤレス マウス G502XWL-RGBBK LIGHTFORCE ハイブリッドスイッチ HERO 25K センサー 13個プログラムボタン USB Type-C",
+    "price": 27223,
+    "last_notified_time": "2025-04-14 14:22:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 27223,
+        "time": "2025-04-14 14:22:34"
+      }
+    ]
+  },
+  "4981254049051": {
+    "product_name": "【最大2,000円OFFクーポン有】 バッファロー HD-NRLD2.0U3-BA 2TB 外付けハードディスクドライブ スタンダードモデル ブラック",
+    "price": 10799,
+    "last_notified_time": "2025-04-14 14:22:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 10799,
+        "time": "2025-04-14 14:22:34"
       }
     ]
   }
