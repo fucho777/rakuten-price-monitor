@@ -260,14 +260,18 @@
     ]
   },
   "4549576195520": {
-    "product_name": "【展示品】【アウトレット 展示品】★☆Microsoft / マイクロソフト Surface Laptop 5 R1S-00020 [プラチナ]",
-    "price": 121280,
-    "last_notified_time": "2025-03-31 07:35:40",
-    "notification_count": 1,
+    "product_name": "ノートパソコン Microsoft / マイクロソフト Surface Laptop 5 R1S-00020 [プラチナ] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549576195520-ds 4549576195520-ds",
+    "price": 192880,
+    "last_notified_time": "2025-04-16 04:32:17",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 121280,
         "time": "2025-03-31 07:35:40"
+      },
+      {
+        "price": 192880,
+        "time": "2025-04-16 04:32:17"
       }
     ]
   },
@@ -6872,6 +6876,30 @@
       {
         "price": 45000,
         "time": "2025-04-16 02:48:59"
+      }
+    ]
+  },
+  "4549077893055": {
+    "product_name": "パナソニック 浄水器 蛇口直結型 シルバー TK-CJ22-S",
+    "price": 15540,
+    "last_notified_time": "2025-04-16 04:32:17",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 15540,
+        "time": "2025-04-16 04:32:17"
+      }
+    ]
+  },
+  "4948872017237": {
+    "product_name": "【新品 箱不良・シュリンク破れ品】PlayStation5用カバー モンスターハンターワイルズ リミテッドエディションCFIJ-16022",
+    "price": 8000,
+    "last_notified_time": "2025-04-16 04:32:17",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 8000,
+        "time": "2025-04-16 04:32:17"
       }
     ]
   }
