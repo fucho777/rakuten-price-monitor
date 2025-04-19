@@ -7746,5 +7746,29 @@
         "time": "2025-04-19 19:10:07"
       }
     ]
+  },
+  "4550559111581": {
+    "product_name": "NEC　Wi-Fiルータ Aterm(エーターム) ［Wi-Fi 6E(ax) /IPv6対応］　PA-WX5400T6",
+    "price": 16500,
+    "last_notified_time": "2025-04-19 22:02:47",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 16500,
+        "time": "2025-04-19 22:02:47"
+      }
+    ]
+  },
+  "4948872015899": {
+    "product_name": "PS5 Marvel s Spider-Man: Miles Morales",
+    "price": 5392,
+    "last_notified_time": "2025-04-19 22:02:47",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 5392,
+        "time": "2025-04-19 22:02:47"
+      }
+    ]
   }
 }
