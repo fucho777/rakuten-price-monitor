@@ -3224,14 +3224,18 @@
     ]
   },
   "4549980783474": {
-    "product_name": "展示品 Panasonic MC-PJ23A-H [グレー] 掃除機 パナソニック",
-    "price": 14980,
-    "last_notified_time": "2025-04-04 10:25:40",
-    "notification_count": 1,
+    "product_name": "パナソニック 掃除機 紙パック式 MC-PJ23A-H グレー 軽量 コンパクト エアダストキャッチャー搭載",
+    "price": 22460,
+    "last_notified_time": "2025-04-20 19:09:58",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 14980,
         "time": "2025-04-04 10:25:40"
+      },
+      {
+        "price": 22460,
+        "time": "2025-04-20 19:09:58"
       }
     ]
   },
@@ -3597,9 +3601,9 @@
   },
   "4988617354814": {
     "product_name": "エプソン カラー プリンター インクジェット複合機 カラリオ EW-052A 2019年モデル",
-    "price": 17486,
-    "last_notified_time": "2025-04-13 16:26:53",
-    "notification_count": 2,
+    "price": 15160,
+    "last_notified_time": "2025-04-20 19:09:58",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 16323,
@@ -3608,6 +3612,10 @@
       {
         "price": 17486,
         "time": "2025-04-13 16:26:53"
+      },
+      {
+        "price": 15160,
+        "time": "2025-04-20 19:09:58"
       }
     ]
   },
@@ -7940,6 +7948,30 @@
       {
         "price": 15500,
         "time": "2025-04-20 13:08:57"
+      }
+    ]
+  },
+  "4549576241692": {
+    "product_name": "純正品 Xbox ワイヤレス コントローラー スカイ サイファー",
+    "price": 16960,
+    "last_notified_time": "2025-04-20 19:09:58",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 16960,
+        "time": "2025-04-20 19:09:58"
+      }
+    ]
+  },
+  "4948872414203": {
+    "product_name": "純正品ワイヤレスコントローラー(DUALSHOCK 4) ジェット・ブラック(CUH-ZCT2J)",
+    "price": 9900,
+    "last_notified_time": "2025-04-20 19:09:58",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9900,
+        "time": "2025-04-20 19:09:58"
       }
     ]
   }
