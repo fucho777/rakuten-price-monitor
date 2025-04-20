@@ -3349,13 +3349,17 @@
   },
   "6941565906410": {
     "product_name": "DJI Pocket 2 vlogカメラ3軸ジンバル 手持ちスタビライザー 4Kカメラ 1/1.7インチCMOS 64MP写真 フェイストラッキング YouTube/TikTok/Vlog用動画撮影 Android iPhone対応 ポータブル ビデ",
-    "price": 63150,
-    "last_notified_time": "2025-04-04 10:25:40",
-    "notification_count": 1,
+    "price": 58082,
+    "last_notified_time": "2025-04-20 10:03:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 63150,
         "time": "2025-04-04 10:25:40"
+      },
+      {
+        "price": 58082,
+        "time": "2025-04-20 10:03:24"
       }
     ]
   },
@@ -7836,6 +7840,18 @@
       {
         "price": 17405,
         "time": "2025-04-20 07:12:47"
+      }
+    ]
+  },
+  "6941812749005": {
+    "product_name": "XIAOMI シャオミ　SIMフリースマートフォン Redmi 14C メモリ/ストレージ：8GB/256GB Sage Green　MZB0HWNUS",
+    "price": 18980,
+    "last_notified_time": "2025-04-20 10:03:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 18980,
+        "time": "2025-04-20 10:03:24"
       }
     ]
   }
