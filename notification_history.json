@@ -3993,13 +3993,17 @@
   },
   "8710103996422": {
     "product_name": "フィリップス 5000シリーズ S5444/03 JAN 8710103996422",
-    "price": 8249,
-    "last_notified_time": "2025-04-06 07:36:57",
-    "notification_count": 1,
+    "price": 7535,
+    "last_notified_time": "2025-04-20 04:19:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 8249,
         "time": "2025-04-06 07:36:57"
+      },
+      {
+        "price": 7535,
+        "time": "2025-04-20 04:19:24"
       }
     ]
   },
@@ -5196,14 +5200,18 @@
     ]
   },
   "4986773230683": {
-    "product_name": "【新品】SAMSUNG サムスン Galaxy Tab S9 SM-X710NZAAXJP グラファイト",
-    "price": 109000,
-    "last_notified_time": "2025-04-09 14:29:24",
-    "notification_count": 1,
+    "product_name": "GALAXY　Androidタブレット Galaxy Tab S9 グラファイト　SM-X710NZAAXJP",
+    "price": 126074,
+    "last_notified_time": "2025-04-20 04:19:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 109000,
         "time": "2025-04-09 14:29:24"
+      },
+      {
+        "price": 126074,
+        "time": "2025-04-20 04:19:24"
       }
     ]
   },
@@ -7772,6 +7780,30 @@
       {
         "price": 5392,
         "time": "2025-04-19 22:02:47"
+      }
+    ]
+  },
+  "4974305218223": {
+    "product_name": "ZOJIRUSHI（象印） NW-SA10-WA IH炊飯ジャー 5.5合炊き STAN.シリーズ ホワイト",
+    "price": 30797,
+    "last_notified_time": "2025-04-20 04:19:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 30797,
+        "time": "2025-04-20 04:19:24"
+      }
+    ]
+  },
+  "6941812748978": {
+    "product_name": "【新品・在庫あり・送料無料】 Xiaomi(シャオミ) Redmi 14C 8G+256G SIMフリー [スターリーブルー] ｜CPUコア数：8.0 コア｜OS種類：ANDROID｜ストレージ容量合計：256.0 GB｜バッテリー容量：5160.0 mAh｜メモリ容量（RAM）：8.0 GB｜※開封品届く場合もございます。",
+    "price": 18979,
+    "last_notified_time": "2025-04-20 04:19:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 18979,
+        "time": "2025-04-20 04:19:24"
       }
     ]
   }
