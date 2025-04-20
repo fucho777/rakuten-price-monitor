@@ -436,10 +436,10 @@
     ]
   },
   "4549046139610": {
-    "product_name": "【メーカー保証対象外】Motorola g53y 5G 4GB/128GB インクブラック Y!mobil版 SIMロック解除済み 新品 未使用品",
-    "price": 14000,
-    "last_notified_time": "2025-04-04 10:25:40",
-    "notification_count": 2,
+    "product_name": "【未使用】MOTOROLA ymobile 【SIMフリー】 moto g53y 5G インクブラック 4GB 128GB A301MO【新橋烏森通り】保証期間3ヶ月",
+    "price": 15980,
+    "last_notified_time": "2025-04-20 07:12:47",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 15280,
@@ -448,6 +448,10 @@
       {
         "price": 14000,
         "time": "2025-04-04 10:25:40"
+      },
+      {
+        "price": 15980,
+        "time": "2025-04-20 07:12:47"
       }
     ]
   },
@@ -3408,10 +3412,10 @@
     ]
   },
   "4549046139627": {
-    "product_name": "【メーカー保証対象外】Motorola g53y 5G アークティックシルバー Y!mobile simロック解除",
-    "price": 13930,
-    "last_notified_time": "2025-04-08 10:32:17",
-    "notification_count": 2,
+    "product_name": "【未使用】MOTOROLA ymobile 【SIMフリー】 moto g53y 5G アークティックシルバー 4GB 128GB A301MO【ECセンター】保証期間3ヶ月",
+    "price": 16980,
+    "last_notified_time": "2025-04-20 07:12:47",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 16500,
@@ -3420,6 +3424,10 @@
       {
         "price": 13930,
         "time": "2025-04-08 10:32:17"
+      },
+      {
+        "price": 16980,
+        "time": "2025-04-20 07:12:47"
       }
     ]
   },
@@ -7804,6 +7812,30 @@
       {
         "price": 18979,
         "time": "2025-04-20 04:19:24"
+      }
+    ]
+  },
+  "4548736142411": {
+    "product_name": "【在庫有り翌営業日発送OK F-2】ソニー WH-CH720N B ワイヤレスノイズキャンセリングステレオヘッドセット ブラック WHCH720N B",
+    "price": 14800,
+    "last_notified_time": "2025-04-20 07:12:47",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 14800,
+        "time": "2025-04-20 07:12:47"
+      }
+    ]
+  },
+  "4975514061518": {
+    "product_name": "ケンウッド ドライブレコーダー DRV-350-B 広角 明るい F1.8レンズ搭載 高機能 両立 スタンダードタイプ ブラック KENWOOD",
+    "price": 17405,
+    "last_notified_time": "2025-04-20 07:12:47",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 17405,
+        "time": "2025-04-20 07:12:47"
       }
     ]
   }
