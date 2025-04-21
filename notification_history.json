@@ -380,14 +380,18 @@
     ]
   },
   "4974305220325": {
-    "product_name": "【大特価】【数量限定商品】象印 IH炊飯ジャー NW-VC10 TA 5.5合炊き 4974305220325",
-    "price": 16970,
-    "last_notified_time": "2025-03-31 07:35:40",
-    "notification_count": 1,
+    "product_name": "象印 IH炊飯ジャー (5.5合炊き) 極め炊き ブラウン NW-VC10-TA",
+    "price": 22040,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 16970,
         "time": "2025-03-31 07:35:40"
+      },
+      {
+        "price": 22040,
+        "time": "2025-04-21 04:32:12"
       }
     ]
   },
@@ -2980,10 +2984,10 @@
     ]
   },
   "4952040150237": {
-    "product_name": "コムテック 車用 前後2カメラ ドライブレコーダー ZDR035 前後200万画素 FullHD GPS搭載 後続車両接近お知らせ機能搭載 安全運転支援機能搭載 常時録画 衝撃録画 高速起動",
-    "price": 25752,
-    "last_notified_time": "2025-04-16 07:25:35",
-    "notification_count": 2,
+    "product_name": "【在庫あり・送料無料】COMTEC ZDR035 フルHD200万画素 前後2カメラ STARVIS搭載 ドライブレコーダー",
+    "price": 21299,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 21098,
@@ -2992,18 +2996,26 @@
       {
         "price": 25752,
         "time": "2025-04-16 07:25:35"
+      },
+      {
+        "price": 21299,
+        "time": "2025-04-21 04:32:12"
       }
     ]
   },
   "4988601011525": {
     "product_name": "【New・お得・早いもの勝ち・即納】PS5 ソフト ファイナルファンタジーXVI 17才以上対象【ポスト投函】ギフト 贈り物 プレゼント 誕生日",
-    "price": 5019,
-    "last_notified_time": "2025-04-04 04:01:46",
-    "notification_count": 1,
+    "price": 4627,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 5019,
         "time": "2025-04-04 04:01:46"
+      },
+      {
+        "price": 4627,
+        "time": "2025-04-21 04:32:12"
       }
     ]
   },
@@ -8008,6 +8020,66 @@
       {
         "price": 24500,
         "time": "2025-04-21 01:53:33"
+      }
+    ]
+  },
+  "4549046139399": {
+    "product_name": "SONY Xperia 10 V A302SO ラベンダー 128GB SIMロック解除済み 新品 未使用品",
+    "price": 45800,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 45800,
+        "time": "2025-04-21 04:32:12"
+      }
+    ]
+  },
+  "4549046139429": {
+    "product_name": "【送料無料・在庫あり】Xperia 10 V A302SO Softbank [セージグリーン] SIMフリー　 白ロム",
+    "price": 37599,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 37599,
+        "time": "2025-04-21 04:32:12"
+      }
+    ]
+  },
+  "4549576186054": {
+    "product_name": "【新品・在庫あり・送料無料】Microsoft Xbox Elite ワイヤレス コントローラー Series 2 Core Edition (ホワイト)",
+    "price": 13099,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 13099,
+        "time": "2025-04-21 04:32:12"
+      }
+    ]
+  },
+  "4948872415088": {
+    "product_name": "【新品】メディアリモコン周辺機器(メーカー純正)ソフト／便利グッズ・ゲーム",
+    "price": 3820,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 3820,
+        "time": "2025-04-21 04:32:12"
+      }
+    ]
+  },
+  "4987176165732": {
+    "product_name": "【新品・送料無料】 BRAUN ブラウン 9567cc ブラウン シリーズ9 PRO+ 電気シェーバー 6in1アルコール洗浄システム付き マットシルバー 4987176165732",
+    "price": 55700,
+    "last_notified_time": "2025-04-21 04:32:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 55700,
+        "time": "2025-04-21 04:32:12"
       }
     ]
   }
