@@ -1332,10 +1332,10 @@
     ]
   },
   "4549576212814": {
-    "product_name": "マイクロソフト Surface Laptop Go 3 ノートパソコン ラップトップ セージ Office H&B 2021 搭載 / 12.4インチ /第12世代 Core-i5 /16GB/256GB / XKQ-00010",
-    "price": 141500,
-    "last_notified_time": "2025-04-07 07:44:20",
-    "notification_count": 2,
+    "product_name": "ノートパソコン Microsoft / マイクロソフト Surface Laptop Go 3 XKQ-00010 [セージ] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549576212814-ds 4549576212814-ds",
+    "price": 153880,
+    "last_notified_time": "2025-04-21 01:53:33",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 152814,
@@ -1344,6 +1344,10 @@
       {
         "price": 141500,
         "time": "2025-04-07 07:44:20"
+      },
+      {
+        "price": 153880,
+        "time": "2025-04-21 01:53:33"
       }
     ]
   },
@@ -6921,13 +6925,17 @@
   },
   "4549292185492": {
     "product_name": "【在庫あり・送料無料】CANON プリンタ PIXUS TS8530 [ブラック]",
-    "price": 29784,
-    "last_notified_time": "2025-04-15 10:32:39",
-    "notification_count": 1,
+    "price": 27767,
+    "last_notified_time": "2025-04-21 01:53:33",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 29784,
         "time": "2025-04-15 10:32:39"
+      },
+      {
+        "price": 27767,
+        "time": "2025-04-21 01:53:33"
       }
     ]
   },
@@ -7976,6 +7984,30 @@
       {
         "price": 9900,
         "time": "2025-04-20 19:09:58"
+      }
+    ]
+  },
+  "4549576199818": {
+    "product_name": "マイクロソフト Surface Pro 9 / Office HB 2021 搭載 / 13インチ /第12世代 Core-i5 /8GB/256GB / サファイア QEZ-00045",
+    "price": 227818,
+    "last_notified_time": "2025-04-21 01:53:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 227818,
+        "time": "2025-04-21 01:53:33"
+      }
+    ]
+  },
+  "4974019222486": {
+    "product_name": "【在庫あり・送料無料】AQUOS sense6s SH-RM19s 64GB 楽天版 [シルバー] * 白ロム・SIMフリー",
+    "price": 24500,
+    "last_notified_time": "2025-04-21 01:53:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 24500,
+        "time": "2025-04-21 01:53:33"
       }
     ]
   }
