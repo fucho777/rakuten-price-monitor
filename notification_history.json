@@ -2357,13 +2357,17 @@
   },
   "4548736012547": {
     "product_name": "SONY デジタルカメラ DSC-WX500 光学30倍ズーム 1820万画素 ブラック Cyber-shot DSC-WX500 BC",
-    "price": 71560,
-    "last_notified_time": "2025-04-02 19:43:17",
-    "notification_count": 1,
+    "price": 83120,
+    "last_notified_time": "2025-04-23 19:11:17",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 71560,
         "time": "2025-04-02 19:43:17"
+      },
+      {
+        "price": 83120,
+        "time": "2025-04-23 19:11:17"
       }
     ]
   },
@@ -4604,14 +4608,18 @@
     ]
   },
   "4948872414647": {
-    "product_name": "PlayStation 4 ジェット・ブラック 500GB (CUH-2200AB01)【メーカー生産終了】",
-    "price": 39760,
-    "last_notified_time": "2025-04-07 19:37:38",
-    "notification_count": 1,
+    "product_name": "【PS4 レンタル】 PlayStation4 本体 500GB 1ヶ月レンタル 格安レンタル ソニーPS4 ゲーム機 レンタル",
+    "price": 7800,
+    "last_notified_time": "2025-04-23 19:11:17",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 39760,
         "time": "2025-04-07 19:37:38"
+      },
+      {
+        "price": 7800,
+        "time": "2025-04-23 19:11:17"
       }
     ]
   },
