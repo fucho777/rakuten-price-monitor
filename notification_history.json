@@ -1149,13 +1149,17 @@
   },
   "4948872017176": {
     "product_name": "【送料無料・在庫あり】【PS5】PlayStation5 本体 (model group - slim)デジタル・エディション \"モンスターハンターワイルズ\" 同梱版 【CFIJ-10026】",
-    "price": 72978,
-    "last_notified_time": "2025-04-01 04:17:16",
-    "notification_count": 1,
+    "price": 89799,
+    "last_notified_time": "2025-04-23 16:08:57",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 72978,
         "time": "2025-04-01 04:17:16"
+      },
+      {
+        "price": 89799,
+        "time": "2025-04-23 16:08:57"
       }
     ]
   },
@@ -1564,14 +1568,18 @@
     ]
   },
   "6941565965073": {
-    "product_name": "DJI OSMO ACTION 4 スタンダードコンボ JAN 6941565965073",
-    "price": 35970,
-    "last_notified_time": "2025-04-01 10:31:59",
-    "notification_count": 1,
+    "product_name": "23%OFF! 5/7まで アクションカメラ ウェアラブルカメラ DJI Osmo Action 4 Standard Combo スタンダードコンボ OA4 Action4 オズモアクション 4K/120fps 縦向き撮影 防水 耐寒性 長時間駆動バッテリー Vlog 1/1.3インチセンサー",
+    "price": 33880,
+    "last_notified_time": "2025-04-23 16:08:57",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 35970,
         "time": "2025-04-01 10:31:59"
+      },
+      {
+        "price": 33880,
+        "time": "2025-04-23 16:08:57"
       }
     ]
   },
@@ -2389,9 +2397,9 @@
   },
   "4589794580142": {
     "product_name": "【在庫あり・送料無料】Godfall Ascended Edition/PS5【ポスト投函】",
-    "price": 6473,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 4,
+    "price": 5310,
+    "last_notified_time": "2025-04-23 16:08:57",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 13197,
@@ -2408,6 +2416,10 @@
       {
         "price": 6473,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 5310,
+        "time": "2025-04-23 16:08:57"
       }
     ]
   },
@@ -8788,6 +8800,18 @@
       {
         "price": 79800,
         "time": "2025-04-23 13:20:42"
+      }
+    ]
+  },
+  "6941565965080": {
+    "product_name": "22%OFF! 5/7まで アクションカメラ ウェアラブルカメラ DJI Osmo Action 4 Adventure Combo アドベンチャーコンボ OA4 Action4 オズモアクション 4K/120fps 縦向き撮影 防水 耐寒性 長時間駆動バッテリー Vlog 1/1.3インチセンサー",
+    "price": 47190,
+    "last_notified_time": "2025-04-23 16:08:57",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 47190,
+        "time": "2025-04-23 16:08:57"
       }
     ]
   }
