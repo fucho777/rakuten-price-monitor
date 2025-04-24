@@ -7281,13 +7281,17 @@
   },
   "4549077893055": {
     "product_name": "パナソニック 浄水器 蛇口直結型 シルバー TK-CJ22-S",
-    "price": 15540,
-    "last_notified_time": "2025-04-16 04:32:17",
-    "notification_count": 1,
+    "price": 16410,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 15540,
         "time": "2025-04-16 04:32:17"
+      },
+      {
+        "price": 16410,
+        "time": "2025-04-24 07:13:36"
       }
     ]
   },
@@ -8852,6 +8856,90 @@
       {
         "price": 114800,
         "time": "2025-04-24 01:56:57"
+      }
+    ]
+  },
+  "4548736146075": {
+    "product_name": "Sony SRS-XB100/B ワイヤレスポータブルスピーカー XB100 ブラック",
+    "price": 9473,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9473,
+        "time": "2025-04-24 07:13:36"
+      }
+    ]
+  },
+  "4548736146082": {
+    "product_name": "Sony SRS-XB100/H ワイヤレスポータブルスピーカー XB100 ライトグレー",
+    "price": 9473,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9473,
+        "time": "2025-04-24 07:13:36"
+      }
+    ]
+  },
+  "4548736146099": {
+    "product_name": "Sony SRS-XB100/L ワイヤレスポータブルスピーカー XB100 ブルー",
+    "price": 9473,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9473,
+        "time": "2025-04-24 07:13:36"
+      }
+    ]
+  },
+  "4548736146112": {
+    "product_name": "Sony SRS-XB100/D ワイヤレスポータブルスピーカー XB100 オレンジ",
+    "price": 9473,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9473,
+        "time": "2025-04-24 07:13:36"
+      }
+    ]
+  },
+  "4549995556438": {
+    "product_name": "【未使用】Apple iPad Air 13インチ (第2世代/M3/2025) Wi-Fiモデル 1TB スペースグレイ MCQ04J/A【東池袋1丁目】保証期間6ヶ月",
+    "price": 187980,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 187980,
+        "time": "2025-04-24 07:13:36"
+      }
+    ]
+  },
+  "4981254064658": {
+    "product_name": "【ポイント10倍】 バッファロー 無線LANルーター(Wi-Fiルーター) AirStation WSR-5400XE6/D [チタニウムグレー] [無線LAN規格：Wi-Fi 6E (11ax) メッシュWi-Fi：○ 周波数：2.4/5/6GHz IPv6：○ セキュリティ規格：WPA/WPA2/WPA3/WEP] 【P10倍】",
+    "price": 26730,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 26730,
+        "time": "2025-04-24 07:13:36"
+      }
+    ]
+  },
+  "6941812795088": {
+    "product_name": "【ポイント10倍】 Xiaomi タブレットPC Redmi Pad SE 8.7 4GB+128GB VHU4990JP [スカイブルー] [画面サイズ：8.7インチ 画面解像度：1340x800 詳細OS種類：Android 14 ネットワーク接続タイプ：Wi-Fiモデル ストレージ容量：128GB メモリ容量：4GB CPU：MediaTek Helio G85]",
+    "price": 27610,
+    "last_notified_time": "2025-04-24 07:13:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 27610,
+        "time": "2025-04-24 07:13:36"
       }
     ]
   }
