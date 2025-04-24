@@ -3149,13 +3149,17 @@
   },
   "6970214571532": {
     "product_name": "【送料無料・在庫あり】PICO 4 256GB VRヘッドセット",
-    "price": 85926,
-    "last_notified_time": "2025-04-04 04:01:46",
-    "notification_count": 1,
+    "price": 73633,
+    "last_notified_time": "2025-04-24 19:12:10",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 85926,
         "time": "2025-04-04 04:01:46"
+      },
+      {
+        "price": 73633,
+        "time": "2025-04-24 19:12:10"
       }
     ]
   },
@@ -8988,6 +8992,42 @@
       {
         "price": 37225,
         "time": "2025-04-24 13:23:00"
+      }
+    ]
+  },
+  "4548736122147": {
+    "product_name": "ソニー 2TB 2チューナー 4K ブルーレイレコーダー BDZ-FBW2100 4K放送長時間録画/W録画対応(2021年モデル)",
+    "price": 90180,
+    "last_notified_time": "2025-04-24 19:12:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 90180,
+        "time": "2025-04-24 19:12:10"
+      }
+    ]
+  },
+  "4549980030738": {
+    "product_name": "パナソニック ETC2.0車載器 CY-ET2500VD アンテナ分離型 (DSRC) 新セキュリティ対応 Panasonic",
+    "price": 40224,
+    "last_notified_time": "2025-04-24 19:12:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 40224,
+        "time": "2025-04-24 19:12:10"
+      }
+    ]
+  },
+  "4975514063901": {
+    "product_name": "ケンウッド　ナビ連携デジタルルームミラー型ドライブレコーダー　DRVEMN5700",
+    "price": 26190,
+    "last_notified_time": "2025-04-24 19:12:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 26190,
+        "time": "2025-04-24 19:12:10"
       }
     ]
   }
