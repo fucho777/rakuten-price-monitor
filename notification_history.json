@@ -1285,13 +1285,17 @@
   },
   "4974019184296": {
     "product_name": "【お得・新品・送料無料・即納】 SHARP AQUOS 4Kレコーダー 4B-C20DT3 ※倉庫からの移動中に箱傷みあり※ 【外箱傷あり】",
-    "price": 63587,
-    "last_notified_time": "2025-04-01 07:44:10",
-    "notification_count": 1,
+    "price": 70300,
+    "last_notified_time": "2025-04-24 04:19:49",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 63587,
         "time": "2025-04-01 07:44:10"
+      },
+      {
+        "price": 70300,
+        "time": "2025-04-24 04:19:49"
       }
     ]
   },
@@ -1764,10 +1768,10 @@
     ]
   },
   "4582239436813": {
-    "product_name": "【新品　国内版】Motorola モトローラ motorola edge 50 pro 12GB+256GB ブラックビューティ SIMフリー/楽天/ドコモ/au/ソフトバンク/SIM対応",
-    "price": 56977,
-    "last_notified_time": "2025-04-20 13:08:57",
-    "notification_count": 3,
+    "product_name": "motorola edge 50 pro ブラックビューティ SIMフリー メモリ/ストレージ：12GB / 256GB",
+    "price": 62495,
+    "last_notified_time": "2025-04-24 04:19:49",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 54799,
@@ -1780,6 +1784,10 @@
       {
         "price": 56977,
         "time": "2025-04-20 13:08:57"
+      },
+      {
+        "price": 62495,
+        "time": "2025-04-24 04:19:49"
       }
     ]
   },
