@@ -209,13 +209,17 @@
   },
   "4960759902290": {
     "product_name": "Nikon デジタルカメラ COOLPIX B600 BK 光学60倍 軽量 クールピクス ブラック B600BK",
-    "price": 87407,
-    "last_notified_time": "2025-03-30 16:16:38",
-    "notification_count": 1,
+    "price": 105051,
+    "last_notified_time": "2025-04-25 16:05:15",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 87407,
         "time": "2025-03-30 16:16:38"
+      },
+      {
+        "price": 105051,
+        "time": "2025-04-25 16:05:15"
       }
     ]
   },
@@ -5488,14 +5492,18 @@
     ]
   },
   "3045386381531": {
-    "product_name": "ティファール 電気ケトル 0.8L 軽くてコンパクト アプレシア・プラス ホワイト KO6301JP",
-    "price": 8034,
-    "last_notified_time": "2025-04-10 03:56:04",
-    "notification_count": 1,
+    "product_name": "ティファール 電気ケトル 0.8L 軽くてコンパクト 「アプレシア・プラス ホワイト」 KO6301JP 送料無料",
+    "price": 6956,
+    "last_notified_time": "2025-04-25 16:05:15",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 8034,
         "time": "2025-04-10 03:56:04"
+      },
+      {
+        "price": 6956,
+        "time": "2025-04-25 16:05:15"
       }
     ]
   },
@@ -6325,13 +6333,17 @@
   },
   "4974305227805": {
     "product_name": "象印 加湿器 スチーム式 2.2L ホワイト EE-RT35-WA",
-    "price": 22480,
-    "last_notified_time": "2025-04-12 04:02:01",
-    "notification_count": 1,
+    "price": 27811,
+    "last_notified_time": "2025-04-25 16:05:15",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 22480,
         "time": "2025-04-12 04:02:01"
+      },
+      {
+        "price": 27811,
+        "time": "2025-04-25 16:05:15"
       }
     ]
   },
@@ -9276,6 +9288,18 @@
       {
         "price": 18799,
         "time": "2025-04-25 13:20:55"
+      }
+    ]
+  },
+  "4548736145818": {
+    "product_name": "ソニー　SONY　ワイヤレスステレオヘッドセット Float Run（フロートラン） ブラック［リモコン・マイク対応］　WI-OE610BQ",
+    "price": 15465,
+    "last_notified_time": "2025-04-25 16:05:15",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 15465,
+        "time": "2025-04-25 16:05:15"
       }
     ]
   }
