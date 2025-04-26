@@ -4220,10 +4220,10 @@
     ]
   },
   "4549576188379": {
-    "product_name": "ノートパソコン 新品 マイクロソフト Surface Laptop Go 2 8QF-00007 12.4型 Core i5 1135G7 SSD容量256GB メモリ容量8GB Office Windows 11 Home 指紋認証 Webカメラ 日本語キーボード セージ",
-    "price": 114800,
-    "last_notified_time": "2025-04-11 14:29:14",
-    "notification_count": 2,
+    "product_name": "マイクロソフト Surface Laptop Go 2/ 第 11 世代 Intel??Core? H35 i5-1135G7 / Office HB 2021搭載 / 12.4インチ /8GB / 256GB /セージ 8QF-00007",
+    "price": 150224,
+    "last_notified_time": "2025-04-26 15:57:36",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 149666,
@@ -4232,6 +4232,10 @@
       {
         "price": 114800,
         "time": "2025-04-11 14:29:14"
+      },
+      {
+        "price": 150224,
+        "time": "2025-04-26 15:57:36"
       }
     ]
   },
@@ -9496,6 +9500,18 @@
       {
         "price": 33679,
         "time": "2025-04-26 13:18:02"
+      }
+    ]
+  },
+  "4549980667033": {
+    "product_name": "パナソニック 空気清浄機 ナノイー搭載 ハウスダストキャッチャー コンパクトモデル ~27畳 F-PXV60-W",
+    "price": 49216,
+    "last_notified_time": "2025-04-26 15:57:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 49216,
+        "time": "2025-04-26 15:57:36"
       }
     ]
   }
