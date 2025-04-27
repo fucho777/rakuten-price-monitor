@@ -5220,10 +5220,10 @@
     ]
   },
   "4547410431032": {
-    "product_name": "「+2倍ポイント・新品」istax mii 11 チェキ [ブラッシュピンク]4547410431032",
-    "price": 12000,
-    "last_notified_time": "2025-04-14 10:24:48",
-    "notification_count": 2,
+    "product_name": "富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 ブラッシュピンク INS MINI 11 PINK",
+    "price": 25506,
+    "last_notified_time": "2025-04-27 07:11:32",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 22512,
@@ -5232,6 +5232,10 @@
       {
         "price": 12000,
         "time": "2025-04-14 10:24:48"
+      },
+      {
+        "price": 25506,
+        "time": "2025-04-27 07:11:32"
       }
     ]
   },
@@ -9536,6 +9540,42 @@
       {
         "price": 76148,
         "time": "2025-04-26 19:09:47"
+      }
+    ]
+  },
+  "4210201443339": {
+    "product_name": "メンズシェーバー 電気シェーバー シリーズ9 Pro 充電式 アルコール洗浄システム ブラウン 9450cc-V",
+    "price": 41250,
+    "last_notified_time": "2025-04-27 07:11:32",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 41250,
+        "time": "2025-04-27 07:11:32"
+      }
+    ]
+  },
+  "4549980465509": {
+    "product_name": "パナソニック(Panasonic) ポータブルナビ ゴリラ 7インチ CN-G1500VD 無料地図更新 全国市街地図収録 ワンセグ 24V車対応 高精度測位システム",
+    "price": 207805,
+    "last_notified_time": "2025-04-27 07:11:32",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 207805,
+        "time": "2025-04-27 07:11:32"
+      }
+    ]
+  },
+  "4974019206707": {
+    "product_name": "SHARP AQUOS wish オリーブグリーン SIMフリースマホ eSIM 5G対応",
+    "price": 32900,
+    "last_notified_time": "2025-04-27 07:11:32",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 32900,
+        "time": "2025-04-27 07:11:32"
       }
     ]
   }
