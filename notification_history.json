@@ -9229,13 +9229,17 @@
   },
   "4549980030738": {
     "product_name": "パナソニック ETC2.0車載器 CY-ET2500VD アンテナ分離型 (DSRC) 新セキュリティ対応 Panasonic",
-    "price": 40224,
-    "last_notified_time": "2025-04-24 19:12:10",
-    "notification_count": 1,
+    "price": 36511,
+    "last_notified_time": "2025-04-28 22:04:36",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 40224,
         "time": "2025-04-24 19:12:10"
+      },
+      {
+        "price": 36511,
+        "time": "2025-04-28 22:04:36"
       }
     ]
   },
@@ -9848,6 +9852,30 @@
       {
         "price": 5580,
         "time": "2025-04-28 11:32:43"
+      }
+    ]
+  },
+  "4549873134178": {
+    "product_name": "日立 炊飯器 5.5合 圧力スチームIH ふっくら御膳 RZ-V100EM K フロストブラック 八代目儀兵衛 監修 本体日本製 大火力 沸騰鉄釜 蒸気カット",
+    "price": 42875,
+    "last_notified_time": "2025-04-28 22:04:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 42875,
+        "time": "2025-04-28 22:04:36"
+      }
+    ]
+  },
+  "4549995555356": {
+    "product_name": "Apple iPad Air 11インチ (M3) Wi-Fi 1TB MCAH4J/A スペースグレイ【お取り寄せ（5週から7週程度見込み）での入荷、発送】",
+    "price": 191853,
+    "last_notified_time": "2025-04-28 22:04:36",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 191853,
+        "time": "2025-04-28 22:04:36"
       }
     ]
   }
