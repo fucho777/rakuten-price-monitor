@@ -2021,13 +2021,17 @@
   },
   "4550556103596": {
     "product_name": "新品　 シャープ(SHARP) AQUOS wish 3 SH-M25 B ブラック 5.7型 4GB/64GB SIMフリー4550556103596",
-    "price": 20900,
-    "last_notified_time": "2025-04-02 07:37:37",
-    "notification_count": 1,
+    "price": 18900,
+    "last_notified_time": "2025-04-28 07:21:38",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 20900,
         "time": "2025-04-02 07:37:37"
+      },
+      {
+        "price": 18900,
+        "time": "2025-04-28 07:21:38"
       }
     ]
   },
@@ -3153,9 +3157,9 @@
   },
   "4952040150237": {
     "product_name": "【在庫あり・送料無料】COMTEC ZDR035 フルHD200万画素 前後2カメラ STARVIS搭載 ドライブレコーダー",
-    "price": 21299,
-    "last_notified_time": "2025-04-21 04:32:12",
-    "notification_count": 3,
+    "price": 23044,
+    "last_notified_time": "2025-04-28 07:21:38",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 21098,
@@ -3168,6 +3172,10 @@
       {
         "price": 21299,
         "time": "2025-04-21 04:32:12"
+      },
+      {
+        "price": 23044,
+        "time": "2025-04-28 07:21:38"
       }
     ]
   },
@@ -4445,13 +4453,17 @@
   },
   "4549980191279": {
     "product_name": "パナソニック【Panasonic】沸騰浄水コーヒーメーカー NC-A57-K★【NCA57K】",
-    "price": 19650,
-    "last_notified_time": "2025-04-07 03:58:06",
-    "notification_count": 1,
+    "price": 21901,
+    "last_notified_time": "2025-04-28 07:21:38",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 19650,
         "time": "2025-04-07 03:58:06"
+      },
+      {
+        "price": 21901,
+        "time": "2025-04-28 07:21:38"
       }
     ]
   },
@@ -5152,14 +5164,18 @@
     ]
   },
   "4549995542479": {
-    "product_name": "【新品 未開封】MW0W3J/A MacBook Air 13インチ Apple M4搭載モデル [2025年春モデル/SSD 256GB/メモリ16GB/10コアCPUと8コアGPU] シルバー",
-    "price": 154800,
-    "last_notified_time": "2025-04-08 19:43:38",
-    "notification_count": 1,
+    "product_name": "【アウトレット品】 MacBook Air 13インチ 2025年春モデル SSD 256GB メモリ 16GB 10コアCPU 8コアGPU シルバー MW0W3J/A A3240 cs-001-133",
+    "price": 141000,
+    "last_notified_time": "2025-04-28 07:21:38",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 154800,
         "time": "2025-04-08 19:43:38"
+      },
+      {
+        "price": 141000,
+        "time": "2025-04-28 07:21:38"
       }
     ]
   },
@@ -9680,6 +9696,30 @@
       {
         "price": 98280,
         "time": "2025-04-27 15:58:30"
+      }
+    ]
+  },
+  "4902370551136": {
+    "product_name": "Nintendo Switch Joy-Con(L) パステルパープル 左 ジョイコン 任天堂 新品 純正品 ニンテンドースイッチ",
+    "price": 5100,
+    "last_notified_time": "2025-04-28 07:21:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 5100,
+        "time": "2025-04-28 07:21:38"
+      }
+    ]
+  },
+  "4986773240071": {
+    "product_name": "【在庫あり・送料無料】 Galaxy S24 Ultra SM-S928Q 12G+256G SIMフリー [チタニウム ブラック]【メーカー版】 日本国内どのキャリアでも使用可能",
+    "price": 162999,
+    "last_notified_time": "2025-04-28 07:21:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 162999,
+        "time": "2025-04-28 07:21:38"
       }
     ]
   }
