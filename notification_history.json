@@ -8521,13 +8521,17 @@
   },
   "4987176165732": {
     "product_name": "【新品・送料無料】 BRAUN ブラウン 9567cc ブラウン シリーズ9 PRO+ 電気シェーバー 6in1アルコール洗浄システム付き マットシルバー 4987176165732",
-    "price": 55700,
-    "last_notified_time": "2025-04-21 04:32:12",
-    "notification_count": 1,
+    "price": 44800,
+    "last_notified_time": "2025-04-29 10:08:55",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 55700,
         "time": "2025-04-21 04:32:12"
+      },
+      {
+        "price": 44800,
+        "time": "2025-04-29 10:08:55"
       }
     ]
   },
@@ -9940,6 +9944,18 @@
       {
         "price": 3779,
         "time": "2025-04-29 07:14:06"
+      }
+    ]
+  },
+  "5025155085011": {
+    "product_name": "【新品】Dyson ダイソン Dyson V12s Detect Slim Submarine SV46SU イエロー/アイアン/ニッケル",
+    "price": 73049,
+    "last_notified_time": "2025-04-29 10:08:55",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 73049,
+        "time": "2025-04-29 10:08:55"
       }
     ]
   }
