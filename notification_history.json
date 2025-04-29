@@ -192,10 +192,10 @@
     ]
   },
   "4549995454017": {
-    "product_name": "【新品保証開始・お得・即納・在庫僅か】 Apple Pencil USB-C MUWA3ZA/A 【対応機種:iPad(第10世代)、Air(第4～5世代)、mini(第6世代)、Pro 12.9インチ(第3～6世代)/11インチ(第1～4世代)】【ポスト投函】",
-    "price": 12200,
-    "last_notified_time": "2025-04-22 13:17:46",
-    "notification_count": 3,
+    "product_name": "【未使用】Apple Apple Pencil（USB-C） MUWA3ZA/A【戸塚】保証期間1週間",
+    "price": 12980,
+    "last_notified_time": "2025-04-29 04:28:07",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 11980,
@@ -208,6 +208,10 @@
       {
         "price": 12200,
         "time": "2025-04-22 13:17:46"
+      },
+      {
+        "price": 12980,
+        "time": "2025-04-29 04:28:07"
       }
     ]
   },
@@ -9884,6 +9888,18 @@
       {
         "price": 191853,
         "time": "2025-04-28 22:04:36"
+      }
+    ]
+  },
+  "4521329373126": {
+    "product_name": "★【新品】【点線切れ有】ポケモンカードゲーム ソード&シールド 拡張パック パラダイムトリガー BOX【加納店】",
+    "price": 12500,
+    "last_notified_time": "2025-04-29 04:28:07",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 12500,
+        "time": "2025-04-29 04:28:07"
       }
     ]
   }
