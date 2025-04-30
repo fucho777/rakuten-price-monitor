@@ -2544,10 +2544,10 @@
     ]
   },
   "4549292189711": {
-    "product_name": "Canon EOS R10 ボディ【お取り寄せ（4週間から5週程度）での入荷、発送】",
-    "price": 128491,
-    "last_notified_time": "2025-04-11 04:02:12",
-    "notification_count": 2,
+    "product_name": "キヤノン EOS R10 ボディ",
+    "price": 113094,
+    "last_notified_time": "2025-04-30 16:10:04",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 117980,
@@ -2556,6 +2556,10 @@
       {
         "price": 128491,
         "time": "2025-04-11 04:02:12"
+      },
+      {
+        "price": 113094,
+        "time": "2025-04-30 16:10:04"
       }
     ]
   },
@@ -4004,10 +4008,10 @@
     ]
   },
   "4986773231758": {
-    "product_name": "【新品】GALAXY ギャラクシー Androidタブレット Galaxy Tab A9+ 11型 64GB SM-X210NZAAXJP グラファイト",
-    "price": 32000,
-    "last_notified_time": "2025-04-21 13:20:25",
-    "notification_count": 2,
+    "product_name": "GALAXY　Androidタブレット Galaxy Tab A9＋ ［11型 /Wi-Fiモデル /ストレージ：64GB］ Graphite　SM-X210NZAAXJP",
+    "price": 37390,
+    "last_notified_time": "2025-04-30 16:10:04",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 35810,
@@ -4016,6 +4020,10 @@
       {
         "price": 32000,
         "time": "2025-04-21 13:20:25"
+      },
+      {
+        "price": 37390,
+        "time": "2025-04-30 16:10:04"
       }
     ]
   },
@@ -6536,10 +6544,10 @@
     ]
   },
   "6941812764558": {
-    "product_name": "「+2倍ポイント・新品」Xiaomi(シャオミ) Redmi 12 5G [Polar Silver] （ 8G+256G）SIMフリー ポーラーシルバー",
-    "price": 23500,
-    "last_notified_time": "2025-04-22 10:06:17",
-    "notification_count": 2,
+    "product_name": "《減額品》【未開封｜未使用】Xiaomi｜Redmi 12 5G",
+    "price": 25390,
+    "last_notified_time": "2025-04-30 16:10:04",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 25390,
@@ -6548,6 +6556,10 @@
       {
         "price": 23500,
         "time": "2025-04-22 10:06:17"
+      },
+      {
+        "price": 25390,
+        "time": "2025-04-30 16:10:04"
       }
     ]
   },
@@ -7432,14 +7444,18 @@
     ]
   },
   "4961310161248": {
-    "product_name": "オーディオテクニカ　完全ワイヤレスイヤホン [ワイヤレス(左右分離) /Bluetooth /ノイズキャンセリング対応]　ATH-TWX7 GY",
-    "price": 24200,
-    "last_notified_time": "2025-04-15 10:32:39",
-    "notification_count": 1,
+    "product_name": "オーディオテクニカ　完全ワイヤレスイヤホン [ ワイヤレス ( 左右分離 ) / Bluetooth / ノイズキャンセリング 対応 ] 　ATH-TWX7 GY",
+    "price": 22790,
+    "last_notified_time": "2025-04-30 16:10:04",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 24200,
         "time": "2025-04-15 10:32:39"
+      },
+      {
+        "price": 22790,
+        "time": "2025-04-30 16:10:04"
       }
     ]
   },
@@ -10148,6 +10164,18 @@
       {
         "price": 16275,
         "time": "2025-04-30 13:20:55"
+      }
+    ]
+  },
+  "4580038879886": {
+    "product_name": "OPPO　SIMフリースマートフォン Find X8 6.59インチ メモリ/ストレージ：16GB/512GB スターグレー　CPH2651GY",
+    "price": 126974,
+    "last_notified_time": "2025-04-30 16:10:04",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 126974,
+        "time": "2025-04-30 16:10:04"
       }
     ]
   }
