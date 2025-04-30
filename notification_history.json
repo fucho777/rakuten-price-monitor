@@ -4176,10 +4176,10 @@
     ]
   },
   "4549980496350": {
-    "product_name": "【新品 箱不良】Panasonic マスク型イオン美顔器 ゴールド調 EH-SM50-N",
-    "price": 13000,
-    "last_notified_time": "2025-04-21 10:09:15",
-    "notification_count": 3,
+    "product_name": "パナソニック マスク型イオン美顔器 イオンブースト EH-SM50 JAN 4549980496350",
+    "price": 11770,
+    "last_notified_time": "2025-04-30 10:05:33",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 17880,
@@ -4192,6 +4192,10 @@
       {
         "price": 13000,
         "time": "2025-04-21 10:09:15"
+      },
+      {
+        "price": 11770,
+        "time": "2025-04-30 10:05:33"
       }
     ]
   },
@@ -5685,9 +5689,9 @@
   },
   "4942857217544": {
     "product_name": "新品 SIMフリー docomo Xperia Ace II SO-41B ブラック スマートフォン本体",
-    "price": 27684,
-    "last_notified_time": "2025-04-16 07:25:35",
-    "notification_count": 2,
+    "price": 29394,
+    "last_notified_time": "2025-04-30 10:05:33",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 21384,
@@ -5696,6 +5700,10 @@
       {
         "price": 27684,
         "time": "2025-04-16 07:25:35"
+      },
+      {
+        "price": 29394,
+        "time": "2025-04-30 10:05:33"
       }
     ]
   },
@@ -10052,6 +10060,66 @@
       {
         "price": 173666,
         "time": "2025-04-30 07:06:08"
+      }
+    ]
+  },
+  "4548736122222": {
+    "product_name": "SONY ワイヤレスポータブルスピーカー ブラック SRS-XB13B [SRSXB13B]【RNH】",
+    "price": 5280,
+    "last_notified_time": "2025-04-30 10:05:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 5280,
+        "time": "2025-04-30 10:05:33"
+      }
+    ]
+  },
+  "4549873175386": {
+    "product_name": "日立 沸騰鉄釜 ふっくら御膳 RZ-W100GM(K) [漆黒] JAN 4549873175386",
+    "price": 50450,
+    "last_notified_time": "2025-04-30 10:05:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 50450,
+        "time": "2025-04-30 10:05:33"
+      }
+    ]
+  },
+  "4582239436646": {
+    "product_name": "【新品・在庫あり・送料無料】motorola edge 40 neo 8GB+256GB SIMフリー [ブラックビューティ] ※メーカー保証対象外※",
+    "price": 28773,
+    "last_notified_time": "2025-04-30 10:05:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 28773,
+        "time": "2025-04-30 10:05:33"
+      }
+    ]
+  },
+  "4902370550825": {
+    "product_name": "【新品】Switch ゲームソフト Fire Emblem Engage ファイアーエムブレム エンゲージ メール便",
+    "price": 5500,
+    "last_notified_time": "2025-04-30 10:05:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 5500,
+        "time": "2025-04-30 10:05:33"
+      }
+    ]
+  },
+  "4986773240088": {
+    "product_name": "【未使用】SAMSUNG 国内版 【SIMフリー】 Galaxy S24 Ultra チタニウムブラック 12GB 512GB SM-S928QZKFSJP【ECセンター】保証期間3ヶ月",
+    "price": 199980,
+    "last_notified_time": "2025-04-30 10:05:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 199980,
+        "time": "2025-04-30 10:05:33"
       }
     ]
   }
