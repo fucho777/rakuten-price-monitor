@@ -5641,13 +5641,17 @@
   },
   "4573173356350": {
     "product_name": "釣りスピリッツ Nintendo Switchバージョン -Switch",
-    "price": 5100,
-    "last_notified_time": "2025-04-09 19:41:22",
-    "notification_count": 1,
+    "price": 6110,
+    "last_notified_time": "2025-05-01 19:12:48",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 5100,
         "time": "2025-04-09 19:41:22"
+      },
+      {
+        "price": 6110,
+        "time": "2025-05-01 19:12:48"
       }
     ]
   },
@@ -6212,10 +6216,10 @@
     ]
   },
   "4210201212768": {
-    "product_name": "ブラウン 光美容器 シルクエキスパート Pro5 PL-5117　(全身+部分用アタッチメント付きモデル)",
-    "price": 49799,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 2,
+    "product_name": "ブラウン 光美容器 シルクエキスパート PL-5117 ホワイト",
+    "price": 46400,
+    "last_notified_time": "2025-05-01 19:12:48",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 58493,
@@ -6224,6 +6228,10 @@
       {
         "price": 49799,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 46400,
+        "time": "2025-05-01 19:12:48"
       }
     ]
   },
@@ -8141,13 +8149,17 @@
   },
   "4960759902306": {
     "product_name": "Nikon デジタルカメラ COOLPIX B600 RD 光学60倍 軽量 クールピクス レッド B600RD",
-    "price": 98558,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 1,
+    "price": 92064,
+    "last_notified_time": "2025-05-01 19:12:48",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 98558,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 92064,
+        "time": "2025-05-01 19:12:48"
       }
     ]
   },
@@ -10368,6 +10380,18 @@
       {
         "price": 37480,
         "time": "2025-05-01 15:59:20"
+      }
+    ]
+  },
+  "4902370546057": {
+    "product_name": "スーパーマリオ 3Dコレクション -Switch",
+    "price": 16570,
+    "last_notified_time": "2025-05-01 19:12:48",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 16570,
+        "time": "2025-05-01 19:12:48"
       }
     ]
   }
