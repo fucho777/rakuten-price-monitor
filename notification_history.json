@@ -1288,10 +1288,10 @@
     ]
   },
   "4957812660556": {
-    "product_name": "ヤマハ　YAMAHA　AVアンプ RX-A2AB [ハイレゾ対応 /Bluetooth対応 /Wi-Fi対応 /ワイドFM対応 /7.1ch /DolbyAtmos対応]　RX-A2AB",
-    "price": 72310,
-    "last_notified_time": "2025-04-12 19:36:27",
-    "notification_count": 2,
+    "product_name": "YAMAHA RX-A2A(B)【SS4957812660556】",
+    "price": 94228,
+    "last_notified_time": "2025-05-01 07:15:03",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 94228,
@@ -1300,6 +1300,10 @@
       {
         "price": 72310,
         "time": "2025-04-12 19:36:27"
+      },
+      {
+        "price": 94228,
+        "time": "2025-05-01 07:15:03"
       }
     ]
   },
@@ -8748,14 +8752,18 @@
     ]
   },
   "4549980800867": {
-    "product_name": "Panasonic ラムダッシュ 3枚刃 （白） ES-L320W-W",
-    "price": 7487,
-    "last_notified_time": "2025-04-21 13:20:25",
-    "notification_count": 1,
+    "product_name": "パナソニック　Panasonic　電気シェーバー ラムダッシュ3 ［3枚刃 /AC100V-240V］ 白　ES-L320W-W",
+    "price": 8580,
+    "last_notified_time": "2025-05-01 07:15:03",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 7487,
         "time": "2025-04-21 13:20:25"
+      },
+      {
+        "price": 8580,
+        "time": "2025-05-01 07:15:03"
       }
     ]
   },
@@ -10224,6 +10232,18 @@
       {
         "price": 21800,
         "time": "2025-05-01 04:35:42"
+      }
+    ]
+  },
+  "4975514062171": {
+    "product_name": "ケンウッド カーナビ 彩速 9インチ MDV-M908HDL HDモデル 圧倒的な地図の見やすさ 操作感 大画面 インダッシュナビ HDMI入力 ハイレゾ音源対応 KENWOOD",
+    "price": 125896,
+    "last_notified_time": "2025-05-01 07:15:03",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 125896,
+        "time": "2025-05-01 07:15:03"
       }
     ]
   }
