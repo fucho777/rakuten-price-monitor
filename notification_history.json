@@ -1549,9 +1549,9 @@
   },
   "4580652111676": {
     "product_name": "東芝 REGZAブルーレイ DBR-T1010 JAN 4580652111676",
-    "price": 61358,
-    "last_notified_time": "2025-04-28 11:32:43",
-    "notification_count": 5,
+    "price": 79765,
+    "last_notified_time": "2025-05-02 07:04:43",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 63580,
@@ -1572,6 +1572,10 @@
       {
         "price": 61358,
         "time": "2025-04-28 11:32:43"
+      },
+      {
+        "price": 79765,
+        "time": "2025-05-02 07:04:43"
       }
     ]
   },
@@ -6300,14 +6304,18 @@
     ]
   },
   "4549576210643": {
-    "product_name": "Xbox ワイヤレス コントローラー ゴールド シャドウ 【新品】スペシャル エディション QAU-00123【日曜日以外即日発送】【送料無料】",
-    "price": 11798,
-    "last_notified_time": "2025-04-11 07:34:59",
-    "notification_count": 1,
+    "product_name": "在庫品 純正品 Xbox ワイヤレス コントローラー ゴールド シャドウ",
+    "price": 10800,
+    "last_notified_time": "2025-05-02 07:04:43",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 11798,
         "time": "2025-04-11 07:34:59"
+      },
+      {
+        "price": 10800,
+        "time": "2025-05-02 07:04:43"
       }
     ]
   },
@@ -10412,6 +10420,18 @@
       {
         "price": 28180,
         "time": "2025-05-02 01:59:56"
+      }
+    ]
+  },
+  "4974019130392": {
+    "product_name": "シャープ　SHARP　単機能電子レンジ［18L／ターンテーブル式］　RE-TM18-W",
+    "price": 11636,
+    "last_notified_time": "2025-05-02 07:04:43",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 11636,
+        "time": "2025-05-02 07:04:43"
       }
     ]
   }
