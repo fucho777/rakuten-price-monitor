@@ -413,9 +413,9 @@
   },
   "4974305220325": {
     "product_name": "象印 極め炊き NW-VC10 JAN 4974305220325",
-    "price": 17980,
-    "last_notified_time": "2025-04-27 10:04:23",
-    "notification_count": 3,
+    "price": 18980,
+    "last_notified_time": "2025-05-02 15:59:11",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 16970,
@@ -428,6 +428,10 @@
       {
         "price": 17980,
         "time": "2025-04-27 10:04:23"
+      },
+      {
+        "price": 18980,
+        "time": "2025-05-02 15:59:11"
       }
     ]
   },
@@ -10588,6 +10592,18 @@
       {
         "price": 41253,
         "time": "2025-05-02 13:19:53"
+      }
+    ]
+  },
+  "6941812716670": {
+    "product_name": "シャオミ(Xiaomi) SIMフリースマートフォン Redmi 12C 大型 6.71 インチ HD 4GB+128GB スマホ docomo/au/SoftBank/Rakuten Mobile 回線対応 ミントグリーン",
+    "price": 21817,
+    "last_notified_time": "2025-05-02 15:59:11",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 21817,
+        "time": "2025-05-02 15:59:11"
       }
     ]
   }
