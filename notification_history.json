@@ -2152,14 +2152,18 @@
     ]
   },
   "4974305227799": {
-    "product_name": "象印 スチーム式加湿器 EE-DE50-HA EE-DE50-WA グレー ホワイト 4.0L ZOJIRUSHI フィルター不要 加湿器 スチーム式 4L お手入れ簡単 清潔",
-    "price": 35800,
-    "last_notified_time": "2025-04-02 07:37:37",
-    "notification_count": 1,
+    "product_name": "象印 加湿器 スチーム式 4.0L グレー EE-DE50-HA",
+    "price": 40974,
+    "last_notified_time": "2025-05-03 01:59:41",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 35800,
         "time": "2025-04-02 07:37:37"
+      },
+      {
+        "price": 40974,
+        "time": "2025-05-03 01:59:41"
       }
     ]
   },
@@ -6197,9 +6201,9 @@
   },
   "4549980511763": {
     "product_name": "パナソニック スチーマー ナノケア コンパクトタイプ ゴールド調 EH-SA3C-N",
-    "price": 26860,
-    "last_notified_time": "2025-04-25 13:20:55",
-    "notification_count": 2,
+    "price": 24755,
+    "last_notified_time": "2025-05-03 01:59:41",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 23852,
@@ -6208,6 +6212,10 @@
       {
         "price": 26860,
         "time": "2025-04-25 13:20:55"
+      },
+      {
+        "price": 24755,
+        "time": "2025-05-03 01:59:41"
       }
     ]
   },
