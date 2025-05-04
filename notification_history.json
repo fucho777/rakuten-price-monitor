@@ -2417,13 +2417,17 @@
   },
   "4549995514834": {
     "product_name": "【未使用】Apple Apple Watch SE2 40mm GPS ミッドナイトアルミニウムケース/ミッドナイトスポーツバンド (M/L) MXE93J/A【ECセンター】保証期間3ヶ月",
-    "price": 29980,
-    "last_notified_time": "2025-04-02 14:20:19",
-    "notification_count": 1,
+    "price": 28480,
+    "last_notified_time": "2025-05-04 01:58:02",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 29980,
         "time": "2025-04-02 14:20:19"
+      },
+      {
+        "price": 28480,
+        "time": "2025-05-04 01:58:02"
       }
     ]
   },
@@ -10688,6 +10692,18 @@
       {
         "price": 22000,
         "time": "2025-05-03 16:07:05"
+      }
+    ]
+  },
+  "4573176159217": {
+    "product_name": "【在庫限即納】SIXPAD シックスパッド　パワーガンポケット　レッド　0　SE−BP−01A",
+    "price": 12313,
+    "last_notified_time": "2025-05-04 01:58:02",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 12313,
+        "time": "2025-05-04 01:58:02"
       }
     ]
   }
