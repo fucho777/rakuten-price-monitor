@@ -780,10 +780,10 @@
     ]
   },
   "4547410431049": {
-    "product_name": "「+2倍ポイント・新品」富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 4547410431049",
-    "price": 12000,
-    "last_notified_time": "2025-04-23 10:06:29",
-    "notification_count": 2,
+    "product_name": "富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 チャコールグレイ INS MINI 11 GRAY",
+    "price": 21415,
+    "last_notified_time": "2025-05-04 10:07:50",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 18921,
@@ -792,6 +792,10 @@
       {
         "price": 12000,
         "time": "2025-04-23 10:06:29"
+      },
+      {
+        "price": 21415,
+        "time": "2025-05-04 10:07:50"
       }
     ]
   },
@@ -10732,6 +10736,18 @@
       {
         "price": 45780,
         "time": "2025-05-04 07:03:53"
+      }
+    ]
+  },
+  "4549576197517": {
+    "product_name": "タブレットパソコン Microsoft Surface Pro 9 QEZ-00028 13型 Core i5 メモリ8GB ストレージ256GB 顔認証 Office Windows 11 Type-C グラファイト",
+    "price": 169800,
+    "last_notified_time": "2025-05-04 10:07:50",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 169800,
+        "time": "2025-05-04 10:07:50"
       }
     ]
   }
