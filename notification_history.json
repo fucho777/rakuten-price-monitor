@@ -10710,5 +10710,29 @@
         "time": "2025-05-04 01:58:02"
       }
     ]
+  },
+  "4549980250594": {
+    "product_name": "パナソニック コンパクトデジタルカメラ ルミックス TZ95 光学30倍 ホワイト DC-TZ95-W",
+    "price": 115246,
+    "last_notified_time": "2025-05-04 07:03:53",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 115246,
+        "time": "2025-05-04 07:03:53"
+      }
+    ]
+  },
+  "4549980471982": {
+    "product_name": "パナソニック 光美容器 光エステ ボディ＆フェイス用 ハイパワー ゴールド ES-CWP97-N",
+    "price": 45780,
+    "last_notified_time": "2025-05-04 07:03:53",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 45780,
+        "time": "2025-05-04 07:03:53"
+      }
+    ]
   }
 }
