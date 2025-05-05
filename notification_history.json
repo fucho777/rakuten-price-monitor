@@ -5705,9 +5705,9 @@
   },
   "4573173356350": {
     "product_name": "釣りスピリッツ Nintendo Switchバージョン -Switch",
-    "price": 6110,
-    "last_notified_time": "2025-05-01 19:12:48",
-    "notification_count": 2,
+    "price": 5780,
+    "last_notified_time": "2025-05-05 19:10:11",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 5100,
@@ -5716,6 +5716,10 @@
       {
         "price": 6110,
         "time": "2025-05-01 19:12:48"
+      },
+      {
+        "price": 5780,
+        "time": "2025-05-05 19:10:11"
       }
     ]
   },
@@ -10808,6 +10812,18 @@
       {
         "price": 49375,
         "time": "2025-05-05 15:59:44"
+      }
+    ]
+  },
+  "4549980746424": {
+    "product_name": "パナソニック ドライヤー イオニティ 速乾 大風量 パワフルドライ 低温モード ダブルミネラルイオン ダークグレー EH-NE7L-H",
+    "price": 14406,
+    "last_notified_time": "2025-05-05 19:10:11",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 14406,
+        "time": "2025-05-05 19:10:11"
       }
     ]
   }
