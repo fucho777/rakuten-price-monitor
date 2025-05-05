@@ -4800,10 +4800,10 @@
     ]
   },
   "4550556131292": {
-    "product_name": "シャープ　SHARP　SIMフリースマートフォン AQUOS wish4 MediaTekTM Dimensity 700 6.6型 メモリ/ストレージ：4GB/64GB ブルー　SH-M27-A",
-    "price": 35057,
-    "last_notified_time": "2025-04-27 10:04:23",
-    "notification_count": 2,
+    "product_name": "AQUOS wish 4 SH-M27 BL ブルー 6.6型 4GB/64GB SIMフリー",
+    "price": 32486,
+    "last_notified_time": "2025-05-05 10:00:06",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 31114,
@@ -4812,6 +4812,10 @@
       {
         "price": 35057,
         "time": "2025-04-27 10:04:23"
+      },
+      {
+        "price": 32486,
+        "time": "2025-05-05 10:00:06"
       }
     ]
   },
@@ -9085,13 +9089,17 @@
   },
   "4548736112155": {
     "product_name": "ソニー ワイヤレスノイズキャンセリングヘッドホン WH-1000XM4 : LDAC/ Alexa搭載/Bluetooth/ハイレゾ 最大30時間連続再生 密閉型 マイク付 2020年モデル 360 Reality Audio認定モデル シルバー WH",
-    "price": 41410,
-    "last_notified_time": "2025-04-22 13:17:46",
-    "notification_count": 1,
+    "price": 39330,
+    "last_notified_time": "2025-05-05 10:00:06",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 41410,
         "time": "2025-04-22 13:17:46"
+      },
+      {
+        "price": 39330,
+        "time": "2025-05-05 10:00:06"
       }
     ]
   },
@@ -9944,14 +9952,18 @@
     ]
   },
   "4550556131131": {
-    "product_name": "シャープ　SHARP　SIMフリースマートフォン AQUOS wish4 MediaTekTM Dimensity 700 6.6型 メモリ/ストレージ：4GB/64GB ブラック　SH-M27-B",
-    "price": 35057,
-    "last_notified_time": "2025-04-27 10:04:23",
-    "notification_count": 1,
+    "product_name": "シャープ SHARP AQUOS wish 4 SH-M27 BK ブラック 6.6型 4GB/64GB SIMフリー SHM27BK",
+    "price": 32486,
+    "last_notified_time": "2025-05-05 10:00:06",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 35057,
         "time": "2025-04-27 10:04:23"
+      },
+      {
+        "price": 32486,
+        "time": "2025-05-05 10:00:06"
       }
     ]
   },
