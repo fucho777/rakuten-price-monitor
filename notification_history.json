@@ -10236,14 +10236,18 @@
     ]
   },
   "5025155085011": {
-    "product_name": "【新品】Dyson ダイソン Dyson V12s Detect Slim Submarine SV46SU イエロー/アイアン/ニッケル",
-    "price": 73049,
-    "last_notified_time": "2025-04-29 10:08:55",
-    "notification_count": 1,
+    "product_name": "ダイソン　dyson　V12s Detect Slim Submarine イエロー/アイアン/ニッケル ［サイクロン式 /コードレス］　SV46SU",
+    "price": 109670,
+    "last_notified_time": "2025-05-06 13:23:21",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 73049,
         "time": "2025-04-29 10:08:55"
+      },
+      {
+        "price": 109670,
+        "time": "2025-05-06 13:23:21"
       }
     ]
   },
@@ -10868,6 +10872,30 @@
       {
         "price": 168980,
         "time": "2025-05-06 04:29:44"
+      }
+    ]
+  },
+  "4549292204230": {
+    "product_name": "Canon キヤノン プリンター A4インクジェット複合機 TS8630",
+    "price": 27800,
+    "last_notified_time": "2025-05-06 13:23:21",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 27800,
+        "time": "2025-05-06 13:23:21"
+      }
+    ]
+  },
+  "4902370551587": {
+    "product_name": "任天堂【ゲームソフト】Switch スーパーマリオブラザーズ ワンダー HAC-P-AQMXA【ゾウマリオ】",
+    "price": 4980,
+    "last_notified_time": "2025-05-06 13:23:21",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 4980,
+        "time": "2025-05-06 13:23:21"
       }
     ]
   }
