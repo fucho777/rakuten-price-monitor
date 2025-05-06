@@ -257,9 +257,9 @@
   },
   "4549980568361": {
     "product_name": "2022年発売 パナソニック 光美容器 光エステ ボディフェイス用 ハイパワー ゴールド ES-WP98-N",
-    "price": 57777,
-    "last_notified_time": "2025-04-06 13:57:31",
-    "notification_count": 2,
+    "price": 69135,
+    "last_notified_time": "2025-05-06 10:08:31",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 64197,
@@ -268,6 +268,10 @@
       {
         "price": 57777,
         "time": "2025-04-06 13:57:31"
+      },
+      {
+        "price": 69135,
+        "time": "2025-05-06 10:08:31"
       }
     ]
   },
@@ -1581,9 +1585,9 @@
   },
   "4580652111676": {
     "product_name": "東芝 REGZAブルーレイ DBR-T1010 JAN 4580652111676",
-    "price": 79765,
-    "last_notified_time": "2025-05-02 07:04:43",
-    "notification_count": 6,
+    "price": 61358,
+    "last_notified_time": "2025-05-06 10:08:31",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 63580,
@@ -1608,6 +1612,10 @@
       {
         "price": 79765,
         "time": "2025-05-02 07:04:43"
+      },
+      {
+        "price": 61358,
+        "time": "2025-05-06 10:08:31"
       }
     ]
   },
@@ -4420,10 +4428,10 @@
     ]
   },
   "8710103996422": {
-    "product_name": "フィリップス 5000シリーズ S5444/03 JAN 8710103996422",
-    "price": 8030,
-    "last_notified_time": "2025-05-01 10:08:28",
-    "notification_count": 3,
+    "product_name": "【新品】フィリップス メンズシェーバー 5000シリーズ S5444/03 ネイビーブルー",
+    "price": 6985,
+    "last_notified_time": "2025-05-06 10:08:31",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 8249,
@@ -4436,6 +4444,10 @@
       {
         "price": 8030,
         "time": "2025-05-01 10:08:28"
+      },
+      {
+        "price": 6985,
+        "time": "2025-05-06 10:08:31"
       }
     ]
   },
@@ -5360,14 +5372,18 @@
     ]
   },
   "4549995085334": {
-    "product_name": "Apple USB-C Digital AV Multiport アダプタ　並行輸入品",
-    "price": 9590,
-    "last_notified_time": "2025-04-08 22:25:04",
-    "notification_count": 1,
+    "product_name": "訳あり(外箱なし、多少擦過、6ヵ月保証付き) Apple MUF82AM/A　USB-C　Digital　AV　Multiport　アダプタ　　並行輸入品",
+    "price": 7390,
+    "last_notified_time": "2025-05-06 10:08:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 9590,
         "time": "2025-04-08 22:25:04"
+      },
+      {
+        "price": 7390,
+        "time": "2025-05-06 10:08:31"
       }
     ]
   },
