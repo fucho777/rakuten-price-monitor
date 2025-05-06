@@ -217,9 +217,9 @@
   },
   "4960759902290": {
     "product_name": "Nikon デジタルカメラ COOLPIX B600 BK 光学60倍 軽量 クールピクス ブラック B600BK",
-    "price": 105051,
-    "last_notified_time": "2025-04-25 16:05:15",
-    "notification_count": 2,
+    "price": 91025,
+    "last_notified_time": "2025-05-06 01:57:39",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 87407,
@@ -228,6 +228,10 @@
       {
         "price": 105051,
         "time": "2025-04-25 16:05:15"
+      },
+      {
+        "price": 91025,
+        "time": "2025-05-06 01:57:39"
       }
     ]
   },
@@ -761,9 +765,9 @@
   },
   "4547410431025": {
     "product_name": "富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 スカイブルー INS MINI 11 BLUE",
-    "price": 21805,
-    "last_notified_time": "2025-04-23 10:06:29",
-    "notification_count": 3,
+    "price": 18850,
+    "last_notified_time": "2025-05-06 01:57:39",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 15199,
@@ -776,6 +780,10 @@
       {
         "price": 21805,
         "time": "2025-04-23 10:06:29"
+      },
+      {
+        "price": 18850,
+        "time": "2025-05-06 01:57:39"
       }
     ]
   },
