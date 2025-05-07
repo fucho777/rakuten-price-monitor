@@ -8349,13 +8349,17 @@
   },
   "4948872015998": {
     "product_name": "PS5 ラチェットクランク パラレル トラブル",
-    "price": 6022,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 1,
+    "price": 5503,
+    "last_notified_time": "2025-05-07 21:57:33",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 6022,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 5503,
+        "time": "2025-05-07 21:57:33"
       }
     ]
   },
@@ -11228,6 +11232,30 @@
       {
         "price": 11980,
         "time": "2025-05-07 19:12:05"
+      }
+    ]
+  },
+  "4545350053871": {
+    "product_name": "OMシステム OM-1 12-40mmF2.8PROIIキット(1台)",
+    "price": 327800,
+    "last_notified_time": "2025-05-07 21:57:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 327800,
+        "time": "2025-05-07 21:57:33"
+      }
+    ]
+  },
+  "4710483943676": {
+    "product_name": "ASRock RX7800XT SL 16GO Radeon RX 7800XT Steel Legend 16G OC [グラフィックボード]",
+    "price": 83600,
+    "last_notified_time": "2025-05-07 21:57:33",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 83600,
+        "time": "2025-05-07 21:57:33"
       }
     ]
   }
