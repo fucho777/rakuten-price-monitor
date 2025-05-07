@@ -52,10 +52,10 @@
     ]
   },
   "4549576247038": {
-    "product_name": "【新品】Xbox Series X 1TB デジタル モデル EP2-00708 ホワイト",
-    "price": 70000,
-    "last_notified_time": "2025-04-10 14:27:07",
-    "notification_count": 3,
+    "product_name": "Xbox Series X デジタル エディション EP2-00708 [1TB ロボット ホワイト]",
+    "price": 89100,
+    "last_notified_time": "2025-05-07 02:01:28",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 76999,
@@ -68,6 +68,10 @@
       {
         "price": 70000,
         "time": "2025-04-10 14:27:07"
+      },
+      {
+        "price": 89100,
+        "time": "2025-05-07 02:01:28"
       }
     ]
   },
@@ -4165,9 +4169,9 @@
   },
   "4549292119282": {
     "product_name": "【展示品】【アウトレット 展示品】★キヤノン / CANON EOS R ボディ",
-    "price": 166900,
-    "last_notified_time": "2025-04-30 01:51:27",
-    "notification_count": 4,
+    "price": 157110,
+    "last_notified_time": "2025-05-07 02:01:28",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 212570,
@@ -4184,6 +4188,10 @@
       {
         "price": 166900,
         "time": "2025-04-30 01:51:27"
+      },
+      {
+        "price": 157110,
+        "time": "2025-05-07 02:01:28"
       }
     ]
   },
@@ -10904,6 +10912,18 @@
       {
         "price": 4980,
         "time": "2025-05-06 13:23:21"
+      }
+    ]
+  },
+  "4549292189766": {
+    "product_name": "【新品/取寄品】Canon EOS R10 RF-S18-45 IS STM レンズキット APS-Cサイズ ミラーレスカメラ キヤノン",
+    "price": 144401,
+    "last_notified_time": "2025-05-07 02:01:28",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 144401,
+        "time": "2025-05-07 02:01:28"
       }
     ]
   }
