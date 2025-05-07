@@ -4736,10 +4736,10 @@
     ]
   },
   "4902370548839": {
-    "product_name": "ゼルダの伝説 ブレス オブ ザ ワイルド + エキスパンション パス -Switch",
-    "price": 14980,
-    "last_notified_time": "2025-04-20 22:05:20",
-    "notification_count": 2,
+    "product_name": "ゼルダの伝説 ブレス オブ ザ ワイルド + エキスパンション・パス -Switch",
+    "price": 13980,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 14030,
@@ -4748,6 +4748,10 @@
       {
         "price": 14980,
         "time": "2025-04-20 22:05:20"
+      },
+      {
+        "price": 13980,
+        "time": "2025-05-07 07:13:58"
       }
     ]
   },
@@ -6016,14 +6020,18 @@
     ]
   },
   "4974305224736": {
-    "product_name": "象印 加湿器 長時間加湿タイプ 4.0L スチーム式 蒸気式 フィルター不要 お手入れ簡単 グレー EE-DD50-HA",
-    "price": 47125,
-    "last_notified_time": "2025-04-10 07:38:26",
-    "notification_count": 1,
+    "product_name": "象印マホービン 加湿器 4.0L 長時間加湿タイプ スチーム式 蒸気式 フィルター不要 お手入れ簡単 グレー EE-DD50-HA",
+    "price": 44260,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 47125,
         "time": "2025-04-10 07:38:26"
+      },
+      {
+        "price": 44260,
+        "time": "2025-05-07 07:13:58"
       }
     ]
   },
@@ -7828,14 +7836,18 @@
     ]
   },
   "4210201443254": {
-    "product_name": "【送料無料・在庫あり】BRAUN ブラウン メンズシェーバー シリーズ9 Pro 9410s-V",
-    "price": 27019,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 1,
+    "product_name": "ブラウン ブラウン シリーズ9 Pro 9410s-V",
+    "price": 32480,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 27019,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 32480,
+        "time": "2025-05-07 07:13:58"
       }
     ]
   },
@@ -10444,14 +10456,18 @@
     ]
   },
   "4974019133560": {
-    "product_name": "まごころ長期修理保証(保証5年)［加入料：対象商品代金の5%］商品「RE-TM18-B」専用加入料(※加入料のみ注文不可)",
-    "price": 634,
-    "last_notified_time": "2025-05-01 01:57:31",
-    "notification_count": 1,
+    "product_name": "シャープ　SHARP　単機能電子レンジ［18L／ターンテーブル式］　RE-TM18-B",
+    "price": 10683,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 634,
         "time": "2025-05-01 01:57:31"
+      },
+      {
+        "price": 10683,
+        "time": "2025-05-07 07:13:58"
       }
     ]
   },
@@ -10601,13 +10617,17 @@
   },
   "4974019130392": {
     "product_name": "シャープ　SHARP　単機能電子レンジ［18L／ターンテーブル式］　RE-TM18-W",
-    "price": 11636,
-    "last_notified_time": "2025-05-02 07:04:43",
-    "notification_count": 1,
+    "price": 10683,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 11636,
         "time": "2025-05-02 07:04:43"
+      },
+      {
+        "price": 10683,
+        "time": "2025-05-07 07:13:58"
       }
     ]
   },
@@ -11004,6 +11024,42 @@
       {
         "price": 127113,
         "time": "2025-05-07 04:31:22"
+      }
+    ]
+  },
+  "4548736012561": {
+    "product_name": "SONY デジタルカメラ DSC-WX500 光学30倍ズーム 1820万画素 レッド Cyber-shot DSC-WX500 RC",
+    "price": 89272,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 89272,
+        "time": "2025-05-07 07:13:58"
+      }
+    ]
+  },
+  "4549873163482": {
+    "product_name": "【当日出荷】日立 紙パック式クリーナー【日本製】【620W】【かるパック】小型・軽量ボディ&強力パワー(ライトゴールド) CV-KP90K-N 紙パック式クリーナー 日本製 小型・軽量 強烈パワー 持ち運びラク 自走機能 ecoこれっきり サッとズームパイプ パッとブラシ",
+    "price": 20918,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 20918,
+        "time": "2025-05-07 07:13:58"
+      }
+    ]
+  },
+  "4974305224170": {
+    "product_name": "象印マホービン 炊飯器 5.5合 極め炊き 豪熱大火力 圧力IHタイプ 日本製 お手入れ点数2点 ブラック NW-JZ10-BA",
+    "price": 51020,
+    "last_notified_time": "2025-05-07 07:13:58",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 51020,
+        "time": "2025-05-07 07:13:58"
       }
     ]
   }
