@@ -10636,14 +10636,18 @@
     ]
   },
   "4549873158679": {
-    "product_name": "(未使用) HITACHI 日立 紙パック式クリーナー かるパック CV-KP900K ライトゴールド【訳あり】",
-    "price": 37480,
-    "last_notified_time": "2025-05-01 15:59:20",
-    "notification_count": 1,
+    "product_name": "日立 紙パック式クリーナー CV-KP900K ライトゴールド 普通",
+    "price": 47718,
+    "last_notified_time": "2025-05-07 16:06:50",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 37480,
         "time": "2025-05-01 15:59:20"
+      },
+      {
+        "price": 47718,
+        "time": "2025-05-07 16:06:50"
       }
     ]
   },
@@ -11200,6 +11204,18 @@
       {
         "price": 34980,
         "time": "2025-05-07 13:20:20"
+      }
+    ]
+  },
+  "4988601011211": {
+    "product_name": "【在庫あり・送料無料】PS5 ソフト Forspoken(フォースポークン) ELJM30125【ポスト投函】",
+    "price": 3025,
+    "last_notified_time": "2025-05-07 16:06:50",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 3025,
+        "time": "2025-05-07 16:06:50"
       }
     ]
   }
