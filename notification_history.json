@@ -2072,10 +2072,10 @@
     ]
   },
   "4512223695193": {
-    "product_name": "[訳アリ] shokz 完全ワイヤレスイヤホン OpenFit ベージュopenfit-skz-ep-000021 [難あり(D)]",
-    "price": 6800,
-    "last_notified_time": "2025-04-25 13:20:55",
-    "notification_count": 2,
+    "product_name": "Shokz OpenFit SKZ-EP-000021 [ベージュ] JAN 4512223695193",
+    "price": 16283,
+    "last_notified_time": "2025-05-08 16:00:01",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 12700,
@@ -2084,6 +2084,10 @@
       {
         "price": 6800,
         "time": "2025-04-25 13:20:55"
+      },
+      {
+        "price": 16283,
+        "time": "2025-05-08 16:00:01"
       }
     ]
   },
@@ -2680,10 +2684,10 @@
     ]
   },
   "4549292189711": {
-    "product_name": "キヤノン EOS R10 ボディ",
-    "price": 113094,
-    "last_notified_time": "2025-04-30 16:10:04",
-    "notification_count": 3,
+    "product_name": "CANON(キヤノン) EOS R10 ボディ",
+    "price": 122934,
+    "last_notified_time": "2025-05-08 16:00:01",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 117980,
@@ -2696,6 +2700,10 @@
       {
         "price": 113094,
         "time": "2025-04-30 16:10:04"
+      },
+      {
+        "price": 122934,
+        "time": "2025-05-08 16:00:01"
       }
     ]
   },
@@ -10628,14 +10636,18 @@
     ]
   },
   "4512223695186": {
-    "product_name": "【5/1限定★抽選で最大300%ポイントバック！(要エントリー)】(在庫限り) Shokz OpenFit ショックス オープンフィット 完全ワイヤレスイヤホン オープンイヤー型 耳をふさがないイヤホン オープンイヤーイヤホン Bluetooth ブルートゥース 通話 マイク付き 防水防塵",
-    "price": 21800,
-    "last_notified_time": "2025-05-01 04:35:42",
-    "notification_count": 1,
+    "product_name": "Shokz OpenFit SKZ-EP-000020 [ブラック] JAN 4512223695186",
+    "price": 16282,
+    "last_notified_time": "2025-05-08 16:00:01",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 21800,
         "time": "2025-05-01 04:35:42"
+      },
+      {
+        "price": 16282,
+        "time": "2025-05-08 16:00:01"
       }
     ]
   },
@@ -11452,6 +11464,18 @@
       {
         "price": 31900,
         "time": "2025-05-08 13:12:26"
+      }
+    ]
+  },
+  "4548736122406": {
+    "product_name": "【当店1年保証】SONY ワイヤレスポータブルスピーカー SRS-XB13 / BC ワイヤレススピーカー ソニー Bluetooth 小型 ブルートゥース アクティブスピーカー / ネックスピーカー 黒 ブラック B 青 ライトブルー L ベージュ C コーラルピンク P パウダーブルー ポータブル 携帯用",
+    "price": 6180,
+    "last_notified_time": "2025-05-08 16:00:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 6180,
+        "time": "2025-05-08 16:00:01"
       }
     ]
   }
