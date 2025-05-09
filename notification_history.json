@@ -11080,14 +11080,18 @@
     ]
   },
   "4549576197517": {
-    "product_name": "タブレットパソコン Microsoft Surface Pro 9 QEZ-00028 13型 Core i5 メモリ8GB ストレージ256GB 顔認証 Office Windows 11 Type-C グラファイト",
-    "price": 169800,
-    "last_notified_time": "2025-05-04 10:07:50",
-    "notification_count": 1,
+    "product_name": "タブレットパソコン Microsoft Surface Pro 9 QEZ-00028 13型 Core i5 メモリ8GB ストレージ256GB 顔認証 Office Windows 11 Type-C グラファイト 量販店展示品",
+    "price": 149800,
+    "last_notified_time": "2025-05-09 09:59:53",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 169800,
         "time": "2025-05-04 10:07:50"
+      },
+      {
+        "price": 149800,
+        "time": "2025-05-09 09:59:53"
       }
     ]
   },
@@ -11580,6 +11584,42 @@
       {
         "price": 51150,
         "time": "2025-05-09 07:14:38"
+      }
+    ]
+  },
+  "4549292057522": {
+    "product_name": "【在庫あり・送料無料】Canon デジタルカメラ IXY 650 BK",
+    "price": 46499,
+    "last_notified_time": "2025-05-09 09:59:53",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 46499,
+        "time": "2025-05-09 09:59:53"
+      }
+    ]
+  },
+  "4969929257147": {
+    "product_name": "BOSE ボーズ ボーズ / Bose QuietComfort 45 headphones [ホワイトスモーク]",
+    "price": 30085,
+    "last_notified_time": "2025-05-09 09:59:53",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 30085,
+        "time": "2025-05-09 09:59:53"
+      }
+    ]
+  },
+  "4976219124416": {
+    "product_name": "PS5 ストリートファイター6",
+    "price": 6758,
+    "last_notified_time": "2025-05-09 09:59:53",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 6758,
+        "time": "2025-05-09 09:59:53"
       }
     ]
   }
