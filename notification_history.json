@@ -372,10 +372,10 @@
     ]
   },
   "4580652111751": {
-    "product_name": "【新品 箱不良・シュリンク破れ品】TOSHIBA 東芝 4Kブルーレイレコーダー REGZA DBR-4KZ200",
-    "price": 74000,
-    "last_notified_time": "2025-04-15 14:31:08",
-    "notification_count": 3,
+    "product_name": "【ポイント10倍】 TVS REGZA ブルーレイ・DVDレコーダー 4KREGZAブルーレイ DBR-4KZ200 [タイプ：ブルーレイレコーダー 同時録画可能番組数：3番組 HDD容量：2TB 早見再生：1.3倍速 無線LAN：○] 【P10倍】",
+    "price": 122650,
+    "last_notified_time": "2025-05-09 07:14:38",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 72599,
@@ -388,6 +388,10 @@
       {
         "price": 74000,
         "time": "2025-04-15 14:31:08"
+      },
+      {
+        "price": 122650,
+        "time": "2025-05-09 07:14:38"
       }
     ]
   },
@@ -4633,13 +4637,17 @@
   },
   "4550161481423": {
     "product_name": "NEC　無線LANルーター(Wi-Fiルーター) Wi-Fi 6(ax)/ac/n/a/g/b 目安：〜4LDK/3階建　PA-WX3000HP2",
-    "price": 9100,
-    "last_notified_time": "2025-04-06 16:24:54",
-    "notification_count": 1,
+    "price": 10079,
+    "last_notified_time": "2025-05-09 07:14:38",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 9100,
         "time": "2025-04-06 16:24:54"
+      },
+      {
+        "price": 10079,
+        "time": "2025-05-09 07:14:38"
       }
     ]
   },
@@ -9737,9 +9745,9 @@
   },
   "4549980030738": {
     "product_name": "パナソニック ETC2.0車載器 CY-ET2500VD アンテナ分離型 (DSRC) 新セキュリティ対応 Panasonic",
-    "price": 36511,
-    "last_notified_time": "2025-04-28 22:04:36",
-    "notification_count": 2,
+    "price": 40224,
+    "last_notified_time": "2025-05-09 07:14:38",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 40224,
@@ -9748,6 +9756,10 @@
       {
         "price": 36511,
         "time": "2025-04-28 22:04:36"
+      },
+      {
+        "price": 40224,
+        "time": "2025-05-09 07:14:38"
       }
     ]
   },
@@ -10561,13 +10573,17 @@
   },
   "4549873175386": {
     "product_name": "日立 沸騰鉄釜 ふっくら御膳 RZ-W100GM(K) [漆黒] JAN 4549873175386",
-    "price": 50450,
-    "last_notified_time": "2025-04-30 10:05:33",
-    "notification_count": 1,
+    "price": 64350,
+    "last_notified_time": "2025-05-09 07:14:38",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 50450,
         "time": "2025-04-30 10:05:33"
+      },
+      {
+        "price": 64350,
+        "time": "2025-05-09 07:14:38"
       }
     ]
   },
@@ -11528,6 +11544,42 @@
       {
         "price": 248900,
         "time": "2025-05-09 04:29:01"
+      }
+    ]
+  },
+  "4549046144393": {
+    "product_name": "【新品　国内版】Motorola モトローラ スマホ moto g64y 5G 4GB+128GB Y!mobile版 クリーム SIMロック解除済み/楽天/ドコモ/au/ソフトバンク/SIM対応",
+    "price": 16327,
+    "last_notified_time": "2025-05-09 07:14:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 16327,
+        "time": "2025-05-09 07:14:38"
+      }
+    ]
+  },
+  "4549873188232": {
+    "product_name": "日立 掃除機 紙パック式 小型・軽量ボディ&強烈パワー (ホワイト) CV-KV70L-W【納期目安：05/12入荷予定】 紙パック 小型 軽量 強烈パワー ホワイト ファンモーター ヘッド パワフルエアーヘッド ワンタッチズームパイプ ねじれんホース クルッとヘッド ペタリンコ構造",
+    "price": 17800,
+    "last_notified_time": "2025-05-09 07:14:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 17800,
+        "time": "2025-05-09 07:14:38"
+      }
+    ]
+  },
+  "4550556104555": {
+    "product_name": "【ポイント10倍】 シャープ 掃除機 RACTIVE Air EC-AR9-B [ブラック系] [タイプ：スティック/ハンディ 集じん方式：サイクロン 本体質量：0.84kg 最長運転時間/連続使用時間：標準モード：60分/40分/自動モード：28分/強モード：11分] 【P10倍】",
+    "price": 51150,
+    "last_notified_time": "2025-05-09 07:14:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 51150,
+        "time": "2025-05-09 07:14:38"
       }
     ]
   }
