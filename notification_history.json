@@ -6204,10 +6204,10 @@
     ]
   },
   "4942857222029": {
-    "product_name": "【最大2000円クーポンGET】「新品 未使用 白ロム」Simフリー FUJITSU arrows We F-51B パープル※赤ロム保証 [docomoロック解除済][富士通][jan:4942857222029]",
-    "price": 15980,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 2,
+    "product_name": "SIMフリー docomo arrows We F-51B [パープル] スマートフォン本体",
+    "price": 20290,
+    "last_notified_time": "2025-05-10 01:50:22",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 17880,
@@ -6216,6 +6216,10 @@
       {
         "price": 15980,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 20290,
+        "time": "2025-05-10 01:50:22"
       }
     ]
   },
@@ -11704,6 +11708,18 @@
       {
         "price": 280854,
         "time": "2025-05-09 22:06:57"
+      }
+    ]
+  },
+  "4948872017251": {
+    "product_name": "【新品】PlayStation Portal リモートプレーヤー ミッドナイトブラック (CFIJ-18001)【加納店】",
+    "price": 32000,
+    "last_notified_time": "2025-05-10 01:50:22",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 32000,
+        "time": "2025-05-10 01:50:22"
       }
     ]
   }
