@@ -4592,14 +4592,18 @@
     ]
   },
   "4974305227126": {
-    "product_name": "【新品 箱不良・シュリンク破れ品】ZOJIRUSHI 象印 炎舞炊き 炊飯器 NW-NA10-BZ ブラック",
-    "price": 64000,
-    "last_notified_time": "2025-04-06 10:16:12",
-    "notification_count": 1,
+    "product_name": "象印 炎舞炊き NW-NA10-BZ [スレートブラック] JAN 4974305227126",
+    "price": 68351,
+    "last_notified_time": "2025-05-10 04:27:56",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 64000,
         "time": "2025-04-06 10:16:12"
+      },
+      {
+        "price": 68351,
+        "time": "2025-05-10 04:27:56"
       }
     ]
   },
@@ -9908,14 +9912,18 @@
     ]
   },
   "4549046141163": {
-    "product_name": "[新品未開封｜SIMフリー] OPPO A79 5G 4GB/128GB｜Yモバイル版 A303OP｜キャリア無しSIMフリー版 CPH2557 スマホ 本体",
-    "price": 20300,
-    "last_notified_time": "2025-04-25 10:05:35",
-    "notification_count": 1,
+    "product_name": "【新品　国内版】OPPO オッポ A79 5G Y!mobile版 128GB グローグリーン SIMロック解除済み/楽天/ドコモ/au/ソフトバンク/SIM対応",
+    "price": 18749,
+    "last_notified_time": "2025-05-10 04:27:56",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 20300,
         "time": "2025-04-25 10:05:35"
+      },
+      {
+        "price": 18749,
+        "time": "2025-05-10 04:27:56"
       }
     ]
   },
@@ -11720,6 +11728,42 @@
       {
         "price": 32000,
         "time": "2025-05-10 01:50:22"
+      }
+    ]
+  },
+  "4547410269307": {
+    "product_name": "新品 FUJIFILM / 富士フイルム instax mini 90 チェキ ネオクラシック ブラウン INS MINI90 NEO CLASSIC 4547410269307",
+    "price": 53798,
+    "last_notified_time": "2025-05-10 04:27:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 53798,
+        "time": "2025-05-10 04:27:56"
+      }
+    ]
+  },
+  "4548736155619": {
+    "product_name": "WH-G500-WZ ソニー SONY INZONE H5 インゾーン H5 ゲーミングヘッドセット ワイヤレスモデル ホワイト",
+    "price": 20899,
+    "last_notified_time": "2025-05-10 04:27:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 20899,
+        "time": "2025-05-10 04:27:56"
+      }
+    ]
+  },
+  "4549995542608": {
+    "product_name": "【未使用】Apple MacBook Air 15インチ (M4,2025) M4(CPU:10C/GPU:10C) 16GB/512GB ミッドナイト MW1M3J/A【吉祥寺】保証期間3ヶ月",
+    "price": 215980,
+    "last_notified_time": "2025-05-10 04:27:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 215980,
+        "time": "2025-05-10 04:27:56"
       }
     ]
   }
