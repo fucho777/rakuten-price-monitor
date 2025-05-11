@@ -52,10 +52,10 @@
     ]
   },
   "4549576247038": {
-    "product_name": "Xbox Series X デジタル エディション EP2-00708 [1TB ロボット ホワイト]",
-    "price": 89100,
-    "last_notified_time": "2025-05-07 02:01:28",
-    "notification_count": 4,
+    "product_name": "【送料無料・在庫あり】Microsoft Xbox Series X 1TB デジタル モデル [EP2-00708](ホワイト)",
+    "price": 100876,
+    "last_notified_time": "2025-05-11 01:59:49",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 76999,
@@ -72,6 +72,10 @@
       {
         "price": 89100,
         "time": "2025-05-07 02:01:28"
+      },
+      {
+        "price": 100876,
+        "time": "2025-05-11 01:59:49"
       }
     ]
   },
@@ -11876,6 +11880,18 @@
       {
         "price": 16470,
         "time": "2025-05-10 15:58:11"
+      }
+    ]
+  },
+  "4902370551815": {
+    "product_name": "マリオカート8 デラックス ＋ コース追加パス -Switch",
+    "price": 12790,
+    "last_notified_time": "2025-05-11 01:59:49",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 12790,
+        "time": "2025-05-11 01:59:49"
       }
     ]
   }
