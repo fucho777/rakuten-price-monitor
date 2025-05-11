@@ -10844,14 +10844,18 @@
     ]
   },
   "4549980762974": {
-    "product_name": "【新品】Panasonic パナソニック カーナビ ストラーダ CN-CE01D",
-    "price": 66989,
-    "last_notified_time": "2025-05-01 13:11:04",
-    "notification_count": 1,
+    "product_name": "【新品 箱不良・シュリンク破れ品】Panasonic パナソニック カーナビ 7V型 ストラーダ CN-CE01D",
+    "price": 63000,
+    "last_notified_time": "2025-05-11 13:09:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 66989,
         "time": "2025-05-01 13:11:04"
+      },
+      {
+        "price": 63000,
+        "time": "2025-05-11 13:09:24"
       }
     ]
   },
@@ -11308,14 +11312,18 @@
     ]
   },
   "4549576183381": {
-    "product_name": "【お得・新品・送料無料・即納】 Microsoft XBOX ワイヤレス コントローラー [ディープ ピンク]※倉庫からの移動中に箱傷みあり※ 【外箱傷あり】",
-    "price": 6749,
-    "last_notified_time": "2025-05-07 04:31:22",
-    "notification_count": 1,
+    "product_name": "【新品 箱不良・シュリンク破れ品】Microsoft マイクロソフト Xbox ワイヤレス コントローラー QAU00084 ディープピンク",
+    "price": 6000,
+    "last_notified_time": "2025-05-11 13:09:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 6749,
         "time": "2025-05-07 04:31:22"
+      },
+      {
+        "price": 6000,
+        "time": "2025-05-11 13:09:24"
       }
     ]
   },
@@ -11968,6 +11976,18 @@
       {
         "price": 14015,
         "time": "2025-05-11 10:04:28"
+      }
+    ]
+  },
+  "4540790314230": {
+    "product_name": "【新品 箱不良・シュリンク破れ品】YA-MAN ヤーマン 光美容器 レイボーテ ヴィーナス プロ YJEA0L アイスブルー",
+    "price": 31000,
+    "last_notified_time": "2025-05-11 13:09:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 31000,
+        "time": "2025-05-11 13:09:24"
       }
     ]
   }
