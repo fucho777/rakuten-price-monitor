@@ -11429,13 +11429,17 @@
   },
   "4547410476408": {
     "product_name": "【新品 保証開始済み品】FUJIFILM 富士フイルム スマートフォン用プリンター チェキ instax mini Link 2 ソフトピンク",
-    "price": 13000,
-    "last_notified_time": "2025-05-07 13:20:20",
-    "notification_count": 1,
+    "price": 12000,
+    "last_notified_time": "2025-05-11 10:04:28",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 13000,
         "time": "2025-05-07 13:20:20"
+      },
+      {
+        "price": 12000,
+        "time": "2025-05-11 10:04:28"
       }
     ]
   },
@@ -11940,6 +11944,30 @@
       {
         "price": 35800,
         "time": "2025-05-11 07:03:43"
+      }
+    ]
+  },
+  "4549046134028": {
+    "product_name": "【未使用】【赤ロム保証あり】Xiaomi SoftBank 【SIMフリー】 Redmi Note 10T ナイトタイムブルー 4GB 64GB A101XM【高崎モントレー】保証期間3ヶ月",
+    "price": 12980,
+    "last_notified_time": "2025-05-11 10:04:28",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 12980,
+        "time": "2025-05-11 10:04:28"
+      }
+    ]
+  },
+  "4549980550786": {
+    "product_name": "パナソニック メンズシェーバー ラムダッシュ 3枚刃 黒 お風呂剃り可 ES-LT2B-K",
+    "price": 14015,
+    "last_notified_time": "2025-05-11 10:04:28",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 14015,
+        "time": "2025-05-11 10:04:28"
       }
     ]
   }
