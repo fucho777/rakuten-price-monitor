@@ -2645,9 +2645,9 @@
   },
   "4548736012547": {
     "product_name": "SONY デジタルカメラ DSC-WX500 光学30倍ズーム 1820万画素 ブラック Cyber-shot DSC-WX500 BC",
-    "price": 83120,
-    "last_notified_time": "2025-04-23 19:11:17",
-    "notification_count": 2,
+    "price": 87805,
+    "last_notified_time": "2025-05-12 19:13:05",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 71560,
@@ -2656,6 +2656,10 @@
       {
         "price": 83120,
         "time": "2025-04-23 19:11:17"
+      },
+      {
+        "price": 87805,
+        "time": "2025-05-12 19:13:05"
       }
     ]
   },
@@ -8277,9 +8281,9 @@
   },
   "4549077811820": {
     "product_name": "パナソニック HDビデオカメラ V480MS 32GB 高倍率90倍ズーム ホワイト HC-V480MS-W",
-    "price": 79077,
-    "last_notified_time": "2025-04-29 22:07:23",
-    "notification_count": 3,
+    "price": 70363,
+    "last_notified_time": "2025-05-12 19:13:05",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 79077,
@@ -8292,6 +8296,10 @@
       {
         "price": 79077,
         "time": "2025-04-29 22:07:23"
+      },
+      {
+        "price": 70363,
+        "time": "2025-05-12 19:13:05"
       }
     ]
   },
@@ -9473,9 +9481,9 @@
   },
   "4548736012554": {
     "product_name": "ソニー / コンパクトデジタルカメラ / Cyber-shot / DSC-WX500 / ホワイト / 光学ズーム30倍(24-720mm) / 180度可動式液晶モニター / DSC-WX500 WC",
-    "price": 99433,
-    "last_notified_time": "2025-05-08 09:59:49",
-    "notification_count": 2,
+    "price": 87805,
+    "last_notified_time": "2025-05-12 19:13:05",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 104792,
@@ -9484,6 +9492,10 @@
       {
         "price": 99433,
         "time": "2025-05-08 09:59:49"
+      },
+      {
+        "price": 87805,
+        "time": "2025-05-12 19:13:05"
       }
     ]
   },
@@ -12376,6 +12388,18 @@
       {
         "price": 98780,
         "time": "2025-05-12 13:21:56"
+      }
+    ]
+  },
+  "4549995285604": {
+    "product_name": "Apple 2021 iPad mini (Wi-Fi + Cellular, 64GB) - ピンク",
+    "price": 113626,
+    "last_notified_time": "2025-05-12 19:13:05",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 113626,
+        "time": "2025-05-12 19:13:05"
       }
     ]
   }
