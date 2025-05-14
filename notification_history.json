@@ -4381,9 +4381,9 @@
   },
   "4549292119282": {
     "product_name": "【展示品】【アウトレット 展示品】★キヤノン / CANON EOS R ボディ",
-    "price": 157110,
-    "last_notified_time": "2025-05-07 02:01:28",
-    "notification_count": 5,
+    "price": 147320,
+    "last_notified_time": "2025-05-14 16:04:38",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 212570,
@@ -4404,6 +4404,10 @@
       {
         "price": 157110,
         "time": "2025-05-07 02:01:28"
+      },
+      {
+        "price": 147320,
+        "time": "2025-05-14 16:04:38"
       }
     ]
   },
@@ -12756,6 +12760,18 @@
       {
         "price": 278980,
         "time": "2025-05-14 13:21:19"
+      }
+    ]
+  },
+  "4549292214543": {
+    "product_name": "【未使用】Canon EOS R100 ボディ【日本橋3】保証期間3ヶ月",
+    "price": 76980,
+    "last_notified_time": "2025-05-14 16:04:38",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 76980,
+        "time": "2025-05-14 16:04:38"
       }
     ]
   }
