@@ -676,10 +676,10 @@
     ]
   },
   "4902370540437": {
-    "product_name": "【メール便配送】任天堂 スーパーマリオパーティ 4902370540437",
-    "price": 5560,
-    "last_notified_time": "2025-04-23 07:13:26",
-    "notification_count": 4,
+    "product_name": "スーパー マリオパーティ - Switch",
+    "price": 4753,
+    "last_notified_time": "2025-05-14 02:01:20",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 5984,
@@ -696,6 +696,10 @@
       {
         "price": 5560,
         "time": "2025-04-23 07:13:26"
+      },
+      {
+        "price": 4753,
+        "time": "2025-05-14 02:01:20"
       }
     ]
   },
@@ -11001,13 +11005,17 @@
   },
   "4975514062171": {
     "product_name": "ケンウッド カーナビ 彩速 9インチ MDV-M908HDL HDモデル 圧倒的な地図の見やすさ 操作感 大画面 インダッシュナビ HDMI入力 ハイレゾ音源対応 KENWOOD",
-    "price": 125896,
-    "last_notified_time": "2025-05-01 07:15:03",
-    "notification_count": 1,
+    "price": 117769,
+    "last_notified_time": "2025-05-14 02:01:20",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 125896,
         "time": "2025-05-01 07:15:03"
+      },
+      {
+        "price": 117769,
+        "time": "2025-05-14 02:01:20"
       }
     ]
   },
@@ -12536,6 +12544,18 @@
       {
         "price": 5333,
         "time": "2025-05-13 04:32:42"
+      }
+    ]
+  },
+  "4988028522123": {
+    "product_name": "AVIC-RW821-D パイオニア カロッツェリア carrozzeria カーナビ",
+    "price": 73400,
+    "last_notified_time": "2025-05-14 02:01:20",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 73400,
+        "time": "2025-05-14 02:01:20"
       }
     ]
   }
