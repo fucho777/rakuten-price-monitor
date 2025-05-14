@@ -1897,13 +1897,17 @@
   },
   "4549077457974": {
     "product_name": "パナソニック デジタルカメラ ルミックス FZ300 光学24倍 ブラック DMC-FZ300-K",
-    "price": 152480,
-    "last_notified_time": "2025-04-01 19:42:39",
-    "notification_count": 1,
+    "price": 180023,
+    "last_notified_time": "2025-05-14 04:31:46",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 152480,
         "time": "2025-04-01 19:42:39"
+      },
+      {
+        "price": 180023,
+        "time": "2025-05-14 04:31:46"
       }
     ]
   },
@@ -9596,10 +9600,10 @@
     ]
   },
   "4974305221506": {
-    "product_name": "象印マホービン 炊飯器 圧力IH炊飯ジャー(5.5合炊き) 黒釉 ZOJIRUSHI 炎舞炊き NW-FA10-BZ",
-    "price": 100796,
-    "last_notified_time": "2025-05-05 22:06:25",
-    "notification_count": 2,
+    "product_name": "象印 圧力IH炊飯ジャー 炎舞炊き NW-FA10 黒釉(BZ)",
+    "price": 90440,
+    "last_notified_time": "2025-05-14 04:31:46",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 83770,
@@ -9608,6 +9612,10 @@
       {
         "price": 100796,
         "time": "2025-05-05 22:06:25"
+      },
+      {
+        "price": 90440,
+        "time": "2025-05-14 04:31:46"
       }
     ]
   },
@@ -12556,6 +12564,42 @@
       {
         "price": 73400,
         "time": "2025-05-14 02:01:20"
+      }
+    ]
+  },
+  "4549980736364": {
+    "product_name": "炊飯器 Panasonic / パナソニック SR-CR10A-K [ブラック] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549980736364-ds 4549980736364-ds",
+    "price": 33760,
+    "last_notified_time": "2025-05-14 04:31:46",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 33760,
+        "time": "2025-05-14 04:31:46"
+      }
+    ]
+  },
+  "4549995521498": {
+    "product_name": "【未使用】Apple MacBook Pro 14インチ M4(CPU:10C/GPU:10C) 16GB/1TB シルバー MW2X3J/A(14インチ,M4,2024)【大須アメ横】保証期間3ヶ月",
+    "price": 253980,
+    "last_notified_time": "2025-05-14 04:31:46",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 253980,
+        "time": "2025-05-14 04:31:46"
+      }
+    ]
+  },
+  "4968929077984": {
+    "product_name": "JBL｜ジェイビーエル ブルートゥース スピーカー ピンク JBLGO3PINK [防水 /Bluetooth対応]",
+    "price": 5480,
+    "last_notified_time": "2025-05-14 04:31:46",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 5480,
+        "time": "2025-05-14 04:31:46"
       }
     ]
   }
