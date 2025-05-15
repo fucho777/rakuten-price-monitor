@@ -2168,10 +2168,10 @@
     ]
   },
   "4549980712627": {
-    "product_name": "【ポイント10倍】 パナソニック ブルーレイレコーダー 4Kディーガ DMR-4TS203 [タイプ：ブルーレイレコーダー 同時録画可能番組数：3番組 HDD容量：2TB 早見再生：2倍速 無線LAN：○] 【P10倍】",
-    "price": 91190,
-    "last_notified_time": "2025-05-12 07:06:34",
-    "notification_count": 4,
+    "product_name": "パナソニック 4Kディーガ DMR-4TS203 JAN 4549980712627",
+    "price": 68000,
+    "last_notified_time": "2025-05-15 13:21:27",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 60980,
@@ -2188,6 +2188,10 @@
       {
         "price": 91190,
         "time": "2025-05-12 07:06:34"
+      },
+      {
+        "price": 68000,
+        "time": "2025-05-15 13:21:27"
       }
     ]
   },
@@ -2645,13 +2649,17 @@
   },
   "6941487230075": {
     "product_name": "HUAWEI MatePad 11 タブレット 2021年モデル Wi-Fi6 ディスプレイ解像度(2,560 1,600) Harman Kardonチューニング クアッドスピーカー RAM6GB/ROM128GB アイルブルー 日本正規代理店品",
-    "price": 45445,
-    "last_notified_time": "2025-04-02 14:20:19",
-    "notification_count": 1,
+    "price": 51001,
+    "last_notified_time": "2025-05-15 13:21:27",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 45445,
         "time": "2025-04-02 14:20:19"
+      },
+      {
+        "price": 51001,
+        "time": "2025-05-15 13:21:27"
       }
     ]
   },
@@ -4696,10 +4704,10 @@
     ]
   },
   "8710103996422": {
-    "product_name": "【新品】フィリップス メンズシェーバー 5000シリーズ S5444/03 ネイビーブルー",
-    "price": 6985,
-    "last_notified_time": "2025-05-06 10:08:31",
-    "notification_count": 4,
+    "product_name": "フィリップス 5000シリーズ S5444/03 JAN 8710103996422",
+    "price": 8030,
+    "last_notified_time": "2025-05-15 13:21:27",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 8249,
@@ -4716,6 +4724,10 @@
       {
         "price": 6985,
         "time": "2025-05-06 10:08:31"
+      },
+      {
+        "price": 8030,
+        "time": "2025-05-15 13:21:27"
       }
     ]
   },
@@ -6841,9 +6853,9 @@
   },
   "4540790333736": {
     "product_name": "【土日祝発送】【新品】YA-MAN ヤーマン スムースアイロンフォトイオン ストレートアイロン YJHB0N",
-    "price": 20199,
-    "last_notified_time": "2025-05-12 10:09:37",
-    "notification_count": 4,
+    "price": 15833,
+    "last_notified_time": "2025-05-15 13:21:27",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 19869,
@@ -6860,6 +6872,10 @@
       {
         "price": 20199,
         "time": "2025-05-12 10:09:37"
+      },
+      {
+        "price": 15833,
+        "time": "2025-05-15 13:21:27"
       }
     ]
   },
@@ -12964,6 +12980,18 @@
       {
         "price": 23703,
         "time": "2025-05-15 10:00:00"
+      }
+    ]
+  },
+  "4549995452136": {
+    "product_name": "Apple iPad Pro 13インチ Wi-Fi 1TB 2024年春モデル MVX73J/A シルバー アップル",
+    "price": 261360,
+    "last_notified_time": "2025-05-15 13:21:27",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 261360,
+        "time": "2025-05-15 13:21:27"
       }
     ]
   }
