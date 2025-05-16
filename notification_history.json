@@ -10908,14 +10908,18 @@
     ]
   },
   "4549995555356": {
-    "product_name": "Apple iPad Air 11インチ (M3) Wi-Fi 1TB MCAH4J/A スペースグレイ【お取り寄せ（5週から7週程度見込み）での入荷、発送】",
-    "price": 191853,
-    "last_notified_time": "2025-04-28 22:04:36",
-    "notification_count": 1,
+    "product_name": "【未使用】Apple 【Wi-Fi】 11インチ iPad Air（M3/2025) 1TB スペースグレイ MCAH4J/A【福岡天神】保証期間6ヶ月",
+    "price": 165980,
+    "last_notified_time": "2025-05-16 21:58:13",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 191853,
         "time": "2025-04-28 22:04:36"
+      },
+      {
+        "price": 165980,
+        "time": "2025-05-16 21:58:13"
       }
     ]
   },
@@ -13280,6 +13284,18 @@
       {
         "price": 13759,
         "time": "2025-05-16 13:22:23"
+      }
+    ]
+  },
+  "4902370547948": {
+    "product_name": "【新品】ニンテンドースイッチソフト マリオゴルフ スーパーラッシュ",
+    "price": 5380,
+    "last_notified_time": "2025-05-16 21:58:13",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 5380,
+        "time": "2025-05-16 21:58:13"
       }
     ]
   }
