@@ -2444,10 +2444,10 @@
     ]
   },
   "4987176180292": {
-    "product_name": "ブラウン　BRAUN　電気シェーバー シリーズ5 (キワゾリトリマー/防水設計/充電式/コードレス/ディープキャッチ網刃) ［3枚刃 /AC100V-240V］ ブルー　52-A1200S",
-    "price": 7125,
-    "last_notified_time": "2025-05-12 04:34:04",
-    "notification_count": 3,
+    "product_name": "【ポイント10倍】 ブラウン シェーバー ブラウン シリーズ5 52-A1200s [アズールブルー] [刃の枚数：3枚刃 駆動方式：往復式 電源方式：充電 その他機能：水洗い/海外使用/お風呂剃り対応/キワゾリ刃] 【P10倍】",
+    "price": 6600,
+    "last_notified_time": "2025-05-16 07:10:25",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 7474,
@@ -2460,6 +2460,10 @@
       {
         "price": 7125,
         "time": "2025-05-12 04:34:04"
+      },
+      {
+        "price": 6600,
+        "time": "2025-05-16 07:10:25"
       }
     ]
   },
@@ -11820,14 +11824,18 @@
     ]
   },
   "4549995453010": {
-    "product_name": "【未使用】Apple iPad Air 13インチ （第1世代/M2/2024） Wi-Fiモデル 256GB スペースグレイ MV2D3J/A【ECセンター】保証期間6ヶ月",
-    "price": 115980,
-    "last_notified_time": "2025-05-07 13:20:20",
-    "notification_count": 1,
+    "product_name": "★アップル / APPLE iPad Air 13インチ Wi-Fi 256GB 2024年春モデルMV2D3J/A [スペースグレイ] 【タブレットPC】【送料無料】",
+    "price": 122920,
+    "last_notified_time": "2025-05-16 07:10:25",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 115980,
         "time": "2025-05-07 13:20:20"
+      },
+      {
+        "price": 122920,
+        "time": "2025-05-16 07:10:25"
       }
     ]
   },
@@ -12132,14 +12140,18 @@
     ]
   },
   "4580038876137": {
-    "product_name": "「+2倍ポイント・新品」 OPPO A55S 5G ブラック [CPH2309][4GB/64GB] [oppo]SIMフリー 4580038876137",
-    "price": 16190,
-    "last_notified_time": "2025-05-09 13:21:18",
-    "notification_count": 1,
+    "product_name": "【あす楽】【新品未開封】OPPO A55s 5G [ブラック] 4580038876137【即日発送、土、祝日発送 】【送料無料※沖縄を除く】【不正利用防止のため、配達時転送不可】",
+    "price": 17200,
+    "last_notified_time": "2025-05-16 07:10:25",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 16190,
         "time": "2025-05-09 13:21:18"
+      },
+      {
+        "price": 17200,
+        "time": "2025-05-16 07:10:25"
       }
     ]
   },
@@ -13092,6 +13104,30 @@
       {
         "price": 29800,
         "time": "2025-05-16 04:34:01"
+      }
+    ]
+  },
+  "4948872416030": {
+    "product_name": "ディスクドライブ",
+    "price": 11980,
+    "last_notified_time": "2025-05-16 07:10:25",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 11980,
+        "time": "2025-05-16 07:10:25"
+      }
+    ]
+  },
+  "4974019206042": {
+    "product_name": "SHARP｜シャープ 【SIMフリー】AQUOS sense6「SH-M19BB」Snapdragon 690 6.1型 メモリ/ストレージ：6GB/128GB nanoSIM×2 DSDV対応【防水・防塵・おサイフケータイ】 ブラック【国内正規品】",
+    "price": 46800,
+    "last_notified_time": "2025-05-16 07:10:25",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 46800,
+        "time": "2025-05-16 07:10:25"
       }
     ]
   }
