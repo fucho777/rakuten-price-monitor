@@ -724,10 +724,10 @@
     ]
   },
   "4942857239133": {
-    "product_name": "【在庫あり・送料無料】arrows We2 F-52E docomo [ライトオレンジ]　SIMフリー　白ロム",
-    "price": 15479,
-    "last_notified_time": "2025-05-08 13:12:26",
-    "notification_count": 2,
+    "product_name": "arrows We2 F-52E docomo ライトオレンジ SIMロック解除済み 新品 未使用品",
+    "price": 13400,
+    "last_notified_time": "2025-05-16 04:34:01",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 14479,
@@ -736,6 +736,10 @@
       {
         "price": 15479,
         "time": "2025-05-08 13:12:26"
+      },
+      {
+        "price": 13400,
+        "time": "2025-05-16 04:34:01"
       }
     ]
   },
@@ -4768,14 +4772,18 @@
     ]
   },
   "6941812798188": {
-    "product_name": "【新品】Xiaomi シャオミ スマホ Redmi 14C 256GB ミッドナイトブラック SIMフリー",
-    "price": 19885,
-    "last_notified_time": "2025-04-06 10:16:12",
-    "notification_count": 1,
+    "product_name": "【新品・在庫あり・送料無料】 Xiaomi(シャオミ) Redmi 14C 8G+256G SIMフリー [ミッドナイトブラック] SIMフリー softbank｜AU｜docomo｜国内どのキャリアでも使用可 ※開封品届く場合もございます。",
+    "price": 21489,
+    "last_notified_time": "2025-05-16 04:34:01",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 19885,
         "time": "2025-04-06 10:16:12"
+      },
+      {
+        "price": 21489,
+        "time": "2025-05-16 04:34:01"
       }
     ]
   },
@@ -5793,9 +5801,9 @@
   },
   "4547410431032": {
     "product_name": "富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 ブラッシュピンク INS MINI 11 PINK",
-    "price": 23883,
-    "last_notified_time": "2025-04-30 22:07:43",
-    "notification_count": 4,
+    "price": 17184,
+    "last_notified_time": "2025-05-16 04:34:01",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 22512,
@@ -5812,6 +5820,10 @@
       {
         "price": 23883,
         "time": "2025-04-30 22:07:43"
+      },
+      {
+        "price": 17184,
+        "time": "2025-05-16 04:34:01"
       }
     ]
   },
@@ -13032,6 +13044,54 @@
       {
         "price": 3400,
         "time": "2025-05-16 02:03:22"
+      }
+    ]
+  },
+  "4549995521450": {
+    "product_name": "MacBook Pro Liquid Retina XDRディスプレイ 14.2インチ MW2V3J/A [スペースブラック] M4チップ10コアCPU 10コアGPU 16GBメモリ 1TBSSD ※限定保証2026年2月13日 ※アップルケアには加入出来ません 新品",
+    "price": 246880,
+    "last_notified_time": "2025-05-16 04:34:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 246880,
+        "time": "2025-05-16 04:34:01"
+      }
+    ]
+  },
+  "4942857231045": {
+    "product_name": "Xperia 10 V SO-52D ラベンダー SIMロック解除済み 新品 未使用品",
+    "price": 49800,
+    "last_notified_time": "2025-05-16 04:34:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 49800,
+        "time": "2025-05-16 04:34:01"
+      }
+    ]
+  },
+  "4969929259165": {
+    "product_name": "[国内正規品 未開封新品]BOSE(ボーズ) QuietComfort Ultra Earbuds Black QCULTRAEARBUDSBLK ［ワイヤレス(左右分離) /Bluetooth /ノイズキャンセリング対応］",
+    "price": 26900,
+    "last_notified_time": "2025-05-16 04:34:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 26900,
+        "time": "2025-05-16 04:34:01"
+      }
+    ]
+  },
+  "4974019206035": {
+    "product_name": "SHARP AQUOS sense6 SH-M19 シルバー RAM 4GB/ROM 64GB eSIM対応 SIMフリー 新品 未使用品",
+    "price": 29800,
+    "last_notified_time": "2025-05-16 04:34:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 29800,
+        "time": "2025-05-16 04:34:01"
       }
     ]
   }
