@@ -8200,10 +8200,10 @@
     ]
   },
   "4547410449341": {
-    "product_name": "【新品 箱不良】FUJIFILM 富士フイルム instax mini 40 チェキ ブラック",
-    "price": 16000,
-    "last_notified_time": "2025-05-08 13:12:26",
-    "notification_count": 2,
+    "product_name": "【新品・在庫あり・送料無料】FUJIFILM instax mini 40 チェキ",
+    "price": 17500,
+    "last_notified_time": "2025-05-17 02:01:26",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 21239,
@@ -8212,6 +8212,10 @@
       {
         "price": 16000,
         "time": "2025-05-08 13:12:26"
+      },
+      {
+        "price": 17500,
+        "time": "2025-05-17 02:01:26"
       }
     ]
   },
@@ -13296,6 +13300,18 @@
       {
         "price": 5380,
         "time": "2025-05-16 21:58:13"
+      }
+    ]
+  },
+  "4573176156087": {
+    "product_name": "★MTG ReFa BEAUTECH DRYER SMART RE-AN-02A [ホワイト] 【ヘアドライヤー】【送料無料】",
+    "price": 31760,
+    "last_notified_time": "2025-05-17 02:01:26",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 31760,
+        "time": "2025-05-17 02:01:26"
       }
     ]
   }
