@@ -648,10 +648,10 @@
     ]
   },
   "4580038879381": {
-    "product_name": "「+2倍ポイント・新品・開封」OPPO(オッポ) Reno7 A(ドリームブルー) 6.4型 6GB/128GB SIMフリー CPH2353 BL 4580038879381",
-    "price": 30000,
-    "last_notified_time": "2025-05-12 13:21:56",
-    "notification_count": 2,
+    "product_name": "【新品未開封】【あす楽】OPPO Reno7 A ドリームブルー CHP2353 SIMフリー　4580038879381　【即日発送、土、祝日発送】【送料無料※沖縄を除く】【不正利用防止のため、配達時転送不可】",
+    "price": 28199,
+    "last_notified_time": "2025-05-17 04:26:23",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 28200,
@@ -660,6 +660,10 @@
       {
         "price": 30000,
         "time": "2025-05-12 13:21:56"
+      },
+      {
+        "price": 28199,
+        "time": "2025-05-17 04:26:23"
       }
     ]
   },
@@ -6697,9 +6701,9 @@
   },
   "4549980511763": {
     "product_name": "パナソニック スチーマー ナノケア コンパクトタイプ ゴールド調 EH-SA3C-N",
-    "price": 22922,
-    "last_notified_time": "2025-05-09 13:21:18",
-    "notification_count": 4,
+    "price": 25848,
+    "last_notified_time": "2025-05-17 04:26:23",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 23852,
@@ -6716,6 +6720,10 @@
       {
         "price": 22922,
         "time": "2025-05-09 13:21:18"
+      },
+      {
+        "price": 25848,
+        "time": "2025-05-17 04:26:23"
       }
     ]
   },
@@ -7976,14 +7984,18 @@
     ]
   },
   "4580551661630": {
-    "product_name": "未使用｜64GB｜Wi-Fi版｜Lenovo TAB K10 FORCE Club Edition｜ZA8N0027JP｜本体",
-    "price": 9800,
-    "last_notified_time": "2025-04-15 04:09:43",
-    "notification_count": 1,
+    "product_name": "★レノボ / Lenovo Lenovo Tab K10 ZA8N0027JP (Android 11/ストレージ 64GB/メモリ 4GB/8コア/10.3 インチ/Wi-Fiモデル)【送料無料】",
+    "price": 24840,
+    "last_notified_time": "2025-05-17 04:26:23",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 9800,
         "time": "2025-04-15 04:09:43"
+      },
+      {
+        "price": 24840,
+        "time": "2025-05-17 04:26:23"
       }
     ]
   },
@@ -13312,6 +13324,18 @@
       {
         "price": 31760,
         "time": "2025-05-17 02:01:26"
+      }
+    ]
+  },
+  "4549576094113": {
+    "product_name": "【新品】Nintendo Switchソフト Minecraft(マインクラフト)【一宮店】",
+    "price": 3100,
+    "last_notified_time": "2025-05-17 04:26:23",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 3100,
+        "time": "2025-05-17 04:26:23"
       }
     ]
   }
