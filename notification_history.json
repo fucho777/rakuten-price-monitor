@@ -8264,14 +8264,18 @@
     ]
   },
   "4549995555295": {
-    "product_name": "【新品】iPad Air 11インチ Wi-Fi 256GB 2025年春モデル MCA44J/A スターライト",
-    "price": 111111,
-    "last_notified_time": "2025-04-15 14:31:08",
-    "notification_count": 1,
+    "product_name": "【未使用】Apple 【Wi-Fi】 11インチ iPad Air（M3/2025) 256GB スターライト MCA44J/A【熊本】保証期間6ヶ月",
+    "price": 99980,
+    "last_notified_time": "2025-05-17 15:58:11",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 111111,
         "time": "2025-04-15 14:31:08"
+      },
+      {
+        "price": 99980,
+        "time": "2025-05-17 15:58:11"
       }
     ]
   },
@@ -13452,6 +13456,18 @@
       {
         "price": 259980,
         "time": "2025-05-17 13:19:23"
+      }
+    ]
+  },
+  "4549292185485": {
+    "product_name": "【新品】Canon キヤノン カラー インクジェット複合機 PIXUS TS8530WH ホワイト",
+    "price": 32789,
+    "last_notified_time": "2025-05-17 15:58:11",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 32789,
+        "time": "2025-05-17 15:58:11"
       }
     ]
   }
