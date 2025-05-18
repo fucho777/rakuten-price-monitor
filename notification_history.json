@@ -116,10 +116,10 @@
     ]
   },
   "4550556143868": {
-    "product_name": "【新品】SHARP シャープ プラズマクラスタードレープフロードライヤー IB-WX902-B ブラック",
-    "price": 31789,
-    "last_notified_time": "2025-04-26 13:18:02",
-    "notification_count": 3,
+    "product_name": "SHARP プラズマクラスタードレープフロードライヤー IB-WX902-B",
+    "price": 34000,
+    "last_notified_time": "2025-05-18 09:58:07",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 28289,
@@ -132,6 +132,10 @@
       {
         "price": 31789,
         "time": "2025-04-26 13:18:02"
+      },
+      {
+        "price": 34000,
+        "time": "2025-05-18 09:58:07"
       }
     ]
   },
@@ -6424,10 +6428,10 @@
     ]
   },
   "4974305224736": {
-    "product_name": "象印 加湿器 長時間加湿タイプ 4.0L スチーム式 蒸気式 フィルター不要 お手入れ簡単 グレー EE-DD50-HA",
-    "price": 50250,
-    "last_notified_time": "2025-05-10 10:07:49",
-    "notification_count": 3,
+    "product_name": "象印マホービン 加湿器 4.0L 長時間加湿タイプ スチーム式 蒸気式 フィルター不要 お手入れ簡単 グレー EE-DD50-HA",
+    "price": 47219,
+    "last_notified_time": "2025-05-18 09:58:07",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 47125,
@@ -6440,6 +6444,10 @@
       {
         "price": 50250,
         "time": "2025-05-10 10:07:49"
+      },
+      {
+        "price": 47219,
+        "time": "2025-05-18 09:58:07"
       }
     ]
   },
@@ -13492,6 +13500,30 @@
       {
         "price": 7980,
         "time": "2025-05-17 19:07:15"
+      }
+    ]
+  },
+  "4550556115322": {
+    "product_name": "シャープ(SHARP) AQUOS sense8 SIMフリー 6.1型 6GB/128GB [ライトカッパー] SH-M26 C【ラッピング対応可】 R-LOGI",
+    "price": 58648,
+    "last_notified_time": "2025-05-18 09:58:07",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 58648,
+        "time": "2025-05-18 09:58:07"
+      }
+    ]
+  },
+  "4975514061846": {
+    "product_name": "【新品】KENWOOD ケンウッド 彩速ナビ MDV-S708L",
+    "price": 102606,
+    "last_notified_time": "2025-05-18 09:58:07",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 102606,
+        "time": "2025-05-18 09:58:07"
       }
     ]
   }
