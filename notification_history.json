@@ -3161,9 +3161,9 @@
   },
   "4987176165695": {
     "product_name": "ブラウン 電気シェーバー シリーズ9 PRO+ 電動 髭剃り メンズ 9555cc シェーバー本体 5 in 1 洗浄機付きモデル 防水設計 5+1 カットシステム 進化したキワぞり刃 極限0.05mm カット あご下まで夕方ヒゲ、ゼロへ 電動シェーバー",
-    "price": 70620,
-    "last_notified_time": "2025-05-11 19:05:02",
-    "notification_count": 2,
+    "price": 54720,
+    "last_notified_time": "2025-05-19 19:14:46",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 60571,
@@ -3172,6 +3172,10 @@
       {
         "price": 70620,
         "time": "2025-05-11 19:05:02"
+      },
+      {
+        "price": 54720,
+        "time": "2025-05-19 19:14:46"
       }
     ]
   },
@@ -13812,6 +13816,30 @@
       {
         "price": 4998,
         "time": "2025-05-19 16:10:40"
+      }
+    ]
+  },
+  "4549995219913": {
+    "product_name": "◆ポイントUP◆【新品未開封品（未使用）】 Apple　HomePod mini　MJ2D3J/A　[オレンジ]　Bluetooth スピーカー",
+    "price": 14000,
+    "last_notified_time": "2025-05-19 19:14:46",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 14000,
+        "time": "2025-05-19 19:14:46"
+      }
+    ]
+  },
+  "4974305218773": {
+    "product_name": "象印 IH炊飯ジャー 5.5合炊き ブラウン ZOJIRUSHI 極め炊き NW-VH10-TA",
+    "price": 37638,
+    "last_notified_time": "2025-05-19 19:14:46",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 37638,
+        "time": "2025-05-19 19:14:46"
       }
     ]
   }
