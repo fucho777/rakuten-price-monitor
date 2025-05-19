@@ -13802,5 +13802,17 @@
         "time": "2025-05-19 13:19:54"
       }
     ]
+  },
+  "4902370552492": {
+    "product_name": "ドンキーコング リターンズ HD",
+    "price": 4998,
+    "last_notified_time": "2025-05-19 16:10:40",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 4998,
+        "time": "2025-05-19 16:10:40"
+      }
+    ]
   }
 }
