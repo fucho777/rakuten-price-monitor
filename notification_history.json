@@ -2089,13 +2089,17 @@
   },
   "4710483941733": {
     "product_name": "ASROCK　グラフィックボード Radeon RX 7900 XTX Phantom Gaming 24G OC(RX7900XTX PG 24GO) ［Radeon RXシリーズ /24GB］　RX7900XTXPG24GO",
-    "price": 177990,
-    "last_notified_time": "2025-04-02 03:55:09",
-    "notification_count": 1,
+    "price": 131111,
+    "last_notified_time": "2025-05-19 07:11:34",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 177990,
         "time": "2025-04-02 03:55:09"
+      },
+      {
+        "price": 131111,
+        "time": "2025-05-19 07:11:34"
       }
     ]
   },
@@ -2348,10 +2352,10 @@
     ]
   },
   "4974305227799": {
-    "product_name": "象印 加湿器 スチーム式 4.0L グレー EE-DE50-HA",
-    "price": 46500,
-    "last_notified_time": "2025-05-10 10:07:49",
-    "notification_count": 3,
+    "product_name": "象印 加湿器 4.0L EE-DE50-HA 木造8畳/プレハブ洋室13畳対応 スチーム式 蒸気式 フィルター不要 自動加湿3段階 入タイマー&切タイマー搭載 お手入れ簡単 グレー ZOJIRUSHI加湿器 インフルエンザ予防 大容量加湿器 お手入れ簡単加湿器 4リットル加湿器",
+    "price": 54800,
+    "last_notified_time": "2025-05-19 07:11:34",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 35800,
@@ -2364,6 +2368,10 @@
       {
         "price": 46500,
         "time": "2025-05-10 10:07:49"
+      },
+      {
+        "price": 54800,
+        "time": "2025-05-19 07:11:34"
       }
     ]
   },
@@ -7729,9 +7737,9 @@
   },
   "4902370551679": {
     "product_name": "【新品・在庫あり・即納】任天堂 スーパー マリオパーティ 4人で遊べる Joy-Conセット [Nintendo Switch]",
-    "price": 15666,
-    "last_notified_time": "2025-05-09 04:29:01",
-    "notification_count": 3,
+    "price": 13499,
+    "last_notified_time": "2025-05-19 07:11:34",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 13709,
@@ -7744,6 +7752,10 @@
       {
         "price": 15666,
         "time": "2025-05-09 04:29:01"
+      },
+      {
+        "price": 13499,
+        "time": "2025-05-19 07:11:34"
       }
     ]
   },
@@ -10516,14 +10528,18 @@
     ]
   },
   "4968929210947": {
-    "product_name": "JBL CHARGE 5 [ブラック] JAN 4968929210947",
-    "price": 18799,
-    "last_notified_time": "2025-04-25 13:20:55",
-    "notification_count": 1,
+    "product_name": "【在庫あり・送料無料】JBL Bluetoothスピーカー CHARGE 5 [ブラック]",
+    "price": 17843,
+    "last_notified_time": "2025-05-19 07:11:34",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 18799,
         "time": "2025-04-25 13:20:55"
+      },
+      {
+        "price": 17843,
+        "time": "2025-05-19 07:11:34"
       }
     ]
   },
@@ -13632,6 +13648,18 @@
       {
         "price": 4619,
         "time": "2025-05-19 04:29:16"
+      }
+    ]
+  },
+  "4974019224619": {
+    "product_name": "【ポイント10倍】 シャープ Bluetoothスピーカー AQUOSサウンドパートナー AN-SX8 [Bluetooth：○ 駆動時間：音楽再生時間：約16時間] 【P10倍】",
+    "price": 47960,
+    "last_notified_time": "2025-05-19 07:11:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 47960,
+        "time": "2025-05-19 07:11:34"
       }
     ]
   }
