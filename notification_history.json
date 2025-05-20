@@ -1060,10 +1060,10 @@
     ]
   },
   "4974305227782": {
-    "product_name": "在庫有、翌日出荷　象印 スチーム式 加湿器 4.0L 大容量 EE-DE50 EE-DE50-HA グレー EE-DE50-WA ホワイト｜清潔加湿 蒸気式 湿度調整 寝室 リビング オフィス用 静音設計 乾燥対策 冬の必需品 日本製 4974305227782 4974305227799",
-    "price": 39980,
-    "last_notified_time": "2025-05-06 16:09:32",
-    "notification_count": 3,
+    "product_name": "象印 加湿器 スチーム式 4.0L ホワイト EE-DE50-WA",
+    "price": 42950,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 37800,
@@ -1076,6 +1076,10 @@
       {
         "price": 39980,
         "time": "2025-05-06 16:09:32"
+      },
+      {
+        "price": 42950,
+        "time": "2025-05-20 07:10:59"
       }
     ]
   },
@@ -1965,9 +1969,9 @@
   },
   "4549077457974": {
     "product_name": "パナソニック デジタルカメラ ルミックス FZ300 光学24倍 ブラック DMC-FZ300-K",
-    "price": 180023,
-    "last_notified_time": "2025-05-14 04:31:46",
-    "notification_count": 2,
+    "price": 118357,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 152480,
@@ -1976,6 +1980,10 @@
       {
         "price": 180023,
         "time": "2025-05-14 04:31:46"
+      },
+      {
+        "price": 118357,
+        "time": "2025-05-20 07:10:59"
       }
     ]
   },
@@ -3984,14 +3992,18 @@
     ]
   },
   "4974305227812": {
-    "product_name": "在庫有、翌日出荷　象印 加湿器 スチーム式 3.0L ホワイト EE-RT50-WA｜清潔加湿 蒸気式 湿度調整 寝室 リビング オフィス用 静音設計 乾燥対策 冬の必需品 日本製 4974305227812",
-    "price": 32780,
-    "last_notified_time": "2025-04-04 10:25:40",
-    "notification_count": 1,
+    "product_name": "象印 スチーム式加湿器 (EE-RT50-WA)",
+    "price": 26877,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 32780,
         "time": "2025-04-04 10:25:40"
+      },
+      {
+        "price": 26877,
+        "time": "2025-05-20 07:10:59"
       }
     ]
   },
@@ -5056,10 +5068,10 @@
     ]
   },
   "4549980191279": {
-    "product_name": "パナソニック【Panasonic】沸騰浄水コーヒーメーカー NC-A57-K★【NCA57K】",
-    "price": 21901,
-    "last_notified_time": "2025-04-28 07:21:38",
-    "notification_count": 2,
+    "product_name": "パナソニック コーヒーメーカー 全自動 ミル付き 沸騰浄水機能 デカフェ豆コース搭載 670ml ブラック NC-A57-K",
+    "price": 25920,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 19650,
@@ -5068,6 +5080,10 @@
       {
         "price": 21901,
         "time": "2025-04-28 07:21:38"
+      },
+      {
+        "price": 25920,
+        "time": "2025-05-20 07:10:59"
       }
     ]
   },
@@ -13900,6 +13916,54 @@
       {
         "price": 55600,
         "time": "2025-05-20 04:30:07"
+      }
+    ]
+  },
+  "4549980651988": {
+    "product_name": "パナソニック デジタルコードレス普通紙ファクス(子機1台付き) 迷惑防止機能搭載 受話音量6段階調整 KX-PD350DL-W",
+    "price": 32560,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 32560,
+        "time": "2025-05-20 07:10:59"
+      }
+    ]
+  },
+  "4549980674727": {
+    "product_name": "未使用品 Panasonic HC-V495M-K [ブラック] ビデオカメラ パナソニック",
+    "price": 68800,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 68800,
+        "time": "2025-05-20 07:10:59"
+      }
+    ]
+  },
+  "4549995555288": {
+    "product_name": "【未使用】Apple 【Wi-Fi】 11インチ iPad Air（M3/2025) 256GB ブルー MCA34J/A【京都】保証期間6ヶ月",
+    "price": 111980,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 111980,
+        "time": "2025-05-20 07:10:59"
+      }
+    ]
+  },
+  "4902370549560": {
+    "product_name": "Nintendo Switch Proコントローラー スプラトゥーン3エディション",
+    "price": 8228,
+    "last_notified_time": "2025-05-20 07:10:59",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 8228,
+        "time": "2025-05-20 07:10:59"
       }
     ]
   }
