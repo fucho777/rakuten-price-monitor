@@ -3656,10 +3656,10 @@
     ]
   },
   "6970214571532": {
-    "product_name": "【送料無料・在庫あり】PICO 4 256GB VRヘッドセット",
-    "price": 73633,
-    "last_notified_time": "2025-04-24 19:12:10",
-    "notification_count": 2,
+    "product_name": "PICO 4 - 256GB 完全ワイヤレス オールインワン VRヘッドセット (ピコ 4 VRゴーグルPC対応)",
+    "price": 93858,
+    "last_notified_time": "2025-05-21 01:59:35",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 85926,
@@ -3668,6 +3668,10 @@
       {
         "price": 73633,
         "time": "2025-04-24 19:12:10"
+      },
+      {
+        "price": 93858,
+        "time": "2025-05-21 01:59:35"
       }
     ]
   },
@@ -4573,9 +4577,9 @@
   },
   "4549292119282": {
     "product_name": "【展示品】【アウトレット 展示品】★キヤノン / CANON EOS R ボディ",
-    "price": 147320,
-    "last_notified_time": "2025-05-14 16:04:38",
-    "notification_count": 6,
+    "price": 137520,
+    "last_notified_time": "2025-05-21 01:59:35",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 212570,
@@ -4600,6 +4604,10 @@
       {
         "price": 147320,
         "time": "2025-05-14 16:04:38"
+      },
+      {
+        "price": 137520,
+        "time": "2025-05-21 01:59:35"
       }
     ]
   },
@@ -14112,6 +14120,18 @@
       {
         "price": 24290,
         "time": "2025-05-20 19:14:55"
+      }
+    ]
+  },
+  "4549995514520": {
+    "product_name": "【安心の上場企業】 Apple アップル MacBook Air Liquid Retinaディスプレイ 15.3インチ MXD13J/A スペースグレイ Apple M3チップ SSD512GB メモリ16GB 8コアCPUと10コアGPU マックブックエア JAN:4549995514520 【北海道・沖縄・離島は配送不可】-NA-",
+    "price": 210941,
+    "last_notified_time": "2025-05-21 01:59:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 210941,
+        "time": "2025-05-21 01:59:35"
       }
     ]
   }
