@@ -1584,10 +1584,10 @@
     ]
   },
   "4547410441529": {
-    "product_name": "【在庫あり・送料無料】FUJIFILM instax SQUARE SQ1 チェキスクエア [グレイシャーブルー]",
-    "price": 21889,
-    "last_notified_time": "2025-05-20 10:00:46",
-    "notification_count": 7,
+    "product_name": "【新品】カメラ 富士フイルム インスタントカメラ チェキ instax SQUARE SQ1 (グレイシャーブルー)",
+    "price": 28599,
+    "last_notified_time": "2025-05-23 22:02:09",
+    "notification_count": 8,
     "previous_prices": [
       {
         "price": 18500,
@@ -1616,6 +1616,10 @@
       {
         "price": 21889,
         "time": "2025-05-20 10:00:46"
+      },
+      {
+        "price": 28599,
+        "time": "2025-05-23 22:02:09"
       }
     ]
   },
@@ -14708,6 +14712,18 @@
       {
         "price": 15970,
         "time": "2025-05-23 13:18:30"
+      }
+    ]
+  },
+  "4549995489026": {
+    "product_name": "★アップル / APPLE iPad Pro 13インチ Wi-Fi 1TB Nano-textureディスプレイガラス搭載 2024年春モデル MWRF3J/A [スペースブラック]",
+    "price": 353800,
+    "last_notified_time": "2025-05-23 22:02:09",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 353800,
+        "time": "2025-05-23 22:02:09"
       }
     ]
   }
