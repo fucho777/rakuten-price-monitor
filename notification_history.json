@@ -7961,9 +7961,9 @@
   },
   "4580527850839": {
     "product_name": "【新品・送料無料・在庫あり】FCNT arrows We2 M07 楽天モバイル版 [ネイビーグリーン] ／ 白ロム／SIMフリー",
-    "price": 17799,
-    "last_notified_time": "2025-05-19 10:09:37",
-    "notification_count": 6,
+    "price": 16699,
+    "last_notified_time": "2025-05-24 10:04:13",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 24990,
@@ -7988,6 +7988,10 @@
       {
         "price": 17799,
         "time": "2025-05-19 10:09:37"
+      },
+      {
+        "price": 16699,
+        "time": "2025-05-24 10:04:13"
       }
     ]
   },
@@ -9380,14 +9384,18 @@
     ]
   },
   "4974019251769": {
-    "product_name": "シャープ 掃除機 コードレススティッククリーナー EC-AR8-W ホワイト ラクティブエア 軽量モデル スタミナ運転 大容量バッテリー 急速充電",
-    "price": 36904,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 1,
+    "product_name": "【新品】SHARP シャープ 充電式掃除機 RACTIVE Air EC-AR8-W ホワイト",
+    "price": 40956,
+    "last_notified_time": "2025-05-24 10:04:13",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 36904,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 40956,
+        "time": "2025-05-24 10:04:13"
       }
     ]
   },
@@ -13276,14 +13284,18 @@
     ]
   },
   "6941812789179": {
-    "product_name": "Xiaomi 14T Pro Titan Gray 12+256",
-    "price": 98780,
-    "last_notified_time": "2025-05-12 13:21:56",
-    "notification_count": 1,
+    "product_name": "【新品】Xiaomi シャオミ スマホ 14T Pro 256GB チタングレー SIMフリー",
+    "price": 85310,
+    "last_notified_time": "2025-05-24 10:04:13",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 98780,
         "time": "2025-05-12 13:21:56"
+      },
+      {
+        "price": 85310,
+        "time": "2025-05-24 10:04:13"
       }
     ]
   },
@@ -14824,6 +14836,18 @@
       {
         "price": 116000,
         "time": "2025-05-24 04:19:56"
+      }
+    ]
+  },
+  "4549995452976": {
+    "product_name": "★アップル / APPLE iPad Air 13インチ Wi-Fi 128GB 2024年春モデル MV273J/A [スペースグレイ] 【タブレットPC】【送料無料】",
+    "price": 104370,
+    "last_notified_time": "2025-05-24 10:04:13",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 104370,
+        "time": "2025-05-24 10:04:13"
       }
     ]
   }
