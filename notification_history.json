@@ -7009,9 +7009,9 @@
   },
   "4549980511763": {
     "product_name": "パナソニック スチーマー ナノケア コンパクトタイプ ゴールド調 EH-SA3C-N",
-    "price": 25848,
-    "last_notified_time": "2025-05-17 04:26:23",
-    "notification_count": 5,
+    "price": 23852,
+    "last_notified_time": "2025-05-24 04:19:56",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 23852,
@@ -7032,6 +7032,10 @@
       {
         "price": 25848,
         "time": "2025-05-17 04:26:23"
+      },
+      {
+        "price": 23852,
+        "time": "2025-05-24 04:19:56"
       }
     ]
   },
@@ -7109,9 +7113,9 @@
   },
   "4549046134950": {
     "product_name": "【未使用】SONY ymobile 【SIMフリー】 Xperia Ace III ブリックオレンジ 4GB 64GB A203SO【道玄坂】保証期間3ヶ月",
-    "price": 22980,
-    "last_notified_time": "2025-05-17 07:13:38",
-    "notification_count": 2,
+    "price": 20980,
+    "last_notified_time": "2025-05-24 04:19:56",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 19989,
@@ -7120,6 +7124,10 @@
       {
         "price": 22980,
         "time": "2025-05-17 07:13:38"
+      },
+      {
+        "price": 20980,
+        "time": "2025-05-24 04:19:56"
       }
     ]
   },
@@ -10040,14 +10048,18 @@
     ]
   },
   "4974305224279": {
-    "product_name": "象印 炊飯器 IH炊飯ジャー 5.5合炊き 極め炊き NW-VE10-WA ホワイト",
-    "price": 26125,
-    "last_notified_time": "2025-04-21 16:05:35",
-    "notification_count": 1,
+    "product_name": "【訳あり】極め炊き NW-VE10-WA [ホワイト][ラッピング可] R-LOGI",
+    "price": 22717,
+    "last_notified_time": "2025-05-24 04:19:56",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 26125,
         "time": "2025-04-21 16:05:35"
+      },
+      {
+        "price": 22717,
+        "time": "2025-05-24 04:19:56"
       }
     ]
   },
@@ -14764,6 +14776,42 @@
       {
         "price": 12980,
         "time": "2025-05-24 01:55:35"
+      }
+    ]
+  },
+  "4549980487495": {
+    "product_name": "パナソニック 500GB 2チューナー ブルーレイレコーダー どこでもディーガ対応 おうちクラウドDIGA DMR-2W51",
+    "price": 62696,
+    "last_notified_time": "2025-05-24 04:19:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 62696,
+        "time": "2025-05-24 04:19:56"
+      }
+    ]
+  },
+  "4549995489033": {
+    "product_name": "【未使用】Apple 【Wi-Fi】 13インチ iPad Pro（M4/2024） 1TB シルバー Nano-Texture MWRG3J/A【大阪堂島】保証期間6ヶ月",
+    "price": 277980,
+    "last_notified_time": "2025-05-24 04:19:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 277980,
+        "time": "2025-05-24 04:19:56"
+      }
+    ]
+  },
+  "4580038879879": {
+    "product_name": "【送料無料・新品】OPPO Find X8 SIMフリー／「CPH2651 BK」／MediaTek Dimensity 9400 6.59inch メモリ／ストレージ： 16GB／512GB ／nanoSIM x2 ／eSIM対応",
+    "price": 116000,
+    "last_notified_time": "2025-05-24 04:19:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 116000,
+        "time": "2025-05-24 04:19:56"
       }
     ]
   }
