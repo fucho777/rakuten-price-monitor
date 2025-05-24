@@ -6864,10 +6864,10 @@
     ]
   },
   "4549046141170": {
-    "product_name": "【新品未開封】OPPO A79 5G A303OP ワイモバイル [ミステリーブラック]【即日発送、土、祝日発送】【送料無料】",
-    "price": 20479,
-    "last_notified_time": "2025-05-10 07:11:14",
-    "notification_count": 3,
+    "product_name": "「+2倍ポイント・新品」 OPPO A79 5G ミステリーブラック ymobile版 SIMフリー 4549046141170",
+    "price": 17980,
+    "last_notified_time": "2025-05-24 01:55:35",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 17000,
@@ -6880,6 +6880,10 @@
       {
         "price": 20479,
         "time": "2025-05-10 07:11:14"
+      },
+      {
+        "price": 17980,
+        "time": "2025-05-24 01:55:35"
       }
     ]
   },
@@ -14724,6 +14728,42 @@
       {
         "price": 353800,
         "time": "2025-05-23 22:02:09"
+      }
+    ]
+  },
+  "4549995244960": {
+    "product_name": "MagSafeバッテリーパック MJWY3ZA/A/Apple",
+    "price": 13820,
+    "last_notified_time": "2025-05-24 01:55:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 13820,
+        "time": "2025-05-24 01:55:35"
+      }
+    ]
+  },
+  "4573535233572": {
+    "product_name": "ダイキン 空気清浄機 ストリーマ MC55Z-W 2023年モデル コンパクトタイプ ～25畳 センサー（ホコリ・ニオイ） 花粉 ウイルス ハウスダスト PM2.5 脱臭",
+    "price": 55812,
+    "last_notified_time": "2025-05-24 01:55:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 55812,
+        "time": "2025-05-24 01:55:35"
+      }
+    ]
+  },
+  "4974019142555": {
+    "product_name": "シャープ Bluetooth送信機同梱 テレビ用ワイヤレススピーカー（ホワイト）生活防水（IPX4相当）対応AQUOSサウンドパートナー AN-SS2-W",
+    "price": 12980,
+    "last_notified_time": "2025-05-24 01:55:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 12980,
+        "time": "2025-05-24 01:55:35"
       }
     ]
   }
