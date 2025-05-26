@@ -7697,13 +7697,17 @@
   },
   "4974019214665": {
     "product_name": "シャープ 2TB 3チューナー AQUOS ブルーレイレコーダー 2B-C20ET1 どんどん自動録画 テキパキ再生 (2022年モデル)",
-    "price": 84098,
-    "last_notified_time": "2025-04-12 13:48:39",
-    "notification_count": 1,
+    "price": 78151,
+    "last_notified_time": "2025-05-26 02:01:02",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 84098,
         "time": "2025-04-12 13:48:39"
+      },
+      {
+        "price": 78151,
+        "time": "2025-05-26 02:01:02"
       }
     ]
   },
@@ -13625,13 +13629,17 @@
   },
   "4549576206844": {
     "product_name": "【新品・在庫あり・送料無料】Xbox Elite ワイヤレス コントローラー Series 2 Core ブルー RFZ-00019",
-    "price": 16469,
-    "last_notified_time": "2025-05-15 01:49:51",
-    "notification_count": 1,
+    "price": 23218,
+    "last_notified_time": "2025-05-26 02:01:02",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 16469,
         "time": "2025-05-15 01:49:51"
+      },
+      {
+        "price": 23218,
+        "time": "2025-05-26 02:01:02"
       }
     ]
   },
@@ -14976,6 +14984,18 @@
       {
         "price": 94220,
         "time": "2025-05-25 19:02:23"
+      }
+    ]
+  },
+  "4549576189871": {
+    "product_name": "【送料無料・在庫あり】マイクロソフト Microsoft Xbox ワイヤレス コントローラー QAU-00105 ノクターナル ベイパー",
+    "price": 7781,
+    "last_notified_time": "2025-05-26 02:01:02",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 7781,
+        "time": "2025-05-26 02:01:02"
       }
     ]
   }
