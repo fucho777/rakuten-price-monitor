@@ -1520,10 +1520,10 @@
     ]
   },
   "4957812660556": {
-    "product_name": "YAMAHA RX-A2A(B)【SS4957812660556】",
-    "price": 94228,
-    "last_notified_time": "2025-05-01 07:15:03",
-    "notification_count": 3,
+    "product_name": "ヤマハ　YAMAHA　AVアンプ RX-A2AB [ハイレゾ対応 /Bluetooth対応 /Wi-Fi対応 /ワイドFM対応 /7.1ch /DolbyAtmos対応]　RX-A2AB",
+    "price": 72310,
+    "last_notified_time": "2025-05-28 19:09:17",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 94228,
@@ -1536,6 +1536,10 @@
       {
         "price": 94228,
         "time": "2025-05-01 07:15:03"
+      },
+      {
+        "price": 72310,
+        "time": "2025-05-28 19:09:17"
       }
     ]
   },
@@ -15904,6 +15908,30 @@
       {
         "price": 56181,
         "time": "2025-05-28 13:14:11"
+      }
+    ]
+  },
+  "4549046135650": {
+    "product_name": "【最大2000円クーポンGET】「新品 未使用品 白ロム] Simフリー AQUOS wish2 A204SH チャコール [Ymobile simロック解除済][simfree]",
+    "price": 19900,
+    "last_notified_time": "2025-05-28 19:09:17",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 19900,
+        "time": "2025-05-28 19:09:17"
+      }
+    ]
+  },
+  "4549046141309": {
+    "product_name": "AQUOS wish3 A302SH Y mobile Green",
+    "price": 24958,
+    "last_notified_time": "2025-05-28 19:09:17",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 24958,
+        "time": "2025-05-28 19:09:17"
       }
     ]
   }
