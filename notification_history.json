@@ -6521,9 +6521,9 @@
   },
   "4573173356350": {
     "product_name": "釣りスピリッツ Nintendo Switchバージョン -Switch",
-    "price": 5050,
-    "last_notified_time": "2025-05-12 13:21:56",
-    "notification_count": 5,
+    "price": 6764,
+    "last_notified_time": "2025-05-28 04:30:24",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 5100,
@@ -6544,6 +6544,10 @@
       {
         "price": 5050,
         "time": "2025-05-12 13:21:56"
+      },
+      {
+        "price": 6764,
+        "time": "2025-05-28 04:30:24"
       }
     ]
   },
@@ -9276,14 +9280,18 @@
     ]
   },
   "4549995501018": {
-    "product_name": "【未使用】Apple Apple Watch Series10 42mm GPS シルバーアルミニウムケース/デニムスポーツバンド (S/M) MWWA3J/A【静岡】保証期間3ヶ月",
-    "price": 56980,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 1,
+    "product_name": "【アウトレット品】 Apple Watch Series 10 GPSモデル 42mm シルバーアルミニウムケース S/M MWWA3J/A cs-001-139",
+    "price": 52800,
+    "last_notified_time": "2025-05-28 04:30:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 56980,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 52800,
+        "time": "2025-05-28 04:30:24"
       }
     ]
   },
@@ -9492,14 +9500,18 @@
     ]
   },
   "4960759906274": {
-    "product_name": "【在庫あり・送料無料】Nikon 標準ズームレンズ カメラレンズ NIKKOR Z 24-120F4 S",
-    "price": 141927,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 1,
+    "product_name": "Nikon NIKKOR Z 24-120mm f/4 S【お取り寄せ（10営業日から2週間半程度）での入荷、発送】",
+    "price": 131616,
+    "last_notified_time": "2025-05-28 04:30:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 141927,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 131616,
+        "time": "2025-05-28 04:30:24"
       }
     ]
   },
@@ -15668,6 +15680,30 @@
       {
         "price": 24332,
         "time": "2025-05-27 13:23:02"
+      }
+    ]
+  },
+  "4549995542523": {
+    "product_name": "【多少のシュリンク破れ、箱のへこみがある場合があります】APPLE　Mac ノート　MacBook Air 13.6インチ Liquid Retinaディスプレイ MW133J/A [ミッドナイト]",
+    "price": 180013,
+    "last_notified_time": "2025-05-28 04:30:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 180013,
+        "time": "2025-05-28 04:30:24"
+      }
+    ]
+  },
+  "4580652112161": {
+    "product_name": "★REGZAブルーレイ DBR-T101【送料無料】",
+    "price": 49480,
+    "last_notified_time": "2025-05-28 04:30:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 49480,
+        "time": "2025-05-28 04:30:24"
       }
     ]
   }
