@@ -7541,9 +7541,9 @@
   },
   "4974305224194": {
     "product_name": "象印 炊飯器 圧力IH炊飯ジャー 5.5合炊き 極め炊き NW-CB10-BA ブラック",
-    "price": 42775,
-    "last_notified_time": "2025-05-21 13:19:03",
-    "notification_count": 3,
+    "price": 40113,
+    "last_notified_time": "2025-05-29 02:02:14",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 37377,
@@ -7556,6 +7556,10 @@
       {
         "price": 42775,
         "time": "2025-05-21 13:19:03"
+      },
+      {
+        "price": 40113,
+        "time": "2025-05-29 02:02:14"
       }
     ]
   },
@@ -10837,9 +10841,9 @@
   },
   "4549980502372": {
     "product_name": "パナソニック メンズシェーバー ラムダッシュ 3枚刃 お風呂剃り可 黒 ES-CST2T-K",
-    "price": 22922,
-    "last_notified_time": "2025-05-23 16:05:41",
-    "notification_count": 2,
+    "price": 20596,
+    "last_notified_time": "2025-05-29 02:02:14",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 21177,
@@ -10848,6 +10852,10 @@
       {
         "price": 22922,
         "time": "2025-05-23 16:05:41"
+      },
+      {
+        "price": 20596,
+        "time": "2025-05-29 02:02:14"
       }
     ]
   },
@@ -12028,10 +12036,10 @@
     ]
   },
   "4974019133560": {
-    "product_name": "シャープ　SHARP　単機能電子レンジ［18L／ターンテーブル式］　RE-TM18-B",
-    "price": 10683,
-    "last_notified_time": "2025-05-07 07:13:58",
-    "notification_count": 2,
+    "product_name": "まごころ長期修理保証(保証5年)［加入料：対象商品代金の5%］商品「RE-TM18-B」専用加入料(※加入料のみ注文不可)",
+    "price": 640,
+    "last_notified_time": "2025-05-29 02:02:14",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 634,
@@ -12040,6 +12048,10 @@
       {
         "price": 10683,
         "time": "2025-05-07 07:13:58"
+      },
+      {
+        "price": 640,
+        "time": "2025-05-29 02:02:14"
       }
     ]
   },
@@ -15944,6 +15956,30 @@
       {
         "price": 175097,
         "time": "2025-05-28 21:58:06"
+      }
+    ]
+  },
+  "4549995556445": {
+    "product_name": "【多少のシュリンク破れ、箱のへこみがある場合があります】APPLE　iPAD(Wi-Fiモデル)　MCQ14J/A (iPad Air 13インチ 1TB M3)　iPad Air 13インチ Wi-Fi 1TB 2025年春モデル MCQ14J/A [ブルー]",
+    "price": 231976,
+    "last_notified_time": "2025-05-29 02:02:14",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 231976,
+        "time": "2025-05-29 02:02:14"
+      }
+    ]
+  },
+  "6941812716243": {
+    "product_name": "シャオミ(Xiaomi) SIMフリースマートフォン Redmi 12C 大型 6.71 インチ HD 4GB+128GB スマホ docomo/au/SoftBank/Rakuten Mobile 回線対応 グラファイトグレー",
+    "price": 23035,
+    "last_notified_time": "2025-05-29 02:02:14",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 23035,
+        "time": "2025-05-29 02:02:14"
       }
     ]
   }
