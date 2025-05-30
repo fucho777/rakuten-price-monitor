@@ -3100,10 +3100,10 @@
     ]
   },
   "4981254070444": {
-    "product_name": "【新品】BUFFALO バッファロー 無線ルーター AirStation WSR-3000AX4P-BK ブラック",
-    "price": 7900,
-    "last_notified_time": "2025-05-27 10:09:08",
-    "notification_count": 2,
+    "product_name": "BUFFALO　Wi-Fiルーター AirStation(エアステーション) Wi-Fi 6(11ax)対応 2401＋573Mbps ［］ ［Wi-Fi 6(ax) /IPv6対応］ ブラック　WSR-3000AX4P-BK",
+    "price": 9300,
+    "last_notified_time": "2025-05-30 19:10:07",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 8980,
@@ -3112,6 +3112,10 @@
       {
         "price": 7900,
         "time": "2025-05-27 10:09:08"
+      },
+      {
+        "price": 9300,
+        "time": "2025-05-30 19:10:07"
       }
     ]
   },
@@ -6708,10 +6712,10 @@
     ]
   },
   "3045386381531": {
-    "product_name": "電気ケトル 0.8リットル 電気 ポット ケトル 軽量 おしゃれ シンプル かわいい 小さめ コンパクト お湯 湯沸し 湯沸かし やかん ホワイト シュガーピンク カフェオレ 0.8L T-fal ティファール アプレシア・プラス KO6301JP KO6307JP KO630AJP",
-    "price": 6490,
-    "last_notified_time": "2025-05-20 01:58:53",
-    "notification_count": 4,
+    "product_name": "ティファール T-fal 電気ケトル 0.8L 軽くてコンパクト 「アプレシア・プラス ホワイト KO6301JP",
+    "price": 5540,
+    "last_notified_time": "2025-05-30 19:10:07",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 8034,
@@ -6728,6 +6732,10 @@
       {
         "price": 6490,
         "time": "2025-05-20 01:58:53"
+      },
+      {
+        "price": 5540,
+        "time": "2025-05-30 19:10:07"
       }
     ]
   },
