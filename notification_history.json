@@ -4916,10 +4916,10 @@
     ]
   },
   "4942857224825": {
-    "product_name": "【新品未使用】AQUOS wish2 SH-51C [チャコール] docomo版 64GB【即日発送、土、祝日発送】【送料無料】",
-    "price": 18799,
-    "last_notified_time": "2025-04-15 07:44:52",
-    "notification_count": 2,
+    "product_name": "【未使用】SHARP docomo 【SIMフリー】 AQUOS wish2 チャコール 4GB 64GB SH-51C【広島】保証期間3ヶ月",
+    "price": 16980,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 15800,
@@ -4928,6 +4928,10 @@
       {
         "price": 18799,
         "time": "2025-04-15 07:44:52"
+      },
+      {
+        "price": 16980,
+        "time": "2025-05-30 04:33:56"
       }
     ]
   },
@@ -12317,9 +12321,9 @@
   },
   "4974019130392": {
     "product_name": "シャープ　SHARP　単機能電子レンジ［18L／ターンテーブル式］　RE-TM18-W",
-    "price": 10683,
-    "last_notified_time": "2025-05-07 07:13:58",
-    "notification_count": 2,
+    "price": 11700,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 11636,
@@ -12328,6 +12332,10 @@
       {
         "price": 10683,
         "time": "2025-05-07 07:13:58"
+      },
+      {
+        "price": 11700,
+        "time": "2025-05-30 04:33:56"
       }
     ]
   },
@@ -13669,13 +13677,17 @@
   },
   "4549995560176": {
     "product_name": "【新品】Apple アップル iPad 11インチ Wi-Fi 512GB 2025年春モデル MD5A4J/A イエロー",
-    "price": 107769,
-    "last_notified_time": "2025-05-12 13:21:56",
-    "notification_count": 1,
+    "price": 99460,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 107769,
         "time": "2025-05-12 13:21:56"
+      },
+      {
+        "price": 99460,
+        "time": "2025-05-30 04:33:56"
       }
     ]
   },
@@ -13961,13 +13973,17 @@
   },
   "4549576210797": {
     "product_name": "【訳あり】Microsoft マイクロソフト Xbox Series X Forza Horizon 5 同梱版 エックスボックス ホライゾン ブラック[ラッピング不可] R-LOGI",
-    "price": 91460,
-    "last_notified_time": "2025-05-14 13:21:19",
-    "notification_count": 1,
+    "price": 84980,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 91460,
         "time": "2025-05-14 13:21:19"
+      },
+      {
+        "price": 84980,
+        "time": "2025-05-30 04:33:56"
       }
     ]
   },
@@ -16192,6 +16208,54 @@
       {
         "price": 44130,
         "time": "2025-05-30 01:57:16"
+      }
+    ]
+  },
+  "4512223691270": {
+    "product_name": "SHOKZ　骨伝導イヤホン ブラック [ マイク 対応 / 骨伝導 / Bluetooth ] 　SKZ-EP-000003",
+    "price": 15780,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 15780,
+        "time": "2025-05-30 04:33:56"
+      }
+    ]
+  },
+  "4512223691287": {
+    "product_name": "SHOKZ　骨伝導イヤホン Shokz グレー [ 骨伝導 / Bluetooth ] 　SKZ-EP-000004",
+    "price": 15780,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 15780,
+        "time": "2025-05-30 04:33:56"
+      }
+    ]
+  },
+  "4512223691294": {
+    "product_name": "SHOKZ　骨伝導イヤホン OpenRun ブルー [ 骨伝導 / Bluetooth ] 　SKZ-EP-000005",
+    "price": 15780,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 15780,
+        "time": "2025-05-30 04:33:56"
+      }
+    ]
+  },
+  "4512223691300": {
+    "product_name": "SHOKZ　骨伝導イヤホン Shokz レッド [ 骨伝導 / Bluetooth ] 　SKZ-EP-000006",
+    "price": 15780,
+    "last_notified_time": "2025-05-30 04:33:56",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 15780,
+        "time": "2025-05-30 04:33:56"
       }
     ]
   }
