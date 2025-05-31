@@ -14697,13 +14697,17 @@
   },
   "4974365837785": {
     "product_name": "【在庫あり・送料無料】PlayStation 5　龍が如く8/PS5/ELJM30371/D 17才以上対象【ポスト投函】",
-    "price": 4619,
-    "last_notified_time": "2025-05-19 04:29:16",
-    "notification_count": 1,
+    "price": 4267,
+    "last_notified_time": "2025-05-31 07:12:55",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 4619,
         "time": "2025-05-19 04:29:16"
+      },
+      {
+        "price": 4267,
+        "time": "2025-05-31 07:12:55"
       }
     ]
   },
@@ -15012,14 +15016,18 @@
     ]
   },
   "4549292151251": {
-    "product_name": "Canon デジタル一眼レフカメラ EOS Kiss X10i ダブルズームキット EOSKISSX10I-WKIT",
-    "price": 197360,
-    "last_notified_time": "2025-05-21 07:10:31",
-    "notification_count": 1,
+    "product_name": "【展示品】Canon EOS Kiss X10i ダブルズームキット 3923C003",
+    "price": 165980,
+    "last_notified_time": "2025-05-31 07:12:55",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 197360,
         "time": "2025-05-21 07:10:31"
+      },
+      {
+        "price": 165980,
+        "time": "2025-05-31 07:12:55"
       }
     ]
   },
@@ -16448,6 +16456,30 @@
       {
         "price": 27800,
         "time": "2025-05-31 01:57:58"
+      }
+    ]
+  },
+  "4549046148612": {
+    "product_name": "【在庫あり・送料無料】 ZTE nubia S 5G A403ZT Y!mobile [ライトパープル]　SIMフリー　白ロム",
+    "price": 11829,
+    "last_notified_time": "2025-05-31 07:12:55",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 11829,
+        "time": "2025-05-31 07:12:55"
+      }
+    ]
+  },
+  "4974019214702": {
+    "product_name": "【箱破損 または 箱汚れ品】SHARP AQUOSブルーレイ 2B-C10EW2 (ホワイト)",
+    "price": 46980,
+    "last_notified_time": "2025-05-31 07:12:55",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 46980,
+        "time": "2025-05-31 07:12:55"
       }
     ]
   }
