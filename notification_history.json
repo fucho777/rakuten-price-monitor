@@ -368,10 +368,10 @@
     ]
   },
   "4549576195520": {
-    "product_name": "ノートパソコン Microsoft / マイクロソフト Surface Laptop 5 R1S-00020 [プラチナ] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549576195520-ds 4549576195520-ds",
-    "price": 192880,
-    "last_notified_time": "2025-05-26 07:16:16",
-    "notification_count": 4,
+    "product_name": "【新品 箱不良・シュリンク破れ品】Surface Laptop 5 R1S-00020 プラチナ",
+    "price": 145000,
+    "last_notified_time": "2025-05-31 13:19:08",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 121280,
@@ -388,6 +388,10 @@
       {
         "price": 192880,
         "time": "2025-05-26 07:16:16"
+      },
+      {
+        "price": 145000,
+        "time": "2025-05-31 13:19:08"
       }
     ]
   },
@@ -12284,10 +12288,10 @@
     ]
   },
   "4549980762974": {
-    "product_name": "【新品】Panasonic パナソニック カーナビ ストラーダ CN-CE01D",
-    "price": 66729,
-    "last_notified_time": "2025-05-19 13:19:54",
-    "notification_count": 3,
+    "product_name": "【新品 箱不良・シュリンク破れ品】Panasonic パナソニック カーナビ 7V型 ストラーダ CN-CE01D",
+    "price": 62980,
+    "last_notified_time": "2025-05-31 13:19:08",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 66989,
@@ -12300,6 +12304,10 @@
       {
         "price": 66729,
         "time": "2025-05-19 13:19:54"
+      },
+      {
+        "price": 62980,
+        "time": "2025-05-31 13:19:08"
       }
     ]
   },
@@ -16488,6 +16496,30 @@
       {
         "price": 46980,
         "time": "2025-05-31 07:12:55"
+      }
+    ]
+  },
+  "4540790368431": {
+    "product_name": "【新品 箱不良・シュリンク破れ品】YA-MAN ヤーマン 脱毛器 レイボーテ ハイパーZERO YJEA4N シャンパンゴールド",
+    "price": 51980,
+    "last_notified_time": "2025-05-31 13:19:08",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 51980,
+        "time": "2025-05-31 13:19:08"
+      }
+    ]
+  },
+  "4549995560121": {
+    "product_name": "【新品 箱不良・シュリンク破れ品】iPad 11インチ Wi-Fi 256GB 2025年春モデル MD4H4J/A ブルー",
+    "price": 65500,
+    "last_notified_time": "2025-05-31 13:19:08",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 65500,
+        "time": "2025-05-31 13:19:08"
       }
     ]
   }
