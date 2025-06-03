@@ -3532,10 +3532,10 @@
     ]
   },
   "4549576212807": {
-    "product_name": "【土日祝発送】【新品】Microsoft マイクロソフト Surface Laptop Go 3 プラチナ intel Core i5 メモリ:16GB SSD:256GB XKQ-00005",
-    "price": 148000,
-    "last_notified_time": "2025-05-07 13:20:20",
-    "notification_count": 2,
+    "product_name": "マイクロソフト Surface Laptop Go 3 / Office HB 2021 搭載 / 12.4インチ /第12世代 Core-i5 /16GB/256GB / プラチナ XKQ-00005",
+    "price": 204324,
+    "last_notified_time": "2025-06-03 04:32:24",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 168130,
@@ -3544,6 +3544,10 @@
       {
         "price": 148000,
         "time": "2025-05-07 13:20:20"
+      },
+      {
+        "price": 204324,
+        "time": "2025-06-03 04:32:24"
       }
     ]
   },
@@ -6552,14 +6556,18 @@
     ]
   },
   "4549980703472": {
-    "product_name": "【アウトレット】 【即日発送】 Panasonic ラムダッシュ ES-LVG8-K [黒] シェーバー 5枚刃 メンズ 美容家電 4549980703472",
-    "price": 19800,
-    "last_notified_time": "2025-04-09 10:32:36",
-    "notification_count": 1,
+    "product_name": "【送料無料・在庫あり】Panasonic リニアシェーバー ラムダッシュ 5枚刃 ES-LVG8-K [ブラック]",
+    "price": 18364,
+    "last_notified_time": "2025-06-03 04:32:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 19800,
         "time": "2025-04-09 10:32:36"
+      },
+      {
+        "price": 18364,
+        "time": "2025-06-03 04:32:24"
       }
     ]
   },
@@ -14833,13 +14841,17 @@
   },
   "4549077890627": {
     "product_name": "パナソニック デジタルカメラ ルミックス FZ85 ブラック DC-FZ85-K",
-    "price": 83316,
-    "last_notified_time": "2025-05-19 04:29:16",
-    "notification_count": 1,
+    "price": 69880,
+    "last_notified_time": "2025-06-03 04:32:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 83316,
         "time": "2025-05-19 04:29:16"
+      },
+      {
+        "price": 69880,
+        "time": "2025-06-03 04:32:24"
       }
     ]
   },
@@ -16265,13 +16277,17 @@
   },
   "4974019214672": {
     "product_name": "シャープ 1TB 3チューナー AQUOS ブルーレイレコーダー 2B-C10ET1 どんどん自動録画 テキパキ再生 (2022年モデル)",
-    "price": 68890,
-    "last_notified_time": "2025-05-28 10:00:25",
-    "notification_count": 1,
+    "price": 59000,
+    "last_notified_time": "2025-06-03 04:32:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 68890,
         "time": "2025-05-28 10:00:25"
+      },
+      {
+        "price": 59000,
+        "time": "2025-06-03 04:32:24"
       }
     ]
   },
@@ -16816,6 +16832,30 @@
       {
         "price": 110346,
         "time": "2025-06-03 01:54:55"
+      }
+    ]
+  },
+  "4548736129696": {
+    "product_name": "【新品】SONY SRS-NS7",
+    "price": 27325,
+    "last_notified_time": "2025-06-03 04:32:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 27325,
+        "time": "2025-06-03 04:32:24"
+      }
+    ]
+  },
+  "4549873161426": {
+    "product_name": "【当日出荷】日立 スティッククリーナー紙パック式 【日本製】 「かるパックスティック」 軽量1.1kg(ライトラベンダー) PKV-BK3K-V スティッククリーナー 紙パック式 かるパックスティック 日本製 軽量 吸引力 LEDライト 取り回しやすい お手入れ ハンディ 充電時間",
+    "price": 34000,
+    "last_notified_time": "2025-06-03 04:32:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 34000,
+        "time": "2025-06-03 04:32:24"
       }
     ]
   }
