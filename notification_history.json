@@ -1636,10 +1636,10 @@
     ]
   },
   "4547410441529": {
-    "product_name": "【新品】カメラ 富士フイルム インスタントカメラ チェキ instax SQUARE SQ1 (グレイシャーブルー)",
-    "price": 24327,
-    "last_notified_time": "2025-05-31 01:57:58",
-    "notification_count": 10,
+    "product_name": "【新品】FUJIFILM フジフイルム instax SQUARE SQ1 チェキスクエア グレイシャーブルー",
+    "price": 22764,
+    "last_notified_time": "2025-06-03 13:19:12",
+    "notification_count": 11,
     "previous_prices": [
       {
         "price": 18500,
@@ -1680,6 +1680,10 @@
       {
         "price": 24327,
         "time": "2025-05-31 01:57:58"
+      },
+      {
+        "price": 22764,
+        "time": "2025-06-03 13:19:12"
       }
     ]
   },
@@ -5560,14 +5564,18 @@
     ]
   },
   "4589796415459": {
-    "product_name": "タブレットPC NEC 11.2型ワイド 有機EL 256GB LAVIE Tab T11 T1195/FAS PC-T1195FAS [ストームグレー] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4589796415459-ds 4589796415459-ds",
-    "price": 64010,
-    "last_notified_time": "2025-04-07 07:44:20",
-    "notification_count": 1,
+    "product_name": "【新品 箱不良】NEC タブレットPC LAVIE Tab T11 T1195/FAS PC-T1195FAS ストームグレー",
+    "price": 54000,
+    "last_notified_time": "2025-06-03 13:19:12",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 64010,
         "time": "2025-04-07 07:44:20"
+      },
+      {
+        "price": 54000,
+        "time": "2025-06-03 13:19:12"
       }
     ]
   },
@@ -5884,10 +5892,10 @@
     ]
   },
   "4571591440774": {
-    "product_name": "LENOVO レノボ 82QS001WJP Lenovo IdeaPad Duet 560 Chromebook ChromeOS 13.3型（インチ） 1920×1080 Snapdragon 8GB eMMC 256GB Office無し Bluetooth v5.1 700〜800g グレー系",
-    "price": 64067,
-    "last_notified_time": "2025-05-28 13:14:11",
-    "notification_count": 4,
+    "product_name": "新品 USB PD マイク 急速充電対応 Lenovo タブレットPC 13.3 インチ IdeaPad Duet 560 Chromebook 82QS001WJP [ストームグレー] Snapdragon 7c Gen 2 2.55 GHz メモリ:8GB ストレージ:256GB",
+    "price": 58980,
+    "last_notified_time": "2025-06-03 13:19:12",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 73880,
@@ -5904,6 +5912,10 @@
       {
         "price": 64067,
         "time": "2025-05-28 13:14:11"
+      },
+      {
+        "price": 58980,
+        "time": "2025-06-03 13:19:12"
       }
     ]
   },
@@ -8012,10 +8024,10 @@
     ]
   },
   "4210201393337": {
-    "product_name": "【送料無料・在庫あり】BRAUN メンズシェーバー シリーズ9 Pro 9410s｜刃の枚数：4 枚｜水洗い可：有｜電源方式：AC充電 AC100V-240V",
-    "price": 24396,
-    "last_notified_time": "2025-05-27 07:13:39",
-    "notification_count": 2,
+    "product_name": "【新品 箱不良・シュリンク破れ品】BRAUN ブラウン メンズシェーバー シリーズ9 Pro 9410S",
+    "price": 22000,
+    "last_notified_time": "2025-06-03 13:19:12",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 22980,
@@ -8024,6 +8036,10 @@
       {
         "price": 24396,
         "time": "2025-05-27 07:13:39"
+      },
+      {
+        "price": 22000,
+        "time": "2025-06-03 13:19:12"
       }
     ]
   },
@@ -16916,6 +16932,18 @@
       {
         "price": 14980,
         "time": "2025-06-03 10:01:06"
+      }
+    ]
+  },
+  "4549576238845": {
+    "product_name": "【新品】Microsoft マイクロソフト Surface Laptop 第 7 世代 13.8インチ Snapdragon X Plus/16GB/256GB Copilot+ PC ZGJ-00020 プラチナ",
+    "price": 173566,
+    "last_notified_time": "2025-06-03 13:19:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 173566,
+        "time": "2025-06-03 13:19:12"
       }
     ]
   }
