@@ -9844,10 +9844,10 @@
     ]
   },
   "4974019251769": {
-    "product_name": "【新品】SHARP シャープ 充電式掃除機 RACTIVE Air EC-AR8-W ホワイト",
-    "price": 40956,
-    "last_notified_time": "2025-05-24 10:04:13",
-    "notification_count": 2,
+    "product_name": "シャープ 掃除機 コードレススティッククリーナー EC-AR8-W ホワイト ラクティブエア 軽量モデル スタミナ運転 大容量バッテリー 急速充電",
+    "price": 36090,
+    "last_notified_time": "2025-06-03 01:54:55",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 36904,
@@ -9856,6 +9856,10 @@
       {
         "price": 40956,
         "time": "2025-05-24 10:04:13"
+      },
+      {
+        "price": 36090,
+        "time": "2025-06-03 01:54:55"
       }
     ]
   },
@@ -16800,6 +16804,18 @@
       {
         "price": 50327,
         "time": "2025-06-02 13:14:03"
+      }
+    ]
+  },
+  "4548736079410": {
+    "product_name": "SONY(ソニー) 4K ビデオカメラ Handycam FDR-AX45(2018年モデル) ブラック 内蔵メモリー64GB 光学ズーム20倍 空間光学手ブレ補正 FDR-AX45 B",
+    "price": 110346,
+    "last_notified_time": "2025-06-03 01:54:55",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 110346,
+        "time": "2025-06-03 01:54:55"
       }
     ]
   }
