@@ -7437,13 +7437,17 @@
   },
   "4981254057391": {
     "product_name": "東芝　TOSHIBA　USB3．2（Gen1）対応　外付けHDD　東芝　Canvio　Desktop［3．5インチ　／6TB］　HD-TDA6U3-B",
-    "price": 20980,
-    "last_notified_time": "2025-04-10 19:39:09",
-    "notification_count": 1,
+    "price": 19260,
+    "last_notified_time": "2025-06-03 19:10:56",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 20980,
         "time": "2025-04-10 19:39:09"
+      },
+      {
+        "price": 19260,
+        "time": "2025-06-03 19:10:56"
       }
     ]
   },
@@ -7460,10 +7464,10 @@
     ]
   },
   "4560330110702": {
-    "product_name": "バルミューダ 0.6L 電気ケトル BALMUDA The Pot K07A-WH ホワイト【送料無料】【KK9N0D18P】",
-    "price": 16480,
-    "last_notified_time": "2025-05-26 07:16:16",
-    "notification_count": 3,
+    "product_name": "バルミューダ ザ・ポット 電気ケトル ホワイト/ブラック BALMUDA The Pot K07A-WH/BK コンパクトで注ぎやすいデザイン",
+    "price": 14800,
+    "last_notified_time": "2025-06-03 19:10:56",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 14765,
@@ -7476,6 +7480,10 @@
       {
         "price": 16480,
         "time": "2025-05-26 07:16:16"
+      },
+      {
+        "price": 14800,
+        "time": "2025-06-03 19:10:56"
       }
     ]
   },
