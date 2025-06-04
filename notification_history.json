@@ -1336,10 +1336,10 @@
     ]
   },
   "4548736156425": {
-    "product_name": "ソニー SONY Bluetooth ワイヤレス ノイズキャンセリング ステレオ ヘッドセット ヘッドホン ハイレゾ対応 ULT POWER SOUND 重低音 WH-ULT900N BC ブラック",
-    "price": 24000,
-    "last_notified_time": "2025-05-23 13:18:30",
-    "notification_count": 5,
+    "product_name": "【送料無料・新品・在庫あり】SONY ワイヤレスヘッドホン ULT WEAR WH-ULT900N (B) [ブラック]　シリーズ：ULT POWER SOUND",
+    "price": 25798,
+    "last_notified_time": "2025-06-04 07:14:52",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 22973,
@@ -1360,6 +1360,10 @@
       {
         "price": 24000,
         "time": "2025-05-23 13:18:30"
+      },
+      {
+        "price": 25798,
+        "time": "2025-06-04 07:14:52"
       }
     ]
   },
@@ -4136,10 +4140,10 @@
     ]
   },
   "4548736158375": {
-    "product_name": "ソニー SONY Bluetooth ワイヤレス ノイズキャンセリング ステレオ ヘッドセット ヘッドホン ハイレゾ対応 ULT POWER SOUND 重低音 WH-ULT900N HC フォレストグレー",
-    "price": 23300,
-    "last_notified_time": "2025-05-22 04:34:16",
-    "notification_count": 4,
+    "product_name": "「新品」SONY ULT WEAR WH-ULT900N (H) [フォレストグレー] ワイヤレスヘッドホン【即納】【あす楽】【プレゼント】",
+    "price": 26100,
+    "last_notified_time": "2025-06-04 07:14:52",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 24195,
@@ -4156,6 +4160,10 @@
       {
         "price": 23300,
         "time": "2025-05-22 04:34:16"
+      },
+      {
+        "price": 26100,
+        "time": "2025-06-04 07:14:52"
       }
     ]
   },
@@ -14112,14 +14120,18 @@
     ]
   },
   "4974365837334": {
-    "product_name": "龍が如く 維新 極 - PS5",
-    "price": 5333,
-    "last_notified_time": "2025-05-13 04:32:42",
-    "notification_count": 1,
+    "product_name": "龍が如く 維新！ 極 PS5版",
+    "price": 3997,
+    "last_notified_time": "2025-06-04 07:14:52",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 5333,
         "time": "2025-05-13 04:32:42"
+      },
+      {
+        "price": 3997,
+        "time": "2025-06-04 07:14:52"
       }
     ]
   },
@@ -14920,10 +14932,10 @@
     ]
   },
   "4974365837785": {
-    "product_name": "【在庫あり・送料無料】PlayStation 5　龍が如く8/PS5/ELJM30371/D 17才以上対象【ポスト投函】",
-    "price": 4267,
-    "last_notified_time": "2025-05-31 07:12:55",
-    "notification_count": 2,
+    "product_name": "龍が如く8 PS5版",
+    "price": 5033,
+    "last_notified_time": "2025-06-04 07:14:52",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 4619,
@@ -14932,6 +14944,10 @@
       {
         "price": 4267,
         "time": "2025-05-31 07:12:55"
+      },
+      {
+        "price": 5033,
+        "time": "2025-06-04 07:14:52"
       }
     ]
   },
@@ -16992,6 +17008,30 @@
       {
         "price": 9799,
         "time": "2025-06-04 04:34:12"
+      }
+    ]
+  },
+  "4571579000143": {
+    "product_name": "ONE PIECE ODYSSEY PS5版",
+    "price": 2194,
+    "last_notified_time": "2025-06-04 07:14:52",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 2194,
+        "time": "2025-06-04 07:14:52"
+      }
+    ]
+  },
+  "4974365862879": {
+    "product_name": "ソニックフロンティア Switch版",
+    "price": 2107,
+    "last_notified_time": "2025-06-04 07:14:52",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 2107,
+        "time": "2025-06-04 07:14:52"
       }
     ]
   }
