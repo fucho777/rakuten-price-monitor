@@ -4320,10 +4320,10 @@
     ]
   },
   "4974011803836": {
-    "product_name": "プレゼント【即日発送】リファ ビューテック スマート ドライヤー W ブラック RE-AX-03A MTG Refa ヘア ケア ドライヤー DNS 4974011803836",
-    "price": 34990,
-    "last_notified_time": "2025-04-25 13:20:55",
-    "notification_count": 3,
+    "product_name": "リファ ビューテック ドライヤースマート ダブル ReFa BEAUTECH DRYER SMART W ホワイト RE-AX-02A ブラック RE-AX-03A ピンク RE-AX-05A【海外対応 ヘアケア サロン帰り 自宅 レア髪 しっとり髪 ふんわり髪 MTG クリスマス プレゼント ギフト 母の日 正規品】",
+    "price": 29809,
+    "last_notified_time": "2025-06-05 13:19:46",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 34499,
@@ -4336,6 +4336,10 @@
       {
         "price": 34990,
         "time": "2025-04-25 13:20:55"
+      },
+      {
+        "price": 29809,
+        "time": "2025-06-05 13:19:46"
       }
     ]
   },
@@ -9648,10 +9652,10 @@
     ]
   },
   "4549995453119": {
-    "product_name": "【未使用】Apple 【Wi-Fi】 13インチ iPad Air（M2/2024） 1TB スターライト MV2R3J/A【福岡筑紫】保証期間6ヶ月",
-    "price": 156980,
-    "last_notified_time": "2025-05-25 07:08:54",
-    "notification_count": 2,
+    "product_name": "【未使用】Apple 【Wi-Fi】 13インチ iPad Air（M2/2024） 1TB スターライト MV2R3J/A【ECセンター】保証期間6ヶ月",
+    "price": 141980,
+    "last_notified_time": "2025-06-05 13:19:46",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 193070,
@@ -9660,6 +9664,10 @@
       {
         "price": 156980,
         "time": "2025-05-25 07:08:54"
+      },
+      {
+        "price": 141980,
+        "time": "2025-06-05 13:19:46"
       }
     ]
   },
@@ -13764,14 +13772,18 @@
     ]
   },
   "4549576206837": {
-    "product_name": "Xbox Elite ワイヤレス コントローラー Series 2 Core",
-    "price": 16470,
-    "last_notified_time": "2025-05-10 15:58:11",
-    "notification_count": 1,
+    "product_name": "「+2倍ポイント・新品」Xbox Elite ワイヤレス コントローラー シリーズ2 コア レッド RFZ-00015 4549576206837",
+    "price": 18980,
+    "last_notified_time": "2025-06-05 13:19:46",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 16470,
         "time": "2025-05-10 15:58:11"
+      },
+      {
+        "price": 18980,
+        "time": "2025-06-05 13:19:46"
       }
     ]
   },
@@ -17236,6 +17248,30 @@
       {
         "price": 48500,
         "time": "2025-06-05 10:09:43"
+      }
+    ]
+  },
+  "4549046139047": {
+    "product_name": "SHARP AQUOS wish3 A302SH ブラック 5G 4GB/64GB SIMロック解除済み 新品 未使用品",
+    "price": 13500,
+    "last_notified_time": "2025-06-05 13:19:46",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 13500,
+        "time": "2025-06-05 13:19:46"
+      }
+    ]
+  },
+  "4549292179675": {
+    "product_name": "【エントリーで更にポイント10倍！06/11/01:59まで！】 【土日祝発送】【新品】Canon キヤノン 望遠鏡型 PowerShot ZOOM",
+    "price": 26000,
+    "last_notified_time": "2025-06-05 13:19:46",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 26000,
+        "time": "2025-06-05 13:19:46"
       }
     ]
   }
