@@ -5156,10 +5156,10 @@
     ]
   },
   "4549980496350": {
-    "product_name": "パナソニック マスク型イオン美顔器 イオンブースト EH-SM50 JAN 4549980496350",
-    "price": 11770,
-    "last_notified_time": "2025-04-30 10:05:33",
-    "notification_count": 4,
+    "product_name": "PANASONIC パナソニック マスク型イオン美顔器 イオンブースト EH-SM50",
+    "price": 10979,
+    "last_notified_time": "2025-06-07 19:11:10",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 17880,
@@ -5176,6 +5176,10 @@
       {
         "price": 11770,
         "time": "2025-04-30 10:05:33"
+      },
+      {
+        "price": 10979,
+        "time": "2025-06-07 19:11:10"
       }
     ]
   },
@@ -17520,6 +17524,18 @@
       {
         "price": 55980,
         "time": "2025-06-07 16:03:43"
+      }
+    ]
+  },
+  "4549995521436": {
+    "product_name": "Apple 2024 MacBook Pro 10 コア CPU、10 コア GPU の M4 チップ搭載ノートパソコ ン: Apple Intelligence のために設計、14.2 インチ Liquid Retina XDR ディスプレイ、16G",
+    "price": 299884,
+    "last_notified_time": "2025-06-07 19:11:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 299884,
+        "time": "2025-06-07 19:11:10"
       }
     ]
   }
