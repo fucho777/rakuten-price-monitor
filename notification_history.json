@@ -4192,10 +4192,10 @@
     ]
   },
   "4549046137975": {
-    "product_name": "未使用｜64GB｜SIMフリー｜Libero 5G III｜A202ZT｜Y!mobile｜本体",
-    "price": 10700,
-    "last_notified_time": "2025-04-11 10:29:45",
-    "notification_count": 2,
+    "product_name": "【未使用】ZTE ymobile 【SIMフリー】 Libero 5G III 4GB 64GB ブラック A202ZT【神保町】保証期間3ヶ月",
+    "price": 11980,
+    "last_notified_time": "2025-06-07 07:03:09",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 11990,
@@ -4204,6 +4204,10 @@
       {
         "price": 10700,
         "time": "2025-04-11 10:29:45"
+      },
+      {
+        "price": 11980,
+        "time": "2025-06-07 07:03:09"
       }
     ]
   },
@@ -10236,14 +10240,18 @@
     ]
   },
   "4550559111581": {
-    "product_name": "NEC　Wi-Fiルータ Aterm(エーターム) ［Wi-Fi 6E(ax) /IPv6対応］　PA-WX5400T6",
-    "price": 16500,
-    "last_notified_time": "2025-04-19 22:02:47",
-    "notification_count": 1,
+    "product_name": "NEC LANルーター 6ストリーム Wi-Fi 6E+安定通信機能搭載 Aterm WX5400T6 PA-WX5400T6",
+    "price": 18160,
+    "last_notified_time": "2025-06-07 07:03:09",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 16500,
         "time": "2025-04-19 22:02:47"
+      },
+      {
+        "price": 18160,
+        "time": "2025-06-07 07:03:09"
       }
     ]
   },
@@ -17440,6 +17448,42 @@
       {
         "price": 35980,
         "time": "2025-06-07 04:31:11"
+      }
+    ]
+  },
+  "4548736121188": {
+    "product_name": "【新品未使用】 WF-1000XM4 プラチナシルバー スマホ 本体 即日発送 土日祝発送OK あす楽",
+    "price": 24400,
+    "last_notified_time": "2025-06-07 07:03:09",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 24400,
+        "time": "2025-06-07 07:03:09"
+      }
+    ]
+  },
+  "4573176159170": {
+    "product_name": "「新品」SIXPAD Power Gun Pocket SE-BP-03A [ブラック] ハンディマッサージャー【即納】【あす楽】【プレゼント】",
+    "price": 12096,
+    "last_notified_time": "2025-06-07 07:03:09",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 12096,
+        "time": "2025-06-07 07:03:09"
+      }
+    ]
+  },
+  "4975514062188": {
+    "product_name": "KENWOOD　カーナビ　彩速ナビ MDV-M908HDF",
+    "price": 155000,
+    "last_notified_time": "2025-06-07 07:03:09",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 155000,
+        "time": "2025-06-07 07:03:09"
       }
     ]
   }
