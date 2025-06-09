@@ -1033,9 +1033,9 @@
   },
   "4549873195698": {
     "product_name": "日立 沸騰鉄釜 ふっくら御膳 RZ-V100HM(K) [フロストブラック] JAN 4549873195698",
-    "price": 36080,
-    "last_notified_time": "2025-05-07 10:09:40",
-    "notification_count": 2,
+    "price": 37985,
+    "last_notified_time": "2025-06-09 16:06:04",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 41580,
@@ -1044,6 +1044,10 @@
       {
         "price": 36080,
         "time": "2025-05-07 10:09:40"
+      },
+      {
+        "price": 37985,
+        "time": "2025-06-09 16:06:04"
       }
     ]
   },
@@ -9597,9 +9601,9 @@
   },
   "4549077811820": {
     "product_name": "パナソニック HDビデオカメラ V480MS 32GB 高倍率90倍ズーム ホワイト HC-V480MS-W",
-    "price": 70247,
-    "last_notified_time": "2025-06-06 01:58:14",
-    "notification_count": 6,
+    "price": 79077,
+    "last_notified_time": "2025-06-09 16:06:04",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 79077,
@@ -9624,6 +9628,10 @@
       {
         "price": 70247,
         "time": "2025-06-06 01:58:14"
+      },
+      {
+        "price": 79077,
+        "time": "2025-06-09 16:06:04"
       }
     ]
   },
@@ -14560,14 +14568,18 @@
     ]
   },
   "4976219131797": {
-    "product_name": "PS5 モンスターハンターワイルズ[カプコン]《発売済・在庫品》",
-    "price": 6993,
-    "last_notified_time": "2025-05-14 10:00:02",
-    "notification_count": 1,
+    "product_name": "モンスターハンターワイルズ",
+    "price": 4995,
+    "last_notified_time": "2025-06-09 16:06:04",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 6993,
         "time": "2025-05-14 10:00:02"
+      },
+      {
+        "price": 4995,
+        "time": "2025-06-09 16:06:04"
       }
     ]
   },
