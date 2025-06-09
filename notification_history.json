@@ -4380,10 +4380,10 @@
     ]
   },
   "4974011803836": {
-    "product_name": "リファ ビューテック ドライヤースマート ダブル ReFa BEAUTECH DRYER SMART W ホワイト RE-AX-02A ブラック RE-AX-03A ピンク RE-AX-05A【海外対応 ヘアケア サロン帰り 自宅 レア髪 しっとり髪 ふんわり髪 MTG クリスマス プレゼント ギフト 母の日 正規品】",
-    "price": 29809,
-    "last_notified_time": "2025-06-05 13:19:46",
-    "notification_count": 4,
+    "product_name": "MTG リファ ビューテック ドライヤースマートダブル ReFa BEAUTECH DRYER SMART W ブラック",
+    "price": 37899,
+    "last_notified_time": "2025-06-09 13:13:42",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 34499,
@@ -4400,6 +4400,10 @@
       {
         "price": 29809,
         "time": "2025-06-05 13:19:46"
+      },
+      {
+        "price": 37899,
+        "time": "2025-06-09 13:13:42"
       }
     ]
   },
@@ -12472,14 +12476,18 @@
     ]
   },
   "4549576195551": {
-    "product_name": "【新品】Microsoft マイクロソフト Surface Laptop 5 13.5型 Core i5/8GB/512GB/Office R1S-00072 サンドストーン",
-    "price": 165000,
-    "last_notified_time": "2025-04-29 13:22:25",
-    "notification_count": 1,
+    "product_name": "Microsoft Surface Laptop 5 R1S-00072 サンドストーン /13.5インチ/Core i5/メモリ 8GB/SSD 512GB/Office/Win11 Home/ ノートパソコン マイクロソフト サーフェス",
+    "price": 174022,
+    "last_notified_time": "2025-06-09 13:13:42",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 165000,
         "time": "2025-04-29 13:22:25"
+      },
+      {
+        "price": 174022,
+        "time": "2025-06-09 13:13:42"
       }
     ]
   },
@@ -14817,13 +14825,17 @@
   },
   "4549980232521": {
     "product_name": "パナソニック おたっくす デジタルコードレスFAX 子機1台付き 迷惑電話対策機能搭載 シャンパンゴールド KX-PD725DL-N",
-    "price": 50834,
-    "last_notified_time": "2025-05-15 15:59:25",
-    "notification_count": 1,
+    "price": 46183,
+    "last_notified_time": "2025-06-09 13:13:42",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 50834,
         "time": "2025-05-15 15:59:25"
+      },
+      {
+        "price": 46183,
+        "time": "2025-06-09 13:13:42"
       }
     ]
   },
@@ -17744,6 +17756,18 @@
       {
         "price": 5200,
         "time": "2025-06-09 10:09:52"
+      }
+    ]
+  },
+  "4974019221816": {
+    "product_name": "シャープ AQUOS 4Kレコーダー 4B-C20ET3 JAN 4974019221816",
+    "price": 69086,
+    "last_notified_time": "2025-06-09 13:13:42",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 69086,
+        "time": "2025-06-09 13:13:42"
       }
     ]
   }
