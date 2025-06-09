@@ -300,10 +300,10 @@
     ]
   },
   "4968929221639": {
-    "product_name": "【送料無料・在庫あり】JBL Bluetoothスピーカー GO 4 [スウォッシュピンク]",
-    "price": 5870,
-    "last_notified_time": "2025-04-25 10:05:35",
-    "notification_count": 3,
+    "product_name": "JBL　ブルートゥース スピーカー ［防水 /Bluetooth対応］ SWASH PINK　JBLGO4PINK",
+    "price": 6264,
+    "last_notified_time": "2025-06-09 07:16:35",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 5991,
@@ -316,6 +316,10 @@
       {
         "price": 5870,
         "time": "2025-04-25 10:05:35"
+      },
+      {
+        "price": 6264,
+        "time": "2025-06-09 07:16:35"
       }
     ]
   },
@@ -5996,10 +6000,10 @@
     ]
   },
   "4560330110696": {
-    "product_name": "ギフト対応 バルミューダ ザ ポット 電気ケトル ブラック BALMUDA The Pot K07A-BK",
-    "price": 17695,
-    "last_notified_time": "2025-05-28 16:07:23",
-    "notification_count": 3,
+    "product_name": "バルミューダ ザ・ポット 電気ケトル ホワイト/ブラック BALMUDA The Pot K07A-WH/BK コンパクトで注ぎやすいデザイン",
+    "price": 14800,
+    "last_notified_time": "2025-06-09 07:16:35",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 14960,
@@ -6012,6 +6016,10 @@
       {
         "price": 17695,
         "time": "2025-05-28 16:07:23"
+      },
+      {
+        "price": 14800,
+        "time": "2025-06-09 07:16:35"
       }
     ]
   },
@@ -10904,10 +10912,10 @@
     ]
   },
   "4957812660419": {
-    "product_name": "【ポイント10倍】 ヤマハ AVアンプ RX-V6A [サラウンドチャンネル：7.1ch HDMI端子入力：7系統 HDMI端子出力：1系統 オーディオ入力：3系統] 【P10倍】",
-    "price": 74250,
-    "last_notified_time": "2025-05-14 10:00:02",
-    "notification_count": 2,
+    "product_name": "まごころ長期修理保証(保証5年)［加入料：対象商品代金の5%］商品「RX-V6A-B」専用加入料(※加入料のみ注文不可)",
+    "price": 2638,
+    "last_notified_time": "2025-06-09 07:16:35",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 52250,
@@ -10916,6 +10924,10 @@
       {
         "price": 74250,
         "time": "2025-05-14 10:00:02"
+      },
+      {
+        "price": 2638,
+        "time": "2025-06-09 07:16:35"
       }
     ]
   },
@@ -11569,9 +11581,9 @@
   },
   "4549980030738": {
     "product_name": "パナソニック ETC2.0車載器 CY-ET2500VD アンテナ分離型 (DSRC) 新セキュリティ対応 Panasonic",
-    "price": 40224,
-    "last_notified_time": "2025-05-09 07:14:38",
-    "notification_count": 3,
+    "price": 43759,
+    "last_notified_time": "2025-06-09 07:16:35",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 40224,
@@ -11584,6 +11596,10 @@
       {
         "price": 40224,
         "time": "2025-05-09 07:14:38"
+      },
+      {
+        "price": 43759,
+        "time": "2025-06-09 07:16:35"
       }
     ]
   },
@@ -17652,6 +17668,30 @@
       {
         "price": 24500,
         "time": "2025-06-09 02:03:30"
+      }
+    ]
+  },
+  "4549046144928": {
+    "product_name": "OPPO Reno11 A Y!mobile ダークグリーン SIMロック解除済み 新品 未使用品",
+    "price": 30900,
+    "last_notified_time": "2025-06-09 07:16:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 30900,
+        "time": "2025-06-09 07:16:35"
+      }
+    ]
+  },
+  "4549995501100": {
+    "product_name": "新品未開封 Apple Watch Series 10 GPSモデル 46mm　MWWL3J/A 4549995501100",
+    "price": 59084,
+    "last_notified_time": "2025-06-09 07:16:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 59084,
+        "time": "2025-06-09 07:16:35"
       }
     ]
   }
