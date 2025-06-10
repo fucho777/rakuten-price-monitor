@@ -15512,10 +15512,10 @@
     ]
   },
   "4902370549560": {
-    "product_name": "【送料無料・在庫あり】Nintendo Switch Proコントローラー スプラトゥーン3エディション",
-    "price": 9249,
-    "last_notified_time": "2025-06-02 04:39:30",
-    "notification_count": 2,
+    "product_name": "【あす楽】【新品未使用】Nintendo Switch Proコントローラー スプラトゥーン3エディション　4902370549560【即日発送、土、祝日発送 】【送料無料※沖縄を除く】【不正利用防止のため、配達時転送不可】",
+    "price": 8180,
+    "last_notified_time": "2025-06-10 02:01:23",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 8228,
@@ -15524,6 +15524,10 @@
       {
         "price": 9249,
         "time": "2025-06-02 04:39:30"
+      },
+      {
+        "price": 8180,
+        "time": "2025-06-10 02:01:23"
       }
     ]
   },
@@ -17780,6 +17784,30 @@
       {
         "price": 69086,
         "time": "2025-06-09 13:13:42"
+      }
+    ]
+  },
+  "4549980487204": {
+    "product_name": "Panasonic ヘアードライヤー　ナノケア（モイストピンク） EH-NA0G-P",
+    "price": 27138,
+    "last_notified_time": "2025-06-10 02:01:23",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 27138,
+        "time": "2025-06-10 02:01:23"
+      }
+    ]
+  },
+  "4549980487273": {
+    "product_name": "Panasonic ヘアードライヤー　ナノケア（ゴールド） EH-NA9G-N",
+    "price": 17820,
+    "last_notified_time": "2025-06-10 02:01:23",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 17820,
+        "time": "2025-06-10 02:01:23"
       }
     ]
   }
