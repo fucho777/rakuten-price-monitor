@@ -11936,14 +11936,18 @@
     ]
   },
   "4550556108324": {
-    "product_name": "新品 SHARP Plasmacluster Beauty IB-P801-B [ミッドナイトブラック] シャープ ドライヤー",
-    "price": 21974,
-    "last_notified_time": "2025-04-26 01:56:52",
-    "notification_count": 1,
+    "product_name": "シャープ(SHARP) ドライヤー プラズマクラスター ビューティー IB-P801-B ミッドナイトブラック 速乾 エアロフォルム 大風量 静電気抑制",
+    "price": 29510,
+    "last_notified_time": "2025-06-10 04:37:42",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 21974,
         "time": "2025-04-26 01:56:52"
+      },
+      {
+        "price": 29510,
+        "time": "2025-06-10 04:37:42"
       }
     ]
   },
@@ -17808,6 +17812,18 @@
       {
         "price": 17820,
         "time": "2025-06-10 02:01:23"
+      }
+    ]
+  },
+  "4969929257246": {
+    "product_name": "Bose SoundLink Flex Bluetooth speaker ポータブル ワイヤレス スピーカー マイク付き 最大12時間 再生 防水・防塵 20.1 cm (W) x 9 cm (H) x 5.2 cm (D) ホワイトスモーク",
+    "price": 17500,
+    "last_notified_time": "2025-06-10 04:37:42",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 17500,
+        "time": "2025-06-10 04:37:42"
       }
     ]
   }
