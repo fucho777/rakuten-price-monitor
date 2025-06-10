@@ -5984,10 +5984,10 @@
     ]
   },
   "4948872414647": {
-    "product_name": "PlayStation 4 ジェット・ブラック 500GB (CUH-2200AB01)【メーカー生産終了】",
-    "price": 41640,
-    "last_notified_time": "2025-04-30 19:12:46",
-    "notification_count": 3,
+    "product_name": "【PS4 レンタル】 PlayStation4 本体 500GB 1ヶ月レンタル 格安レンタル ソニーPS4 ゲーム機 レンタル",
+    "price": 7800,
+    "last_notified_time": "2025-06-10 07:05:27",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 39760,
@@ -6000,6 +6000,10 @@
       {
         "price": 41640,
         "time": "2025-04-30 19:12:46"
+      },
+      {
+        "price": 7800,
+        "time": "2025-06-10 07:05:27"
       }
     ]
   },
@@ -13356,14 +13360,18 @@
     ]
   },
   "4589796418634": {
-    "product_name": "【ポイント10倍】 NEC ノートパソコン LAVIE N16 N1670/HAL PC-N1670HAL [ネイビーブルー] 【P10倍】",
-    "price": 223190,
-    "last_notified_time": "2025-05-07 04:31:22",
-    "notification_count": 1,
+    "product_name": "【6/10は期間限定クーポン発行】NEC ノートパソコン LAVIE N16 PC-N1670HAL 16インチ/Windows11/Core i7-1255U/メモリ16GB/SSD256GB/ネイビーブルー【/srm】【KK9N0D18P】",
+    "price": 163500,
+    "last_notified_time": "2025-06-10 07:05:27",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 223190,
         "time": "2025-05-07 04:31:22"
+      },
+      {
+        "price": 163500,
+        "time": "2025-06-10 07:05:27"
       }
     ]
   },
@@ -16440,14 +16448,18 @@
     ]
   },
   "4948872016131": {
-    "product_name": "【PS5】パッケージ版 Horizon Forbidden West 新品 4948872016131 ホライズン プレステ5 ソフト ゲーム",
-    "price": 4770,
-    "last_notified_time": "2025-05-27 04:24:27",
-    "notification_count": 1,
+    "product_name": "Horizon Forbidden West PS5版",
+    "price": 4159,
+    "last_notified_time": "2025-06-10 07:05:27",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 4770,
         "time": "2025-05-27 04:24:27"
+      },
+      {
+        "price": 4159,
+        "time": "2025-06-10 07:05:27"
       }
     ]
   },
@@ -17516,14 +17528,18 @@
     ]
   },
   "6934177755705": {
-    "product_name": "【LINEお友達登録で300円OFFクーポン】☆Xiaomi タブレット「Pad 5」 Wi-fi版 256GB シャオミ コズミックグレー【送料無料】",
-    "price": 48500,
-    "last_notified_time": "2025-06-05 10:09:43",
-    "notification_count": 1,
+    "product_name": "【LINEお友達登録で300円OFFクーポン】☆ Xiaomi タブレット Pad 5 Wi-fi版 256GB 11インチ シャオミ Android コズミックグレー 送料無料 更に割引クーポン",
+    "price": 45500,
+    "last_notified_time": "2025-06-10 07:05:27",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 48500,
         "time": "2025-06-05 10:09:43"
+      },
+      {
+        "price": 45500,
+        "time": "2025-06-10 07:05:27"
       }
     ]
   },
@@ -17824,6 +17840,30 @@
       {
         "price": 17500,
         "time": "2025-06-10 04:37:42"
+      }
+    ]
+  },
+  "4549980739648": {
+    "product_name": "【ポイント10倍】 パナソニック 炊飯器 おどり炊き SR-M10A-K [ブラック] [タイプ：圧力IH炊飯器 炊飯量：5.5合 早炊き：○ 保温時間：24時間] 【P10倍】",
+    "price": 49610,
+    "last_notified_time": "2025-06-10 07:05:27",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 49610,
+        "time": "2025-06-10 07:05:27"
+      }
+    ]
+  },
+  "4550556103121": {
+    "product_name": "シャープ SHARP 過熱水蒸気オーブンレンジ 23L 1段調理 ホワイト系 RE-WF234(W)",
+    "price": 51938,
+    "last_notified_time": "2025-06-10 07:05:27",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 51938,
+        "time": "2025-06-10 07:05:27"
       }
     ]
   }
