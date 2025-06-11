@@ -11940,14 +11940,18 @@
     ]
   },
   "4547410370003": {
-    "product_name": "【お得・新品・送料無料・即納】FUJI FILM 富士フイルム スクエアフィルム 2本パック INSTAX SQUARE WW 2【10枚入り×2パック】　※倉庫からの移動中に箱傷みあり※ 【外箱傷あり】",
-    "price": 3231,
-    "last_notified_time": "2025-04-25 19:10:05",
-    "notification_count": 1,
+    "product_name": "【チェキ用フィルム20枚】スクエアフォーマットフィルム「INSTAX SQUARE」 日本製 チェキフィルム 富士フイルム インスタントカラーフィルム 正方形 20シート ホワイト チェキ フィルム 純正 フイルム　INSTAX SQUARE WW2",
+    "price": 342,
+    "last_notified_time": "2025-06-11 04:29:02",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 3231,
         "time": "2025-04-25 19:10:05"
+      },
+      {
+        "price": 342,
+        "time": "2025-06-11 04:29:02"
       }
     ]
   },
@@ -18012,6 +18016,18 @@
       {
         "price": 6480,
         "time": "2025-06-10 16:04:56"
+      }
+    ]
+  },
+  "7622100834601": {
+    "product_name": "【送料無料・在庫あり】IQOS イルマ i 【リーフグリーン】【製品登録不可商品】IQOS ILUMA（アイコス イルマ）専用たばこ TEREA（テリア） IQOS ILUMA i",
+    "price": 8697,
+    "last_notified_time": "2025-06-11 04:29:02",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 8697,
+        "time": "2025-06-11 04:29:02"
       }
     ]
   }
