@@ -2389,9 +2389,9 @@
   },
   "4948872415187": {
     "product_name": "DualSense ワイヤレスコントローラー コズミック レッド",
-    "price": 8980,
-    "last_notified_time": "2025-05-27 13:23:02",
-    "notification_count": 2,
+    "price": 9980,
+    "last_notified_time": "2025-06-11 16:09:23",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 9980,
@@ -2400,6 +2400,10 @@
       {
         "price": 8980,
         "time": "2025-05-27 13:23:02"
+      },
+      {
+        "price": 9980,
+        "time": "2025-06-11 16:09:23"
       }
     ]
   },
