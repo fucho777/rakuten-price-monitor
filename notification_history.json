@@ -1516,10 +1516,10 @@
     ]
   },
   "4988602173222": {
-    "product_name": "【新品・送料無料】桃太郎電鉄 ～昭和 平成 令和も定番！～ Nintendo Switch コナミ KONAMI 4988602173222 RL005J1",
-    "price": 4830,
-    "last_notified_time": "2025-06-08 04:33:46",
-    "notification_count": 4,
+    "product_name": "【在庫あり・送料無料】桃太郎電鉄 ～昭和 平成 令和も定番！～ [Nintendo Switch] コナミ(KONAMI) 【ポスト投函】",
+    "price": 5375,
+    "last_notified_time": "2025-06-12 09:59:40",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 5298,
@@ -1536,6 +1536,10 @@
       {
         "price": 4830,
         "time": "2025-06-08 04:33:46"
+      },
+      {
+        "price": 5375,
+        "time": "2025-06-12 09:59:40"
       }
     ]
   },
@@ -2493,9 +2497,9 @@
   },
   "4512223695193": {
     "product_name": "Shokz OpenFit SKZ-EP-000021 [ベージュ] JAN 4512223695193",
-    "price": 16283,
-    "last_notified_time": "2025-05-08 16:00:01",
-    "notification_count": 3,
+    "price": 15180,
+    "last_notified_time": "2025-06-12 09:59:40",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 12700,
@@ -2508,6 +2512,10 @@
       {
         "price": 16283,
         "time": "2025-05-08 16:00:01"
+      },
+      {
+        "price": 15180,
+        "time": "2025-06-12 09:59:40"
       }
     ]
   },
@@ -3341,9 +3349,9 @@
   },
   "4549046132352": {
     "product_name": "【新品同様】OPPO A55s 5G A102OP グリーン Softbank【日曜日以外即日発送】【送料無料】",
-    "price": 12500,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 2,
+    "price": 9980,
+    "last_notified_time": "2025-06-12 09:59:40",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 16500,
@@ -3352,6 +3360,10 @@
       {
         "price": 12500,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 9980,
+        "time": "2025-06-12 09:59:40"
       }
     ]
   },
@@ -16557,13 +16569,17 @@
   },
   "4546821923785": {
     "product_name": "【在庫あり・送料無料】SONY 密閉型 ワイヤレスイヤホン WH-1000XM5 BNT -Blue Note Tokyo Edition- [ミッドナイトブルー]",
-    "price": 63787,
-    "last_notified_time": "2025-05-27 04:24:27",
-    "notification_count": 1,
+    "price": 70453,
+    "last_notified_time": "2025-06-12 09:59:40",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 63787,
         "time": "2025-05-27 04:24:27"
+      },
+      {
+        "price": 70453,
+        "time": "2025-06-12 09:59:40"
       }
     ]
   },
@@ -16672,10 +16688,10 @@
     ]
   },
   "4974019222479": {
-    "product_name": "【新品・送料無料】SHARP AQUOS sense6S SH-RM19S 64GB [ライトカッパー] 楽天版",
-    "price": 22100,
-    "last_notified_time": "2025-05-31 04:32:42",
-    "notification_count": 2,
+    "product_name": "【訳あり品】AQUOS Sense6s SH-RM19s ライトカッパー シルバー ブラック SIMロック解除済 楽天モバイル【保証7日】本体 白ロム CCコネクト",
+    "price": 7900,
+    "last_notified_time": "2025-06-12 09:59:40",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 25000,
@@ -16684,6 +16700,10 @@
       {
         "price": 22100,
         "time": "2025-05-31 04:32:42"
+      },
+      {
+        "price": 7900,
+        "time": "2025-06-12 09:59:40"
       }
     ]
   },
@@ -18228,6 +18248,18 @@
       {
         "price": 12179,
         "time": "2025-06-12 04:40:21"
+      }
+    ]
+  },
+  "4549576186078": {
+    "product_name": "【送料無料・在庫あり】Xbox ワイヤレス コントローラー ミネラル カモ",
+    "price": 11979,
+    "last_notified_time": "2025-06-12 09:59:40",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 11979,
+        "time": "2025-06-12 09:59:40"
       }
     ]
   }
