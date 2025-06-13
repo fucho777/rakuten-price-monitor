@@ -15280,10 +15280,10 @@
     ]
   },
   "4550556111607": {
-    "product_name": "【新品】SHARP シャープ プラズマクラスタードレープフロードライヤー IB-WX901-W ホワイト",
-    "price": 29249,
-    "last_notified_time": "2025-05-20 13:13:55",
-    "notification_count": 2,
+    "product_name": "【新品】美容・健康家電 シャープ プラズマクラスタードレープフロードライヤー (ホワイト) [IB-WX901-W]",
+    "price": 40999,
+    "last_notified_time": "2025-06-13 22:04:16",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 33789,
@@ -15292,6 +15292,10 @@
       {
         "price": 29249,
         "time": "2025-05-20 13:13:55"
+      },
+      {
+        "price": 40999,
+        "time": "2025-06-13 22:04:16"
       }
     ]
   },
@@ -18460,6 +18464,18 @@
       {
         "price": 182550,
         "time": "2025-06-13 13:13:10"
+      }
+    ]
+  },
+  "4537694315999": {
+    "product_name": "【新品】カメラ 360度アクションカメラ Insta360 X3 [CINSAAQ/B]",
+    "price": 52050,
+    "last_notified_time": "2025-06-13 22:04:16",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 52050,
+        "time": "2025-06-13 22:04:16"
       }
     ]
   }
