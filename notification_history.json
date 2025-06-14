@@ -5345,13 +5345,17 @@
   },
   "4902370549027": {
     "product_name": "『ポケットモンスター ブリリアントダイヤモンド・シャイニングパール』ダブルパック",
-    "price": 11248,
-    "last_notified_time": "2025-04-05 13:58:10",
-    "notification_count": 1,
+    "price": 10619,
+    "last_notified_time": "2025-06-14 13:15:00",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 11248,
         "time": "2025-04-05 13:58:10"
+      },
+      {
+        "price": 10619,
+        "time": "2025-06-14 13:15:00"
       }
     ]
   },
@@ -8608,10 +8612,10 @@
     ]
   },
   "4550556108331": {
-    "product_name": "【ポイント10倍】 シャープ ヘアドライヤー Plasmacluster Beauty IB-P801-W [ルミナスホワイト] [種類：ヘアドライヤー 風量：5.1m3/分 マイナスイオン：○ 冷風：○ スカルプモード：○ 重量：約545g(付属品除く)] 【P10倍】",
-    "price": 37180,
-    "last_notified_time": "2025-04-23 10:06:29",
-    "notification_count": 3,
+    "product_name": "【送料無料・新品】SHARP プラズマクラスタードレープフロードライヤー Plasmacluster Beauty IB-P801 [ルミナスホワイト]",
+    "price": 27671,
+    "last_notified_time": "2025-06-14 13:15:00",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 26505,
@@ -8624,6 +8628,10 @@
       {
         "price": 37180,
         "time": "2025-04-23 10:06:29"
+      },
+      {
+        "price": 27671,
+        "time": "2025-06-14 13:15:00"
       }
     ]
   },
