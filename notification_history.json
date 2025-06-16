@@ -5636,10 +5636,10 @@
     ]
   },
   "4550556110761": {
-    "product_name": "【新品】SHARP シャープ 電気調理鍋 ヘルシオ ホットクック KN-HW24G-B ブラック",
-    "price": 72573,
-    "last_notified_time": "2025-06-13 13:13:10",
-    "notification_count": 2,
+    "product_name": "SHARP シャープ KN-HW24G-B 水なし自動調理鍋 HEALSIO ヘルシオ ホットクック 2.4L プレミアムブラック",
+    "price": 59346,
+    "last_notified_time": "2025-06-16 22:04:36",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 53999,
@@ -5648,6 +5648,10 @@
       {
         "price": 72573,
         "time": "2025-06-13 13:13:10"
+      },
+      {
+        "price": 59346,
+        "time": "2025-06-16 22:04:36"
       }
     ]
   },
@@ -11621,9 +11625,9 @@
   },
   "4540790232435": {
     "product_name": "★ヤーマン レイボーテ ヴィーナス STA-209L 【美容器具】【送料無料】",
-    "price": 25910,
-    "last_notified_time": "2025-06-05 10:09:43",
-    "notification_count": 3,
+    "price": 29780,
+    "last_notified_time": "2025-06-16 22:04:36",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 24729,
@@ -11636,6 +11640,10 @@
       {
         "price": 25910,
         "time": "2025-06-05 10:09:43"
+      },
+      {
+        "price": 29780,
+        "time": "2025-06-16 22:04:36"
       }
     ]
   },
