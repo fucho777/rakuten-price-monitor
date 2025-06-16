@@ -5948,14 +5948,18 @@
     ]
   },
   "4548736163560": {
-    "product_name": "【お得・新品・送料無料・即納】SONY イヤホン・ヘッドホン SONY WH-1000XM5 (P)[スモーキーピンク]※倉庫からの移動中に箱傷みあり※ 【外箱傷あり】",
-    "price": 42880,
-    "last_notified_time": "2025-04-07 14:25:25",
-    "notification_count": 1,
+    "product_name": "【新品】SONY ソニー ワイヤレスヘッドフォン WH-1000XM5-PM スモーキーピンク",
+    "price": 36800,
+    "last_notified_time": "2025-06-16 07:07:21",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 42880,
         "time": "2025-04-07 14:25:25"
+      },
+      {
+        "price": 36800,
+        "time": "2025-06-16 07:07:21"
       }
     ]
   },
@@ -6881,9 +6885,9 @@
   },
   "4550161442844": {
     "product_name": "NEC Wi-Fi PA-WX5400HP 無線LANルータ dual_band Aterm",
-    "price": 23950,
-    "last_notified_time": "2025-06-05 07:14:49",
-    "notification_count": 2,
+    "price": 25550,
+    "last_notified_time": "2025-06-16 07:07:21",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 26230,
@@ -6892,6 +6896,10 @@
       {
         "price": 23950,
         "time": "2025-06-05 07:14:49"
+      },
+      {
+        "price": 25550,
+        "time": "2025-06-16 07:07:21"
       }
     ]
   },
@@ -18461,13 +18469,17 @@
   },
   "6934177789267": {
     "product_name": "【在庫あり・送料無料】Xiaomi Pad 5 256GB コズミックグレー",
-    "price": 68309,
-    "last_notified_time": "2025-06-11 07:13:59",
-    "notification_count": 1,
+    "price": 41924,
+    "last_notified_time": "2025-06-16 07:07:21",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 68309,
         "time": "2025-06-11 07:13:59"
+      },
+      {
+        "price": 41924,
+        "time": "2025-06-16 07:07:21"
       }
     ]
   },
@@ -18696,6 +18708,18 @@
       {
         "price": 4436,
         "time": "2025-06-16 04:39:16"
+      }
+    ]
+  },
+  "4580038879640": {
+    "product_name": "【土日、祝日発送、店舗受取可】新品未開封品【Nランク】mineo版SIMフリー OPPO Reno10 Pro 5G グロッシーパープル CPH2541 4580038879640",
+    "price": 49000,
+    "last_notified_time": "2025-06-16 07:07:21",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 49000,
+        "time": "2025-06-16 07:07:21"
       }
     ]
   }
