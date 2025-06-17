@@ -5652,10 +5652,10 @@
     ]
   },
   "4210201443391": {
-    "product_name": "ブラウン シリーズ9Pro シェーバー BRAUN 洗浄機モデル 4枚刃 9465CC-V シルバー 新品 メンズシェーバー 充電式シェーバー　4210201443391",
-    "price": 39800,
-    "last_notified_time": "2025-06-12 07:11:44",
-    "notification_count": 2,
+    "product_name": "BRAUN ブラウン シリーズ9 Pro 9465cc-V",
+    "price": 32340,
+    "last_notified_time": "2025-06-17 16:06:39",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 30000,
@@ -5664,6 +5664,10 @@
       {
         "price": 39800,
         "time": "2025-06-12 07:11:44"
+      },
+      {
+        "price": 32340,
+        "time": "2025-06-17 16:06:39"
       }
     ]
   },
@@ -14337,9 +14341,9 @@
   },
   "4976219124416": {
     "product_name": "PS5 ストリートファイター6",
-    "price": 8024,
-    "last_notified_time": "2025-06-02 13:14:03",
-    "notification_count": 3,
+    "price": 7555,
+    "last_notified_time": "2025-06-17 16:06:39",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 6758,
@@ -14352,6 +14356,10 @@
       {
         "price": 8024,
         "time": "2025-06-02 13:14:03"
+      },
+      {
+        "price": 7555,
+        "time": "2025-06-17 16:06:39"
       }
     ]
   },
@@ -18948,6 +18956,18 @@
       {
         "price": 27500,
         "time": "2025-06-17 13:18:52"
+      }
+    ]
+  },
+  "4549995303612": {
+    "product_name": "Apple Magic Mouse - ブラック(Multi-Touch対応) ​​​​​​​",
+    "price": 13045,
+    "last_notified_time": "2025-06-17 16:06:39",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 13045,
+        "time": "2025-06-17 16:06:39"
       }
     ]
   }
