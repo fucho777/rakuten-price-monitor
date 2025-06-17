@@ -9472,10 +9472,10 @@
     ]
   },
   "4549292182477": {
-    "product_name": "キヤノン Canon プリンター A4インクジェット複合機 PIXUS TS3530 ブラック Wi-Fi対応 テレワーク向け 2022年モデル 4色・一体型・対応インクBC-365/366シリーズ",
-    "price": 9300,
-    "last_notified_time": "2025-06-05 02:03:15",
-    "notification_count": 3,
+    "product_name": "CANON PIXUS TS3530 BK A4インクジェット複合機(プリント/コピー/スキャナ)",
+    "price": 9800,
+    "last_notified_time": "2025-06-17 07:11:34",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 9800,
@@ -9488,6 +9488,10 @@
       {
         "price": 9300,
         "time": "2025-06-05 02:03:15"
+      },
+      {
+        "price": 9800,
+        "time": "2025-06-17 07:11:34"
       }
     ]
   },
