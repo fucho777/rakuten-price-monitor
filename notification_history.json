@@ -4361,9 +4361,9 @@
   },
   "4549046137975": {
     "product_name": "【未使用】ZTE ymobile 【SIMフリー】 Libero 5G III 4GB 64GB ブラック A202ZT【神保町】保証期間3ヶ月",
-    "price": 11980,
-    "last_notified_time": "2025-06-07 07:03:09",
-    "notification_count": 3,
+    "price": 10980,
+    "last_notified_time": "2025-06-17 04:34:23",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 11990,
@@ -4376,6 +4376,10 @@
       {
         "price": 11980,
         "time": "2025-06-07 07:03:09"
+      },
+      {
+        "price": 10980,
+        "time": "2025-06-17 04:34:23"
       }
     ]
   },
@@ -9853,9 +9857,9 @@
   },
   "4548736119024": {
     "product_name": "新色サイレントホワイト ソニー ワイヤレスノイズキャンセリングヘッドホン WH-1000XM4 : LDAC/　 Alexa搭載/Bluetooth/ハイレゾ 最大30時間連続再生 密閉型 マイク付 2020年モデル 360 Reality Audio認定モ",
-    "price": 66590,
-    "last_notified_time": "2025-05-23 04:29:54",
-    "notification_count": 2,
+    "price": 71446,
+    "last_notified_time": "2025-06-17 04:34:23",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 59800,
@@ -9864,6 +9868,10 @@
       {
         "price": 66590,
         "time": "2025-05-23 04:29:54"
+      },
+      {
+        "price": 71446,
+        "time": "2025-06-17 04:34:23"
       }
     ]
   },
@@ -11444,10 +11452,10 @@
     ]
   },
   "4969929259172": {
-    "product_name": "【在庫あり・送料無料】BOSE ワイヤレスイヤホン QuietComfort Ultra Earbuds [ホワイトスモーク]",
-    "price": 28199,
-    "last_notified_time": "2025-06-05 04:28:49",
-    "notification_count": 4,
+    "product_name": "Bose QuietComfort Ultra Earbuds 完全ワイヤレス ノイズキャンセリングイヤホン ホワイトスモーク 空間オーディオ Bluetooth接続 マイク付 最大6時間再生 急速充電",
+    "price": 30600,
+    "last_notified_time": "2025-06-17 04:34:23",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 25216,
@@ -11464,6 +11472,10 @@
       {
         "price": 28199,
         "time": "2025-06-05 04:28:49"
+      },
+      {
+        "price": 30600,
+        "time": "2025-06-17 04:34:23"
       }
     ]
   },
@@ -18836,6 +18848,18 @@
       {
         "price": 45000,
         "time": "2025-06-17 02:01:16"
+      }
+    ]
+  },
+  "4942857224849": {
+    "product_name": "【未使用】SHARP docomo 【SIMフリー】 AQUOS wish2 コーラル 4GB 64GB SH-51C【広島】保証期間3ヶ月",
+    "price": 15980,
+    "last_notified_time": "2025-06-17 04:34:23",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 15980,
+        "time": "2025-06-17 04:34:23"
       }
     ]
   }
