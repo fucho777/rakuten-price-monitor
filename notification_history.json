@@ -12241,9 +12241,9 @@
   },
   "4988617439184": {
     "product_name": "エプソン プリンター A4インクジェット複合機 カラリオ EP-714A",
-    "price": 30486,
-    "last_notified_time": "2025-05-25 22:02:44",
-    "notification_count": 2,
+    "price": 32834,
+    "last_notified_time": "2025-06-18 16:06:12",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 32602,
@@ -12252,6 +12252,10 @@
       {
         "price": 30486,
         "time": "2025-05-25 22:02:44"
+      },
+      {
+        "price": 32834,
+        "time": "2025-06-18 16:06:12"
       }
     ]
   },
@@ -19072,6 +19076,18 @@
       {
         "price": 39800,
         "time": "2025-06-18 13:14:02"
+      }
+    ]
+  },
+  "4549576178677": {
+    "product_name": "ノートパソコン マイクロソフト Surface Pro 8 8PQ-00026 13インチ Core i5 1135G7 ストレージ容量256GB メモリ8GB Windows 11 顔認証 Office 量販店展示品",
+    "price": 117800,
+    "last_notified_time": "2025-06-18 16:06:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 117800,
+        "time": "2025-06-18 16:06:12"
       }
     ]
   }
