@@ -2517,9 +2517,9 @@
   },
   "4948872415293": {
     "product_name": "DualSense ワイヤレスコントローラー ノヴァ ピンク",
-    "price": 8980,
-    "last_notified_time": "2025-05-27 13:23:02",
-    "notification_count": 2,
+    "price": 9980,
+    "last_notified_time": "2025-06-18 01:59:32",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 9980,
@@ -2528,6 +2528,10 @@
       {
         "price": 8980,
         "time": "2025-05-27 13:23:02"
+      },
+      {
+        "price": 9980,
+        "time": "2025-06-18 01:59:32"
       }
     ]
   },
@@ -3224,10 +3228,10 @@
     ]
   },
   "4549980601761": {
-    "product_name": "パナソニック 温水洗浄便座 ビューティ トワレ CH941SPF パステルアイボリー 貯湯式タイプ 脱臭無",
-    "price": 33765,
-    "last_notified_time": "2025-06-08 16:07:27",
-    "notification_count": 5,
+    "product_name": "Panasonic（パナソニック） 温水便座　4549980601761 ビューティ・トワレ CH941SPF [パステルアイボリー]",
+    "price": 21527,
+    "last_notified_time": "2025-06-18 01:59:32",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 31555,
@@ -3248,6 +3252,10 @@
       {
         "price": 33765,
         "time": "2025-06-08 16:07:27"
+      },
+      {
+        "price": 21527,
+        "time": "2025-06-18 01:59:32"
       }
     ]
   },
@@ -9996,14 +10004,18 @@
     ]
   },
   "4549576230382": {
-    "product_name": "【送料無料・在庫あり】マイクロソフト Microsoft Xbox ワイヤレス コントローラー （アークティック カモ） QAU-00140",
-    "price": 7555,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 1,
+    "product_name": "XBOXワイヤレスコントローラー(アークティックカモ)",
+    "price": 13540,
+    "last_notified_time": "2025-06-18 01:59:32",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 7555,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 13540,
+        "time": "2025-06-18 01:59:32"
       }
     ]
   },
