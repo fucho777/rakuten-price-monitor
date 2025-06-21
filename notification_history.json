@@ -2449,9 +2449,9 @@
   },
   "4710483941733": {
     "product_name": "ASROCK　グラフィックボード Radeon RX 7900 XTX Phantom Gaming 24G OC ［Radeon RXシリーズ /24GB］　RX7900XTXPG24GO",
-    "price": 122244,
-    "last_notified_time": "2025-06-13 02:05:23",
-    "notification_count": 4,
+    "price": 112041,
+    "last_notified_time": "2025-06-21 01:53:32",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 177990,
@@ -2468,6 +2468,10 @@
       {
         "price": 122244,
         "time": "2025-06-13 02:05:23"
+      },
+      {
+        "price": 112041,
+        "time": "2025-06-21 01:53:32"
       }
     ]
   },
@@ -15757,9 +15761,9 @@
   },
   "4550556111607": {
     "product_name": "【新品】美容・健康家電 シャープ プラズマクラスタードレープフロードライヤー (ホワイト) [IB-WX901-W]",
-    "price": 40999,
-    "last_notified_time": "2025-06-13 22:04:16",
-    "notification_count": 3,
+    "price": 37233,
+    "last_notified_time": "2025-06-21 01:53:32",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 33789,
@@ -15772,6 +15776,10 @@
       {
         "price": 40999,
         "time": "2025-06-13 22:04:16"
+      },
+      {
+        "price": 37233,
+        "time": "2025-06-21 01:53:32"
       }
     ]
   },
