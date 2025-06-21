@@ -14109,9 +14109,9 @@
   },
   "4988755059411": {
     "product_name": "NVIDIA GeForce RTX3060Ti 搭載 グラフィックボード GDDR6 8GB GALAKURO GAMINGシリーズ GG-RTX3060Ti-E8GB/DF/LHR",
-    "price": 96481,
-    "last_notified_time": "2025-06-13 02:05:23",
-    "notification_count": 4,
+    "price": 90151,
+    "last_notified_time": "2025-06-21 22:01:14",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 127113,
@@ -14128,6 +14128,10 @@
       {
         "price": 96481,
         "time": "2025-06-13 02:05:23"
+      },
+      {
+        "price": 90151,
+        "time": "2025-06-21 22:01:14"
       }
     ]
   },
