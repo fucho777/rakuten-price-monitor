@@ -14368,14 +14368,18 @@
     ]
   },
   "4710483943676": {
-    "product_name": "ASRock RX7800XT SL 16GO Radeon RX 7800XT Steel Legend 16G OC [グラフィックボード]",
-    "price": 83600,
-    "last_notified_time": "2025-05-07 21:57:33",
-    "notification_count": 1,
+    "product_name": "ASRock Radeon / RX7800XT 搭載 グラフィックボード GDDR6 16GB 搭載モデル 国内正規代理店品 RX7800XT SL 16GO",
+    "price": 104814,
+    "last_notified_time": "2025-06-22 19:12:34",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 83600,
         "time": "2025-05-07 21:57:33"
+      },
+      {
+        "price": 104814,
+        "time": "2025-06-22 19:12:34"
       }
     ]
   },
@@ -19564,6 +19568,30 @@
       {
         "price": 66523,
         "time": "2025-06-22 15:58:15"
+      }
+    ]
+  },
+  "4902370548846": {
+    "product_name": "スプラトゥーン2 + オクト エキスパンション -Switch",
+    "price": 9228,
+    "last_notified_time": "2025-06-22 19:12:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 9228,
+        "time": "2025-06-22 19:12:34"
+      }
+    ]
+  },
+  "6941812730676": {
+    "product_name": "Xiaomi Pad 6 タブレット 6GB + 128GB Wi-fi版 11インチ 8840mAh 大容量バッテリー 33W急速充電 Snapdragon 870 Android 13 軽量ボディ Dolby Atmos 対応 エンターテインメント 作業 会議 適用 グラビティグレー",
+    "price": 60238,
+    "last_notified_time": "2025-06-22 19:12:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 60238,
+        "time": "2025-06-22 19:12:34"
       }
     ]
   }
