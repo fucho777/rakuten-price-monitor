@@ -17117,9 +17117,9 @@
   },
   "4549980452547": {
     "product_name": "パナソニック 美顔器 RF(ラジオ波) 海外対応 コードレス ゴールド調 EH-SR73-N",
-    "price": 25400,
-    "last_notified_time": "2025-06-17 10:01:32",
-    "notification_count": 2,
+    "price": 31847,
+    "last_notified_time": "2025-06-22 04:35:22",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 36341,
@@ -17128,6 +17128,10 @@
       {
         "price": 25400,
         "time": "2025-06-17 10:01:32"
+      },
+      {
+        "price": 31847,
+        "time": "2025-06-22 04:35:22"
       }
     ]
   },
@@ -18032,14 +18036,18 @@
     ]
   },
   "4988602176490": {
-    "product_name": "【新品】Switch ゲームソフト 桃太郎電鉄ワールド 〜地球は希望でまわってる！【ポスト投函便・代引き不可・メール便】",
-    "price": 4480,
-    "last_notified_time": "2025-05-30 10:09:16",
-    "notification_count": 1,
+    "product_name": "【新品】Nintendo Switchソフト 桃太郎電鉄ワールド ~地球は希望でまわってる! ~【加納店】",
+    "price": 5400,
+    "last_notified_time": "2025-06-22 04:35:22",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 4480,
         "time": "2025-05-30 10:09:16"
+      },
+      {
+        "price": 5400,
+        "time": "2025-06-22 04:35:22"
       }
     ]
   },
@@ -19472,6 +19480,18 @@
       {
         "price": 206999,
         "time": "2025-06-21 04:35:52"
+      }
+    ]
+  },
+  "4549995451221": {
+    "product_name": "【未使用】Apple 【Wi-Fi】 11インチ iPad Pro（M4/2024） 256GB シルバー 標準ガラス MVV93J/A【静岡】保証期間6ヶ月",
+    "price": 150980,
+    "last_notified_time": "2025-06-22 04:35:22",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 150980,
+        "time": "2025-06-22 04:35:22"
       }
     ]
   }
