@@ -7997,9 +7997,9 @@
   },
   "4948872416306": {
     "product_name": "【送料無料・在庫あり】SIE DualSense ワイヤレスコントローラー アストロボット リミテッドエディション CFI-ZCT1JZ3",
-    "price": 21799,
-    "last_notified_time": "2025-06-06 10:09:28",
-    "notification_count": 4,
+    "price": 18699,
+    "last_notified_time": "2025-06-22 13:15:22",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 19781,
@@ -8016,6 +8016,10 @@
       {
         "price": 21799,
         "time": "2025-06-06 10:09:28"
+      },
+      {
+        "price": 18699,
+        "time": "2025-06-22 13:15:22"
       }
     ]
   },
@@ -12884,14 +12888,18 @@
     ]
   },
   "4540790393433": {
-    "product_name": "【土日祝発送】【新品】YAMAN ヤーマン RF美顔器 フォトプラス シャイニー ネオ YJFM18N シャンパンゴールド",
-    "price": 52766,
-    "last_notified_time": "2025-04-27 13:14:53",
-    "notification_count": 1,
+    "product_name": "【新品 箱不良・シュリンク破れ品】YAMAN ヤーマン RF美顔器 フォトプラス シャイニー ネオ YJFM18N シャンパンゴールド",
+    "price": 49677,
+    "last_notified_time": "2025-06-22 13:15:22",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 52766,
         "time": "2025-04-27 13:14:53"
+      },
+      {
+        "price": 49677,
+        "time": "2025-06-22 13:15:22"
       }
     ]
   },
