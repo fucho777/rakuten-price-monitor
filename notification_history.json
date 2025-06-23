@@ -11893,9 +11893,9 @@
   },
   "4988617467125": {
     "product_name": "エプソン プリンター A4インクジェット複合機 カラリオ EP-885AB ブラック(黒) 中",
-    "price": 36090,
-    "last_notified_time": "2025-05-14 10:00:02",
-    "notification_count": 3,
+    "price": 33997,
+    "last_notified_time": "2025-06-23 13:19:35",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 32800,
@@ -11908,6 +11908,10 @@
       {
         "price": 36090,
         "time": "2025-05-14 10:00:02"
+      },
+      {
+        "price": 33997,
+        "time": "2025-06-23 13:19:35"
       }
     ]
   },
@@ -12772,10 +12776,10 @@
     ]
   },
   "4549995551488": {
-    "product_name": "Apple(アップル) MacBook Air Liquid Retinaディスプレイ 15.3 MC9D4J/A スペースグレイ",
-    "price": 182100,
-    "last_notified_time": "2025-05-01 10:08:28",
-    "notification_count": 2,
+    "product_name": "【未使用】Apple MacBook Air 15インチ M3(CPU:8C/GPU:10C) 16GB/256GB スペースグレイ MC9D4J/A (15インチ, M3, 2024)【ECセンター】保証期間3ヶ月",
+    "price": 155980,
+    "last_notified_time": "2025-06-23 13:19:35",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 165850,
@@ -12784,6 +12788,10 @@
       {
         "price": 182100,
         "time": "2025-05-01 10:08:28"
+      },
+      {
+        "price": 155980,
+        "time": "2025-06-23 13:19:35"
       }
     ]
   },
@@ -19688,6 +19696,42 @@
       {
         "price": 62920,
         "time": "2025-06-23 10:12:31"
+      }
+    ]
+  },
+  "4549980657232": {
+    "product_name": "【エントリーでポイント10倍！ 6/27 01:59迄】【土日祝発送】【新品】Panasonic パナソニック カーナビ ストラーダ 7V型HD液晶 CN-HE02D",
+    "price": 72930,
+    "last_notified_time": "2025-06-23 13:19:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 72930,
+        "time": "2025-06-23 13:19:35"
+      }
+    ]
+  },
+  "4549980712825": {
+    "product_name": "【新品】Panasonic パナソニック メンズシェーバー ラムダッシュPRO 6枚刃 AC100V-240V ES-LS5Q-K クラフトブラック",
+    "price": 39789,
+    "last_notified_time": "2025-06-23 13:19:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 39789,
+        "time": "2025-06-23 13:19:35"
+      }
+    ]
+  },
+  "4549995550566": {
+    "product_name": "Apple(アップル) [未使用品]MacBook Air 13.6インチ Liquid Retinaディスプレイ MC6T4J/A スカイブルー",
+    "price": 143426,
+    "last_notified_time": "2025-06-23 13:19:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 143426,
+        "time": "2025-06-23 13:19:35"
       }
     ]
   }
