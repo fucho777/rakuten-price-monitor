@@ -15605,9 +15605,9 @@
   },
   "4976219131797": {
     "product_name": "モンスターハンターワイルズ",
-    "price": 4995,
-    "last_notified_time": "2025-06-09 16:06:04",
-    "notification_count": 2,
+    "price": 5693,
+    "last_notified_time": "2025-06-26 04:41:01",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 6993,
@@ -15616,6 +15616,10 @@
       {
         "price": 4995,
         "time": "2025-06-09 16:06:04"
+      },
+      {
+        "price": 5693,
+        "time": "2025-06-26 04:41:01"
       }
     ]
   },
@@ -19724,14 +19728,18 @@
     ]
   },
   "4549995451214": {
-    "product_name": "新品未開封 2024年春モデル 新品未開封 Apple iPad Pro 11インチ(M4) 第5世代 Wi-Fi 256GB MVV83J/A A2836スペースブラック 本体 日本国内正規品 送料無料　あす楽対応",
-    "price": 150120,
-    "last_notified_time": "2025-06-20 07:05:41",
-    "notification_count": 1,
+    "product_name": "【多少の箱のへこみや傷がある場合があります】APPLE　iPAD(Wi-Fiモデル)　iPad Pro 11インチ Wi-Fi 256GB 2024年春モデル MVV83J/A [スペースブラック]",
+    "price": 158000,
+    "last_notified_time": "2025-06-26 04:41:01",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 150120,
         "time": "2025-06-20 07:05:41"
+      },
+      {
+        "price": 158000,
+        "time": "2025-06-26 04:41:01"
       }
     ]
   },
@@ -20012,6 +20020,18 @@
       {
         "price": 22800,
         "time": "2025-06-25 10:07:59"
+      }
+    ]
+  },
+  "4549995526790": {
+    "product_name": "【新品未使用・開封済み】APPLE iPad mini7 128GB 8.3インチ Wi-Fi+Cellular MXPR3J/A SIMフリー [パープル] 【日曜日以外即日発送】【送料無料】",
+    "price": 89999,
+    "last_notified_time": "2025-06-26 04:41:01",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 89999,
+        "time": "2025-06-26 04:41:01"
       }
     ]
   }
