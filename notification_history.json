@@ -12445,9 +12445,9 @@
   },
   "4549980030738": {
     "product_name": "パナソニック ETC2.0車載器 CY-ET2500VD アンテナ分離型 (DSRC) 新セキュリティ対応 Panasonic",
-    "price": 43759,
-    "last_notified_time": "2025-06-09 07:16:35",
-    "notification_count": 4,
+    "price": 40224,
+    "last_notified_time": "2025-06-26 01:54:33",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 40224,
@@ -12464,6 +12464,10 @@
       {
         "price": 43759,
         "time": "2025-06-09 07:16:35"
+      },
+      {
+        "price": 40224,
+        "time": "2025-06-26 01:54:33"
       }
     ]
   },
