@@ -8237,9 +8237,9 @@
   },
   "4549980511763": {
     "product_name": "パナソニック スチーマー ナノケア コンパクトタイプ ゴールド調 EH-SA3C-N",
-    "price": 26860,
-    "last_notified_time": "2025-06-20 16:08:16",
-    "notification_count": 7,
+    "price": 22922,
+    "last_notified_time": "2025-06-27 19:05:00",
+    "notification_count": 8,
     "previous_prices": [
       {
         "price": 23852,
@@ -8268,6 +8268,10 @@
       {
         "price": 26860,
         "time": "2025-06-20 16:08:16"
+      },
+      {
+        "price": 22922,
+        "time": "2025-06-27 19:05:00"
       }
     ]
   },
@@ -13493,9 +13497,9 @@
   },
   "5025155085011": {
     "product_name": "ダイソン　dyson　V12s Detect Slim Submarine イエロー/アイアン/ニッケル ［サイクロン式 /コードレス］　SV46SU",
-    "price": 97700,
-    "last_notified_time": "2025-06-08 07:04:13",
-    "notification_count": 4,
+    "price": 114440,
+    "last_notified_time": "2025-06-27 19:05:00",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 73049,
@@ -13512,6 +13516,10 @@
       {
         "price": 97700,
         "time": "2025-06-08 07:04:13"
+      },
+      {
+        "price": 114440,
+        "time": "2025-06-27 19:05:00"
       }
     ]
   },
