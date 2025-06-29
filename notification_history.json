@@ -15428,10 +15428,10 @@
     ]
   },
   "4948872016476": {
-    "product_name": "ゴッド・オブ・ウォー ラグナロク PS5版",
-    "price": 3768,
-    "last_notified_time": "2025-05-27 13:23:02",
-    "notification_count": 2,
+    "product_name": "【PS5】ゴッド・オブ・ウォー ラグナロク【CEROレーティング「Z」】",
+    "price": 5370,
+    "last_notified_time": "2025-06-29 07:13:12",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 3999,
@@ -15440,6 +15440,10 @@
       {
         "price": 3768,
         "time": "2025-05-27 13:23:02"
+      },
+      {
+        "price": 5370,
+        "time": "2025-06-29 07:13:12"
       }
     ]
   },
@@ -20612,6 +20616,18 @@
       {
         "price": 38990,
         "time": "2025-06-29 02:02:39"
+      }
+    ]
+  },
+  "5025155042403": {
+    "product_name": "◆新品未開封品◆Dyson ダイソン サイクロン式 掃除機 V8 Slim Fluffy+ SV10KSLMCOM ニッケル/アイアン/レッド◆5025155042403◆",
+    "price": 33000,
+    "last_notified_time": "2025-06-29 07:13:12",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 33000,
+        "time": "2025-06-29 07:13:12"
       }
     ]
   }
