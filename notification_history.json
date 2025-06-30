@@ -6037,9 +6037,9 @@
   },
   "4961310161255": {
     "product_name": "オーディオテクニカ　完全ワイヤレスイヤホン [ ワイヤレス ( 左右分離 ) / Bluetooth / ノイズキャンセリング 対応 ] 　ATH-TWX7 WH",
-    "price": 22488,
-    "last_notified_time": "2025-06-27 15:59:36",
-    "notification_count": 3,
+    "price": 20652,
+    "last_notified_time": "2025-06-30 22:02:58",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 17333,
@@ -6052,6 +6052,10 @@
       {
         "price": 22488,
         "time": "2025-06-27 15:59:36"
+      },
+      {
+        "price": 20652,
+        "time": "2025-06-30 22:02:58"
       }
     ]
   },
@@ -10077,9 +10081,9 @@
   },
   "4961310161248": {
     "product_name": "オーディオテクニカ　完全ワイヤレスイヤホン [ ワイヤレス ( 左右分離 ) / Bluetooth / ノイズキャンセリング 対応 ] 　ATH-TWX7 GY",
-    "price": 24040,
-    "last_notified_time": "2025-05-04 13:17:56",
-    "notification_count": 3,
+    "price": 20652,
+    "last_notified_time": "2025-06-30 22:02:58",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 24200,
@@ -10092,6 +10096,10 @@
       {
         "price": 24040,
         "time": "2025-05-04 13:17:56"
+      },
+      {
+        "price": 20652,
+        "time": "2025-06-30 22:02:58"
       }
     ]
   },
