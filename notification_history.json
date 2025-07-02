@@ -2592,10 +2592,10 @@
     ]
   },
   "4710483941733": {
-    "product_name": "ASRock グラフィックボード AMD Radeon RX7900XTX GDDR6 24GB 搭載モデル 国内正規代理店品 RX7900XTX PG 24GO",
-    "price": 149506,
-    "last_notified_time": "2025-06-25 13:19:03",
-    "notification_count": 6,
+    "product_name": "ASROCK　グラフィックボード Radeon RX 7900 XTX Phantom Gaming 24G OC ［Radeon RXシリーズ /24GB］　RX7900XTXPG24GO",
+    "price": 120680,
+    "last_notified_time": "2025-07-02 19:15:14",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 177990,
@@ -2620,6 +2620,10 @@
       {
         "price": 149506,
         "time": "2025-06-25 13:19:03"
+      },
+      {
+        "price": 120680,
+        "time": "2025-07-02 19:15:14"
       }
     ]
   },
@@ -5905,9 +5909,9 @@
   },
   "8710103996422": {
     "product_name": "フィリップス　PHILIPS　電気シェーバー 5000シリーズ ［回転刃 /AC100V-240V］ ネイビーブルー　S5444/03",
-    "price": 8258,
-    "last_notified_time": "2025-06-27 10:09:58",
-    "notification_count": 8,
+    "price": 7310,
+    "last_notified_time": "2025-07-02 19:15:14",
+    "notification_count": 9,
     "previous_prices": [
       {
         "price": 8249,
@@ -5940,6 +5944,10 @@
       {
         "price": 8258,
         "time": "2025-06-27 10:09:58"
+      },
+      {
+        "price": 7310,
+        "time": "2025-07-02 19:15:14"
       }
     ]
   },
@@ -21140,6 +21148,18 @@
       {
         "price": 28000,
         "time": "2025-07-02 13:18:28"
+      }
+    ]
+  },
+  "4548736133358": {
+    "product_name": "ソニー ゲーミングヘッドセット INZONE H9: WH-G900N: ワイヤレス / Bluetooth / ノイキャン搭載 / 立体音響 / 低遅延 / 長時間使用しても疲れづらい / ブームマイク付き / Perfect for PlayStation5 PS5 ホワイト",
+    "price": 32060,
+    "last_notified_time": "2025-07-02 19:15:14",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 32060,
+        "time": "2025-07-02 19:15:14"
       }
     ]
   }
