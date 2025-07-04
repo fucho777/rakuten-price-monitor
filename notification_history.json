@@ -17212,10 +17212,10 @@
     ]
   },
   "4549212304507": {
-    "product_name": "【新品 保証開始済み品】RICOH リコー デジタルカメラ GR IIIx Urban Edition",
-    "price": 171000,
-    "last_notified_time": "2025-06-28 13:19:51",
-    "notification_count": 4,
+    "product_name": "デジタルカメラ RICOH / リコー RICOH GR IIIx Urban Edition 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549212304507-ds",
+    "price": 187250,
+    "last_notified_time": "2025-07-04 02:01:00",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 163799,
@@ -17232,6 +17232,10 @@
       {
         "price": 171000,
         "time": "2025-06-28 13:19:51"
+      },
+      {
+        "price": 187250,
+        "time": "2025-07-04 02:01:00"
       }
     ]
   },
@@ -21284,6 +21288,18 @@
       {
         "price": 37982,
         "time": "2025-07-03 19:09:38"
+      }
+    ]
+  },
+  "4549980486443": {
+    "product_name": "テクニクス ワイヤレスイヤホン EAH-AZ40-N ローズゴールド bluetooth マルチポイント IPX4 アプリ対応",
+    "price": 18808,
+    "last_notified_time": "2025-07-04 02:01:00",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 18808,
+        "time": "2025-07-04 02:01:00"
       }
     ]
   }
