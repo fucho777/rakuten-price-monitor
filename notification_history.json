@@ -8961,9 +8961,9 @@
   },
   "4571591626192": {
     "product_name": "Lenovo レノボ Tab M10 (3rd Gen) ZAAE0009JP [ タブレットPC ]",
-    "price": 46000,
-    "last_notified_time": "2025-06-13 02:05:23",
-    "notification_count": 4,
+    "price": 41340,
+    "last_notified_time": "2025-07-04 07:06:11",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 32890,
@@ -8980,6 +8980,10 @@
       {
         "price": 46000,
         "time": "2025-06-13 02:05:23"
+      },
+      {
+        "price": 41340,
+        "time": "2025-07-04 07:06:11"
       }
     ]
   },
@@ -17989,9 +17993,9 @@
   },
   "7622100547020": {
     "product_name": "IQOS ILUMA i ONE アイコス イルマ アイ ワン キット 本体キット 新型 2024 アニバーサリーモデル IQOS10周年の日本限定モデル",
-    "price": 9980,
-    "last_notified_time": "2025-06-27 10:09:58",
-    "notification_count": 4,
+    "price": 10480,
+    "last_notified_time": "2025-07-04 07:06:11",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 7693,
@@ -18008,6 +18012,10 @@
       {
         "price": 9980,
         "time": "2025-06-27 10:09:58"
+      },
+      {
+        "price": 10480,
+        "time": "2025-07-04 07:06:11"
       }
     ]
   },
