@@ -1304,10 +1304,10 @@
     ]
   },
   "4988028522000": {
-    "product_name": "パイオニア 楽ナビ AVIC-RF721 JAN 4988028522000",
-    "price": 95849,
-    "last_notified_time": "2025-06-16 10:06:49",
-    "notification_count": 3,
+    "product_name": "AVIC-RF721 パイオニア PIONEER カロッツェリア carrozzeria カーナビ",
+    "price": 102300,
+    "last_notified_time": "2025-07-04 04:40:28",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 102558,
@@ -1320,6 +1320,10 @@
       {
         "price": 95849,
         "time": "2025-06-16 10:06:49"
+      },
+      {
+        "price": 102300,
+        "time": "2025-07-04 04:40:28"
       }
     ]
   },
@@ -14804,10 +14808,10 @@
     ]
   },
   "4549576183381": {
-    "product_name": "【新品 箱不良・シュリンク破れ品】Microsoft マイクロソフト Xbox ワイヤレス コントローラー QAU00084 ディープピンク",
-    "price": 6000,
-    "last_notified_time": "2025-05-11 13:09:24",
-    "notification_count": 2,
+    "product_name": "【訳あり】Xbox ワイヤレス コントローラー （ディープ ピンク）",
+    "price": 7670,
+    "last_notified_time": "2025-07-04 04:40:28",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 6749,
@@ -14816,6 +14820,10 @@
       {
         "price": 6000,
         "time": "2025-05-11 13:09:24"
+      },
+      {
+        "price": 7670,
+        "time": "2025-07-04 04:40:28"
       }
     ]
   },
@@ -16300,10 +16308,10 @@
     ]
   },
   "4549576206844": {
-    "product_name": "【純正品】XBOXELITEワイヤレスコントローラーSERIES2CORE(ブルー)",
-    "price": 24964,
-    "last_notified_time": "2025-06-20 13:23:59",
-    "notification_count": 3,
+    "product_name": "【新品・在庫あり・送料無料】Xbox Elite ワイヤレス コントローラー Series 2 Core ブルー RFZ-00019",
+    "price": 16467,
+    "last_notified_time": "2025-07-04 04:40:28",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 16469,
@@ -16316,6 +16324,10 @@
       {
         "price": 24964,
         "time": "2025-06-20 13:23:59"
+      },
+      {
+        "price": 16467,
+        "time": "2025-07-04 04:40:28"
       }
     ]
   },
@@ -21300,6 +21312,42 @@
       {
         "price": 18808,
         "time": "2025-07-04 02:01:00"
+      }
+    ]
+  },
+  "4549576211046": {
+    "product_name": "【訳あり】Xbox ワイヤレス コントローラー （ショック ブルー）",
+    "price": 7670,
+    "last_notified_time": "2025-07-04 04:40:28",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 7670,
+        "time": "2025-07-04 04:40:28"
+      }
+    ]
+  },
+  "4549576211060": {
+    "product_name": "【訳あり】Xbox ワイヤレス コントローラー （ロボット ホワイト）",
+    "price": 7120,
+    "last_notified_time": "2025-07-04 04:40:28",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 7120,
+        "time": "2025-07-04 04:40:28"
+      }
+    ]
+  },
+  "4549995453027": {
+    "product_name": "【新品・送料無料・未開封・在庫あり】Apple iPad Air 13インチ Wi-Fi 256GB 2024年春モデル MV2F3J/A [ブルー]",
+    "price": 124839,
+    "last_notified_time": "2025-07-04 04:40:28",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 124839,
+        "time": "2025-07-04 04:40:28"
       }
     ]
   }
