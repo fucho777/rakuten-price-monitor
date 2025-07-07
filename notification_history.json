@@ -2008,10 +2008,10 @@
     ]
   },
   "4549576212739": {
-    "product_name": "新品 マイクロソフト ノートパソコン 12.4 型(インチ) Surface Laptop Go 3 XK1-00015 [サンドストーン] 第12世代 インテル Core i5 1235U(Alder Lake) 10コア メモリ：8GB SSD：256GB Windows 11 Home Office付き",
-    "price": 127980,
-    "last_notified_time": "2025-06-06 04:37:43",
-    "notification_count": 3,
+    "product_name": "マイクロソフト　Microsoft　Surface Laptop Go 3 サンドストーン [intel Core i5 /メモリ:8GB /SSD:256GB]　XK1-00015",
+    "price": 115950,
+    "last_notified_time": "2025-07-07 15:59:01",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 135130,
@@ -2024,6 +2024,10 @@
       {
         "price": 127980,
         "time": "2025-06-06 04:37:43"
+      },
+      {
+        "price": 115950,
+        "time": "2025-07-07 15:59:01"
       }
     ]
   },
@@ -5556,10 +5560,10 @@
     ]
   },
   "4986773231758": {
-    "product_name": "【送料無料・在庫あり】SAMSUNG Galaxy Tab A9+ [グラファイト] SM-X210NZAAXJP",
-    "price": 30218,
-    "last_notified_time": "2025-05-27 04:24:27",
-    "notification_count": 5,
+    "product_name": "GALAXY｜ギャラクシー Androidタブレット Galaxy Tab A9+ グラファイト SM-X210NZAAXJP [11型 /Wi-Fiモデル /ストレージ：64GB]",
+    "price": 27570,
+    "last_notified_time": "2025-07-07 15:59:01",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 35810,
@@ -5580,6 +5584,10 @@
       {
         "price": 30218,
         "time": "2025-05-27 04:24:27"
+      },
+      {
+        "price": 27570,
+        "time": "2025-07-07 15:59:01"
       }
     ]
   },
