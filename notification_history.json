@@ -733,9 +733,9 @@
   },
   "4549980657188": {
     "product_name": "パナソニック ストラーダ F1X PREMIUM10 CN-F1X10BGD JAN 4549980657188",
-    "price": 257400,
-    "last_notified_time": "2025-05-01 10:08:28",
-    "notification_count": 2,
+    "price": 371379,
+    "last_notified_time": "2025-07-08 07:06:02",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 343200,
@@ -744,6 +744,10 @@
       {
         "price": 257400,
         "time": "2025-05-01 10:08:28"
+      },
+      {
+        "price": 371379,
+        "time": "2025-07-08 07:06:02"
       }
     ]
   },
@@ -1617,9 +1621,9 @@
   },
   "4550556144292": {
     "product_name": "【新品・送料無料・在庫あり】AQUOS sense9 SH-M29 6G+128G SIMフリー [コーラル]* docomo｜AU ｜softbank｜楽天｜格安SIMも使用可能",
-    "price": 51599,
-    "last_notified_time": "2025-07-01 10:11:07",
-    "notification_count": 2,
+    "price": 55696,
+    "last_notified_time": "2025-07-08 07:06:02",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 55069,
@@ -1628,6 +1632,10 @@
       {
         "price": 51599,
         "time": "2025-07-01 10:11:07"
+      },
+      {
+        "price": 55696,
+        "time": "2025-07-08 07:06:02"
       }
     ]
   },
@@ -7868,10 +7876,10 @@
     ]
   },
   "6941812795026": {
-    "product_name": "Xiaomi Redmi Pad SE 8.7 4GB+64GB [スカイブルー] JAN 6941812795026",
-    "price": 20020,
-    "last_notified_time": "2025-07-02 07:16:28",
-    "notification_count": 6,
+    "product_name": "【ポイント10倍】 Xiaomi タブレットPC Redmi Pad SE 8.7 4GB+64GB [スカイブルー] [画面サイズ：8.7インチ 画面解像度：1340x800 詳細OS種類：Android 14 ネットワーク接続タイプ：Wi-Fiモデル ストレージ容量：64GB メモリ容量：4GB CPU：MediaTek Helio G85] 【P10倍】",
+    "price": 25520,
+    "last_notified_time": "2025-07-08 07:06:02",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 18416,
@@ -7896,6 +7904,10 @@
       {
         "price": 20020,
         "time": "2025-07-02 07:16:28"
+      },
+      {
+        "price": 25520,
+        "time": "2025-07-08 07:06:02"
       }
     ]
   },
@@ -16837,9 +16849,9 @@
   },
   "4549995514865": {
     "product_name": "「新品」Apple Watch SE 第2世代 GPSモデル 40mm MXED3J/A [シルバー・デニムスポーツバンド M/L] 【即納】【あす楽】【プレゼント】",
-    "price": 37800,
-    "last_notified_time": "2025-05-31 10:03:09",
-    "notification_count": 2,
+    "price": 34800,
+    "last_notified_time": "2025-07-08 07:06:02",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 34340,
@@ -16848,6 +16860,10 @@
       {
         "price": 37800,
         "time": "2025-05-31 10:03:09"
+      },
+      {
+        "price": 34800,
+        "time": "2025-07-08 07:06:02"
       }
     ]
   },
@@ -17733,13 +17749,17 @@
   },
   "4550556115315": {
     "product_name": "【新品・在庫あり・送料無料】SHARP AQUOS sense8 SH-M26 SIMフリー [ペールグリーン]* メーカー版｜ドコモ｜au ｜ソフトバンクSIM対応",
-    "price": 46799,
-    "last_notified_time": "2025-05-22 10:10:53",
-    "notification_count": 1,
+    "price": 50500,
+    "last_notified_time": "2025-07-08 07:06:02",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 46799,
         "time": "2025-05-22 10:10:53"
+      },
+      {
+        "price": 50500,
+        "time": "2025-07-08 07:06:02"
       }
     ]
   },
@@ -21768,6 +21788,18 @@
       {
         "price": 63625,
         "time": "2025-07-08 04:41:22"
+      }
+    ]
+  },
+  "6941812735541": {
+    "product_name": "【新品・在庫あり・送料無料】 Xiaomi 13T Pro 12G+256G SIMフリー [メドウグリーン]",
+    "price": 61999,
+    "last_notified_time": "2025-07-08 07:06:02",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 61999,
+        "time": "2025-07-08 07:06:02"
       }
     ]
   }
