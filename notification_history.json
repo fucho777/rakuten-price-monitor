@@ -13589,9 +13589,9 @@
   },
   "4550556108324": {
     "product_name": "シャープ(SHARP) ドライヤー プラズマクラスター ビューティー IB-P801-B ミッドナイトブラック 速乾 エアロフォルム 大風量 静電気抑制",
-    "price": 25237,
-    "last_notified_time": "2025-06-26 13:19:56",
-    "notification_count": 3,
+    "price": 27350,
+    "last_notified_time": "2025-07-10 19:15:39",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 21974,
@@ -13604,6 +13604,10 @@
       {
         "price": 25237,
         "time": "2025-06-26 13:19:56"
+      },
+      {
+        "price": 27350,
+        "time": "2025-07-10 19:15:39"
       }
     ]
   },
@@ -16680,10 +16684,10 @@
     ]
   },
   "4548848882175": {
-    "product_name": "【延長保証対応!!】【新品訳あり(箱きず・やぶれ)】 DAIKIN 加湿ストリーマ空気清浄機 ACK70X-W ホワイト",
-    "price": 48800,
-    "last_notified_time": "2025-06-14 19:10:58",
-    "notification_count": 2,
+    "product_name": "【延長保証対応!!】DAIKIN 加湿ストリーマ空気清浄機 ACK70X-W ホワイト",
+    "price": 55950,
+    "last_notified_time": "2025-07-10 19:15:39",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 60601,
@@ -16692,6 +16696,10 @@
       {
         "price": 48800,
         "time": "2025-06-14 19:10:58"
+      },
+      {
+        "price": 55950,
+        "time": "2025-07-10 19:15:39"
       }
     ]
   },
@@ -22196,6 +22204,18 @@
       {
         "price": 4997,
         "time": "2025-07-10 13:14:37"
+      }
+    ]
+  },
+  "4550161161462": {
+    "product_name": "PA-MP02LN-SA Aterm MP02LN LTEモバイルルータ[ACアダプタセットタイプ]",
+    "price": 8110,
+    "last_notified_time": "2025-07-10 19:15:39",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 8110,
+        "time": "2025-07-10 19:15:39"
       }
     ]
   }
