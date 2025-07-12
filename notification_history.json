@@ -1332,10 +1332,10 @@
     ]
   },
   "4974305227782": {
-    "product_name": "【延長保証対応!!】【新品訳あり(箱きず・やぶれ)】 ZOJIRUSHI スチーム式加湿器 EE-DE50-WA ホワイト",
-    "price": 46200,
-    "last_notified_time": "2025-06-25 16:00:55",
-    "notification_count": 6,
+    "product_name": "象印マホービン 加湿器 スチーム式 4.0L ホワイト EE-DE50-WA",
+    "price": 40303,
+    "last_notified_time": "2025-07-12 10:03:59",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 37800,
@@ -1360,6 +1360,10 @@
       {
         "price": 46200,
         "time": "2025-06-25 16:00:55"
+      },
+      {
+        "price": 40303,
+        "time": "2025-07-12 10:03:59"
       }
     ]
   },
@@ -1657,9 +1661,9 @@
   },
   "4550556144292": {
     "product_name": "【新品・送料無料・在庫あり】AQUOS sense9 SH-M29 6G+128G SIMフリー [コーラル]* docomo｜AU ｜softbank｜楽天｜格安SIMも使用可能",
-    "price": 55696,
-    "last_notified_time": "2025-07-08 07:06:02",
-    "notification_count": 3,
+    "price": 51562,
+    "last_notified_time": "2025-07-12 10:03:59",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 55069,
@@ -1672,6 +1676,10 @@
       {
         "price": 55696,
         "time": "2025-07-08 07:06:02"
+      },
+      {
+        "price": 51562,
+        "time": "2025-07-12 10:03:59"
       }
     ]
   },
@@ -22352,6 +22360,18 @@
       {
         "price": 11653,
         "time": "2025-07-11 13:13:46"
+      }
+    ]
+  },
+  "4549046137852": {
+    "product_name": "[新品] Xiaomi 12T Pro ブルーソフトバンク シムロック解除済み4549046137852",
+    "price": 56700,
+    "last_notified_time": "2025-07-12 10:03:59",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 56700,
+        "time": "2025-07-12 10:03:59"
       }
     ]
   }
