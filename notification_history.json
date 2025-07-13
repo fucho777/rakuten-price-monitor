@@ -6861,13 +6861,17 @@
   },
   "4549980746431": {
     "product_name": "パナソニック ドライヤー イオニティ 速乾 大風量 パワフルドライ 低温モード ダブルミネラルイオン ミントグリーン EH-NE7L-G",
-    "price": 12250,
-    "last_notified_time": "2025-04-07 16:31:22",
-    "notification_count": 1,
+    "price": 13190,
+    "last_notified_time": "2025-07-13 02:03:39",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 12250,
         "time": "2025-04-07 16:31:22"
+      },
+      {
+        "price": 13190,
+        "time": "2025-07-13 02:03:39"
       }
     ]
   },
@@ -19840,14 +19844,18 @@
     ]
   },
   "4548736129696": {
-    "product_name": "【新品】SONY SRS-NS7",
-    "price": 27325,
-    "last_notified_time": "2025-06-03 04:32:24",
-    "notification_count": 1,
+    "product_name": "ソニー(SONY) ワイヤレスネックバンドスピーカー SRS-NS7 : 360 Reality Audio対応/ハンズフリー通話/IPX4防滴/ロングバッテ―12時間・急速充電10分充電60分使用 SRS-NS7 HC",
+    "price": 30060,
+    "last_notified_time": "2025-07-13 02:03:39",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 27325,
         "time": "2025-06-03 04:32:24"
+      },
+      {
+        "price": 30060,
+        "time": "2025-07-13 02:03:39"
       }
     ]
   },
@@ -20224,10 +20232,10 @@
     ]
   },
   "4549995521436": {
-    "product_name": "[外箱開封のみ] 未使用品 アップル MacBook Pro MW2U3J/A スペースブラック 14インチ M4チップ 10コアCPUと10コアGPU 16GB 512GB SSD 保証未開始 Apple 送料無料",
-    "price": 227800,
-    "last_notified_time": "2025-06-19 04:39:12",
-    "notification_count": 2,
+    "product_name": "Apple 2024 MacBook Pro 10 コア CPU、10 コア GPU の M4 チップ搭載ノートパソコ ン: Apple Intelligence のために設計、14.2 インチ Liquid Retina XDR ディスプレイ、16G",
+    "price": 286355,
+    "last_notified_time": "2025-07-13 02:03:39",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 299884,
@@ -20236,6 +20244,10 @@
       {
         "price": 227800,
         "time": "2025-06-19 04:39:12"
+      },
+      {
+        "price": 286355,
+        "time": "2025-07-13 02:03:39"
       }
     ]
   },
