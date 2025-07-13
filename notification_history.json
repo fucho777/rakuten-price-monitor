@@ -476,14 +476,18 @@
     ]
   },
   "4549995501056": {
-    "product_name": "【未使用】Apple Apple Watch Series10 42mm GPS ジェットブラックアルミニウムケース/ブラックスポーツバンド (M/L) MWWF3J/A【大須】保証期間3ヶ月",
-    "price": 54980,
-    "last_notified_time": "2025-03-31 07:35:40",
-    "notification_count": 1,
+    "product_name": "【未使用】Apple Apple Watch Series10 42mm GPS ジェットブラックアルミニウムケース/ブラックスポーツバンド (M/L) MWWF3J/A【ECセンター】保証期間3ヶ月",
+    "price": 50980,
+    "last_notified_time": "2025-07-13 07:05:29",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 54980,
         "time": "2025-03-31 07:35:40"
+      },
+      {
+        "price": 50980,
+        "time": "2025-07-13 07:05:29"
       }
     ]
   },
@@ -2565,9 +2569,9 @@
   },
   "4549077457974": {
     "product_name": "パナソニック デジタルカメラ ルミックス FZ300 光学24倍 ブラック DMC-FZ300-K",
-    "price": 118357,
-    "last_notified_time": "2025-05-20 07:10:59",
-    "notification_count": 3,
+    "price": 108595,
+    "last_notified_time": "2025-07-13 07:05:29",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 152480,
@@ -2580,6 +2584,10 @@
       {
         "price": 118357,
         "time": "2025-05-20 07:10:59"
+      },
+      {
+        "price": 108595,
+        "time": "2025-07-13 07:05:29"
       }
     ]
   },
