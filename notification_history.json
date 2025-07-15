@@ -12005,9 +12005,9 @@
   },
   "6941812749005": {
     "product_name": "【新品】Xiaomi スマホ Redmi 14C 256GB SIMフリー セージグリーン",
-    "price": 18890,
-    "last_notified_time": "2025-07-05 07:04:04",
-    "notification_count": 5,
+    "price": 17000,
+    "last_notified_time": "2025-07-15 02:00:35",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 18980,
@@ -12028,6 +12028,10 @@
       {
         "price": 18890,
         "time": "2025-07-05 07:04:04"
+      },
+      {
+        "price": 17000,
+        "time": "2025-07-15 02:00:35"
       }
     ]
   },
@@ -15664,10 +15668,10 @@
     ]
   },
   "4549046140975": {
-    "product_name": "【新品未使用】 Y!mobile Libero 5G IV A302ZT ホワイト スマホ ZTE 安心保証 即日発送 土日祝発送OK",
-    "price": 14900,
-    "last_notified_time": "2025-07-07 10:12:21",
-    "notification_count": 2,
+    "product_name": "【未使用】ZTE ymobile 【SIMフリー】 Libero 5G IV 4GB 128GB ホワイト A302ZT【ECセンター】保証期間3ヶ月",
+    "price": 13480,
+    "last_notified_time": "2025-07-15 02:00:35",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 11980,
@@ -15676,6 +15680,10 @@
       {
         "price": 14900,
         "time": "2025-07-07 10:12:21"
+      },
+      {
+        "price": 13480,
+        "time": "2025-07-15 02:00:35"
       }
     ]
   },
@@ -22616,6 +22624,18 @@
       {
         "price": 59799,
         "time": "2025-07-14 13:24:19"
+      }
+    ]
+  },
+  "4549980578629": {
+    "product_name": "パナソニック ラムダッシュPRO メンズシェーバー 5枚刃 青 ES-LV5V-A",
+    "price": 37428,
+    "last_notified_time": "2025-07-15 02:00:35",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 37428,
+        "time": "2025-07-15 02:00:35"
       }
     ]
   }
