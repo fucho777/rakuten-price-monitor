@@ -3720,10 +3720,10 @@
     ]
   },
   "4942857221008": {
-    "product_name": "【未使用】SAMSUNG docomo 【SIMフリー】 Galaxy A22 5G ホワイト 4GB 64GB SC-56B【大須2】保証期間3ヶ月",
-    "price": 18980,
-    "last_notified_time": "2025-07-09 13:14:29",
-    "notification_count": 3,
+    "product_name": "サムスン SAMSUNG Galaxy A22 5G SC-56B ホワイト docomo SIMロック解除済",
+    "price": 23180,
+    "last_notified_time": "2025-07-15 18:59:40",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 26560,
@@ -3736,6 +3736,10 @@
       {
         "price": 18980,
         "time": "2025-07-09 13:14:29"
+      },
+      {
+        "price": 23180,
+        "time": "2025-07-15 18:59:40"
       }
     ]
   },
@@ -22585,13 +22589,17 @@
   },
   "4550161161462": {
     "product_name": "PA-MP02LN-SA Aterm MP02LN LTEモバイルルータ[ACアダプタセットタイプ]",
-    "price": 8110,
-    "last_notified_time": "2025-07-10 19:15:39",
-    "notification_count": 1,
+    "price": 9870,
+    "last_notified_time": "2025-07-15 18:59:40",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 8110,
         "time": "2025-07-10 19:15:39"
+      },
+      {
+        "price": 9870,
+        "time": "2025-07-15 18:59:40"
       }
     ]
   },
