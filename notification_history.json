@@ -11717,9 +11717,9 @@
   },
   "4974011806370": {
     "product_name": "【新品】MTG SIXPAD シックスパッド Foot Fit 3 SE-BZ-02A",
-    "price": 35973,
-    "last_notified_time": "2025-06-12 16:05:07",
-    "notification_count": 3,
+    "price": 40779,
+    "last_notified_time": "2025-07-16 15:48:25",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 41000,
@@ -11732,6 +11732,10 @@
       {
         "price": 35973,
         "time": "2025-06-12 16:05:07"
+      },
+      {
+        "price": 40779,
+        "time": "2025-07-16 15:48:25"
       }
     ]
   },
@@ -22896,6 +22900,18 @@
       {
         "price": 62000,
         "time": "2025-07-16 12:59:38"
+      }
+    ]
+  },
+  "4549980431238": {
+    "product_name": "パナソニック 1TB 3チューナー ブルーレイレコーダー 4Kチューナー内蔵 4K放送長時間録画/2番組同時録画対応 4K DIGA DMR-4W101",
+    "price": 95740,
+    "last_notified_time": "2025-07-16 15:48:25",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 95740,
+        "time": "2025-07-16 15:48:25"
       }
     ]
   }
