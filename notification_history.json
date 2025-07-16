@@ -757,9 +757,9 @@
   },
   "4549980657188": {
     "product_name": "パナソニック ストラーダ F1X PREMIUM10 CN-F1X10BGD JAN 4549980657188",
-    "price": 371379,
-    "last_notified_time": "2025-07-08 07:06:02",
-    "notification_count": 3,
+    "price": 257400,
+    "last_notified_time": "2025-07-16 00:58:05",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 343200,
@@ -772,6 +772,10 @@
       {
         "price": 371379,
         "time": "2025-07-08 07:06:02"
+      },
+      {
+        "price": 257400,
+        "time": "2025-07-16 00:58:05"
       }
     ]
   },
