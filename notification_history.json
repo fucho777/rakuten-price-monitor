@@ -4420,10 +4420,10 @@
     ]
   },
   "4967576694650": {
-    "product_name": "【新品 箱不良・シュリンク破れ品】IRIS OHYAMA アイリスオーヤマ 掃除機 MagiCaleena SBD-201P-HC",
-    "price": 18000,
-    "last_notified_time": "2025-06-27 13:22:00",
-    "notification_count": 3,
+    "product_name": "【置くだけで充電】掃除機 コードレス サイクロン 紙パック式 紙パック 軽量 超軽量 スタンド アイリスオーヤマ MagiCaleena 充電式 スティッククリーナー 2way ハンディクリーナー 充電スタンド 静電モップ SCD-123P SBD-201P",
+    "price": 19800,
+    "last_notified_time": "2025-07-18 09:55:50",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 18689,
@@ -4436,6 +4436,10 @@
       {
         "price": 18000,
         "time": "2025-06-27 13:22:00"
+      },
+      {
+        "price": 19800,
+        "time": "2025-07-18 09:55:50"
       }
     ]
   },
@@ -15692,10 +15696,10 @@
     ]
   },
   "4974305224170": {
-    "product_name": "象印マホービン 炊飯器 5.5合 極め炊き 豪熱大火力 圧力IHタイプ 日本製 お手入れ点数2点 ブラック NW-JZ10-BA",
-    "price": 48910,
-    "last_notified_time": "2025-05-30 07:15:11",
-    "notification_count": 3,
+    "product_name": "象印 極め炊き NW-JZ10-BA [ブラック] JAN 4974305224170",
+    "price": 42657,
+    "last_notified_time": "2025-07-18 09:55:50",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 51020,
@@ -15708,6 +15712,10 @@
       {
         "price": 48910,
         "time": "2025-05-30 07:15:11"
+      },
+      {
+        "price": 42657,
+        "time": "2025-07-18 09:55:50"
       }
     ]
   },
@@ -23020,6 +23028,42 @@
       {
         "price": 115980,
         "time": "2025-07-18 06:53:32"
+      }
+    ]
+  },
+  "4549292115611": {
+    "product_name": "CANON(キヤノン) [展示品A]RF24-105mm F4L IS USM RF24-10540LIS",
+    "price": 132376,
+    "last_notified_time": "2025-07-18 09:55:50",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 132376,
+        "time": "2025-07-18 09:55:50"
+      }
+    ]
+  },
+  "4902370552461": {
+    "product_name": "【送料無料・在庫あり】マリオ＆ルイージRPG ブラザーシップ！ Switch/ソフト/HACPA8E6A 【ネコポス便】",
+    "price": 4379,
+    "last_notified_time": "2025-07-18 09:55:50",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 4379,
+        "time": "2025-07-18 09:55:50"
+      }
+    ]
+  },
+  "5025155050880": {
+    "product_name": "ダイソン コードレス スティッククリーナー SV21FF Dyson Micro 1.5kg 掃除機 新品 送料無料",
+    "price": 44800,
+    "last_notified_time": "2025-07-18 09:55:50",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 44800,
+        "time": "2025-07-18 09:55:50"
       }
     ]
   }
