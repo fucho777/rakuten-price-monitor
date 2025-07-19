@@ -17061,9 +17061,9 @@
   },
   "4976219131797": {
     "product_name": "モンスターハンターワイルズ",
-    "price": 5693,
-    "last_notified_time": "2025-06-26 04:41:01",
-    "notification_count": 3,
+    "price": 4995,
+    "last_notified_time": "2025-07-19 09:57:58",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 6993,
@@ -17076,6 +17076,10 @@
       {
         "price": 5693,
         "time": "2025-06-26 04:41:01"
+      },
+      {
+        "price": 4995,
+        "time": "2025-07-19 09:57:58"
       }
     ]
   },
@@ -20664,10 +20668,10 @@
     ]
   },
   "4549995521436": {
-    "product_name": "Apple 2024 MacBook Pro 10 コア CPU、10 コア GPU の M4 チップ搭載ノートパソコ ン: Apple Intelligence のために設計、14.2 インチ Liquid Retina XDR ディスプレイ、16G",
-    "price": 286355,
-    "last_notified_time": "2025-07-13 02:03:39",
-    "notification_count": 3,
+    "product_name": "[外箱開封のみ] 未使用品 アップル MacBook Pro MW2U3J/A スペースブラック 14インチ M4チップ 10コアCPUと10コアGPU 16GB 512GB SSD 保証未開始 Apple 送料無料",
+    "price": 219800,
+    "last_notified_time": "2025-07-19 09:57:58",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 299884,
@@ -20680,6 +20684,10 @@
       {
         "price": 286355,
         "time": "2025-07-13 02:03:39"
+      },
+      {
+        "price": 219800,
+        "time": "2025-07-19 09:57:58"
       }
     ]
   },
