@@ -23178,5 +23178,29 @@
         "time": "2025-07-18 09:55:50"
       }
     ]
+  },
+  "4549980681831": {
+    "product_name": "パナソニック コンパクトデジタルカメラ ルミックス TZ95D 光学30倍 ブラック DC-TZ95D-K",
+    "price": 147714,
+    "last_notified_time": "2025-07-19 21:53:11",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 147714,
+        "time": "2025-07-19 21:53:11"
+      }
+    ]
+  },
+  "4549980684030": {
+    "product_name": "パナソニック 1TB 3チューナー ブルーレイレコーダー 4Kチューナー内蔵 4K おうちクラウドDIGA DMR-4SE102",
+    "price": 68162,
+    "last_notified_time": "2025-07-19 21:53:11",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 68162,
+        "time": "2025-07-19 21:53:11"
+      }
+    ]
   }
 }
