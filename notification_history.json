@@ -8349,9 +8349,9 @@
   },
   "4573173356350": {
     "product_name": "釣りスピリッツ Nintendo Switchバージョン -Switch",
-    "price": 6764,
-    "last_notified_time": "2025-05-28 04:30:24",
-    "notification_count": 6,
+    "price": 5800,
+    "last_notified_time": "2025-07-27 01:05:23",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 5100,
@@ -8376,6 +8376,10 @@
       {
         "price": 6764,
         "time": "2025-05-28 04:30:24"
+      },
+      {
+        "price": 5800,
+        "time": "2025-07-27 01:05:23"
       }
     ]
   },
