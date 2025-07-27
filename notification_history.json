@@ -8584,10 +8584,10 @@
     ]
   },
   "4548736156838": {
-    "product_name": "【新品/取寄品】LinkBuds S × Olivia Rodrigo WF-LS900N (V) [バイオレット]",
-    "price": 17465,
-    "last_notified_time": "2025-07-08 04:41:22",
-    "notification_count": 12,
+    "product_name": "【新品】SONY ソニー イヤホン LinkBuds S × Olivia Rodrigo WF-LS900N V バイオレット",
+    "price": 16000,
+    "last_notified_time": "2025-07-27 12:49:34",
+    "notification_count": 13,
     "previous_prices": [
       {
         "price": 19500,
@@ -8636,6 +8636,10 @@
       {
         "price": 17465,
         "time": "2025-07-08 04:41:22"
+      },
+      {
+        "price": 16000,
+        "time": "2025-07-27 12:49:34"
       }
     ]
   },
@@ -9040,10 +9044,10 @@
     ]
   },
   "4904530119880": {
-    "product_name": "TOSHIBA(東芝) スチームオーブンレンジ 石窯ドーム 30L ER-YD3000(W) グランホワイト 2段調理 300℃ おまかせ焼き フラットテーブル 電子レンジ 簡単操作 簡単料理 時短 お手軽メニュー 簡単お手入れ",
-    "price": 48470,
-    "last_notified_time": "2025-07-04 13:23:39",
-    "notification_count": 5,
+    "product_name": "【新品】TOSHIBA 東芝 石窯ドーム ER-YD3000-W グランホワイト",
+    "price": 54989,
+    "last_notified_time": "2025-07-27 12:49:34",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 55469,
@@ -9064,6 +9068,10 @@
       {
         "price": 48470,
         "time": "2025-07-04 13:23:39"
+      },
+      {
+        "price": 54989,
+        "time": "2025-07-27 12:49:34"
       }
     ]
   },
@@ -9749,9 +9757,9 @@
   },
   "4549995526516": {
     "product_name": "【新品】iPad mini A17 Pro 8.3インチ Wi-Fi 128GB MXN93J/A パープル",
-    "price": 76544,
-    "last_notified_time": "2025-07-15 12:55:16",
-    "notification_count": 2,
+    "price": 80827,
+    "last_notified_time": "2025-07-27 12:49:34",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 68890,
@@ -9760,6 +9768,10 @@
       {
         "price": 76544,
         "time": "2025-07-15 12:55:16"
+      },
+      {
+        "price": 80827,
+        "time": "2025-07-27 12:49:34"
       }
     ]
   },
@@ -23904,6 +23916,30 @@
       {
         "price": 92440,
         "time": "2025-07-27 06:54:13"
+      }
+    ]
+  },
+  "4548736162532": {
+    "product_name": "【新品】SONY ソニー ウェアラブルクーラー REON POCKET 5 RNPK-5T/W ホワイト",
+    "price": 21015,
+    "last_notified_time": "2025-07-27 12:49:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 21015,
+        "time": "2025-07-27 12:49:34"
+      }
+    ]
+  },
+  "4549995452099": {
+    "product_name": "Apple 13インチiPad Pro(M4):Ultra Retina XDR ディスプレイ、256GB、横向きの 12MP フロントカメラ/12MP バックカメラ、LiDAR スキャナ、Wi-Fi 6E、Face ID、一日中使えるバッテリ",
+    "price": 257806,
+    "last_notified_time": "2025-07-27 12:49:34",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 257806,
+        "time": "2025-07-27 12:49:34"
       }
     ]
   }
