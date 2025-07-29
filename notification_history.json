@@ -1820,10 +1820,10 @@
     ]
   },
   "4550556144346": {
-    "product_name": "【新品】SHARP シャープ スマホ sense9 SH-M29B-A 8GB/256GB ブルー SIMフリー",
-    "price": 61103,
-    "last_notified_time": "2025-07-19 12:59:44",
-    "notification_count": 6,
+    "product_name": "【新品・送料無料・在庫あり】AQUOS sense9 SH-M29 8G+256G SIMフリー [ブルー]* docomo｜AU ｜softbank｜楽天｜格安SIMも使用可能",
+    "price": 55580,
+    "last_notified_time": "2025-07-29 06:59:09",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 63099,
@@ -1848,6 +1848,10 @@
       {
         "price": 61103,
         "time": "2025-07-19 12:59:44"
+      },
+      {
+        "price": 55580,
+        "time": "2025-07-29 06:59:09"
       }
     ]
   },
@@ -24120,6 +24124,18 @@
       {
         "price": 58060,
         "time": "2025-07-28 15:56:55"
+      }
+    ]
+  },
+  "6934177789243": {
+    "product_name": "【在庫あり・送料無料】Xiaomi Pad 5 128GB コズミックグレー",
+    "price": 42743,
+    "last_notified_time": "2025-07-29 06:59:09",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 42743,
+        "time": "2025-07-29 06:59:09"
       }
     ]
   }
