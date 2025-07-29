@@ -20509,13 +20509,17 @@
   },
   "4942857227765": {
     "product_name": "DIGNOケータイ KY-42C レッド ドコモ docomo",
-    "price": 31441,
-    "last_notified_time": "2025-05-30 01:57:16",
-    "notification_count": 1,
+    "price": 29493,
+    "last_notified_time": "2025-07-29 15:49:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 31441,
         "time": "2025-05-30 01:57:16"
+      },
+      {
+        "price": 29493,
+        "time": "2025-07-29 15:49:24"
       }
     ]
   },
