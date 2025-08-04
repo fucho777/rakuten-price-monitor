@@ -5625,9 +5625,9 @@
   },
   "6941812798317": {
     "product_name": "【新品・在庫あり・送料無料】 Xiaomi(シャオミ) Redmi 14C 4G+128G [ミッドナイトブラック] SIMフリー softbank｜AU｜docomo｜国内どのキャリアでも使用可 ※開封品届く場合もございます。",
-    "price": 15659,
-    "last_notified_time": "2025-04-19 19:10:07",
-    "notification_count": 2,
+    "price": 13988,
+    "last_notified_time": "2025-08-04 15:52:19",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 16500,
@@ -5636,6 +5636,10 @@
       {
         "price": 15659,
         "time": "2025-04-19 19:10:07"
+      },
+      {
+        "price": 13988,
+        "time": "2025-08-04 15:52:19"
       }
     ]
   },
@@ -7216,10 +7220,10 @@
     ]
   },
   "4548736163560": {
-    "product_name": "【新品】SONY ソニー ワイヤレスヘッドフォン WH-1000XM5-PM スモーキーピンク",
-    "price": 36800,
-    "last_notified_time": "2025-06-16 07:07:21",
-    "notification_count": 2,
+    "product_name": "【在庫あり・送料無料】SONY イヤホン・ヘッドホン SONY WH-1000XM5 (P)【スモーキーピンク】",
+    "price": 44400,
+    "last_notified_time": "2025-08-04 15:52:19",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 42880,
@@ -7228,6 +7232,10 @@
       {
         "price": 36800,
         "time": "2025-06-16 07:07:21"
+      },
+      {
+        "price": 44400,
+        "time": "2025-08-04 15:52:19"
       }
     ]
   },
@@ -18773,13 +18781,17 @@
   },
   "4550556115322": {
     "product_name": "シャープ(SHARP) AQUOS sense8 SIMフリー 6.1型 6GB/128GB [ライトカッパー] SH-M26 C【ラッピング対応可】 R-LOGI",
-    "price": 58648,
-    "last_notified_time": "2025-05-18 09:58:07",
-    "notification_count": 1,
+    "price": 50929,
+    "last_notified_time": "2025-08-04 15:52:19",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 58648,
         "time": "2025-05-18 09:58:07"
+      },
+      {
+        "price": 50929,
+        "time": "2025-08-04 15:52:19"
       }
     ]
   },
@@ -24828,6 +24840,18 @@
       {
         "price": 8980,
         "time": "2025-08-04 00:59:10"
+      }
+    ]
+  },
+  "8710103942276": {
+    "product_name": "2021モデル 洗浄器付き フィリップス 5000 シリーズ 電気シェーバー 45枚スティールプレシジョン刃 360-Dフレックスヘッド S5586/50",
+    "price": 18404,
+    "last_notified_time": "2025-08-04 15:52:19",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 18404,
+        "time": "2025-08-04 15:52:19"
       }
     ]
   }
