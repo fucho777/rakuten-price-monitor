@@ -3664,14 +3664,18 @@
     ]
   },
   "4549980712870": {
-    "product_name": "【新品 箱不良】Panasonic パナソニック メンズシェーバー ラムダッシュPRO 5枚刃 ES-LV5J-S",
-    "price": 19000,
-    "last_notified_time": "2025-04-02 14:20:19",
-    "notification_count": 1,
+    "product_name": "【送料無料・在庫あり】Panasonic メンズシェーバー ラムダッシュPRO 5枚刃 ES-LV5J-S",
+    "price": 22387,
+    "last_notified_time": "2025-08-04 00:59:10",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 19000,
         "time": "2025-04-02 14:20:19"
+      },
+      {
+        "price": 22387,
+        "time": "2025-08-04 00:59:10"
       }
     ]
   },
@@ -24740,6 +24744,18 @@
       {
         "price": 5500,
         "time": "2025-08-03 00:59:33"
+      }
+    ]
+  },
+  "4987176171641": {
+    "product_name": "51-W1200s-V ブラウン Series5 51-1200s ホワイト 電気シェーバー メンズシェーバー 密着シリーズ5 充電式シェーバー 男性用 電動シェーバー【RCP】BRAUN シリーズ5 51-W1200S-V",
+    "price": 8980,
+    "last_notified_time": "2025-08-04 00:59:10",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 8980,
+        "time": "2025-08-04 00:59:10"
       }
     ]
   }
