@@ -1525,9 +1525,9 @@
   },
   "6941812740699": {
     "product_name": "【在庫あり・送料無料】Xiaomi Redmi Pad SE 4GB+128GB [ラベンダーパープル]",
-    "price": 23365,
-    "last_notified_time": "2025-07-11 04:40:34",
-    "notification_count": 3,
+    "price": 21224,
+    "last_notified_time": "2025-08-04 18:48:39",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 19980,
@@ -1540,6 +1540,10 @@
       {
         "price": 23365,
         "time": "2025-07-11 04:40:34"
+      },
+      {
+        "price": 21224,
+        "time": "2025-08-04 18:48:39"
       }
     ]
   },
