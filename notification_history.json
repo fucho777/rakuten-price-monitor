@@ -1833,9 +1833,9 @@
   },
   "4550556144292": {
     "product_name": "【新品・送料無料・在庫あり】AQUOS sense9 SH-M29 6G+128G SIMフリー [コーラル]* docomo｜AU ｜softbank｜楽天｜格安SIMも使用可能",
-    "price": 51999,
-    "last_notified_time": "2025-07-22 09:59:19",
-    "notification_count": 6,
+    "price": 54907,
+    "last_notified_time": "2025-08-05 18:53:26",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 55069,
@@ -1860,6 +1860,10 @@
       {
         "price": 51999,
         "time": "2025-07-22 09:59:19"
+      },
+      {
+        "price": 54907,
+        "time": "2025-08-05 18:53:26"
       }
     ]
   },
@@ -24992,6 +24996,18 @@
       {
         "price": 19819,
         "time": "2025-08-05 09:57:10"
+      }
+    ]
+  },
+  "4549980578568": {
+    "product_name": "パナソニック ラムダッシュPRO メンズシェーバー 6枚刃 洗浄器付き クラフトブラック ES-LS9P-K",
+    "price": 76000,
+    "last_notified_time": "2025-08-05 18:53:26",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 76000,
+        "time": "2025-08-05 18:53:26"
       }
     ]
   }
