@@ -1801,9 +1801,9 @@
   },
   "4549995192131": {
     "product_name": "イヤホン・ヘッドホン アップル / APPLE AirPods Max MGYM3J/A [ピンク] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549995192131-ds",
-    "price": 66880,
-    "last_notified_time": "2025-07-29 04:29:04",
-    "notification_count": 3,
+    "price": 115630,
+    "last_notified_time": "2025-08-06 06:49:54",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 59980,
@@ -1816,6 +1816,10 @@
       {
         "price": 66880,
         "time": "2025-07-29 04:29:04"
+      },
+      {
+        "price": 115630,
+        "time": "2025-08-06 06:49:54"
       }
     ]
   },
@@ -24273,9 +24277,9 @@
   },
   "4550161161462": {
     "product_name": "PA-MP02LN-SA Aterm MP02LN LTEモバイルルータ[ACアダプタセットタイプ]",
-    "price": 9870,
-    "last_notified_time": "2025-07-15 18:59:40",
-    "notification_count": 2,
+    "price": 8580,
+    "last_notified_time": "2025-08-06 06:49:54",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 8110,
@@ -24284,6 +24288,10 @@
       {
         "price": 9870,
         "time": "2025-07-15 18:59:40"
+      },
+      {
+        "price": 8580,
+        "time": "2025-08-06 06:49:54"
       }
     ]
   },
@@ -25032,6 +25040,18 @@
       {
         "price": 76000,
         "time": "2025-08-05 18:53:26"
+      }
+    ]
+  },
+  "4549995501285": {
+    "product_name": "【未使用】Apple Apple Watch Series10 42mm Cellular ジェットブラックアルミニウムケース/ブラックスポーツバンド (S/M) MWX63J/A【OSU301】保証期間3ヶ月",
+    "price": 63980,
+    "last_notified_time": "2025-08-06 06:49:54",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 63980,
+        "time": "2025-08-06 06:49:54"
       }
     ]
   }
