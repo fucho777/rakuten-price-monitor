@@ -1,54 +1,15 @@
 [
   {
-    "jan_code": "4547410431025",
-    "product_name": "富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 スカイブルー INS MINI 11 BLUE",
-    "current_price": 17830,
-    "previous_price": 18940.0,
-    "price_change_rate": -5.860612460401267,
+    "jan_code": "4547410555158",
+    "product_name": "【新品】カメラ 富士フイルム ミラーレス一眼カメラ X-M5 ボディ 2610万画素 (ブラック) [FX-M5-B]",
+    "current_price": 162220,
+    "previous_price": 174000.0,
+    "price_change_rate": -6.770114942528736,
     "current_availability": "在庫あり",
     "previous_availability": "在庫あり",
-    "shop_name": "Trend Item Shop",
-    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u2g5j.f7sle928.g00u2g5j.f7slf396/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftrenditemshop%2Fb0djnkvrsk%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftrenditemshop%2Fi%2F10055420%2F&rafcid=wsc_i_is_1027811366364555365",
-    "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u2g5j.f7sle928.g00u2g5j.f7slf396/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftrenditemshop%2Fb0djnkvrsk%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftrenditemshop%2Fi%2F10055420%2F&rafcid=wsc_i_is_1027811366364555365",
-    "timestamp": "2025-08-08 18:06:48"
-  },
-  {
-    "jan_code": "4549995452136",
-    "product_name": "【多少の箱のへこみや傷がある場合があります】APPLE　iPAD(Wi-Fiモデル)　iPad Pro 13インチ Wi-Fi 1TB 2024年春モデル MVX73J/A [シルバー]",
-    "current_price": 298000,
-    "previous_price": 421064.0,
-    "price_change_rate": -29.22691087340642,
-    "current_availability": "在庫あり",
-    "previous_availability": "在庫あり",
-    "shop_name": "ウインクデジタル　楽天市場店",
-    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00s0brj.f7sle6f0.g00s0brj.f7slfbe8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwinkstore%2F262047%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwinkstore%2Fi%2F10037883%2F&rafcid=wsc_i_is_1027811366364555365",
-    "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s0brj.f7sle6f0.g00s0brj.f7slfbe8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwinkstore%2F262047%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwinkstore%2Fi%2F10037883%2F&rafcid=wsc_i_is_1027811366364555365",
-    "timestamp": "2025-08-08 18:24:04"
-  },
-  {
-    "jan_code": "4948872416320",
-    "product_name": "【新品】ソニー・インタラクティブエンタテインメント PlayStation5 （プレイステーション 5）[PS5 model group slim][CFI-2000A01] PS5 [ゲーム機本体]",
-    "current_price": 79900,
-    "previous_price": 113500.0,
-    "price_change_rate": -29.60352422907489,
-    "current_availability": "在庫あり",
-    "previous_availability": "在庫あり",
-    "shop_name": "CLOVERショップ大阪店",
-    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uli4j.f7sle1e2.g00uli4j.f7slf6a4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcloverosaka%2Fps5a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcloverosaka%2Fi%2F10000224%2F&rafcid=wsc_i_is_1027811366364555365",
-    "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uli4j.f7sle1e2.g00uli4j.f7slf6a4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcloverosaka%2Fps5a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcloverosaka%2Fi%2F10000224%2F&rafcid=wsc_i_is_1027811366364555365",
-    "timestamp": "2025-08-08 18:43:14"
-  },
-  {
-    "jan_code": "6941812709979",
-    "product_name": "【未使用】Xiaomi 国内版 【SIMフリー】 Xiaomi 14T Pro 12GB 256GB チタングレー MZB0I4VJP【大宮東口】保証期間3ヶ月",
-    "current_price": 82980,
-    "previous_price": 97000.0,
-    "price_change_rate": -14.45360824742268,
-    "current_availability": "在庫あり",
-    "previous_availability": "在庫あり",
-    "shop_name": "じゃんぱら楽天市場店",
-    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8sj.f7sleed1.g00tw8sj.f7slf9af/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F216054601-216%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10434806%2F&rafcid=wsc_i_is_1027811366364555365",
-    "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8sj.f7sleed1.g00tw8sj.f7slf9af/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F216054601-216%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10434806%2F&rafcid=wsc_i_is_1027811366364555365",
-    "timestamp": "2025-08-08 18:55:27"
+    "shop_name": "ネットショップ駿河屋　楽天市場店",
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qk9aj.f7sle5c4.g00qk9aj.f7slf127/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsurugaya-a-too%2F145898386-0%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsurugaya-a-too%2Fi%2F304630355%2F&rafcid=wsc_i_is_1027811366364555365",
+    "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qk9aj.f7sle5c4.g00qk9aj.f7slf127/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsurugaya-a-too%2F145898386-0%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsurugaya-a-too%2Fi%2F304630355%2F&rafcid=wsc_i_is_1027811366364555365",
+    "timestamp": "2025-08-09 00:16:29"
   }
 ]
