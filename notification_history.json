@@ -641,9 +641,9 @@
   },
   "4974305220325": {
     "product_name": "象印 IH炊飯ジャー (5.5合炊き) 極め炊き ブラウン NW-VC10-TA",
-    "price": 27030,
-    "last_notified_time": "2025-08-01 12:59:40",
-    "notification_count": 6,
+    "price": 30080,
+    "last_notified_time": "2025-08-10 09:56:14",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 16970,
@@ -668,6 +668,10 @@
       {
         "price": 27030,
         "time": "2025-08-01 12:59:40"
+      },
+      {
+        "price": 30080,
+        "time": "2025-08-10 09:56:14"
       }
     ]
   },
@@ -1616,10 +1620,10 @@
     ]
   },
   "4549995514919": {
-    "product_name": "【未使用】Apple Apple Watch SE2 44mm GPS ミッドナイトアルミニウムケース/ミッドナイトスポーツバンド (S/M) MXEJ3J/A【札幌南2条】保証期間3ヶ月",
-    "price": 35980,
-    "last_notified_time": "2025-07-19 06:54:11",
-    "notification_count": 8,
+    "product_name": "Apple Watch SE 第2世代（GPSモデル）40mm A2722　アルミニウムケース+スポーツバンド",
+    "price": 32980,
+    "last_notified_time": "2025-08-10 09:56:14",
+    "notification_count": 9,
     "previous_prices": [
       {
         "price": 34980,
@@ -1652,6 +1656,10 @@
       {
         "price": 35980,
         "time": "2025-07-19 06:54:11"
+      },
+      {
+        "price": 32980,
+        "time": "2025-08-10 09:56:14"
       }
     ]
   },
@@ -1801,13 +1809,17 @@
   },
   "4549292167405": {
     "product_name": "Canon カメラ iNSPiC REC GREEN グリーン(小型/防水/耐久)身につけるカメラ FV-100 GREEN",
-    "price": 29711,
-    "last_notified_time": "2025-04-01 04:17:16",
-    "notification_count": 1,
+    "price": 32109,
+    "last_notified_time": "2025-08-10 09:56:14",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 29711,
         "time": "2025-04-01 04:17:16"
+      },
+      {
+        "price": 32109,
+        "time": "2025-08-10 09:56:14"
       }
     ]
   },
@@ -4041,9 +4053,9 @@
   },
   "4942857221008": {
     "product_name": "【未使用】SAMSUNG docomo 【SIMフリー】 Galaxy A22 5G ホワイト 4GB 64GB SC-56B【大須アメ横】保証期間3ヶ月",
-    "price": 18980,
-    "last_notified_time": "2025-07-24 09:55:55",
-    "notification_count": 5,
+    "price": 16980,
+    "last_notified_time": "2025-08-10 09:56:14",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 26560,
@@ -4064,6 +4076,10 @@
       {
         "price": 18980,
         "time": "2025-07-24 09:55:55"
+      },
+      {
+        "price": 16980,
+        "time": "2025-08-10 09:56:14"
       }
     ]
   },
