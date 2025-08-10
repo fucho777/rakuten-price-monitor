@@ -3933,9 +3933,9 @@
   },
   "4548736012547": {
     "product_name": "SONY デジタルカメラ DSC-WX500 光学30倍ズーム 1820万画素 ブラック Cyber-shot DSC-WX500 BC",
-    "price": 102240,
-    "last_notified_time": "2025-08-04 09:51:52",
-    "notification_count": 5,
+    "price": 94920,
+    "last_notified_time": "2025-08-10 07:01:51",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 71560,
@@ -3956,6 +3956,10 @@
       {
         "price": 102240,
         "time": "2025-08-04 09:51:52"
+      },
+      {
+        "price": 94920,
+        "time": "2025-08-10 07:01:51"
       }
     ]
   },
