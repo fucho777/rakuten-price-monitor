@@ -6356,10 +6356,10 @@
     ]
   },
   "4546821920890": {
-    "product_name": "展示品 SONY VLOGCAM ZV-1G シューティンググリップキット ブラック",
-    "price": 83800,
-    "last_notified_time": "2025-05-28 07:14:33",
-    "notification_count": 3,
+    "product_name": "ソニー / Vlog用カメラ / VLOGCAM / デジタルカメラ / ZV-1 / シューティンググリップキット 同梱グリップ:GP-VPT2BTブラック、バッテリーパック+1個 / ウィンドスクリーン付属 / 24-70mm F1.8-2.8",
+    "price": 139547,
+    "last_notified_time": "2025-08-11 04:17:02",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 108736,
@@ -6372,6 +6372,10 @@
       {
         "price": 83800,
         "time": "2025-05-28 07:14:33"
+      },
+      {
+        "price": 139547,
+        "time": "2025-08-11 04:17:02"
       }
     ]
   },
@@ -20853,13 +20857,17 @@
   },
   "4548848882168": {
     "product_name": "ダイキン ACK70X-T ビターブラウン",
-    "price": 85500,
-    "last_notified_time": "2025-05-27 13:23:02",
-    "notification_count": 1,
+    "price": 80000,
+    "last_notified_time": "2025-08-11 04:17:02",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 85500,
         "time": "2025-05-27 13:23:02"
+      },
+      {
+        "price": 80000,
+        "time": "2025-08-11 04:17:02"
       }
     ]
   },
