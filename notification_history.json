@@ -805,9 +805,9 @@
   },
   "4549576215563": {
     "product_name": "マイクロソフト Microsoft Xbox Series S [1TB ブラック] XXU-00015 R-LOGI",
-    "price": 63179,
-    "last_notified_time": "2025-08-05 12:50:16",
-    "notification_count": 2,
+    "price": 60020,
+    "last_notified_time": "2025-08-12 09:58:31",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 57500,
@@ -816,6 +816,10 @@
       {
         "price": 63179,
         "time": "2025-08-05 12:50:16"
+      },
+      {
+        "price": 60020,
+        "time": "2025-08-12 09:58:31"
       }
     ]
   },
@@ -8020,14 +8024,18 @@
     ]
   },
   "4549995551464": {
-    "product_name": "【未使用】Apple MacBook Air 13インチ M3(CPU:8C/GPU:8C) 16GB/256GB スターライト MC8J4J/A (13インチ, M3, 2024)【仙台イービーンズ】保証期間3ヶ月",
-    "price": 150980,
-    "last_notified_time": "2025-04-08 07:43:48",
-    "notification_count": 1,
+    "product_name": "【Apple】【新品】アップル『MacBook Air / 13inch / M3 / 16GB / SSD256GB / スターライト』MC8J4J/A ノートPC 1週間保証【新品】",
+    "price": 129738,
+    "last_notified_time": "2025-08-12 09:58:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 150980,
         "time": "2025-04-08 07:43:48"
+      },
+      {
+        "price": 129738,
+        "time": "2025-08-12 09:58:31"
       }
     ]
   },
@@ -12624,10 +12632,10 @@
     ]
   },
   "4573176154397": {
-    "product_name": "【新品未使用】 RE-AS02A ReFa FINGER IRON ST 本体 即日発送 土日祝発送OK あす楽",
-    "price": 10200,
-    "last_notified_time": "2025-06-11 10:09:24",
-    "notification_count": 3,
+    "product_name": "【新品未使用】 RE-AI02A ReFa BEAUTECH FINGER IRON フィンガーアイロン ホワイト 本体 即日発送 土日祝発送OK あす楽",
+    "price": 13700,
+    "last_notified_time": "2025-08-12 09:58:31",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 13399,
@@ -12640,6 +12648,10 @@
       {
         "price": 10200,
         "time": "2025-06-11 10:09:24"
+      },
+      {
+        "price": 13700,
+        "time": "2025-08-12 09:58:31"
       }
     ]
   },
