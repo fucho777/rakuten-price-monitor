@@ -7480,10 +7480,10 @@
     ]
   },
   "4550556131148": {
-    "product_name": "シャープ　SHARP　SIMフリースマートフォン AQUOS wish4 MediaTekTM Dimensity 700 6.6型 メモリ/ストレージ：4GB/64GB ホワイト　SH-M27-W",
-    "price": 33393,
-    "last_notified_time": "2025-07-25 15:48:02",
-    "notification_count": 10,
+    "product_name": "シャープ AQUOS (アクオス) Androidスマホ SHARP AQUOS wish4 SH-M27 ホワイト(W) SIMフリー 未開封品 未使用品",
+    "price": 18090,
+    "last_notified_time": "2025-08-13 04:20:44",
+    "notification_count": 11,
     "previous_prices": [
       {
         "price": 31114,
@@ -7524,6 +7524,10 @@
       {
         "price": 33393,
         "time": "2025-07-25 15:48:02"
+      },
+      {
+        "price": 18090,
+        "time": "2025-08-13 04:20:44"
       }
     ]
   },
@@ -8216,14 +8220,18 @@
     ]
   },
   "5025155059258": {
-    "product_name": "【エントリーでポイント5倍】ダイソン Dyson V8 Slim Fluffy Extra サイクロン式 コードレス掃除機 赤紫 青 SV10K EXT FU BU 全2色　　コードレス　ハンディー　一人暮らし　軽量　強力　吸引力　フィルター　ダニ　コード式　紙パック不要",
-    "price": 31171,
-    "last_notified_time": "2025-04-08 10:32:17",
-    "notification_count": 1,
+    "product_name": "ダイソン 【箱に難あり中身で勝負！セール】Dyson V8 Slim Fluffy Extra サイクロン式 コードレス掃除機 SV10KEXTFU【国内正規品】【メーカー保証】 SV10K-EXT-FU",
+    "price": 24800,
+    "last_notified_time": "2025-08-13 04:20:44",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 31171,
         "time": "2025-04-08 10:32:17"
+      },
+      {
+        "price": 24800,
+        "time": "2025-08-13 04:20:44"
       }
     ]
   },
@@ -9689,9 +9697,9 @@
   },
   "4549980511763": {
     "product_name": "パナソニック スチーマー ナノケア コンパクトタイプ ゴールド調 EH-SA3C-N",
-    "price": 22922,
-    "last_notified_time": "2025-06-27 19:05:00",
-    "notification_count": 8,
+    "price": 24329,
+    "last_notified_time": "2025-08-13 04:20:44",
+    "notification_count": 9,
     "previous_prices": [
       {
         "price": 23852,
@@ -9724,6 +9732,10 @@
       {
         "price": 22922,
         "time": "2025-06-27 19:05:00"
+      },
+      {
+        "price": 24329,
+        "time": "2025-08-13 04:20:44"
       }
     ]
   },
@@ -20440,10 +20452,10 @@
     ]
   },
   "4549873158686": {
-    "product_name": "日立 掃除機 紙パック式 CV-KP300K N ライトゴールド 日本製 強烈パワー650W パワフルスマートヘッドlight 自走式",
-    "price": 48902,
-    "last_notified_time": "2025-07-10 04:34:55",
-    "notification_count": 3,
+    "product_name": "日立 軽量 紙パック式クリーナー CV-KP300K ライトゴールド 普通",
+    "price": 35577,
+    "last_notified_time": "2025-08-13 04:20:44",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 48240,
@@ -20456,6 +20468,10 @@
       {
         "price": 48902,
         "time": "2025-07-10 04:34:55"
+      },
+      {
+        "price": 35577,
+        "time": "2025-08-13 04:20:44"
       }
     ]
   },
@@ -25632,6 +25648,18 @@
       {
         "price": 60810,
         "time": "2025-08-12 15:57:25"
+      }
+    ]
+  },
+  "4974019269078": {
+    "product_name": "シャープ AQUOS sense7 ライトカッパー [SH-M24-C]",
+    "price": 44074,
+    "last_notified_time": "2025-08-13 04:20:44",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 44074,
+        "time": "2025-08-13 04:20:44"
       }
     ]
   }
