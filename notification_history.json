@@ -3681,9 +3681,9 @@
   },
   "4987176180292": {
     "product_name": "ブラウン　BRAUN　電気シェーバー シリーズ5 (キワゾリトリマー/防水設計/充電式/コードレス/ディープキャッチ網刃) ［3枚刃 /AC100V-240V］ ブルー　52-A1200S",
-    "price": 10310,
-    "last_notified_time": "2025-08-01 12:59:40",
-    "notification_count": 10,
+    "price": 10865,
+    "last_notified_time": "2025-08-18 04:25:13",
+    "notification_count": 11,
     "previous_prices": [
       {
         "price": 7474,
@@ -3724,6 +3724,10 @@
       {
         "price": 10310,
         "time": "2025-08-01 12:59:40"
+      },
+      {
+        "price": 10865,
+        "time": "2025-08-18 04:25:13"
       }
     ]
   },
@@ -8072,14 +8076,18 @@
     ]
   },
   "4549995514469": {
-    "product_name": "APPLE　Mac ノート　MacBook Air Liquid Retinaディスプレイ 13.6 MXCT3J/A [シルバー]",
-    "price": 203800,
-    "last_notified_time": "2025-04-08 07:43:48",
-    "notification_count": 1,
+    "product_name": "Mac ノート(MacBook) アップル / APPLE MacBook Air Liquid Retinaディスプレイ 13.6 MXCT3J/A [シルバー] 【キャンセル不可・北海道沖縄離島配送不可】 0057-4549995514469-ds",
+    "price": 174900,
+    "last_notified_time": "2025-08-18 04:25:13",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 203800,
         "time": "2025-04-08 07:43:48"
+      },
+      {
+        "price": 174900,
+        "time": "2025-08-18 04:25:13"
       }
     ]
   },
@@ -12360,10 +12368,10 @@
     ]
   },
   "4549980487266": {
-    "product_name": "【4657】☆8【ヘアードライヤーナノケア】Panasonic ヘアードライヤー ナノケア ピンクゴールド 【EH-NA9G-PN】母の日 美容家電",
-    "price": 24450,
-    "last_notified_time": "2025-05-08 04:32:17",
-    "notification_count": 4,
+    "product_name": "Panasonic パナソニック ヘアドライヤー EH-NA9G-PN ナノイー ミネラル速乾 うるおい 保湿 大風量 ヘアケア",
+    "price": 27030,
+    "last_notified_time": "2025-08-18 04:25:13",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 26662,
@@ -12380,6 +12388,10 @@
       {
         "price": 24450,
         "time": "2025-05-08 04:32:17"
+      },
+      {
+        "price": 27030,
+        "time": "2025-08-18 04:25:13"
       }
     ]
   },
@@ -22465,13 +22477,17 @@
   },
   "4582239436882": {
     "product_name": "【新品・送料無料・在庫あり】モトローラ｜MOTOROLA moto g64 5G [シルバーブルー] SIMフリー メモリ/ストレージ：8GB / 128GB ※メーカー保証対象外※",
-    "price": 26955,
-    "last_notified_time": "2025-06-06 10:09:28",
-    "notification_count": 1,
+    "price": 24799,
+    "last_notified_time": "2025-08-18 04:25:13",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 26955,
         "time": "2025-06-06 10:09:28"
+      },
+      {
+        "price": 24799,
+        "time": "2025-08-18 04:25:13"
       }
     ]
   },
