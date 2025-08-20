@@ -9909,9 +9909,9 @@
   },
   "4981254057391": {
     "product_name": "東芝　TOSHIBA　USB3．2（Gen1）対応　外付けHDD　東芝　Canvio　Desktop［3．5インチ　／6TB］　HD-TDA6U3-B",
-    "price": 19260,
-    "last_notified_time": "2025-06-03 19:10:56",
-    "notification_count": 2,
+    "price": 20980,
+    "last_notified_time": "2025-08-20 18:58:08",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 20980,
@@ -9920,6 +9920,10 @@
       {
         "price": 19260,
         "time": "2025-06-03 19:10:56"
+      },
+      {
+        "price": 20980,
+        "time": "2025-08-20 18:58:08"
       }
     ]
   },
