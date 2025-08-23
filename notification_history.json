@@ -4741,9 +4741,9 @@
   },
   "6941812730027": {
     "product_name": "【在庫あり・送料無料】Xiaomi Pad 6 8GB+128GB VHU4329JP [ミストブルー]",
-    "price": 48389,
-    "last_notified_time": "2025-07-16 12:59:38",
-    "notification_count": 4,
+    "price": 52368,
+    "last_notified_time": "2025-08-23 15:56:36",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 52000,
@@ -4760,6 +4760,10 @@
       {
         "price": 48389,
         "time": "2025-07-16 12:59:38"
+      },
+      {
+        "price": 52368,
+        "time": "2025-08-23 15:56:36"
       }
     ]
   },
