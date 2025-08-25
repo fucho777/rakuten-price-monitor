@@ -3493,9 +3493,9 @@
   },
   "4550556103596": {
     "product_name": "シャープ AQUOS wish3 ブラック SH-M25-B",
-    "price": 36905,
-    "last_notified_time": "2025-08-10 12:58:47",
-    "notification_count": 6,
+    "price": 34958,
+    "last_notified_time": "2025-08-25 15:47:19",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 20900,
@@ -3520,6 +3520,10 @@
       {
         "price": 36905,
         "time": "2025-08-10 12:58:47"
+      },
+      {
+        "price": 34958,
+        "time": "2025-08-25 15:47:19"
       }
     ]
   },
@@ -20400,10 +20404,10 @@
     ]
   },
   "4549292204698": {
-    "product_name": "【お得・新品・送料無料・即納】Canon インクジェット複合機 PIXUS TS8630 [ホワイト]　※倉庫からの移動中に箱傷みあり※ 【外箱傷あり】",
-    "price": 34678,
-    "last_notified_time": "2025-08-08 15:47:41",
-    "notification_count": 10,
+    "product_name": "Canon インクジェット複合機 PIXUS TS8630 [ホワイト]",
+    "price": 27332,
+    "last_notified_time": "2025-08-25 15:47:19",
+    "notification_count": 11,
     "previous_prices": [
       {
         "price": 30780,
@@ -20444,6 +20448,10 @@
       {
         "price": 34678,
         "time": "2025-08-08 15:47:41"
+      },
+      {
+        "price": 27332,
+        "time": "2025-08-25 15:47:19"
       }
     ]
   },
@@ -26840,6 +26848,18 @@
       {
         "price": 70920,
         "time": "2025-08-25 12:54:52"
+      }
+    ]
+  },
+  "4960759909077": {
+    "product_name": "ニコン(Nikon) NIKKOR Z 28-75mm f/2.8 ニコンZマウント用 フルサイズ ズームレンズ",
+    "price": 109789,
+    "last_notified_time": "2025-08-25 15:47:19",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 109789,
+        "time": "2025-08-25 15:47:19"
       }
     ]
   }
