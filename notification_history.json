@@ -15605,9 +15605,9 @@
   },
   "4988617439184": {
     "product_name": "エプソン プリンター A4インクジェット複合機 カラリオ EP-714A 送料無料",
-    "price": 32278,
-    "last_notified_time": "2025-08-19 12:54:54",
-    "notification_count": 5,
+    "price": 26722,
+    "last_notified_time": "2025-08-29 18:58:22",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 32602,
@@ -15628,6 +15628,10 @@
       {
         "price": 32278,
         "time": "2025-08-19 12:54:54"
+      },
+      {
+        "price": 26722,
+        "time": "2025-08-29 18:58:22"
       }
     ]
   },
@@ -27280,6 +27284,18 @@
       {
         "price": 19478,
         "time": "2025-08-29 12:58:57"
+      }
+    ]
+  },
+  "4210201443278": {
+    "product_name": "Braun シェーバー シリーズ9Pro 充電式シェーバー 9415S-V",
+    "price": 46870,
+    "last_notified_time": "2025-08-29 18:58:22",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 46870,
+        "time": "2025-08-29 18:58:22"
       }
     ]
   }
