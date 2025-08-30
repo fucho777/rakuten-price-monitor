@@ -19781,13 +19781,17 @@
   },
   "4521329394756": {
     "product_name": "ポケモンカード 未来の一閃 BOX 未開封 拡張パック スカーレット＆バイオレット BOX",
-    "price": 7151,
-    "last_notified_time": "2025-05-16 02:03:22",
-    "notification_count": 1,
+    "price": 7900,
+    "last_notified_time": "2025-08-30 15:47:02",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 7151,
         "time": "2025-05-16 02:03:22"
+      },
+      {
+        "price": 7900,
+        "time": "2025-08-30 15:47:02"
       }
     ]
   },
@@ -20688,10 +20692,10 @@
     ]
   },
   "4549292204698": {
-    "product_name": "Canon インクジェット複合機 PIXUS TS8630 [ホワイト]",
-    "price": 27332,
-    "last_notified_time": "2025-08-25 15:47:19",
-    "notification_count": 11,
+    "product_name": "Canon インクジェット複合機 PIXUS TS8630 ホワイト",
+    "price": 34975,
+    "last_notified_time": "2025-08-30 15:47:02",
+    "notification_count": 12,
     "previous_prices": [
       {
         "price": 30780,
@@ -20736,6 +20740,10 @@
       {
         "price": 27332,
         "time": "2025-08-25 15:47:19"
+      },
+      {
+        "price": 34975,
+        "time": "2025-08-30 15:47:02"
       }
     ]
   },
