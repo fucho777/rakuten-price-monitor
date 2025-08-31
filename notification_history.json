@@ -385,9 +385,9 @@
   },
   "4968929221639": {
     "product_name": "JBL　ブルートゥース スピーカー ［防水 /Bluetooth対応］ SWASH PINK　JBLGO4PINK",
-    "price": 6192,
-    "last_notified_time": "2025-07-10 16:11:12",
-    "notification_count": 6,
+    "price": 7001,
+    "last_notified_time": "2025-08-31 12:48:36",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 5991,
@@ -412,6 +412,10 @@
       {
         "price": 6192,
         "time": "2025-07-10 16:11:12"
+      },
+      {
+        "price": 7001,
+        "time": "2025-08-31 12:48:36"
       }
     ]
   },
@@ -2024,10 +2028,10 @@
     ]
   },
   "4550556144346": {
-    "product_name": "【新品】SHARP シャープ スマホ sense9 SH-M29B-A 8GB/256GB ブルー SIMフリー",
-    "price": 59492,
-    "last_notified_time": "2025-08-20 12:57:52",
-    "notification_count": 8,
+    "product_name": "シャープ　SHARP　SIMフリースマートフォン AQUOS sense9 Snapdragon7s Gen2 Mobile Platform 6.1インチ メモリ/ストレージ：8GB/256GB ブルー　SHM29BA",
+    "price": 65482,
+    "last_notified_time": "2025-08-31 12:48:36",
+    "notification_count": 9,
     "previous_prices": [
       {
         "price": 63099,
@@ -2060,6 +2064,10 @@
       {
         "price": 59492,
         "time": "2025-08-20 12:57:52"
+      },
+      {
+        "price": 65482,
+        "time": "2025-08-31 12:48:36"
       }
     ]
   },
