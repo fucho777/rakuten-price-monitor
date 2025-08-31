@@ -7604,10 +7604,10 @@
     ]
   },
   "4988617467149": {
-    "product_name": "【新品/取寄品/代引不可】EPSON カラリオ EP-885AR レッド A4カラーインクジェット複合機 (6色/無線LAN/4.3型ワイドタッチパネル) エプソン",
-    "price": 38360,
-    "last_notified_time": "2025-08-27 07:00:21",
-    "notification_count": 2,
+    "product_name": "★EPSON カラリオ EP-885AR [レッド]【プリンタ】【送料無料】",
+    "price": 32350,
+    "last_notified_time": "2025-08-31 15:52:20",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 34927,
@@ -7616,6 +7616,10 @@
       {
         "price": 38360,
         "time": "2025-08-27 07:00:21"
+      },
+      {
+        "price": 32350,
+        "time": "2025-08-31 15:52:20"
       }
     ]
   },
@@ -27424,6 +27428,18 @@
       {
         "price": 46499,
         "time": "2025-08-31 09:55:46"
+      }
+    ]
+  },
+  "4549576241715": {
+    "product_name": "Xbox ワイヤレス コントローラー (パルスサイファー)",
+    "price": 7797,
+    "last_notified_time": "2025-08-31 15:52:20",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 7797,
+        "time": "2025-08-31 15:52:20"
       }
     ]
   }
