@@ -17245,9 +17245,9 @@
   },
   "5025155070857": {
     "product_name": "Dyson掃除機 サイクロン式スティッククリーナー SV12 FF LF 整備済み品",
-    "price": 20510,
-    "last_notified_time": "2025-08-11 12:58:25",
-    "notification_count": 6,
+    "price": 19000,
+    "last_notified_time": "2025-09-01 04:17:41",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 26820,
@@ -17272,6 +17272,10 @@
       {
         "price": 20510,
         "time": "2025-08-11 12:58:25"
+      },
+      {
+        "price": 19000,
+        "time": "2025-09-01 04:17:41"
       }
     ]
   },
@@ -20293,9 +20297,9 @@
   },
   "4549077893062": {
     "product_name": "パナソニック 浄水器 蛇口直結型 ホワイト TK-CJ12-W",
-    "price": 12140,
-    "last_notified_time": "2025-07-17 15:57:57",
-    "notification_count": 3,
+    "price": 13960,
+    "last_notified_time": "2025-09-01 04:17:41",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 11600,
@@ -20308,6 +20312,10 @@
       {
         "price": 12140,
         "time": "2025-07-17 15:57:57"
+      },
+      {
+        "price": 13960,
+        "time": "2025-09-01 04:17:41"
       }
     ]
   },
