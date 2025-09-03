@@ -3705,9 +3705,9 @@
   },
   "4974305227799": {
     "product_name": "象印 加湿器 スチーム式 4.0L グレー EE-DE50-HA",
-    "price": 47100,
-    "last_notified_time": "2025-08-06 18:57:29",
-    "notification_count": 7,
+    "price": 39625,
+    "last_notified_time": "2025-09-03 18:52:07",
+    "notification_count": 8,
     "previous_prices": [
       {
         "price": 35800,
@@ -3736,6 +3736,10 @@
       {
         "price": 47100,
         "time": "2025-08-06 18:57:29"
+      },
+      {
+        "price": 39625,
+        "time": "2025-09-03 18:52:07"
       }
     ]
   },
@@ -27085,9 +27089,9 @@
   },
   "4987176171641": {
     "product_name": "ブラウン メンズシェーバー 充電式 シリーズ5 51-W1200S-V",
-    "price": 12830,
-    "last_notified_time": "2025-08-10 15:55:59",
-    "notification_count": 2,
+    "price": 11226,
+    "last_notified_time": "2025-09-03 18:52:07",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 8980,
@@ -27096,6 +27100,10 @@
       {
         "price": 12830,
         "time": "2025-08-10 15:55:59"
+      },
+      {
+        "price": 11226,
+        "time": "2025-09-03 18:52:07"
       }
     ]
   },
@@ -27856,6 +27864,18 @@
       {
         "price": 72979,
         "time": "2025-09-03 15:56:24"
+      }
+    ]
+  },
+  "4549980550793": {
+    "product_name": "パナソニック メンズシェーバー ラムダッシュ 3枚刃 白 お風呂剃り可 ES-LT2B-W",
+    "price": 12239,
+    "last_notified_time": "2025-09-03 18:52:07",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 12239,
+        "time": "2025-09-03 18:52:07"
       }
     ]
   }
