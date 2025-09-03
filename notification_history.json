@@ -3776,10 +3776,10 @@
     ]
   },
   "4549995453089": {
-    "product_name": "Apple 2024 13 インチiPad Air (M2): Liquid Retina ディスプレイ、512GB、横向きの 12MP フロントカメラ/12MP バックカメラ、Wi-Fi 6E、Touch ID、一日中使えるバッテリー - パープル",
-    "price": 182103,
-    "last_notified_time": "2025-08-28 21:56:56",
-    "notification_count": 3,
+    "product_name": "【新品】Apple iPad Air 13インチ Wi-Fi 512GB MV2N3J/A [ パープル ]",
+    "price": 169480,
+    "last_notified_time": "2025-09-03 15:56:24",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 160980,
@@ -3792,6 +3792,10 @@
       {
         "price": 182103,
         "time": "2025-08-28 21:56:56"
+      },
+      {
+        "price": 169480,
+        "time": "2025-09-03 15:56:24"
       }
     ]
   },
@@ -6020,10 +6024,10 @@
     ]
   },
   "4974305227812": {
-    "product_name": "象印 加湿器 スチーム式 3.0L ホワイト EE-RT50-WA｜清潔加湿 蒸気式 湿度調整 寝室 リビング オフィス用 静音設計 乾燥対策 冬の必需品 日本製 4974305227812",
-    "price": 31800,
-    "last_notified_time": "2025-08-11 09:55:57",
-    "notification_count": 3,
+    "product_name": "象印 加湿器 スチーム式 3.0L ホワイト EE-RT50-WA",
+    "price": 26540,
+    "last_notified_time": "2025-09-03 15:56:24",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 32780,
@@ -6036,6 +6040,10 @@
       {
         "price": 31800,
         "time": "2025-08-11 09:55:57"
+      },
+      {
+        "price": 26540,
+        "time": "2025-09-03 15:56:24"
       }
     ]
   },
@@ -8324,14 +8332,18 @@
     ]
   },
   "4948872415910": {
-    "product_name": "【未使用】SONY PlayStation 5 CFI-2000B01 デジタル・エディション PS5 \"プレイステーション5 本体 ディスクドライブ非搭載モデル/ダウンロードプレイ専用\"【加納店】",
-    "price": 67000,
-    "last_notified_time": "2025-04-08 04:02:17",
-    "notification_count": 1,
+    "product_name": "PlayStation5 デジタル・エディション",
+    "price": 62979,
+    "last_notified_time": "2025-09-03 15:56:24",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 67000,
         "time": "2025-04-08 04:02:17"
+      },
+      {
+        "price": 62979,
+        "time": "2025-09-03 15:56:24"
       }
     ]
   },
@@ -10153,9 +10165,9 @@
   },
   "4904530119880": {
     "product_name": "TOSHIBA(東芝) スチームオーブンレンジ 石窯ドーム 30L ER-YD3000(W) グランホワイト 2段調理 300℃ おまかせ焼き フラットテーブル 電子レンジ 簡単操作 簡単料理 時短 お手軽メニュー 簡単お手入れ",
-    "price": 65670,
-    "last_notified_time": "2025-08-05 04:22:01",
-    "notification_count": 7,
+    "price": 55290,
+    "last_notified_time": "2025-09-03 15:56:24",
+    "notification_count": 8,
     "previous_prices": [
       {
         "price": 55469,
@@ -10184,6 +10196,10 @@
       {
         "price": 65670,
         "time": "2025-08-05 04:22:01"
+      },
+      {
+        "price": 55290,
+        "time": "2025-09-03 15:56:24"
       }
     ]
   },
@@ -27816,6 +27832,30 @@
       {
         "price": 3850,
         "time": "2025-09-03 09:53:06"
+      }
+    ]
+  },
+  "4948872016940": {
+    "product_name": "PlayStation5 DualSense ワイヤレスコントローラー ダブルパック",
+    "price": 82979,
+    "last_notified_time": "2025-09-03 15:56:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 82979,
+        "time": "2025-09-03 15:56:24"
+      }
+    ]
+  },
+  "4948872016957": {
+    "product_name": "PlayStation5 デジタル・エディション DualSense ワイヤレスコントローラー ダブルパック",
+    "price": 72979,
+    "last_notified_time": "2025-09-03 15:56:24",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 72979,
+        "time": "2025-09-03 15:56:24"
       }
     ]
   }
