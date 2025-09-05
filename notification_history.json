@@ -1333,9 +1333,9 @@
   },
   "4547410431049": {
     "product_name": "富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 チャコールグレイ INS MINI 11 GRAY",
-    "price": 23753,
-    "last_notified_time": "2025-08-20 06:58:19",
-    "notification_count": 4,
+    "price": 21259,
+    "last_notified_time": "2025-09-05 18:49:05",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 18921,
@@ -1352,6 +1352,10 @@
       {
         "price": 23753,
         "time": "2025-08-20 06:58:19"
+      },
+      {
+        "price": 21259,
+        "time": "2025-09-05 18:49:05"
       }
     ]
   },
@@ -27220,14 +27224,18 @@
     ]
   },
   "4589796411192": {
-    "product_name": "NEC Android タブレットPC LAVIE T1195/BAS Wi-Fi 11.5型 有機EL PC-T1195BAS 【ラッピング対応可】 R-LOGI",
-    "price": 45954,
-    "last_notified_time": "2025-07-31 06:58:04",
-    "notification_count": 1,
+    "product_name": "【延長保証対応!!】NEC Android端末 LAVIE T11 T1195/BAS PC-T1195BAS",
+    "price": 53170,
+    "last_notified_time": "2025-09-05 18:49:05",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 45954,
         "time": "2025-07-31 06:58:04"
+      },
+      {
+        "price": 53170,
+        "time": "2025-09-05 18:49:05"
       }
     ]
   },
