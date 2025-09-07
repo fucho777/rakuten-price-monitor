@@ -5976,10 +5976,10 @@
     ]
   },
   "4580652111393": {
-    "product_name": "東芝 4TB HDD/7チューナー搭載 ブルーレイレコーダー(最大7チャンネルまるごと録画可能)TOSHIBA REGZA タイムシフトマシン DBR-M4010",
-    "price": 102000,
-    "last_notified_time": "2025-07-08 16:10:37",
-    "notification_count": 8,
+    "product_name": "新品 TOSHIBA REGZA タイムシフトマシン DBR-M4010 レグザ 東芝",
+    "price": 114800,
+    "last_notified_time": "2025-09-07 18:52:50",
+    "notification_count": 9,
     "previous_prices": [
       {
         "price": 97369,
@@ -6012,6 +6012,10 @@
       {
         "price": 102000,
         "time": "2025-07-08 16:10:37"
+      },
+      {
+        "price": 114800,
+        "time": "2025-09-07 18:52:50"
       }
     ]
   },
@@ -28228,6 +28232,18 @@
       {
         "price": 110875,
         "time": "2025-09-05 12:53:08"
+      }
+    ]
+  },
+  "4549980514221": {
+    "product_name": "パナソニック 4K ビデオカメラ 64GB 光学20倍ズーム アーバンレッド HC-VX992MS-R",
+    "price": 106433,
+    "last_notified_time": "2025-09-07 18:52:50",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 106433,
+        "time": "2025-09-07 18:52:50"
       }
     ]
   }
