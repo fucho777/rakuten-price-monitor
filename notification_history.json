@@ -22964,10 +22964,10 @@
     ]
   },
   "4969929259257": {
-    "product_name": "BOSE ボーズ Bose Ultra Open Earbuds White Smoke(ホワイトスモーク) 完全ワイヤレスオープンイヤーイヤホン ULTRAOPENEBWH",
-    "price": 35643,
-    "last_notified_time": "2025-09-03 12:57:49",
-    "notification_count": 6,
+    "product_name": "BOSE　フルワイヤレスイヤホン ホワイト [ オープンイヤー / 空間オーディオ 対応 / Bluetooth 対応 / 防滴 対応 ] 　Bose Ultra Open Earbuds WHT",
+    "price": 31680,
+    "last_notified_time": "2025-09-10 18:48:16",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 24332,
@@ -22992,6 +22992,10 @@
       {
         "price": 35643,
         "time": "2025-09-03 12:57:49"
+      },
+      {
+        "price": 31680,
+        "time": "2025-09-10 18:48:16"
       }
     ]
   },
@@ -25848,10 +25852,10 @@
     ]
   },
   "4969929259240": {
-    "product_name": "【新品】BOSE ボーズ フルワイヤレスイヤホン Bose Ultra Open Earbuds ブラック",
-    "price": 35009,
-    "last_notified_time": "2025-09-03 03:56:27",
-    "notification_count": 3,
+    "product_name": "BOSE　フルワイヤレスイヤホン ブラック [ オープンイヤー / 空間オーディオ 対応 / Bluetooth 対応 / 防滴 対応 ] 　Bose Ultra Open Earbuds BLK",
+    "price": 31680,
+    "last_notified_time": "2025-09-10 18:48:16",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 29958,
@@ -25864,6 +25868,10 @@
       {
         "price": 35009,
         "time": "2025-09-03 03:56:27"
+      },
+      {
+        "price": 31680,
+        "time": "2025-09-10 18:48:16"
       }
     ]
   },
@@ -28624,6 +28632,18 @@
       {
         "price": 15474,
         "time": "2025-09-10 12:54:55"
+      }
+    ]
+  },
+  "4969929251039": {
+    "product_name": "BOSE　サラウンドスピーカーセット ホワイト　SurroundspeakersWHT",
+    "price": 46200,
+    "last_notified_time": "2025-09-10 18:48:16",
+    "notification_count": 1,
+    "previous_prices": [
+      {
+        "price": 46200,
+        "time": "2025-09-10 18:48:16"
       }
     ]
   }
