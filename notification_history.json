@@ -14824,10 +14824,10 @@
     ]
   },
   "4549576167718": {
-    "product_name": "Xbox Series S XBOX SERIES 【訳あり】",
-    "price": 56670,
-    "last_notified_time": "2025-09-01 15:57:03",
-    "notification_count": 3,
+    "product_name": "Xbox Series S XBOX SERIES 【訳あり：倉庫移動中に外箱傷あり】",
+    "price": 53070,
+    "last_notified_time": "2025-09-12 15:58:11",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 42283,
@@ -14840,6 +14840,10 @@
       {
         "price": 56670,
         "time": "2025-09-01 15:57:03"
+      },
+      {
+        "price": 53070,
+        "time": "2025-09-12 15:58:11"
       }
     ]
   },
@@ -28029,9 +28033,9 @@
   },
   "4969929259554": {
     "product_name": "BOSE Bluetoot対応ヘッドホン QuietComfort Ultra Headphones WHITE SMOKE 【訳あり：倉庫移動中に外箱傷あり】",
-    "price": 46390,
-    "last_notified_time": "2025-09-09 06:56:44",
-    "notification_count": 2,
+    "price": 41875,
+    "last_notified_time": "2025-09-12 15:58:11",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 41875,
@@ -28040,6 +28044,10 @@
       {
         "price": 46390,
         "time": "2025-09-09 06:56:44"
+      },
+      {
+        "price": 41875,
+        "time": "2025-09-12 15:58:11"
       }
     ]
   },
