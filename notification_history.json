@@ -3528,10 +3528,10 @@
     ]
   },
   "4512223695193": {
-    "product_name": "【お得・新品・送料無料・即納】SHOKZ 完全ワイヤレスイヤホン OpenFit SKZ-EP-000021 [ベージュ] ※倉庫からの移動中に箱傷みあり※ 【外箱傷あり】",
-    "price": 15880,
-    "last_notified_time": "2025-08-20 21:51:12",
-    "notification_count": 7,
+    "product_name": "SHOKZ　完全ワイヤレスイヤホン OpenFit ベージュ [ ワイヤレス ( 左右分離 ) / Bluetooth ] 　SKZ-EP-000021",
+    "price": 13800,
+    "last_notified_time": "2025-09-14 09:55:31",
+    "notification_count": 8,
     "previous_prices": [
       {
         "price": 12700,
@@ -3560,6 +3560,10 @@
       {
         "price": 15880,
         "time": "2025-08-20 21:51:12"
+      },
+      {
+        "price": 13800,
+        "time": "2025-09-14 09:55:31"
       }
     ]
   },
@@ -26909,13 +26913,17 @@
   },
   "4210201366546": {
     "product_name": "ブラウン Pro5 PL-5227",
-    "price": 63625,
-    "last_notified_time": "2025-07-08 04:41:22",
-    "notification_count": 1,
+    "price": 58500,
+    "last_notified_time": "2025-09-14 09:55:31",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 63625,
         "time": "2025-07-08 04:41:22"
+      },
+      {
+        "price": 58500,
+        "time": "2025-09-14 09:55:31"
       }
     ]
   },
