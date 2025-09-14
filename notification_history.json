@@ -4377,13 +4377,17 @@
   },
   "4549576195797": {
     "product_name": "マイクロソフト Surface Pro 9 / Office HB 2021 搭載 / 13インチ /第12世代 Intel Core-i5 /8GB/256GB / プラチナ QEZ-00011",
-    "price": 261324,
-    "last_notified_time": "2025-04-02 22:21:41",
-    "notification_count": 1,
+    "price": 220158,
+    "last_notified_time": "2025-09-14 04:05:38",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 261324,
         "time": "2025-04-02 22:21:41"
+      },
+      {
+        "price": 220158,
+        "time": "2025-09-14 04:05:38"
       }
     ]
   },
@@ -12628,10 +12632,10 @@
     ]
   },
   "4540790333934": {
-    "product_name": "【延長保証対応!!】ヤーマン ミーゼ ニードルヘッドスパリフト MS-31N",
-    "price": 14600,
-    "last_notified_time": "2025-09-04 18:48:09",
-    "notification_count": 13,
+    "product_name": "まごころ長期修理保証(保証5年)［加入料：対象商品代金の5%］商品「MS-31N」専用加入料(※加入料のみ注文不可)",
+    "price": 990,
+    "last_notified_time": "2025-09-14 04:05:38",
+    "notification_count": 14,
     "previous_prices": [
       {
         "price": 16800,
@@ -12684,6 +12688,10 @@
       {
         "price": 14600,
         "time": "2025-09-04 18:48:09"
+      },
+      {
+        "price": 990,
+        "time": "2025-09-14 04:05:38"
       }
     ]
   },
