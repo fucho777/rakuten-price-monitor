@@ -5561,9 +5561,9 @@
   },
   "4902370547627": {
     "product_name": "Nintendo Switch Proコントローラー モンスターハンターライズエディション",
-    "price": 15690,
-    "last_notified_time": "2025-09-11 18:47:35",
-    "notification_count": 3,
+    "price": 14800,
+    "last_notified_time": "2025-09-15 12:57:54",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 16770,
@@ -5576,6 +5576,10 @@
       {
         "price": 15690,
         "time": "2025-09-11 18:47:35"
+      },
+      {
+        "price": 14800,
+        "time": "2025-09-15 12:57:54"
       }
     ]
   },
@@ -8421,9 +8425,9 @@
   },
   "4549980746431": {
     "product_name": "パナソニック ドライヤー イオニティ 速乾 大風量 パワフルドライ 低温モード ダブルミネラルイオン ミントグリーン EH-NE7L-G",
-    "price": 19828,
-    "last_notified_time": "2025-09-08 12:49:17",
-    "notification_count": 4,
+    "price": 17800,
+    "last_notified_time": "2025-09-15 12:57:54",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 12250,
@@ -8440,6 +8444,10 @@
       {
         "price": 19828,
         "time": "2025-09-08 12:49:17"
+      },
+      {
+        "price": 17800,
+        "time": "2025-09-15 12:57:54"
       }
     ]
   },
@@ -9397,9 +9405,9 @@
   },
   "4550161442844": {
     "product_name": "NEC Wi-Fi PA-WX5400HP 無線LANルータ dual_band Aterm",
-    "price": 34260,
-    "last_notified_time": "2025-09-11 18:47:35",
-    "notification_count": 8,
+    "price": 32480,
+    "last_notified_time": "2025-09-15 12:57:54",
+    "notification_count": 9,
     "previous_prices": [
       {
         "price": 26230,
@@ -9432,6 +9440,10 @@
       {
         "price": 34260,
         "time": "2025-09-11 18:47:35"
+      },
+      {
+        "price": 32480,
+        "time": "2025-09-15 12:57:54"
       }
     ]
   },
@@ -9920,14 +9932,18 @@
     ]
   },
   "4548736143005": {
-    "product_name": "【在庫あり・送料無料】SONY WH-CH720N ブルー",
-    "price": 15798,
-    "last_notified_time": "2025-04-10 03:56:04",
-    "notification_count": 1,
+    "product_name": "ソニー　SONY　ブルートゥースヘッドホン ブルー［リモコン・マイク対応 /Bluetooth /ノイズキャンセリング対応］　WH-CH720N LC",
+    "price": 17628,
+    "last_notified_time": "2025-09-15 12:57:54",
+    "notification_count": 2,
     "previous_prices": [
       {
         "price": 15798,
         "time": "2025-04-10 03:56:04"
+      },
+      {
+        "price": 17628,
+        "time": "2025-09-15 12:57:54"
       }
     ]
   },
