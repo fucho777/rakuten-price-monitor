@@ -1369,9 +1369,9 @@
   },
   "4547410431049": {
     "product_name": "富士フイルム(FUJIFILM) インスタントカメラ チェキ instax mini 11 チャコールグレイ INS MINI 11 GRAY",
-    "price": 21259,
-    "last_notified_time": "2025-09-05 18:49:05",
-    "notification_count": 5,
+    "price": 24272,
+    "last_notified_time": "2025-09-19 18:49:11",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 18921,
@@ -1392,6 +1392,10 @@
       {
         "price": 21259,
         "time": "2025-09-05 18:49:05"
+      },
+      {
+        "price": 24272,
+        "time": "2025-09-19 18:49:11"
       }
     ]
   },
@@ -24420,10 +24424,10 @@
     ]
   },
   "4210201412984": {
-    "product_name": "ブラウン 光美容器 脱毛器 BRAUN シルク・エキスパート Pro5 ブラウン PL5267 新品",
-    "price": 50095,
-    "last_notified_time": "2025-08-16 09:56:12",
-    "notification_count": 2,
+    "product_name": "PL-5267 ブラウン BRAUN 光美容器 シルクエキスパート Pro5 顔 全身 vio対応",
+    "price": 45800,
+    "last_notified_time": "2025-09-19 18:49:11",
+    "notification_count": 3,
     "previous_prices": [
       {
         "price": 45790,
@@ -24432,6 +24436,10 @@
       {
         "price": 50095,
         "time": "2025-08-16 09:56:12"
+      },
+      {
+        "price": 45800,
+        "time": "2025-09-19 18:49:11"
       }
     ]
   },
