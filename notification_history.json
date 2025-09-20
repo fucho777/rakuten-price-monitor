@@ -6917,9 +6917,9 @@
   },
   "4549980746448": {
     "product_name": "パナソニック ドライヤー イオニティ 速乾 大風量 パワフルドライ 低温モード ダブルミネラルイオン コーラルピンク EH-NE7L-P",
-    "price": 16250,
-    "last_notified_time": "2025-09-07 21:55:10",
-    "notification_count": 5,
+    "price": 14700,
+    "last_notified_time": "2025-09-20 01:01:20",
+    "notification_count": 6,
     "previous_prices": [
       {
         "price": 14368,
@@ -6940,6 +6940,10 @@
       {
         "price": 16250,
         "time": "2025-09-07 21:55:10"
+      },
+      {
+        "price": 14700,
+        "time": "2025-09-20 01:01:20"
       }
     ]
   },
@@ -18924,10 +18928,10 @@
     ]
   },
   "4549212300202": {
-    "product_name": "RICOH GR III GR3 デジタルカメラ APS-Cサイズ大型CMOSセンサー搭載 #13483",
-    "price": 179800,
-    "last_notified_time": "2025-09-16 06:57:34",
-    "notification_count": 4,
+    "product_name": "【新品/取寄品】RICOH GR III ハイエンド コンパクト デジタルカメラ リコー",
+    "price": 202250,
+    "last_notified_time": "2025-09-20 01:01:20",
+    "notification_count": 5,
     "previous_prices": [
       {
         "price": 161139,
@@ -18944,6 +18948,10 @@
       {
         "price": 179800,
         "time": "2025-09-16 06:57:34"
+      },
+      {
+        "price": 202250,
+        "time": "2025-09-20 01:01:20"
       }
     ]
   },
