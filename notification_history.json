@@ -8409,9 +8409,9 @@
   },
   "4550556131292": {
     "product_name": "【新品】SHARP シャープ スマホ AQUOS wish4 SH-M27 ブルー SIMフリー",
-    "price": 30814,
-    "last_notified_time": "2025-09-10 12:54:55",
-    "notification_count": 12,
+    "price": 26415,
+    "last_notified_time": "2025-09-21 01:01:59",
+    "notification_count": 13,
     "previous_prices": [
       {
         "price": 31114,
@@ -8460,6 +8460,10 @@
       {
         "price": 30814,
         "time": "2025-09-10 12:54:55"
+      },
+      {
+        "price": 26415,
+        "time": "2025-09-21 01:01:59"
       }
     ]
   },
@@ -21680,10 +21684,10 @@
     ]
   },
   "4974365837785": {
-    "product_name": "龍が如く8 PS5版",
-    "price": 4065,
-    "last_notified_time": "2025-09-03 09:53:06",
-    "notification_count": 6,
+    "product_name": "龍が如く8 - PS5",
+    "price": 6803,
+    "last_notified_time": "2025-09-21 01:01:59",
+    "notification_count": 7,
     "previous_prices": [
       {
         "price": 4619,
@@ -21708,6 +21712,10 @@
       {
         "price": 4065,
         "time": "2025-09-03 09:53:06"
+      },
+      {
+        "price": 6803,
+        "time": "2025-09-21 01:01:59"
       }
     ]
   },
@@ -22156,10 +22164,10 @@
     ]
   },
   "4974019200590": {
-    "product_name": "シャープ プラズマクラスター7000搭載 空気清浄機 14畳 リビングタイプ FU-P50-W ホワイト",
-    "price": 27060,
-    "last_notified_time": "2025-09-12 09:56:04",
-    "notification_count": 3,
+    "product_name": "FU-P50-W ホワイト SHARP シャープ プラズマクラスター7000搭載 空気清浄機 14畳 リビングタイプ 電源コード式 パワフル吸じん運転",
+    "price": 22000,
+    "last_notified_time": "2025-09-21 01:01:59",
+    "notification_count": 4,
     "previous_prices": [
       {
         "price": 24290,
@@ -22172,6 +22180,10 @@
       {
         "price": 27060,
         "time": "2025-09-12 09:56:04"
+      },
+      {
+        "price": 22000,
+        "time": "2025-09-21 01:01:59"
       }
     ]
   },
